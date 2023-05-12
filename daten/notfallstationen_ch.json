@@ -1,0 +1,54 @@
+{
+    "source": "BFS - Bundesamt f\u00fcr Statistik",
+    "data": [
+        {
+            "lat": "47.39356545",
+            "lon": "8.430542580571107",
+            "institut": "Zurzach Care Rehaklinik Limmattal",
+            "stand_address": "Urdorferstrasse 100",
+            "stand_ort": "8952 Schlieren"
+        },
+        {
+            "lat": "47.4752315",
+            "lon": "9.47456794993623",
+            "institut": "Berit Klinik Goldach",
+            "stand_address": "Klosterstrasse 19",
+            "stand_ort": "9403 Goldach"
+        },
+        {
+            "lat": "47.4787744",
+            "lon": "8.312388428533357",
+            "institut": "ZURZACH Care Rehaklinik Baden",
+            "stand_address": "B\u00e4derstrasse 16",
+            "stand_ort": "5401 Baden"
+        },
+        {
+            "lat": "47.45470415",
+            "lon": "8.277970718196961",
+            "institut": "ZURZACH Care Rehaklinik Baden-D\u00e4ttwil",
+            "stand_address": "Im Ergel 1",
+            "stand_ort": "5404 Baden"
+        },
+        {
+            "lat": "47.4514245",
+            "lon": "9.4197485",
+            "institut": "Privatklinik Oberwaid",
+            "stand_address": "Rorschacher Strasse 311",
+            "stand_ort": "9016 St. Gallen"
+        },
+        {
+            "lat": "47.6726705",
+            "lon": "9.026964",
+            "institut": "REHA-Abteilung",
+            "stand_address": "Seestrasse 101",
+            "stand_ort": "8267 Berlingen"
+        },
+        {
+            "lat": "46.602193",
+            "lon": "6.222322",
+            "institut": "H\u00f4pital de la Vall\u00e9e de Joux",
+            "stand_address": "Rue de l'H\u00f4pital 3",
+            "stand_ort": "1347 Le Sentier"
+        }
+    ]
+}

@@ -1,0 +1,8329 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.60 f4c14d41",
+  "osm3s": {
+    "timestamp_osm_base": "2023-05-11T18:38:00Z",
+    "timestamp_areas_base": "2023-05-11T16:12:35Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 270430824,
+      "lat": 49.66875,
+      "lon": 5.94935,
+      "tags": {
+        "addr:city": "Koerich",
+        "addr:housenumber": "3",
+        "addr:postcode": "8358",
+        "addr:street": "Rue du Château",
+        "amenity": "fire_station",
+        "name": "CIS Steinfort-Koerich",
+        "official_name": "Centre d'incendie et de secours Steinfort-Koerich",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "phone": "+352 49 771 - 3425"
+      }
+    },
+    {
+      "type": "node",
+      "id": 289905759,
+      "lat": 49.9152458,
+      "lon": 6.2262378,
+      "tags": {
+        "amenity": "fire_station",
+        "name": "Bëttler Pompjeeën"
+      }
+    },
+    {
+      "type": "node",
+      "id": 304986425,
+      "lat": 50.12517,
+      "lon": 6.00402,
+      "tags": {
+        "amenity": "fire_station",
+        "name": "CIS Troisvierges",
+        "official_name": "Centre d'incendie et de secours Troisvierges",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "node",
+      "id": 312748229,
+      "lat": 49.9494587,
+      "lon": 6.0816339,
+      "tags": {
+        "amenity": "fire_station"
+      }
+    },
+    {
+      "type": "node",
+      "id": 359078076,
+      "lat": 49.6237521,
+      "lon": 6.0235053,
+      "tags": {
+        "amenity": "fire_station",
+        "created_by": "Potlatch 0.10f",
+        "name": "Sisma"
+      }
+    },
+    {
+      "type": "node",
+      "id": 439857169,
+      "lat": 49.57574,
+      "lon": 5.9846309,
+      "tags": {
+        "amenity": "fire_station"
+      }
+    },
+    {
+      "type": "node",
+      "id": 447693738,
+      "lat": 49.6500235,
+      "lon": 6.3997507,
+      "tags": {
+        "addr:city": "Oberdonven",
+        "addr:housenumber": "3",
+        "addr:postcode": "5435",
+        "addr:street": "Rue de la Moselle",
+        "amenity": "fire_station",
+        "name": "CIS Flaxweiler",
+        "official_name": "Centre d'incendie et de secours Flaxweiler",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "phone": "+352 49 771 - 4675"
+      }
+    },
+    {
+      "type": "node",
+      "id": 458234966,
+      "lat": 49.65183,
+      "lon": 6.13378,
+      "tags": {
+        "alt_name": "Pompjeen Walferdange",
+        "amenity": "fire_station",
+        "name": "CIS Walferdange",
+        "official_name": "Centre d'incendie et de secours Walferdange",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "phone": "+352 49 771 - 3225"
+      }
+    },
+    {
+      "type": "node",
+      "id": 469384048,
+      "lat": 49.6118651,
+      "lon": 6.0510665,
+      "tags": {
+        "amenity": "fire_station"
+      }
+    },
+    {
+      "type": "node",
+      "id": 959787764,
+      "lat": 49.541374,
+      "lon": 6.144503,
+      "tags": {
+        "amenity": "fire_station",
+        "name": "CIS Roeserbann",
+        "official_name": "Centre d'incendie et de secours Roeserbann",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "phone": "+352 49 771 - 6300"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1524859462,
+      "lat": 49.54924,
+      "lon": 6.37436,
+      "tags": {
+        "amenity": "fire_station",
+        "name": "CIS Remich",
+        "official_name": "Centre d'incendie et de secours Remich",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "phone": "+352 49 771 - 4600"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1570836526,
+      "lat": 49.84799,
+      "lon": 5.90815,
+      "tags": {
+        "alt_name": "Gréiwelser Pompjeën",
+        "amenity": "fire_station",
+        "name": "CIS Grevels",
+        "official_name": "Centre d'incendie et de secours Grevels",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1612445819,
+      "lat": 49.8472676,
+      "lon": 6.0987345,
+      "tags": {
+        "amenity": "fire_station"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1641900510,
+      "lat": 49.4852121,
+      "lon": 6.0403841,
+      "tags": {
+        "addr:city": "Kayl",
+        "addr:housenumber": "16",
+        "addr:postcode": "3660",
+        "addr:street": "Rue du Moulin",
+        "amenity": "fire_station",
+        "name": "CIS Kayl-Tétange",
+        "official_name": "Centre d'incendie et de secours Kayl-Tétange",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "phone": "+352 49 771 - 6525"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1769508107,
+      "lat": 49.46264,
+      "lon": 6.03099,
+      "tags": {
+        "amenity": "fire_station",
+        "name": "CIS Rumelange",
+        "official_name": "Centre d'incendie et de secours Rumelange",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "phone": "+352 49 771 - 6550"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1841823365,
+      "lat": 49.77221,
+      "lon": 6.02115,
+      "tags": {
+        "amenity": "fire_station",
+        "name": "CIS Boevange-sur-Attert",
+        "official_name": "Centre d'incendie et de secours Boevange-sur-Attert",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1870109999,
+      "lat": 49.5868796,
+      "lon": 6.3580435,
+      "tags": {
+        "amenity": "fire_station"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1908496805,
+      "lat": 49.70816,
+      "lon": 6.4272,
+      "tags": {
+        "addr:city": "Manternach",
+        "addr:housenumber": "7",
+        "addr:postcode": "6850",
+        "addr:street": "Iechternacherstrooss",
+        "amenity": "fire_station",
+        "name": "CIS Manternach",
+        "official_name": "Centre d'incendie et de secours Manternach",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "phone": "+352 49 771 - 4575"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1916912178,
+      "lat": 49.5238938,
+      "lon": 6.3414957,
+      "tags": {
+        "amenity": "fire_station"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2054201173,
+      "lat": 49.5249022,
+      "lon": 6.2257045,
+      "tags": {
+        "alt_name": "Pompjeeën Uespelt",
+        "amenity": "fire_station",
+        "name": "CIS Aspelt",
+        "official_name": "Centre d'incendie et de secours Aspelt",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "phone": "+352 49 771 - 6225"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2203510650,
+      "lat": 49.9347448,
+      "lon": 5.9732907,
+      "tags": {
+        "amenity": "fire_station",
+        "name": "CIS Goesdorf",
+        "official_name": "Centre d'incendie et de secours Goesdorf",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2885287724,
+      "lat": 49.9107745,
+      "lon": 5.9332172,
+      "tags": {
+        "amenity": "fire_station",
+        "name": "CIS Esch-sur-Sûre",
+        "official_name": "Centre d'incendie et de secours Esch-sur-Sûre",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3987384864,
+      "lat": 49.9343604,
+      "lon": 5.937044,
+      "tags": {
+        "addr:city": "Büderscheid",
+        "addr:country": "LU",
+        "addr:housenumber": "21",
+        "addr:postcode": "9643",
+        "addr:street": "Duerfstrooss",
+        "amenity": "fire_station",
+        "name": "Al Bitschter Pomjeen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4950985057,
+      "lat": 49.8668,
+      "lon": 6.26438,
+      "tags": {
+        "addr:city": "Reisdorf",
+        "addr:housenumber": "4",
+        "addr:postcode": "9391",
+        "addr:street": "Place de l'Église",
+        "amenity": "fire_station",
+        "email": "info@cisreisdorf.lu",
+        "name": "CIS Reisdorf",
+        "note": "49°52'00.6\"N 6°15'52.2\"E",
+        "official_name": "Centre d'incendie et de secours Reisdorf",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "phone": "+352 86 90 20",
+        "website": "www.cisreisdorf.lu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5556616281,
+      "lat": 49.7037163,
+      "lon": 6.1684391,
+      "tags": {
+        "amenity": "fire_station"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6810267731,
+      "lat": 49.609,
+      "lon": 6.40312,
+      "tags": {
+        "amenity": "fire_station",
+        "name": "CIS Wormeldange",
+        "official_name": "Centre d'incendie et de secours Wormeldange",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "phone": "+352 49 771 - 4775"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6810267732,
+      "lat": 50.058,
+      "lon": 5.9214,
+      "tags": {
+        "amenity": "fire_station",
+        "name": "CIS Wincrange",
+        "official_name": "Centre d'incendie et de secours Wincrange",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6810267733,
+      "lat": 50.14144,
+      "lon": 6.07392,
+      "tags": {
+        "amenity": "fire_station",
+        "name": "CIS Weiswampach",
+        "official_name": "Centre d'incendie et de secours Weiswampach",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6810267735,
+      "lat": 49.79736,
+      "lon": 6.27852,
+      "tags": {
+        "amenity": "fire_station",
+        "name": "CIS Waldbillig",
+        "official_name": "Centre d'incendie et de secours Waldbillig",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6810267737,
+      "lat": 49.93325,
+      "lon": 6.21361,
+      "tags": {
+        "amenity": "fire_station",
+        "name": "CIS Vianden",
+        "official_name": "Centre d'incendie et de secours Vianden",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6810267738,
+      "lat": 49.7185828,
+      "lon": 6.0119275,
+      "tags": {
+        "amenity": "fire_station",
+        "facebook": "https://www.facebook.com/Cistulu/",
+        "name": "CIS Tuntange",
+        "official_name": "Centre d'incendie et de secours Tuntange",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "phone": "+352 49 771 - 3275"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6810267739,
+      "lat": 49.89178,
+      "lon": 6.1637,
+      "tags": {
+        "amenity": "fire_station",
+        "name": "CIS Tandel",
+        "official_name": "Centre d'incendie et de secours Tandel",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6810267740,
+      "lat": 49.678653,
+      "lon": 6.1247209,
+      "tags": {
+        "amenity": "fire_station",
+        "fixme:survey": "Exact position?",
+        "name": "CIS Steinsel",
+        "official_name": "Centre d'incendie et de secours Steinsel",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "website": "https://pompjeen-stesel.lu/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6810267742,
+      "lat": 49.4688122,
+      "lon": 6.3570481,
+      "tags": {
+        "amenity": "fire_station",
+        "name": "CIS Schengen",
+        "official_name": "Centre d'incendie et de secours Schengen",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "phone": "+352 49 771 - 4750"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6810267743,
+      "lat": 49.7635,
+      "lon": 5.8888,
+      "tags": {
+        "amenity": "fire_station",
+        "name": "CIS Redange",
+        "official_name": "Centre d'incendie et de secours Redange",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6810267744,
+      "lat": 49.8490987,
+      "lon": 5.7918256,
+      "tags": {
+        "amenity": "fire_station",
+        "name": "CIS Rambrouch",
+        "official_name": "Centre d'incendie et de secours Rambrouch",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6810267745,
+      "lat": 49.7939107,
+      "lon": 5.9350939,
+      "tags": {
+        "amenity": "fire_station",
+        "fixme:survey": "Exact position?",
+        "name": "CIS Preizerdaul",
+        "official_name": "Centre d'incendie et de secours Preizerdaul",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6810267746,
+      "lat": 49.80005,
+      "lon": 6.13115,
+      "tags": {
+        "amenity": "fire_station",
+        "name": "CIS Nommern",
+        "official_name": "Centre d'incendie et de secours Nommern",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6810267747,
+      "lat": 49.50449,
+      "lon": 6.26713,
+      "tags": {
+        "amenity": "fire_station",
+        "name": "CIS Mondorf",
+        "official_name": "Centre d'incendie et de secours Mondorf",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "phone": "+352 49 771 - 4700"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6810267748,
+      "lat": 49.75516,
+      "lon": 6.50199,
+      "tags": {
+        "addr:city": "Born",
+        "addr:housenumber": "5",
+        "addr:postcode": "6661",
+        "addr:street": "Um Salzwaasser",
+        "amenity": "fire_station",
+        "name": "CIS Mompach",
+        "official_name": "Centre d'incendie et de secours Mompach",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6810267749,
+      "lat": 49.83312,
+      "lon": 6.00421,
+      "tags": {
+        "amenity": "fire_station",
+        "name": "CIS Mertzig",
+        "official_name": "Centre d'incendie et de secours Mertzig",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6810267751,
+      "lat": 49.72633,
+      "lon": 6.12513,
+      "tags": {
+        "amenity": "fire_station",
+        "name": "CIS Lintgen",
+        "official_name": "Centre d'incendie et de secours Lintgen",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6810267752,
+      "lat": 49.9210616,
+      "lon": 5.847357,
+      "tags": {
+        "addr:city": "Bavigne",
+        "addr:housenumber": "7",
+        "addr:postcode": "9635",
+        "addr:street": "Duerfstrooss",
+        "amenity": "fire_station",
+        "name": "CIS Lac",
+        "official_name": "Centre d'incendie et de secours Lac",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6810267753,
+      "lat": 50.00001,
+      "lon": 5.98906,
+      "tags": {
+        "addr:city": "Enscherange",
+        "addr:housenumber": "6",
+        "addr:postcode": "9747",
+        "addr:street": "Am Burreneck",
+        "amenity": "fire_station",
+        "name": "CIS Kiischpelt",
+        "official_name": "Centre d'incendie et de secours Kiischpelt",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6810267754,
+      "lat": 49.82393,
+      "lon": 5.95867,
+      "tags": {
+        "amenity": "fire_station",
+        "name": "CIS Grosbous",
+        "official_name": "Centre d'incendie et de secours Grosbous",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6810267756,
+      "lat": 49.58418,
+      "lon": 5.97404,
+      "tags": {
+        "amenity": "fire_station",
+        "name": "CIS Dippach",
+        "official_name": "Centre d'incendie et de secours Dippach",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6810267757,
+      "lat": 49.5426178,
+      "lon": 6.2569456,
+      "tags": {
+        "amenity": "fire_station",
+        "name": "CIS Dalheim",
+        "official_name": "Centre d'incendie et de secours Dalheim",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6810267758,
+      "lat": 49.61022,
+      "lon": 6.32379,
+      "tags": {
+        "amenity": "fire_station",
+        "name": "CIS Canach",
+        "official_name": "Centre d'incendie et de secours Canach",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6810267759,
+      "lat": 49.9087,
+      "lon": 6.06131,
+      "tags": {
+        "amenity": "fire_station",
+        "name": "CIS Bourscheid",
+        "official_name": "Centre d'incendie et de secours Bourscheid",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8768262969,
+      "lat": 49.7701109,
+      "lon": 5.8821219,
+      "tags": {
+        "amenity": "fire_station",
+        "emergency": "ambulance_station",
+        "name": "CIS Redange/Attert",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9088929099,
+      "lat": 49.5847673,
+      "lon": 6.1320524,
+      "tags": {
+        "amenity": "fire_station",
+        "name": "Zone de secours Centre",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "phone": "+352 49 771 - 3010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9088944068,
+      "lat": 49.7159387,
+      "lon": 6.2684605,
+      "tags": {
+        "amenity": "fire_station",
+        "name": "Zone de secours Est",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "phone": "+352 49 771 - 4010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9088950741,
+      "lat": 49.847718,
+      "lon": 6.1035214,
+      "tags": {
+        "amenity": "fire_station",
+        "name": "Zone de secours Nord",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "phone": "+352 49 771 - 5010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9088964758,
+      "lat": 49.5034201,
+      "lon": 5.9861413,
+      "tags": {
+        "amenity": "fire_station",
+        "name": "Zone de secours Sud",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "phone": "+352 49 771 - 6010"
+      }
+    },
+    {
+      "type": "way",
+      "id": 23283713,
+      "nodes": [
+        252019172,
+        590682168,
+        590682170,
+        590682171,
+        590682169,
+        252019173,
+        252019174,
+        252019175,
+        10557707586,
+        10557707585,
+        252019172
+      ],
+      "tags": {
+        "addr:city": "Luxembourg",
+        "addr:country": "LU",
+        "addr:housenumber": "50",
+        "addr:postcode": "1140",
+        "addr:street": "Route d'Arlon",
+        "amenity": "fire_station",
+        "building": "yes",
+        "emergency": "ambulance_station",
+        "name": "CIS Luxembourg",
+        "name:de": "Berufsfeuerwehr der Stadt Luxemburg",
+        "official_name": "Centre d'incendie et de secours Luxembourg",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "way",
+      "id": 25627857,
+      "nodes": [
+        279317390,
+        279317391,
+        279317392,
+        279317393,
+        279317390
+      ],
+      "tags": {
+        "addr:city": "Bascharage",
+        "addr:housenumber": "21B",
+        "addr:postcode": "4920",
+        "addr:street": "Rue de l'Eau",
+        "amenity": "fire_station",
+        "building": "civic",
+        "name": "CIS Käerjeng-Péiteng",
+        "name:fr": "CIS Bascharage-Petange",
+        "official_name": "Centre d'incendie et de secours Käerjeng-Péiteng",
+        "official_name:fr": "Centre d'incendie et de secours Bascharage-Petange",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "website": "https://112.public.lu/fr/organisation/secours/petange.html"
+      }
+    },
+    {
+      "type": "way",
+      "id": 25627923,
+      "nodes": [
+        1451922997,
+        279318187,
+        279318188,
+        6799779229,
+        279318189,
+        279318190,
+        279318191,
+        10608759186,
+        10608759185,
+        10608759184,
+        10608759183,
+        10608759182,
+        10608759181,
+        279318192,
+        279318193,
+        9348570547,
+        9348570546,
+        6799779230,
+        6799779231,
+        1451922997
+      ],
+      "tags": {
+        "addr:city": "Dudelange",
+        "addr:housenumber": "97",
+        "addr:postcode": "3515",
+        "addr:street": "Route de Luxembourg",
+        "amenity": "fire_station",
+        "building": "yes",
+        "description": "Corps grand-ducal d'incendie et de secours - Centre d'incendie et de secours Dudelange",
+        "fax": "+352 52 37 50 29",
+        "name": "CIS Dudelange",
+        "official_name": "Centre d'incendie et de secours Dudelange",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "phone": "+352 52 37 50 1"
+      }
+    },
+    {
+      "type": "way",
+      "id": 28259944,
+      "nodes": [
+        310358860,
+        6184416870,
+        6184416869,
+        6184416868,
+        6184416867,
+        6184416866,
+        310358862,
+        310358863,
+        7829786737,
+        310358860
+      ],
+      "tags": {
+        "addr:city": "Niederanven",
+        "addr:housenumber": "7",
+        "addr:postcode": "6939",
+        "addr:street": "Routscheed",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "CIS Niederanven-Schuttrange",
+        "official_name": "Centre d'incendie et de secours Niederanven-Schuttrange",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "way",
+      "id": 28632219,
+      "nodes": [
+        314706040,
+        314706042,
+        314706044,
+        7543627411,
+        314706046,
+        314706040
+      ],
+      "tags": {
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "CIS Rosport",
+        "official_name": "Centre d'incendie et de secours Rosport",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29316574,
+      "nodes": [
+        322537066,
+        6726232090,
+        6726232091,
+        322537067,
+        322537068,
+        322537069,
+        322537066
+      ],
+      "tags": {
+        "addr:city": "Lamadelaine",
+        "addr:housenumber": "9",
+        "addr:postcode": "4744",
+        "addr:street": "Rue Jean-Pierre Kirchen",
+        "amenity": "fire_station",
+        "building": "civic",
+        "name": "CIS Petange",
+        "official_name": "Centre d'incendie et de secours Petange",
+        "opening_hours": "24/7",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "short_name": "CIS Pétange"
+      }
+    },
+    {
+      "type": "way",
+      "id": 30705594,
+      "nodes": [
+        339581848,
+        6800743818,
+        6800743821,
+        339581849,
+        339581850,
+        8855976190,
+        339581848
+      ],
+      "tags": {
+        "addr:city": "Luxembourg",
+        "addr:country": "LU",
+        "addr:housenumber": "1",
+        "addr:postcode": "2557",
+        "addr:street": "Rue Robert Stumper",
+        "alt_name": "CSU 112",
+        "alt_name_1": "112",
+        "amenity": "fire_station",
+        "building": "public",
+        "building:levels": "3",
+        "description": "Corps grand-ducal d'incendie et de secours & C.S.U. 112 - Central des secours d'urgence",
+        "name": "Centres d'incendie et de secours (CIS) Cloche d'Or",
+        "operator": "Corps grand-ducal d'incendie et de secours (CGDIS)",
+        "roof:shape": "flat"
+      }
+    },
+    {
+      "type": "way",
+      "id": 32317166,
+      "nodes": [
+        363814093,
+        2685012498,
+        2685012510,
+        363814094,
+        363814093
+      ],
+      "tags": {
+        "addr:city": "Pontpierre",
+        "addr:country": "LU",
+        "addr:housenumber": "6A",
+        "addr:postcode": "4393",
+        "addr:street": "Grand-Rue",
+        "alt_name": "CIS Mondercange-Reckange/Mess",
+        "amenity": "fire_station",
+        "building": "yes",
+        "email": "info@spm.lu",
+        "fax": "+352 55 44 05-55",
+        "image": "https://i2.wp.com/www.cismr.lu/wp-content/uploads/2016/04/FINAL_Couleurs_Fond-Transparent-XS.png",
+        "name": "CIS Mondercange-Reckange",
+        "note:caclr": "Both 6A and 6 are in use (different parts of building?)",
+        "official_name": "Centre d'incendie et de secours Mondercange-Reckange",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "phone": "+352 55 44 05 66",
+        "ref:caclr": "missing",
+        "short_name": "CISMR",
+        "website": "http://www.cismr.lu/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 36810590,
+      "nodes": [
+        427891530,
+        427891531,
+        3798324425,
+        427891532,
+        427891533,
+        427891530
+      ],
+      "tags": {
+        "addr:city": "Pétange",
+        "addr:housenumber": "27",
+        "addr:postcode": "4755",
+        "addr:street": "Rue de Linger",
+        "amenity": "fire_station",
+        "building": "civic",
+        "emergency": "ambulance_station",
+        "name": "CIS Käerjeng-Péiteng",
+        "name:fr": "CIS Bascharage-Petange",
+        "official_name": "Centre d'Incendie et de Secours Käerjeng-Péiteng",
+        "official_name:fr": "Centre d'incendie et de secours Bascharage-Petange",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "way",
+      "id": 41232765,
+      "nodes": [
+        503860679,
+        503860682,
+        939976803,
+        3188165153,
+        3188165152,
+        503860684,
+        503860688,
+        9525543594,
+        9525543595,
+        503860691,
+        2448383136,
+        2448383135,
+        503860679
+      ],
+      "tags": {
+        "addr:city": "Steinfort",
+        "addr:country": "LU",
+        "addr:housenumber": "12",
+        "addr:postcode": "8414",
+        "addr:street": "Rue Collart",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "CIS Steinfort-Koerich",
+        "official_name": "Centre d'incendie et de secours Steinfort-Koerich",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "phone": "+352 49771 3725",
+        "source": "https://www.cisst.lu",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "way",
+      "id": 46267423,
+      "nodes": [
+        590703045,
+        590703052,
+        590703054,
+        590703042,
+        590703045
+      ],
+      "tags": {
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "CIS Bertrange-Strassen",
+        "official_name": "Centre d'incendie et de secours Bertrange-Strassen",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "way",
+      "id": 49876184,
+      "nodes": [
+        633707570,
+        633707585,
+        633707573,
+        633707575,
+        633707579,
+        633707583,
+        1880646350,
+        633707577,
+        633707581,
+        633707596,
+        633707564,
+        633707565,
+        633707567,
+        633707569,
+        633707570
+      ],
+      "tags": {
+        "addr:city": "Bissen",
+        "addr:country": "LU",
+        "addr:housenumber": "10A",
+        "addr:postcode": "7766",
+        "addr:street": "Route de Colmar",
+        "alt_name": "Pompjeesbau",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "CIS Bissen",
+        "official_name": "Centre d'incendie et de secours Bissen",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "ref:caclr": "missing"
+      }
+    },
+    {
+      "type": "way",
+      "id": 59366631,
+      "nodes": [
+        736335205,
+        736335215,
+        736335223,
+        736335233,
+        736335205
+      ],
+      "tags": {
+        "addr:city": "Berdorf",
+        "addr:housenumber": "1",
+        "addr:postcode": "6552",
+        "addr:street": "Beim Maartbësch",
+        "alt_name": "Pompjeesbau",
+        "amenity": "fire_station",
+        "building": "garage",
+        "name": "CIS Berdorf",
+        "official_name": "Centre d'incendie et de secours Berdorf",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "way",
+      "id": 67036313,
+      "nodes": [
+        810133351,
+        810133347,
+        810133342,
+        8003814277,
+        810133335,
+        810133352,
+        810133350,
+        810133345,
+        810133343,
+        810133354,
+        810133346,
+        810133351
+      ],
+      "tags": {
+        "addr:city": "Consthum",
+        "addr:housenumber": "2",
+        "addr:postcode": "9831",
+        "addr:street": "Millewee",
+        "amenity": "fire_station",
+        "building": "yes",
+        "ref:caclr": "127702"
+      }
+    },
+    {
+      "type": "way",
+      "id": 70214566,
+      "nodes": [
+        838398452,
+        8252905298,
+        8252905296,
+        8252905295,
+        8252905297,
+        1025078516,
+        838398456,
+        838398459,
+        10086623373,
+        10086623372,
+        838398455,
+        838398464,
+        838398465,
+        838398462,
+        838398463,
+        838398460,
+        838398461,
+        838398458,
+        838398452
+      ],
+      "tags": {
+        "addr:city": "Esch-sur-Alzette",
+        "addr:housenumber": "18",
+        "addr:postcode": "4238",
+        "addr:street": "Rue Léon Metz",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "CIS Esch-sur-Alzette",
+        "name:lb": "Sprëtzenhaus",
+        "official_name": "Centre d'incendie et de secours Esch-sur-Alzette",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "way",
+      "id": 83552820,
+      "nodes": [
+        973009323,
+        973009324,
+        973009329,
+        973009331,
+        973009344,
+        973009350,
+        2096302037,
+        973009333,
+        2096302041,
+        2096302039,
+        973009334,
+        973009337,
+        973009323
+      ],
+      "tags": {
+        "addr:city": "Leudelange",
+        "addr:country": "LU",
+        "addr:housenumber": "21",
+        "addr:postcode": "3364",
+        "addr:street": "Rue de la Poudrerie",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "CIS Leudelange",
+        "name:lb": "Pompjeeë Leideleng",
+        "official_name": "Centre d'incendie et de secours Leudelange",
+        "opening_hours": "24/7",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "phone": "+352 621 329 612",
+        "ref:caclr": "227121"
+      }
+    },
+    {
+      "type": "way",
+      "id": 84099847,
+      "nodes": [
+        6799734664,
+        978479936,
+        978479929,
+        978479907,
+        5318314190,
+        5318314191,
+        978479933,
+        978479909,
+        75356301,
+        978479959,
+        978479914,
+        978479901,
+        978479887,
+        978479939,
+        5318314192,
+        5318314193,
+        978479899,
+        978479942,
+        978479938,
+        8615075232,
+        978479956,
+        978479916,
+        6799734664
+      ],
+      "tags": {
+        "addr:city": "Bettembourg",
+        "addr:housenumber": "2-4",
+        "addr:postcode": "3275",
+        "addr:street": "Rue James Hilliard Polk",
+        "amenity": "fire_station",
+        "building": "yes",
+        "description": "Corps grand-ducal d'incendie et de secours - Centre d'incendie et de secours Bettembourg",
+        "fax": "+352 51 50 07 60",
+        "name": "CIS Bettembourg",
+        "official_name": "Centre d'incendie et de secours Bettembourg",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "phone": "+352 51 50 07 61",
+        "website": "https://112.public.lu/fr/organisation/secours/bettembourg.html"
+      }
+    },
+    {
+      "type": "way",
+      "id": 87616639,
+      "nodes": [
+        1019213468,
+        1019213496,
+        1019213460,
+        1019213538,
+        1019213468
+      ],
+      "tags": {
+        "addr:city": "Consdorf",
+        "addr:street": "Rue de la Mairie",
+        "amenity": "fire_station",
+        "building": "garage",
+        "name": "CIS Consdorf",
+        "official_name": "Centre d'incendie et de secours Consdorf",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "way",
+      "id": 87759800,
+      "nodes": [
+        1020362519,
+        1020362508,
+        1020362471,
+        1020362599,
+        1020362519
+      ],
+      "tags": {
+        "addr:city": "Osweiler",
+        "addr:housenumber": "6",
+        "addr:postcode": "6570",
+        "addr:street": "Siesgaass",
+        "amenity": "fire_station",
+        "building": "civic",
+        "name": "CIS Osweiler",
+        "official_name": "Centre d'incendie et de secours Osweiler",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "way",
+      "id": 88061842,
+      "nodes": [
+        1023457021,
+        6184481291,
+        6184481292,
+        6184481293,
+        6184481294,
+        6184481295,
+        6184481296,
+        6184481297,
+        6184481298,
+        6184481299,
+        6184481300,
+        9841490709,
+        1023457041,
+        1023457062,
+        1023457075,
+        1023457016,
+        2531356205,
+        6184481289,
+        6184481288,
+        6184481287,
+        6184481286,
+        6184481285,
+        1023457030,
+        1023457067,
+        1023457092,
+        1023457021
+      ],
+      "tags": {
+        "addr:city": "Junglinster",
+        "addr:housenumber": "1",
+        "addr:postcode": "6131",
+        "addr:street": "Rue Émile Nilles",
+        "amenity": "fire_station",
+        "building": "civic",
+        "emergency": "ambulance_station",
+        "fax": "+352 78 03 80",
+        "name": "CIS Junglinster",
+        "official_name": "Centre d'incendie et de secours Junglinster",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "phone": "+352 49 771 - 4400"
+      }
+    },
+    {
+      "type": "way",
+      "id": 99371156,
+      "nodes": [
+        1149355984,
+        1149355987,
+        1149355991,
+        1149355992,
+        1149355984
+      ],
+      "tags": {
+        "amenity": "fire_station",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 104381772,
+      "nodes": [
+        1204271826,
+        1204271820,
+        8345935266,
+        1204271813,
+        1204271852,
+        1204271826
+      ],
+      "tags": {
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "CIS Bettendorf",
+        "official_name": "Centre d'incendie et de secours Bettendorf",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "website": "http://www.pompjeen-bettendorf.lu/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 105189340,
+      "nodes": [
+        8506767825,
+        1212152228,
+        1212152196,
+        1212152210,
+        1212152242,
+        8506767823,
+        8506767827,
+        8506767826,
+        8506767825
+      ],
+      "tags": {
+        "addr:city": "Weiler-la-Tour",
+        "addr:housenumber": "2",
+        "addr:postcode": "5773",
+        "addr:street": "Um Schlammestee",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "CIS Weiler-la-Tour",
+        "official_name": "Centre d'incendie et de secours Weiler-la-Tour",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "website": "https://cisweiler.lu",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "way",
+      "id": 108420804,
+      "nodes": [
+        6176069211,
+        1244135348,
+        1244135354,
+        1244135360,
+        8357685720,
+        6176069211
+      ],
+      "tags": {
+        "addr:city": "Sandweiler",
+        "addr:housenumber": "113",
+        "addr:postcode": "5231",
+        "addr:street": "Rue d'Itzig",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "CIS Sandweiler",
+        "official_name": "Centre d'incendie et de secours Sandweiler",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "way",
+      "id": 122158625,
+      "nodes": [
+        1365812655,
+        1365812658,
+        4593469056,
+        5412760440,
+        1365812654,
+        5412760441,
+        5412760435,
+        1365812651,
+        5412760434,
+        1365812655
+      ],
+      "tags": {
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "CIS Kopstal",
+        "official_name": "Centre d'incendie et de secours Kopstal",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "way",
+      "id": 124117082,
+      "nodes": [
+        1382270940,
+        2199831592,
+        2199831591,
+        2199831588,
+        2199831589,
+        1382270929,
+        1382270933,
+        1382270934,
+        6810306626,
+        6810306625,
+        6810306624,
+        6810306627,
+        1382270944,
+        2199831596,
+        6810306619,
+        6810306618,
+        6810306617,
+        6810306616,
+        6810306623,
+        6810306621,
+        6810306620,
+        6810306622,
+        1382270941,
+        1382270943,
+        1382270940
+      ],
+      "tags": {
+        "addr:city": "Mamer",
+        "addr:country": "LU",
+        "addr:housenumber": "107",
+        "addr:postcode": "8211",
+        "addr:street": "Route d'Arlon",
+        "amenity": "fire_station",
+        "building": "yes",
+        "emergency": "ambulance_station",
+        "name": "CIS Mamer",
+        "official_name": "Centre d'incendie et de secours Mamer",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "ref:caclr": "38135",
+        "website": "http://www.cisma.lu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 127664305,
+      "nodes": [
+        1412443556,
+        1412443571,
+        1412443567,
+        1412443558,
+        1412443552,
+        6466506810,
+        1412443556
+      ],
+      "tags": {
+        "amenity": "fire_station",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 143367742,
+      "nodes": [
+        1568918396,
+        6185965533,
+        7993350679,
+        1568918398,
+        6185965531,
+        6185965530,
+        1568918395,
+        1568918394,
+        1568918396
+      ],
+      "tags": {
+        "addr:city": "Diekirch",
+        "addr:country": "LU",
+        "addr:housenumber": "1",
+        "addr:postcode": "9282",
+        "addr:street": "Rue du 11 septembre",
+        "amenity": "fire_station",
+        "building": "yes",
+        "description": "Corps grand-ducal d'incendie et de secours - Centre d'incendie et de secours Diekirch",
+        "name": "CIS Diekirch",
+        "official_name": "Centre d'incendie et de secours Diekirch",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "ref:caclr": "132524"
+      }
+    },
+    {
+      "type": "way",
+      "id": 143727511,
+      "nodes": [
+        1572814617,
+        1572814613,
+        1572814614,
+        1572814620,
+        1572814617
+      ],
+      "tags": {
+        "amenity": "fire_station",
+        "building": "civic"
+      }
+    },
+    {
+      "type": "way",
+      "id": 144059595,
+      "nodes": [
+        1576448672,
+        1576448674,
+        1576448673,
+        8400770813,
+        1576448671,
+        6797535213,
+        6797535214,
+        6797535215,
+        6797535216,
+        6797535217,
+        6797535218,
+        6797535219,
+        8400770785,
+        8400770788,
+        1576448672
+      ],
+      "tags": {
+        "addr:city": "Ettelbruck",
+        "addr:housenumber": "28",
+        "addr:postcode": "9080",
+        "addr:street": "Avenue Lucien Salentiny",
+        "alt_name": "CIS Ettelbrück",
+        "amenity": "fire_station",
+        "building": "yes",
+        "description": "Corps grand-ducal d'incendie et de secours - Centre d'incendie et de secours Ettelbrück",
+        "name": "CIS Ettelbruck",
+        "official_name": "Centre d'incendie et de secours Ettelbruck",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "phone": "+352 81 74 46-1"
+      }
+    },
+    {
+      "type": "way",
+      "id": 149733511,
+      "nodes": [
+        1626889438,
+        1626889441,
+        1626889459,
+        1626889461,
+        1626889455,
+        1626889471,
+        1626889440,
+        1626889479,
+        1626889467,
+        1626889477,
+        2239583579,
+        2239583584,
+        1626889469,
+        1626889443,
+        1626889438
+      ],
+      "tags": {
+        "alt_name": "CIS Aéroport",
+        "amenity": "fire_station",
+        "building": "fire_station",
+        "name": "Luxembourg Airport Fire Department",
+        "official_name": "Centre d'incendie et de secours Findel",
+        "operator": "Administration de la Navigation Aérienne",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "short_name": "CIS Findel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 161818003,
+      "nodes": [
+        1737731206,
+        1737731203,
+        1737731121,
+        1737731123,
+        1737731206
+      ],
+      "tags": {
+        "amenity": "fire_station",
+        "building": "yes",
+        "source": "bing"
+      }
+    },
+    {
+      "type": "way",
+      "id": 161818010,
+      "nodes": [
+        1737731617,
+        2238713044,
+        1737731618,
+        1737731580,
+        1737731578,
+        1737731617
+      ],
+      "tags": {
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "Pompjeen Rollengergronn",
+        "source": "bing"
+      }
+    },
+    {
+      "type": "way",
+      "id": 185137031,
+      "nodes": [
+        1957077409,
+        1957077414,
+        1957077415,
+        1957077413,
+        1957077409
+      ],
+      "tags": {
+        "addr:city": "Frisange",
+        "addr:country": "LU",
+        "addr:housenumber": "17",
+        "addr:postcode": "5751",
+        "addr:street": "Robert-Schuman-Strooss",
+        "alt_name": "Sprëtzenhaus",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "CIS Frisange",
+        "official_name": "Centre d'incendie et de secours Frisange",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "way",
+      "id": 201751837,
+      "nodes": [
+        2117638611,
+        2117638608,
+        2117638609,
+        2117638610,
+        2117638611
+      ],
+      "tags": {
+        "amenity": "fire_station",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 204310422,
+      "nodes": [
+        2143160529,
+        2143160561,
+        2143160560,
+        6800614769,
+        6800614770,
+        6800614771,
+        2143160527,
+        2143160529
+      ],
+      "tags": {
+        "addr:city": "Clervaux",
+        "addr:housenumber": "20",
+        "addr:postcode": "9706",
+        "addr:street": "Route d'Eselborn",
+        "alt_name": "Pompjëen Cliärref",
+        "amenity": "fire_station",
+        "building": "yes",
+        "fax": "+352 27 800 904",
+        "name": "CIS Clervaux",
+        "official_name": "Centre d'incendie et de secours Clervaux",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "phone": "+352 27 800 500"
+      }
+    },
+    {
+      "type": "way",
+      "id": 208182321,
+      "nodes": [
+        2185092056,
+        2185092055,
+        2185092059,
+        2185092060,
+        2185092058,
+        2185092057,
+        2185092056
+      ],
+      "tags": {
+        "addr:city": "Heiderscheid",
+        "addr:housenumber": "3",
+        "addr:place": "Um Ale Bësch",
+        "addr:postcode": "9158",
+        "alt_name": "Pompjeeën Alebësch",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "CIS Alebësch",
+        "official_name": "Centre d'incendie et de secours Alebësch",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "ref:caclr": "missing",
+        "website": "https://112.public.lu/fr/organisation/secours/cis_alebesch.html"
+      }
+    },
+    {
+      "type": "way",
+      "id": 220247724,
+      "nodes": [
+        2293755657,
+        2293755656,
+        6255972457,
+        6255972456,
+        6255972024,
+        6255972454,
+        2293755659,
+        6255972458,
+        6184457082,
+        6255972462,
+        6255972461,
+        6255972463,
+        6255972459,
+        6255972460,
+        6255972464,
+        2293755655,
+        2293755653,
+        2293755654,
+        2293755657
+      ],
+      "tags": {
+        "amenity": "fire_station",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 235963450,
+      "nodes": [
+        2440397233,
+        2440397234,
+        8179194296,
+        8179194391,
+        2440397231,
+        2440397233
+      ],
+      "tags": {
+        "amenity": "fire_station",
+        "building": "garage",
+        "name": "CIS Beckerich",
+        "official_name": "Centre d'incendie et de secours Beckerich",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "way",
+      "id": 240225641,
+      "nodes": [
+        2479732202,
+        5840527082,
+        5840527081,
+        2479732199,
+        5840527079,
+        5840527080,
+        5840527078,
+        5840527076,
+        5840527075,
+        5840527077,
+        5043353646,
+        5043353645,
+        2479732204,
+        5840527065,
+        5840527064,
+        5840527062,
+        5840527063,
+        5840527066,
+        2479732206,
+        5043353643,
+        5043353644,
+        2479732202
+      ],
+      "tags": {
+        "addr:city": "Soleuvre",
+        "addr:housenumber": "29",
+        "addr:postcode": "4492",
+        "addr:street": "Scheierhaffstrooss",
+        "amenity": "fire_station",
+        "building": "public",
+        "building:levels": "1",
+        "name": "CIS Sanem-Differdange",
+        "name:de": "Zentrum der Feuerwehr und des Rettungsdienstes Sanem-Differdingen",
+        "name:en": "Firedepartment Sanem-Differdange",
+        "name:fr": "Centre d‘Incendie et de secours Sanem-Differdange",
+        "note:caclr": "CACLR has 25 and 27 which are school up the street",
+        "official_name": "Centre d'incendie et de secours Sanem-Differdange",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "ref:caclr": "missing",
+        "short_name": "CIS Sanem-Differdange",
+        "website": "https://112.public.lu/fr/organisation/secours/differdange.html"
+      }
+    },
+    {
+      "type": "way",
+      "id": 241919399,
+      "nodes": [
+        2494907941,
+        2494907953,
+        2494907943,
+        2494907939,
+        2494907941
+      ],
+      "tags": {
+        "amenity": "fire_station",
+        "building": "civic",
+        "fixme:survey": "Is this still active?",
+        "name": "Ale Pompjesbau"
+      }
+    },
+    {
+      "type": "way",
+      "id": 279109067,
+      "nodes": [
+        2833584025,
+        2833584026,
+        2833584027,
+        2833584028,
+        2833584029,
+        2833584030,
+        2833584031,
+        2833584032,
+        2833584025
+      ],
+      "tags": {
+        "addr:city": "Eischen",
+        "addr:country": "LU",
+        "addr:housenumber": "1C",
+        "addr:postcode": "8471",
+        "addr:street": "Rue de la Gare",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "CIS Hobscheid",
+        "official_name": "Centre d'incendie et de secours Hobscheid",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "ref:caclr": "missing",
+        "website": "http://www.sish.lu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 290052560,
+      "nodes": [
+        2935886785,
+        2935886788,
+        2935886786,
+        2935886787,
+        2935886784,
+        2935886783,
+        2935886785
+      ],
+      "tags": {
+        "amenity": "fire_station",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 293856862,
+      "nodes": [
+        2974346909,
+        2974346905,
+        2974346906,
+        2974346907,
+        2974346908,
+        5574308450,
+        5574308451,
+        2974346914,
+        2974346913,
+        2974346912,
+        2974346910,
+        2974346909
+      ],
+      "tags": {
+        "addr:city": "Hosingen",
+        "addr:housenumber": "2A",
+        "addr:postcode": "9806",
+        "addr:street": "Haaptstrooss",
+        "addr:street:lb": "Rue Principale",
+        "alt_name": "Centre d'Intervention Parc Hosingen",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "CIS Hosingen",
+        "official_name": "Centre d'incendie et de secours Hosingen",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "short_name": "CIPHO",
+        "website": "https://www.cispho.lu/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 295287174,
+      "nodes": [
+        2989913829,
+        2989913830,
+        2989913831,
+        2989913828,
+        2989913829
+      ],
+      "tags": {
+        "addr:city": "Bous",
+        "addr:country": "LU",
+        "addr:housenumber": "11",
+        "addr:postcode": "5408",
+        "addr:street": "Rue de Luxembourg",
+        "amenity": "fire_station",
+        "building": "warehouse",
+        "designation": "Service d'incendie",
+        "name": "Centre d'Intervention",
+        "ref:caclr": "167787"
+      }
+    },
+    {
+      "type": "way",
+      "id": 300242429,
+      "nodes": [
+        3043497385,
+        3043497372,
+        3043497367,
+        3043497381,
+        3043497385
+      ],
+      "tags": {
+        "addr:city": "Colmar-Berg",
+        "addr:country": "LU",
+        "addr:housenumber": "91",
+        "addr:postcode": "7733",
+        "addr:street": "Rue de Luxembourg",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "CIS Colmar-Berg",
+        "official_name": "Centre d'incendie et de secours Colmar-Berg",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "way",
+      "id": 315199164,
+      "nodes": [
+        3213013184,
+        3213013171,
+        3213013164,
+        3213013170,
+        3213013169,
+        3213013176,
+        3213013177,
+        3213013181,
+        3213013184
+      ],
+      "tags": {
+        "addr:city": "Ingeldorf",
+        "addr:housenumber": "15",
+        "addr:postcode": "9161",
+        "addr:street": "Rue du Berger",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "CIS Ingeldorf",
+        "official_name": "Centre d'incendie et de secours Ingeldorf",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "ref:caclr": "134180"
+      }
+    },
+    {
+      "type": "way",
+      "id": 315723587,
+      "nodes": [
+        3218544528,
+        3218544533,
+        3218544538,
+        3218544537,
+        3218544536,
+        2302780644,
+        2302780643,
+        3218544530,
+        3218544528
+      ],
+      "tags": {
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "CIS Feulen",
+        "official_name": "Centre d'incendie et de secours Feulen",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "way",
+      "id": 316037045,
+      "nodes": [
+        3221546079,
+        3221546080,
+        8926621520,
+        3221546082,
+        3221546083,
+        8926621522,
+        8926621521,
+        8926621523,
+        3221546084,
+        3221546085,
+        3221546086,
+        3221546087,
+        3221546088,
+        3221546089,
+        3221546090,
+        3221546091,
+        3221546092,
+        3221546079
+      ],
+      "tags": {
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "CIS Mersch",
+        "official_name": "Centre d'incendie et de secours Mersch",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "phone": "+352 49 771 - 3300"
+      }
+    },
+    {
+      "type": "way",
+      "id": 316977185,
+      "nodes": [
+        3231711800,
+        3231711801,
+        3231711802,
+        3231711803,
+        3231711804,
+        3231711805,
+        3231711800
+      ],
+      "tags": {
+        "addr:city": "Rollingen",
+        "addr:country": "LU",
+        "addr:housenumber": "81",
+        "addr:postcode": "7540",
+        "addr:street": "Rue de Luxembourg",
+        "amenity": "fire_station",
+        "building": "yes",
+        "ref:caclr": "126132"
+      }
+    },
+    {
+      "type": "way",
+      "id": 338141421,
+      "nodes": [
+        6726986959,
+        3452070799,
+        5321595784,
+        3452070801,
+        2094675309,
+        6726986959
+      ],
+      "tags": {
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "CIS Useldange",
+        "official_name": "Centre d'incendie et de secours Useldange",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "way",
+      "id": 341146033,
+      "nodes": [
+        3483639310,
+        3483639311,
+        3483639312,
+        3483639313,
+        3483639310
+      ],
+      "tags": {
+        "addr:city": "Moutfort",
+        "addr:housenumber": "1",
+        "addr:postcode": "5335",
+        "addr:street": "Soibelwee",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "CIS Moutfort",
+        "official_name": "Centre d'incendie et de secours Contern-Waldbredimus",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "phone": "+352 49 771 - 4726"
+      }
+    },
+    {
+      "type": "way",
+      "id": 352393425,
+      "nodes": [
+        3581755290,
+        3581755291,
+        3581755292,
+        3581758193,
+        3581755202,
+        3581755196,
+        3581755290
+      ],
+      "tags": {
+        "addr:city": "Schoos",
+        "addr:country": "LU",
+        "addr:housenumber": "7",
+        "addr:postcode": "7475",
+        "addr:street": "Op der Héicht",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "CIS Fischbach",
+        "official_name": "Centre d'incendie et de secours Fischbach",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "ref:caclr": "206917"
+      }
+    },
+    {
+      "type": "way",
+      "id": 357365506,
+      "nodes": [
+        3626471858,
+        6810267724,
+        6810267723,
+        3626471860,
+        6810267721,
+        6810267720,
+        6810267722,
+        3626471848,
+        3626471849,
+        3626471844,
+        3626471856,
+        3626471851,
+        6810267727,
+        6810267729,
+        6810267725,
+        6810267726,
+        6810267728,
+        6810267730,
+        3626471855,
+        3626471858
+      ],
+      "tags": {
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "CIS Schifflange",
+        "official_name": "Centre d'incendie et de secours Schifflange",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "way",
+      "id": 407461563,
+      "nodes": [
+        4095067428,
+        4095067429,
+        4095067430,
+        4095067431,
+        4095067428
+      ],
+      "tags": {
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "Atelier SIS-CCW"
+      }
+    },
+    {
+      "type": "way",
+      "id": 407463412,
+      "nodes": [
+        4095081589,
+        4095081590,
+        4095081591,
+        4095081592,
+        5866078400,
+        4095081593,
+        4095081594,
+        4095081589
+      ],
+      "tags": {
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "Centre d'intervention SIS-CCW"
+      }
+    },
+    {
+      "type": "way",
+      "id": 416427951,
+      "nodes": [
+        10608759172,
+        4171691994,
+        4171691995,
+        10608759174,
+        10608759172
+      ],
+      "tags": {
+        "addr:city": "Kehlen",
+        "addr:country": "LU",
+        "addr:housenumber": "59",
+        "addr:postcode": "8281",
+        "addr:street": "Rue d'Olm",
+        "amenity": "fire_station",
+        "building": "yes",
+        "building:levels": "2",
+        "name": "CIS Kehlen",
+        "official_name": "Centre d'incendie et de secours Kehlen",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "phone": "+352 49771-3400",
+        "ref:caclr": "236730",
+        "website": "https://www.ciskehlen.lu/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 427576929,
+      "nodes": [
+        4267782329,
+        4267782330,
+        4267782328,
+        4267782327,
+        4267782329
+      ],
+      "tags": {
+        "addr:city": "Colpach-Haut",
+        "addr:country": "LU",
+        "addr:housenumber": "53",
+        "addr:postcode": "8528",
+        "addr:street": "Aline an Émile Mayrischstrooss",
+        "amenity": "fire_station",
+        "building": "fire_station",
+        "name": "CIS Ell",
+        "official_name": "Centre d'incendie et de secours Ell",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "way",
+      "id": 461746977,
+      "nodes": [
+        4572102209,
+        4572102202,
+        4572102206,
+        4572102207,
+        4572102208,
+        4572102209
+      ],
+      "tags": {
+        "amenity": "fire_station",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 478950084,
+      "nodes": [
+        4721254146,
+        4721254140,
+        6800742681,
+        4721254147,
+        4721254148,
+        4721254149,
+        4721254150,
+        4721254151,
+        4721254152,
+        4721254153,
+        6800742682,
+        4721254146
+      ],
+      "tags": {
+        "addr:city": "Saeul",
+        "addr:housenumber": "9",
+        "addr:postcode": "7470",
+        "addr:street": "Rue Principale",
+        "amenity": "fire_station",
+        "building": "civic",
+        "description": "Corps grand-ducal d'incendie et de secours - Centre d'incendie et de secours Saeul",
+        "name": "CIS Saeul",
+        "official_name": "Centre d'incendie et de secours Saeul",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "way",
+      "id": 506101698,
+      "nodes": [
+        4958832991,
+        4958832992,
+        4958832993,
+        5083931363,
+        4958832991
+      ],
+      "tags": {
+        "addr:city": "Biwer",
+        "addr:housenumber": "22",
+        "addr:postcode": "6833",
+        "addr:street": "Schoulstrooss",
+        "amenity": "fire_station",
+        "building": "yes",
+        "description": "Corps grand-ducal d'incendie et de secours - Centre d'incendie et de secours Biwer",
+        "name": "CIS Biwer",
+        "official_name": "Centre d'incendie et de secours Biwer",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "phone": "+352 49 771 - 4525"
+      }
+    },
+    {
+      "type": "way",
+      "id": 532165696,
+      "nodes": [
+        2417824755,
+        2417824748,
+        2417824746,
+        5164706315,
+        5164706316,
+        5164706317,
+        5164706318,
+        5164706319,
+        5164706320,
+        2417824755
+      ],
+      "tags": {
+        "amenity": "fire_station",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 536901565,
+      "nodes": [
+        8920072938,
+        8920072939,
+        8920072940,
+        5200058774,
+        5200058773,
+        8906498836,
+        5200058776,
+        5200058775,
+        8920072937,
+        8920072936,
+        8920072935,
+        8920072938
+      ],
+      "tags": {
+        "addr:city": "Reuland",
+        "addr:housenumber": "14",
+        "addr:postcode": "7670",
+        "addr:street": "Am Duerf",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "CIS Heffingen",
+        "official_name": "Centre d'incendie et de secours Heffingen",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "ref:caclr": "120352"
+      }
+    },
+    {
+      "type": "way",
+      "id": 557238342,
+      "nodes": [
+        5374430729,
+        5374430730,
+        5374430731,
+        5374430732,
+        5374430729
+      ],
+      "tags": {
+        "addr:city": "Beaufort",
+        "addr:housenumber": "61",
+        "addr:postcode": "6315",
+        "addr:street": "Route de Dillingen",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "CIS Beaufort",
+        "official_name": "Centre d'incendie et de secours Beaufort",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "website": "https://112.public.lu/fr/organisation/secours/cis-beaufort.html"
+      }
+    },
+    {
+      "type": "way",
+      "id": 567155707,
+      "nodes": [
+        5460223623,
+        5460223625,
+        5460223626,
+        5460223628,
+        5460223629,
+        5460223627,
+        5460223624,
+        5460223623
+      ],
+      "tags": {
+        "amenity": "fire_station",
+        "building": "yes",
+        "emergency": "ambulance_station",
+        "name": "CIS Hesperange",
+        "name:lb": "CIS Hesper",
+        "official_name": "Centre d'incendie et de secours Hesperange",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "website": "https://cihesper.lu/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 572023588,
+      "nodes": [
+        5496238433,
+        8315931006,
+        5460224072,
+        5460224071,
+        5496238434,
+        5496238435,
+        5496238436,
+        5496238437,
+        5496238438,
+        5496238439,
+        5496238440,
+        5496238441,
+        5496238442,
+        5496238433
+      ],
+      "tags": {
+        "addr:city": "Echternach",
+        "addr:country": "LU",
+        "addr:housenumber": "123",
+        "addr:postcode": "6562",
+        "addr:street": "Route de Luxembourg",
+        "amenity": "fire_station",
+        "building": "yes",
+        "description": "Corps grand-ducal d'incendie et de secours - Centre d'incendie et de secours Echternach",
+        "name": "CIS Echternach",
+        "official_name": "Centre d'incendie et de secours Echternach",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "phone": "+352 49 771 - 4175",
+        "ref:caclr": "155798"
+      }
+    },
+    {
+      "type": "way",
+      "id": 580270164,
+      "nodes": [
+        5555362242,
+        5555362228,
+        5555362227,
+        5555362226,
+        5555362229,
+        5555362239,
+        5555362240,
+        5555362241,
+        5555362242
+      ],
+      "tags": {
+        "alt_name": "Pompjeeën Luerenzweiler",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "CIS Lorentzweiler",
+        "official_name": "Centre d'incendie et de secours Lorentzweiler",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "way",
+      "id": 599447665,
+      "nodes": [
+        4867894631,
+        7746332016,
+        7746332017,
+        5703057041,
+        5703057039,
+        5703057040,
+        5703057042,
+        5703057043,
+        4867894631
+      ],
+      "tags": {
+        "addr:city": "Garnich",
+        "addr:housenumber": "7",
+        "addr:postcode": "8354",
+        "addr:street": "Rue des Trois Cantons",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "CIS Kahler",
+        "official_name": "Centre d'incendie et de secours Kahler",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "ref:caclr": "32127",
+        "website": "https://www.ciskahler.lu/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 607721390,
+      "nodes": [
+        5758799527,
+        5758799528,
+        5758799529,
+        5758799530,
+        5758799531,
+        5758799532,
+        5758799527
+      ],
+      "tags": {
+        "addr:city": "Larochette",
+        "addr:housenumber": "2",
+        "addr:postcode": "7615",
+        "addr:street": "Rue d'Ernzen",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "CIS Larochette",
+        "official_name": "Centre d'incendie et de secours Larochette",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "ref:caclr": "120759"
+      }
+    },
+    {
+      "type": "way",
+      "id": 636882717,
+      "nodes": [
+        6005126485,
+        6005126497,
+        6005126504,
+        6005126498,
+        6005126499,
+        6005126503,
+        6005126500,
+        6005126501,
+        6005126502,
+        6005126181,
+        6005126485
+      ],
+      "tags": {
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "CIS Schengen - Annexe Remerschen"
+      }
+    },
+    {
+      "type": "way",
+      "id": 655175347,
+      "nodes": [
+        6138857951,
+        7757252982,
+        7757270485,
+        6138857949,
+        6138857950,
+        6138857951
+      ],
+      "tags": {
+        "addr:city": "Schlindermanderscheid",
+        "addr:housenumber": "16",
+        "addr:postcode": "9183",
+        "addr:street": "Haaptstrooss",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "Fräiwelleg Pompjeen Schlënnermannescht"
+      }
+    },
+    {
+      "type": "way",
+      "id": 668751383,
+      "nodes": [
+        6262573885,
+        6262573834,
+        6262573833,
+        6262573832,
+        6262573281,
+        6262573280,
+        6262573887,
+        6262573886,
+        7508832127,
+        6262573885
+      ],
+      "tags": {
+        "addr:city": "Grevenmacher",
+        "addr:housenumber": "14",
+        "addr:postcode": "6778",
+        "addr:street": "Schaffmill",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "CIS Grevenmacher-Mertert",
+        "operator": "CGDIS - Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "way",
+      "id": 682932625,
+      "nodes": [
+        6396617342,
+        6396617339,
+        6396617340,
+        6396617336,
+        6396617335,
+        6396617341,
+        6396617337,
+        6396617338,
+        6396617342
+      ],
+      "tags": {
+        "addr:city": "Doncols",
+        "addr:housenumber": "1",
+        "addr:postcode": "9647",
+        "addr:street": "Duerfstrooss",
+        "alt_name": "CIS Doncols-Soller-Noertrange",
+        "amenity": "fire_station",
+        "building": "yes",
+        "building:levels": "1",
+        "name": "CIS Doncols-Soller-Noertrange",
+        "name:lb": "CIS Wanseler",
+        "official_name": "Centre d'incendie et de secours Doncols-Soller-Noertrange",
+        "official_name:lb": "Centre d'incendie et de secours Wanseler",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "ref:caclr": "185705"
+      }
+    },
+    {
+      "type": "way",
+      "id": 683240905,
+      "nodes": [
+        6399502327,
+        6399502324,
+        6399502322,
+        6399502323,
+        6399502319,
+        6399502318,
+        6399502325,
+        6399502320,
+        6399502321,
+        6399502326,
+        6399502327
+      ],
+      "tags": {
+        "addr:city": "Troisvierges",
+        "addr:housenumber": "32",
+        "addr:postcode": "9911",
+        "addr:street": "Rue de Wilwerdange",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "CIS",
+        "operator": "Les Centres d'incendie et de secours",
+        "ref:caclr": "176009"
+      }
+    },
+    {
+      "type": "way",
+      "id": 690827096,
+      "nodes": [
+        6481752997,
+        6481752998,
+        316780514,
+        6481752995,
+        6481752994,
+        6481752993,
+        6481752992,
+        6481752991,
+        4960097604,
+        6481752997
+      ],
+      "tags": {
+        "amenity": "fire_station",
+        "building": "civic"
+      }
+    },
+    {
+      "type": "way",
+      "id": 702397387,
+      "nodes": [
+        6596057453,
+        6596057451,
+        6596057450,
+        6596057449,
+        9228611179,
+        6596057448,
+        9228611178,
+        6596057447,
+        6596057446,
+        6596057445,
+        6596057444,
+        9228611122,
+        9228608883,
+        6596057443,
+        6596057442,
+        6596057441,
+        6596057452,
+        6596057453
+      ],
+      "tags": {
+        "amenity": "fire_station",
+        "name": "CIS Grevenmacher-Mertert",
+        "official_name": "Centre d'incendie et de secours Grevenmacher-Mertert",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "phone": "+352 49 771 - 4800"
+      }
+    },
+    {
+      "type": "way",
+      "id": 727209070,
+      "nodes": [
+        6815103071,
+        6815103068,
+        6815103069,
+        6080945922,
+        9677552484,
+        9677552485,
+        9677552486,
+        9677552487,
+        6815103073,
+        9677552482,
+        6815103074,
+        6815103071
+      ],
+      "tags": {
+        "addr:city": "Luxembourg",
+        "addr:housenumber": "3",
+        "addr:postcode": "1821",
+        "addr:street": "Boulevard de Kockelscheuer",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "Administration du CGDIS",
+        "ref:caclr": "238038"
+      }
+    },
+    {
+      "type": "way",
+      "id": 750506072,
+      "nodes": [
+        4754517079,
+        6815103070,
+        9677573200,
+        9677573201,
+        9677573202,
+        9677573203,
+        10031347000,
+        7017432255,
+        7044743479,
+        5253308853,
+        4642863105,
+        5253308858,
+        5253308857,
+        4754517034,
+        937185696,
+        9677552506,
+        9677573166,
+        9677552507,
+        7017432257,
+        7023849251,
+        5424131765,
+        9677552503,
+        937185663,
+        7044743482,
+        7044743481,
+        7044743480,
+        9677552504,
+        9677552505,
+        9677552502,
+        7017432253,
+        7023849252,
+        7044743473,
+        8869679256,
+        7017432254,
+        7017432251,
+        8869679269,
+        7017432250,
+        7017432248,
+        9677573194,
+        7044743477,
+        9677573195,
+        7044743478,
+        9677573198,
+        7023849255,
+        8869679260,
+        9677552499,
+        9677552498,
+        9677573211,
+        9677552514,
+        9677552513,
+        9677573210,
+        5416638674,
+        8869679305,
+        7023849256,
+        4754517083,
+        4754517090,
+        4754517079
+      ],
+      "tags": {
+        "addr:city": "Luxembourg",
+        "addr:housenumber": "3",
+        "addr:postcode": "1821",
+        "addr:street": "Boulevard de Kockelscheuer",
+        "amenity": "fire_station",
+        "name": "Centre national d'incendie et de secours",
+        "old_name": "CIS Luxembourg",
+        "operator": "Corps grand-ducal d'incendie et de secours (CGDIS)",
+        "ref:caclr": "238038",
+        "short_name": "CNIS",
+        "wikidata": "Q31734969",
+        "wikipedia": "fr:Centre national d'incendie et de secours"
+      }
+    },
+    {
+      "type": "way",
+      "id": 785475454,
+      "nodes": [
+        7341752082,
+        7341752083,
+        7341752084,
+        8100918951,
+        7341776585,
+        7341752082
+      ],
+      "tags": {
+        "addr:city": "Harlange",
+        "addr:housenumber": "5",
+        "addr:postcode": "9655",
+        "addr:street": "Rue Laach",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "CIS LAC",
+        "operator": "CGDIS",
+        "ref:caclr": "147771"
+      }
+    },
+    {
+      "type": "way",
+      "id": 799366631,
+      "nodes": [
+        7476035829,
+        7476035830,
+        7476035831,
+        7476035832,
+        7476035833,
+        7476035829
+      ],
+      "tags": {
+        "amenity": "fire_station",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 808515791,
+      "nodes": [
+        7560416324,
+        7560416325,
+        7560416326,
+        7560416327,
+        7560416328,
+        7560416329,
+        7560416330,
+        7560416331,
+        7560416324
+      ],
+      "tags": {
+        "addr:city": "Weiler",
+        "addr:housename": "Pompjeesbau",
+        "addr:housenumber": "10",
+        "addr:postcode": "9466",
+        "addr:street": "Rue Principale",
+        "alt_name": "Weller Pompjeeën",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "CIS Weiler-Putscheid",
+        "official_name": "Centre d'incendie et de secours Weiler-Putscheid",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "ref:caclr": "242534"
+      }
+    },
+    {
+      "type": "way",
+      "id": 814262142,
+      "nodes": [
+        7606197524,
+        7606197525,
+        7606197526,
+        7606197527,
+        7606197524
+      ],
+      "tags": {
+        "addr:city": "Stegen",
+        "addr:housenumber": "7",
+        "addr:postcode": "9186",
+        "addr:street": "Haaptstrooss",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "CIS Ermsdorf",
+        "official_name": "Centre d'incendie et de secours Ermsdorf",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "ref:caclr": "133338"
+      }
+    },
+    {
+      "type": "way",
+      "id": 832347194,
+      "nodes": [
+        7770926817,
+        7770926818,
+        7770926819,
+        7770926820,
+        7770926821,
+        7770926822,
+        7770926817
+      ],
+      "tags": {
+        "addr:city": "Medernach",
+        "addr:housenumber": "50A",
+        "addr:postcode": "7660",
+        "addr:street": "Rue de Savelborn",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "CIS Medernach",
+        "official_name": "Centre d'incendie et de secours Medernach",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "way",
+      "id": 844362433,
+      "nodes": [
+        6810267760,
+        7876312528,
+        7876312529,
+        7876312530,
+        7876312531,
+        7876312532,
+        7876312533,
+        7876312534,
+        6810267760
+      ],
+      "tags": {
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "CIS Boulaide",
+        "official_name": "Centre d'incendie et de secours Boulaide",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "way",
+      "id": 848811555,
+      "nodes": [
+        6810267736,
+        7919798622,
+        7919798623,
+        7919798624,
+        7919798625,
+        7919798626,
+        6810267736
+      ],
+      "tags": {
+        "amenity": "fire_station",
+        "name": "CIS Vichten",
+        "official_name": "Centre d'incendie et de secours Vichten",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "way",
+      "id": 915811261,
+      "nodes": [
+        8506767828,
+        5824355158,
+        5824355161,
+        8506767829,
+        8506767828
+      ],
+      "tags": {
+        "addr:city": "Weiler-la-Tour",
+        "addr:housenumber": "2",
+        "addr:postcode": "5773",
+        "addr:street": "Um Schlammestee",
+        "amenity": "fire_station",
+        "building": "yes",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 931282033,
+      "nodes": [
+        1595918029,
+        1595918027,
+        1595918022,
+        1595918018,
+        1595918019,
+        1595918020,
+        1595918021,
+        1595918023,
+        1595918024,
+        8634262463,
+        1595918029
+      ],
+      "tags": {
+        "amenity": "fire_station",
+        "building": "yes",
+        "contact:facebook": "https://www.facebook.com/pompjeeenschieren/",
+        "name": "CIS Schieren",
+        "official_name": "Centre d'incendie et de secours Schieren",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1020326230,
+      "nodes": [
+        9410659308,
+        9410659307,
+        9410659306,
+        9410659301,
+        9410659302,
+        9410659303,
+        9410659304,
+        9410659305,
+        9410659308
+      ],
+      "tags": {
+        "addr:city": "Mensdorf",
+        "addr:housenumber": "1",
+        "addr:postcode": "6935",
+        "addr:street": "Rue Rouduecht",
+        "amenity": "fire_station",
+        "building": "civic",
+        "name": "CIS Mensdorf",
+        "official_name": "Centre d'incendie et de secours Mensdorf",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "ref:caclr": "245879"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1026719871,
+      "nodes": [
+        9466044102,
+        9466044107,
+        9410659286,
+        9466044106,
+        8571550583,
+        9466044095,
+        9466044094,
+        9466044091,
+        9466044093,
+        9466044092,
+        9466044084,
+        9410659285,
+        9410659283,
+        9410659275,
+        9410659284,
+        9466188985,
+        9466189000,
+        9466188999,
+        9466188998,
+        9466188997,
+        9466188996,
+        9466188995,
+        9466188994,
+        9410659268,
+        9410659267,
+        9410659270,
+        9410659269,
+        9466188992,
+        9466188991,
+        9466188990,
+        9466188989,
+        9410659272,
+        9466188988,
+        9466188987,
+        9466188986,
+        9466044100,
+        9466044102
+      ],
+      "tags": {
+        "amenity": "fire_station"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 9539092,
+      "members": [
+        {
+          "type": "way",
+          "ref": 68748603,
+          "role": "outer"
+        },
+        {
+          "type": "way",
+          "ref": 687530572,
+          "role": "inner"
+        }
+      ],
+      "tags": {
+        "addr:city": "Wiltz",
+        "addr:country": "LU",
+        "addr:housenumber": "24",
+        "addr:postcode": "9573",
+        "addr:street": "Rue Michel Thilges",
+        "amenity": "fire_station",
+        "building": "public",
+        "name": "CIS Wiltz",
+        "official_name": "Centre d'incendie et de secours Wiltz",
+        "old_name": "Centre de secours régional Wiltz",
+        "operator": "CGDIS",
+        "operator:wikidata": "Q55334052",
+        "operator:wikipedia": "lb:Corps grand-ducal d'incendie et de secours",
+        "ref:caclr": "150982",
+        "short_name": "CIS Wiltz",
+        "type": "multipolygon",
+        "website": "http://www.ciwiltz.lu/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 322537066,
+      "lat": 49.5549406,
+      "lon": 5.86099
+    },
+    {
+      "type": "node",
+      "id": 322537067,
+      "lat": 49.555035,
+      "lon": 5.86161
+    },
+    {
+      "type": "node",
+      "id": 322537068,
+      "lat": 49.5548362,
+      "lon": 5.8616975
+    },
+    {
+      "type": "node",
+      "id": 322537069,
+      "lat": 49.5547229,
+      "lon": 5.8610858
+    },
+    {
+      "type": "node",
+      "id": 6726232090,
+      "lat": 49.55502,
+      "lon": 5.8614189
+    },
+    {
+      "type": "node",
+      "id": 6726232091,
+      "lat": 49.5550011,
+      "lon": 5.8614273
+    },
+    {
+      "type": "node",
+      "id": 4267782327,
+      "lat": 49.7674395,
+      "lon": 5.8190601
+    },
+    {
+      "type": "node",
+      "id": 4267782328,
+      "lat": 49.7675267,
+      "lon": 5.8192147
+    },
+    {
+      "type": "node",
+      "id": 4267782329,
+      "lat": 49.7675556,
+      "lon": 5.8189031
+    },
+    {
+      "type": "node",
+      "id": 4267782330,
+      "lat": 49.7676427,
+      "lon": 5.8190577
+    },
+    {
+      "type": "node",
+      "id": 4572102202,
+      "lat": 49.8062619,
+      "lon": 5.7909463
+    },
+    {
+      "type": "node",
+      "id": 4572102206,
+      "lat": 49.8062414,
+      "lon": 5.7909145
+    },
+    {
+      "type": "node",
+      "id": 4572102207,
+      "lat": 49.8063063,
+      "lon": 5.790814
+    },
+    {
+      "type": "node",
+      "id": 4572102208,
+      "lat": 49.8063461,
+      "lon": 5.7908757
+    },
+    {
+      "type": "node",
+      "id": 4572102209,
+      "lat": 49.8062813,
+      "lon": 5.7909762
+    },
+    {
+      "type": "node",
+      "id": 1572814613,
+      "lat": 49.8307006,
+      "lon": 5.8497912
+    },
+    {
+      "type": "node",
+      "id": 1572814614,
+      "lat": 49.8307291,
+      "lon": 5.8501237
+    },
+    {
+      "type": "node",
+      "id": 1572814617,
+      "lat": 49.8308336,
+      "lon": 5.8497638
+    },
+    {
+      "type": "node",
+      "id": 1572814620,
+      "lat": 49.8308621,
+      "lon": 5.8500964
+    },
+    {
+      "type": "node",
+      "id": 6810267760,
+      "lat": 49.9009363,
+      "lon": 5.8102904
+    },
+    {
+      "type": "node",
+      "id": 7876312528,
+      "lat": 49.9009512,
+      "lon": 5.8105023
+    },
+    {
+      "type": "node",
+      "id": 7876312529,
+      "lat": 49.9005534,
+      "lon": 5.8105697
+    },
+    {
+      "type": "node",
+      "id": 7876312530,
+      "lat": 49.9005387,
+      "lon": 5.810361
+    },
+    {
+      "type": "node",
+      "id": 7876312531,
+      "lat": 49.9006721,
+      "lon": 5.8103385
+    },
+    {
+      "type": "node",
+      "id": 7876312532,
+      "lat": 49.9006669,
+      "lon": 5.8102654
+    },
+    {
+      "type": "node",
+      "id": 7876312533,
+      "lat": 49.9008029,
+      "lon": 5.8102424
+    },
+    {
+      "type": "node",
+      "id": 7876312534,
+      "lat": 49.9008078,
+      "lon": 5.8103122
+    },
+    {
+      "type": "node",
+      "id": 838398452,
+      "lat": 49.5042296,
+      "lon": 5.9855317
+    },
+    {
+      "type": "node",
+      "id": 838398455,
+      "lat": 49.5041361,
+      "lon": 5.9861646
+    },
+    {
+      "type": "node",
+      "id": 838398456,
+      "lat": 49.504241,
+      "lon": 5.9858574
+    },
+    {
+      "type": "node",
+      "id": 838398458,
+      "lat": 49.5035734,
+      "lon": 5.9860846
+    },
+    {
+      "type": "node",
+      "id": 838398459,
+      "lat": 49.5042774,
+      "lon": 5.98596
+    },
+    {
+      "type": "node",
+      "id": 838398460,
+      "lat": 49.5038575,
+      "lon": 5.9864812
+    },
+    {
+      "type": "node",
+      "id": 838398461,
+      "lat": 49.5037473,
+      "lon": 5.9865741
+    },
+    {
+      "type": "node",
+      "id": 838398462,
+      "lat": 49.5038179,
+      "lon": 5.9862597
+    },
+    {
+      "type": "node",
+      "id": 838398463,
+      "lat": 49.5037878,
+      "lon": 5.986285
+    },
+    {
+      "type": "node",
+      "id": 838398464,
+      "lat": 49.5040749,
+      "lon": 5.9859922
+    },
+    {
+      "type": "node",
+      "id": 838398465,
+      "lat": 49.5038039,
+      "lon": 5.9862205
+    },
+    {
+      "type": "node",
+      "id": 1025078516,
+      "lat": 49.5043212,
+      "lon": 5.9857897
+    },
+    {
+      "type": "node",
+      "id": 8252905295,
+      "lat": 49.5043191,
+      "lon": 5.9857129
+    },
+    {
+      "type": "node",
+      "id": 8252905296,
+      "lat": 49.5042799,
+      "lon": 5.9856024
+    },
+    {
+      "type": "node",
+      "id": 8252905297,
+      "lat": 49.5042997,
+      "lon": 5.9857292
+    },
+    {
+      "type": "node",
+      "id": 8252905298,
+      "lat": 49.5042605,
+      "lon": 5.9856188
+    },
+    {
+      "type": "node",
+      "id": 10086623372,
+      "lat": 49.5041798,
+      "lon": 5.9861278
+    },
+    {
+      "type": "node",
+      "id": 10086623373,
+      "lat": 49.5041564,
+      "lon": 5.9860619
+    },
+    {
+      "type": "node",
+      "id": 279318188,
+      "lat": 49.4894772,
+      "lon": 6.0811041
+    },
+    {
+      "type": "node",
+      "id": 279318189,
+      "lat": 49.4893409,
+      "lon": 6.0814487
+    },
+    {
+      "type": "node",
+      "id": 279318190,
+      "lat": 49.4894219,
+      "lon": 6.0816476
+    },
+    {
+      "type": "node",
+      "id": 279318192,
+      "lat": 49.489208,
+      "lon": 6.0814256
+    },
+    {
+      "type": "node",
+      "id": 279318193,
+      "lat": 49.4894018,
+      "lon": 6.0807961
+    },
+    {
+      "type": "node",
+      "id": 6799779229,
+      "lat": 49.489452,
+      "lon": 6.0811171
+    },
+    {
+      "type": "node",
+      "id": 6799779231,
+      "lat": 49.4895111,
+      "lon": 6.0809132
+    },
+    {
+      "type": "node",
+      "id": 9348570546,
+      "lat": 49.4895014,
+      "lon": 6.0807462
+    },
+    {
+      "type": "node",
+      "id": 9348570547,
+      "lat": 49.489468,
+      "lon": 6.0808477
+    },
+    {
+      "type": "node",
+      "id": 10608759181,
+      "lat": 49.4891838,
+      "lon": 6.0814062
+    },
+    {
+      "type": "node",
+      "id": 10608759182,
+      "lat": 49.4891269,
+      "lon": 6.0815713
+    },
+    {
+      "type": "node",
+      "id": 10608759183,
+      "lat": 49.4891562,
+      "lon": 6.0816464
+    },
+    {
+      "type": "node",
+      "id": 10608759184,
+      "lat": 49.4891846,
+      "lon": 6.0816192
+    },
+    {
+      "type": "node",
+      "id": 10608759185,
+      "lat": 49.4891788,
+      "lon": 6.0816011
+    },
+    {
+      "type": "node",
+      "id": 10608759186,
+      "lat": 49.4892345,
+      "lon": 6.0815442
+    },
+    {
+      "type": "node",
+      "id": 279318187,
+      "lat": 49.4896096,
+      "lon": 6.0812062
+    },
+    {
+      "type": "node",
+      "id": 1451922997,
+      "lat": 49.4896661,
+      "lon": 6.0810392
+    },
+    {
+      "type": "node",
+      "id": 6799779230,
+      "lat": 49.4895528,
+      "lon": 6.0807862
+    },
+    {
+      "type": "node",
+      "id": 279318191,
+      "lat": 49.4893542,
+      "lon": 6.0818451
+    },
+    {
+      "type": "node",
+      "id": 6005126502,
+      "lat": 49.4888912,
+      "lon": 6.3504121
+    },
+    {
+      "type": "node",
+      "id": 6005126181,
+      "lat": 49.4889734,
+      "lon": 6.3506833
+    },
+    {
+      "type": "node",
+      "id": 6005126485,
+      "lat": 49.4889786,
+      "lon": 6.3507012
+    },
+    {
+      "type": "node",
+      "id": 6005126497,
+      "lat": 49.4888694,
+      "lon": 6.350793
+    },
+    {
+      "type": "node",
+      "id": 6005126498,
+      "lat": 49.4887856,
+      "lon": 6.3506977
+    },
+    {
+      "type": "node",
+      "id": 6005126499,
+      "lat": 49.4888424,
+      "lon": 6.3506579
+    },
+    {
+      "type": "node",
+      "id": 6005126500,
+      "lat": 49.4888229,
+      "lon": 6.3505333
+    },
+    {
+      "type": "node",
+      "id": 6005126501,
+      "lat": 49.4888049,
+      "lon": 6.3504725
+    },
+    {
+      "type": "node",
+      "id": 6005126503,
+      "lat": 49.4888086,
+      "lon": 6.3505433
+    },
+    {
+      "type": "node",
+      "id": 6005126504,
+      "lat": 49.4888064,
+      "lon": 6.3508249
+    },
+    {
+      "type": "node",
+      "id": 2935886783,
+      "lat": 49.5016661,
+      "lon": 6.3527159
+    },
+    {
+      "type": "node",
+      "id": 2935886784,
+      "lat": 49.501717,
+      "lon": 6.3528517
+    },
+    {
+      "type": "node",
+      "id": 2935886785,
+      "lat": 49.5017712,
+      "lon": 6.3526225
+    },
+    {
+      "type": "node",
+      "id": 2935886786,
+      "lat": 49.5017717,
+      "lon": 6.3527237
+    },
+    {
+      "type": "node",
+      "id": 2935886787,
+      "lat": 49.501794,
+      "lon": 6.3527833
+    },
+    {
+      "type": "node",
+      "id": 2935886788,
+      "lat": 49.5017997,
+      "lon": 6.3526988
+    },
+    {
+      "type": "node",
+      "id": 427891532,
+      "lat": 49.5614009,
+      "lon": 5.8742663
+    },
+    {
+      "type": "node",
+      "id": 427891533,
+      "lat": 49.5613693,
+      "lon": 5.8740835
+    },
+    {
+      "type": "node",
+      "id": 3798324425,
+      "lat": 49.5614714,
+      "lon": 5.8742373
+    },
+    {
+      "type": "node",
+      "id": 2479732199,
+      "lat": 49.5196041,
+      "lon": 5.9252221
+    },
+    {
+      "type": "node",
+      "id": 2479732202,
+      "lat": 49.5198394,
+      "lon": 5.9254099
+    },
+    {
+      "type": "node",
+      "id": 2479732204,
+      "lat": 49.520342,
+      "lon": 5.9245149
+    },
+    {
+      "type": "node",
+      "id": 2479732206,
+      "lat": 49.5204606,
+      "lon": 5.9247769
+    },
+    {
+      "type": "node",
+      "id": 5043353643,
+      "lat": 49.5201817,
+      "lon": 5.9250762
+    },
+    {
+      "type": "node",
+      "id": 5043353644,
+      "lat": 49.5201715,
+      "lon": 5.9250536
+    },
+    {
+      "type": "node",
+      "id": 5043353645,
+      "lat": 49.5200684,
+      "lon": 5.9248086
+    },
+    {
+      "type": "node",
+      "id": 5043353646,
+      "lat": 49.5200553,
+      "lon": 5.9247796
+    },
+    {
+      "type": "node",
+      "id": 5840527062,
+      "lat": 49.5204039,
+      "lon": 5.9246173
+    },
+    {
+      "type": "node",
+      "id": 5840527063,
+      "lat": 49.5204481,
+      "lon": 5.924715
+    },
+    {
+      "type": "node",
+      "id": 5840527064,
+      "lat": 49.520385,
+      "lon": 5.9245756
+    },
+    {
+      "type": "node",
+      "id": 5840527065,
+      "lat": 49.5203745,
+      "lon": 5.9245868
+    },
+    {
+      "type": "node",
+      "id": 5840527066,
+      "lat": 49.5204376,
+      "lon": 5.9247262
+    },
+    {
+      "type": "node",
+      "id": 5840527075,
+      "lat": 49.5198489,
+      "lon": 5.9249389
+    },
+    {
+      "type": "node",
+      "id": 5840527076,
+      "lat": 49.5197536,
+      "lon": 5.9250412
+    },
+    {
+      "type": "node",
+      "id": 5840527077,
+      "lat": 49.5198679,
+      "lon": 5.9249807
+    },
+    {
+      "type": "node",
+      "id": 5840527078,
+      "lat": 49.5197725,
+      "lon": 5.925083
+    },
+    {
+      "type": "node",
+      "id": 5840527079,
+      "lat": 49.5197258,
+      "lon": 5.9250915
+    },
+    {
+      "type": "node",
+      "id": 5840527080,
+      "lat": 49.5197385,
+      "lon": 5.9251195
+    },
+    {
+      "type": "node",
+      "id": 5840527081,
+      "lat": 49.5197121,
+      "lon": 5.9254609
+    },
+    {
+      "type": "node",
+      "id": 5840527082,
+      "lat": 49.5198134,
+      "lon": 5.9253523
+    },
+    {
+      "type": "node",
+      "id": 2494907939,
+      "lat": 49.5218403,
+      "lon": 5.9636299
+    },
+    {
+      "type": "node",
+      "id": 2494907943,
+      "lat": 49.5219811,
+      "lon": 5.963562
+    },
+    {
+      "type": "node",
+      "id": 2494907941,
+      "lat": 49.521885,
+      "lon": 5.9638497
+    },
+    {
+      "type": "node",
+      "id": 2494907953,
+      "lat": 49.5220258,
+      "lon": 5.9637817
+    },
+    {
+      "type": "node",
+      "id": 427891530,
+      "lat": 49.5616379,
+      "lon": 5.8739731
+    },
+    {
+      "type": "node",
+      "id": 427891531,
+      "lat": 49.5616695,
+      "lon": 5.8741558
+    },
+    {
+      "type": "node",
+      "id": 279317390,
+      "lat": 49.5654291,
+      "lon": 5.9052903
+    },
+    {
+      "type": "node",
+      "id": 279317391,
+      "lat": 49.5655461,
+      "lon": 5.9057942
+    },
+    {
+      "type": "node",
+      "id": 279317392,
+      "lat": 49.5654064,
+      "lon": 5.9058713
+    },
+    {
+      "type": "node",
+      "id": 279317393,
+      "lat": 49.5652894,
+      "lon": 5.9053674
+    },
+    {
+      "type": "node",
+      "id": 4867894631,
+      "lat": 49.6121045,
+      "lon": 5.9488614
+    },
+    {
+      "type": "node",
+      "id": 5703057039,
+      "lat": 49.6123327,
+      "lon": 5.9489622
+    },
+    {
+      "type": "node",
+      "id": 5703057040,
+      "lat": 49.6122317,
+      "lon": 5.9489804
+    },
+    {
+      "type": "node",
+      "id": 5703057041,
+      "lat": 49.6123189,
+      "lon": 5.9487804
+    },
+    {
+      "type": "node",
+      "id": 5703057042,
+      "lat": 49.6122543,
+      "lon": 5.9492786
+    },
+    {
+      "type": "node",
+      "id": 5703057043,
+      "lat": 49.6121377,
+      "lon": 5.9492996
+    },
+    {
+      "type": "node",
+      "id": 7746332016,
+      "lat": 49.6121879,
+      "lon": 5.9488464
+    },
+    {
+      "type": "node",
+      "id": 7746332017,
+      "lat": 49.6121848,
+      "lon": 5.9488046
+    },
+    {
+      "type": "node",
+      "id": 3626471844,
+      "lat": 49.5125113,
+      "lon": 6.0077294
+    },
+    {
+      "type": "node",
+      "id": 3626471848,
+      "lat": 49.5123473,
+      "lon": 6.007809
+    },
+    {
+      "type": "node",
+      "id": 3626471849,
+      "lat": 49.5123471,
+      "lon": 6.0077303
+    },
+    {
+      "type": "node",
+      "id": 3626471851,
+      "lat": 49.5125307,
+      "lon": 6.0078081
+    },
+    {
+      "type": "node",
+      "id": 3626471855,
+      "lat": 49.5125308,
+      "lon": 6.0079583
+    },
+    {
+      "type": "node",
+      "id": 3626471856,
+      "lat": 49.5125115,
+      "lon": 6.0078082
+    },
+    {
+      "type": "node",
+      "id": 3626471858,
+      "lat": 49.5123295,
+      "lon": 6.0079595
+    },
+    {
+      "type": "node",
+      "id": 3626471860,
+      "lat": 49.5120854,
+      "lon": 6.0078104
+    },
+    {
+      "type": "node",
+      "id": 6810267720,
+      "lat": 49.5123247,
+      "lon": 6.0076756
+    },
+    {
+      "type": "node",
+      "id": 6810267721,
+      "lat": 49.5120851,
+      "lon": 6.007677
+    },
+    {
+      "type": "node",
+      "id": 6810267722,
+      "lat": 49.5123251,
+      "lon": 6.0078091
+    },
+    {
+      "type": "node",
+      "id": 6810267723,
+      "lat": 49.5120856,
+      "lon": 6.0078831
+    },
+    {
+      "type": "node",
+      "id": 6810267724,
+      "lat": 49.5123293,
+      "lon": 6.0078817
+    },
+    {
+      "type": "node",
+      "id": 6810267725,
+      "lat": 49.512818,
+      "lon": 6.0077534
+    },
+    {
+      "type": "node",
+      "id": 6810267726,
+      "lat": 49.512772,
+      "lon": 6.0077537
+    },
+    {
+      "type": "node",
+      "id": 6810267727,
+      "lat": 49.5125301,
+      "lon": 6.0075879
+    },
+    {
+      "type": "node",
+      "id": 6810267728,
+      "lat": 49.5127724,
+      "lon": 6.0078806
+    },
+    {
+      "type": "node",
+      "id": 6810267729,
+      "lat": 49.5128176,
+      "lon": 6.0075862
+    },
+    {
+      "type": "node",
+      "id": 6810267730,
+      "lat": 49.5125306,
+      "lon": 6.007882
+    },
+    {
+      "type": "node",
+      "id": 363814093,
+      "lat": 49.5362908,
+      "lon": 6.0270605
+    },
+    {
+      "type": "node",
+      "id": 363814094,
+      "lat": 49.5363999,
+      "lon": 6.0272446
+    },
+    {
+      "type": "node",
+      "id": 2685012498,
+      "lat": 49.5366974,
+      "lon": 6.0264886
+    },
+    {
+      "type": "node",
+      "id": 2685012510,
+      "lat": 49.5368064,
+      "lon": 6.0266727
+    },
+    {
+      "type": "node",
+      "id": 2417824746,
+      "lat": 49.5576099,
+      "lon": 6.0089961
+    },
+    {
+      "type": "node",
+      "id": 2417824748,
+      "lat": 49.5576992,
+      "lon": 6.0092003
+    },
+    {
+      "type": "node",
+      "id": 2417824755,
+      "lat": 49.5578075,
+      "lon": 6.0090877
+    },
+    {
+      "type": "node",
+      "id": 5164706315,
+      "lat": 49.5577996,
+      "lon": 6.0087995
+    },
+    {
+      "type": "node",
+      "id": 5164706316,
+      "lat": 49.5578896,
+      "lon": 6.0090052
+    },
+    {
+      "type": "node",
+      "id": 5164706317,
+      "lat": 49.5578722,
+      "lon": 6.0090234
+    },
+    {
+      "type": "node",
+      "id": 5164706318,
+      "lat": 49.5578749,
+      "lon": 6.0090296
+    },
+    {
+      "type": "node",
+      "id": 5164706319,
+      "lat": 49.5578288,
+      "lon": 6.0090775
+    },
+    {
+      "type": "node",
+      "id": 5164706320,
+      "lat": 49.5578252,
+      "lon": 6.0090693
+    },
+    {
+      "type": "node",
+      "id": 973009323,
+      "lat": 49.5641184,
+      "lon": 6.0779482
+    },
+    {
+      "type": "node",
+      "id": 973009324,
+      "lat": 49.5640665,
+      "lon": 6.0776808
+    },
+    {
+      "type": "node",
+      "id": 973009329,
+      "lat": 49.5636471,
+      "lon": 6.0778742
+    },
+    {
+      "type": "node",
+      "id": 973009331,
+      "lat": 49.5636811,
+      "lon": 6.0780493
+    },
+    {
+      "type": "node",
+      "id": 973009333,
+      "lat": 49.563688,
+      "lon": 6.0783667
+    },
+    {
+      "type": "node",
+      "id": 973009334,
+      "lat": 49.563925,
+      "lon": 6.0781721
+    },
+    {
+      "type": "node",
+      "id": 973009337,
+      "lat": 49.563901,
+      "lon": 6.0780485
+    },
+    {
+      "type": "node",
+      "id": 973009344,
+      "lat": 49.5637101,
+      "lon": 6.0781987
+    },
+    {
+      "type": "node",
+      "id": 973009350,
+      "lat": 49.563727,
+      "lon": 6.0782858
+    },
+    {
+      "type": "node",
+      "id": 2096302037,
+      "lat": 49.5636768,
+      "lon": 6.0783089
+    },
+    {
+      "type": "node",
+      "id": 2096302039,
+      "lat": 49.5638769,
+      "lon": 6.0781942
+    },
+    {
+      "type": "node",
+      "id": 2096302041,
+      "lat": 49.5638921,
+      "lon": 6.0782726
+    },
+    {
+      "type": "node",
+      "id": 503860679,
+      "lat": 49.6610644,
+      "lon": 5.9112767
+    },
+    {
+      "type": "node",
+      "id": 503860682,
+      "lat": 49.6611648,
+      "lon": 5.911395
+    },
+    {
+      "type": "node",
+      "id": 503860684,
+      "lat": 49.6614197,
+      "lon": 5.9118874
+    },
+    {
+      "type": "node",
+      "id": 503860688,
+      "lat": 49.6613573,
+      "lon": 5.9120136
+    },
+    {
+      "type": "node",
+      "id": 503860691,
+      "lat": 49.6609825,
+      "lon": 5.9115506
+    },
+    {
+      "type": "node",
+      "id": 939976803,
+      "lat": 49.6611048,
+      "lon": 5.9115164
+    },
+    {
+      "type": "node",
+      "id": 2448383135,
+      "lat": 49.6609959,
+      "lon": 5.9114155
+    },
+    {
+      "type": "node",
+      "id": 2448383136,
+      "lat": 49.6610296,
+      "lon": 5.9114552
+    },
+    {
+      "type": "node",
+      "id": 3188165152,
+      "lat": 49.6613165,
+      "lon": 5.9117658
+    },
+    {
+      "type": "node",
+      "id": 3188165153,
+      "lat": 49.6612129,
+      "lon": 5.9116438
+    },
+    {
+      "type": "node",
+      "id": 9525543594,
+      "lat": 49.6610512,
+      "lon": 5.911653
+    },
+    {
+      "type": "node",
+      "id": 9525543595,
+      "lat": 49.6610579,
+      "lon": 5.9116394
+    },
+    {
+      "type": "node",
+      "id": 2833584025,
+      "lat": 49.6842581,
+      "lon": 5.881074
+    },
+    {
+      "type": "node",
+      "id": 2833584026,
+      "lat": 49.684284,
+      "lon": 5.8811024
+    },
+    {
+      "type": "node",
+      "id": 2833584027,
+      "lat": 49.6843482,
+      "lon": 5.8809623
+    },
+    {
+      "type": "node",
+      "id": 2833584028,
+      "lat": 49.6844157,
+      "lon": 5.8810362
+    },
+    {
+      "type": "node",
+      "id": 2833584029,
+      "lat": 49.6843507,
+      "lon": 5.8811783
+    },
+    {
+      "type": "node",
+      "id": 2833584030,
+      "lat": 49.6843971,
+      "lon": 5.8812291
+    },
+    {
+      "type": "node",
+      "id": 2833584031,
+      "lat": 49.6842854,
+      "lon": 5.8814727
+    },
+    {
+      "type": "node",
+      "id": 2833584032,
+      "lat": 49.6841456,
+      "lon": 5.8813197
+    },
+    {
+      "type": "node",
+      "id": 1382270929,
+      "lat": 49.6339472,
+      "lon": 6.0155109
+    },
+    {
+      "type": "node",
+      "id": 1382270933,
+      "lat": 49.6340325,
+      "lon": 6.01535
+    },
+    {
+      "type": "node",
+      "id": 1382270934,
+      "lat": 49.6341306,
+      "lon": 6.015474
+    },
+    {
+      "type": "node",
+      "id": 1382270940,
+      "lat": 49.6342786,
+      "lon": 6.015938
+    },
+    {
+      "type": "node",
+      "id": 1382270941,
+      "lat": 49.634244,
+      "lon": 6.015588
+    },
+    {
+      "type": "node",
+      "id": 1382270943,
+      "lat": 49.6343758,
+      "lon": 6.0157545
+    },
+    {
+      "type": "node",
+      "id": 1382270944,
+      "lat": 49.6344589,
+      "lon": 6.0148544
+    },
+    {
+      "type": "node",
+      "id": 2199831588,
+      "lat": 49.6340528,
+      "lon": 6.0157253
+    },
+    {
+      "type": "node",
+      "id": 2199831589,
+      "lat": 49.6340785,
+      "lon": 6.0156768
+    },
+    {
+      "type": "node",
+      "id": 2199831591,
+      "lat": 49.6341835,
+      "lon": 6.0158904
+    },
+    {
+      "type": "node",
+      "id": 2199831592,
+      "lat": 49.6342065,
+      "lon": 6.015847
+    },
+    {
+      "type": "node",
+      "id": 2199831596,
+      "lat": 49.6344963,
+      "lon": 6.0149017
+    },
+    {
+      "type": "node",
+      "id": 6810306616,
+      "lat": 49.6345586,
+      "lon": 6.0149753
+    },
+    {
+      "type": "node",
+      "id": 6810306617,
+      "lat": 49.6345255,
+      "lon": 6.0149334
+    },
+    {
+      "type": "node",
+      "id": 6810306618,
+      "lat": 49.6345466,
+      "lon": 6.0148935
+    },
+    {
+      "type": "node",
+      "id": 6810306619,
+      "lat": 49.6345191,
+      "lon": 6.0148587
+    },
+    {
+      "type": "node",
+      "id": 6810306620,
+      "lat": 49.6343909,
+      "lon": 6.0152813
+    },
+    {
+      "type": "node",
+      "id": 6810306621,
+      "lat": 49.6344177,
+      "lon": 6.0152308
+    },
+    {
+      "type": "node",
+      "id": 6810306622,
+      "lat": 49.6344003,
+      "lon": 6.0152932
+    },
+    {
+      "type": "node",
+      "id": 6810306623,
+      "lat": 49.634421,
+      "lon": 6.015235
+    },
+    {
+      "type": "node",
+      "id": 6810306624,
+      "lat": 49.6343337,
+      "lon": 6.015121
+    },
+    {
+      "type": "node",
+      "id": 6810306625,
+      "lat": 49.6343075,
+      "lon": 6.0151705
+    },
+    {
+      "type": "node",
+      "id": 6810306626,
+      "lat": 49.6342979,
+      "lon": 6.0151584
+    },
+    {
+      "type": "node",
+      "id": 6810306627,
+      "lat": 49.6343241,
+      "lon": 6.0151089
+    },
+    {
+      "type": "node",
+      "id": 4171691994,
+      "lat": 49.664267,
+      "lon": 6.0167656
+    },
+    {
+      "type": "node",
+      "id": 4171691995,
+      "lat": 49.6642465,
+      "lon": 6.0171558
+    },
+    {
+      "type": "node",
+      "id": 10608759172,
+      "lat": 49.6644329,
+      "lon": 6.0167864
+    },
+    {
+      "type": "node",
+      "id": 10608759174,
+      "lat": 49.6644146,
+      "lon": 6.0171706
+    },
+    {
+      "type": "node",
+      "id": 590703042,
+      "lat": 49.6156001,
+      "lon": 6.0707392
+    },
+    {
+      "type": "node",
+      "id": 590703045,
+      "lat": 49.6156696,
+      "lon": 6.0705513
+    },
+    {
+      "type": "node",
+      "id": 590703052,
+      "lat": 49.6157959,
+      "lon": 6.0706628
+    },
+    {
+      "type": "node",
+      "id": 590703054,
+      "lat": 49.615725,
+      "lon": 6.070847
+    },
+    {
+      "type": "node",
+      "id": 1365812651,
+      "lat": 49.6642989,
+      "lon": 6.0730264
+    },
+    {
+      "type": "node",
+      "id": 1365812654,
+      "lat": 49.6644244,
+      "lon": 6.073072
+    },
+    {
+      "type": "node",
+      "id": 1365812655,
+      "lat": 49.6643455,
+      "lon": 6.0728585
+    },
+    {
+      "type": "node",
+      "id": 1365812658,
+      "lat": 49.6645116,
+      "lon": 6.0729685
+    },
+    {
+      "type": "node",
+      "id": 4593469056,
+      "lat": 49.6645018,
+      "lon": 6.0730037
+    },
+    {
+      "type": "node",
+      "id": 5412760434,
+      "lat": 49.6643191,
+      "lon": 6.0729537
+    },
+    {
+      "type": "node",
+      "id": 5412760435,
+      "lat": 49.6643105,
+      "lon": 6.0730341
+    },
+    {
+      "type": "node",
+      "id": 5412760440,
+      "lat": 49.6644738,
+      "lon": 6.0731047
+    },
+    {
+      "type": "node",
+      "id": 5412760441,
+      "lat": 49.6644156,
+      "lon": 6.0731038
+    },
+    {
+      "type": "node",
+      "id": 75356301,
+      "lat": 49.5170997,
+      "lon": 6.098609
+    },
+    {
+      "type": "node",
+      "id": 978479887,
+      "lat": 49.5168172,
+      "lon": 6.0988723
+    },
+    {
+      "type": "node",
+      "id": 978479899,
+      "lat": 49.5165252,
+      "lon": 6.0987237
+    },
+    {
+      "type": "node",
+      "id": 978479901,
+      "lat": 49.5169357,
+      "lon": 6.0989092
+    },
+    {
+      "type": "node",
+      "id": 978479907,
+      "lat": 49.5169348,
+      "lon": 6.098323
+    },
+    {
+      "type": "node",
+      "id": 978479909,
+      "lat": 49.5170827,
+      "lon": 6.0986037
+    },
+    {
+      "type": "node",
+      "id": 978479914,
+      "lat": 49.5169538,
+      "lon": 6.098771
+    },
+    {
+      "type": "node",
+      "id": 978479916,
+      "lat": 49.5167216,
+      "lon": 6.0982593
+    },
+    {
+      "type": "node",
+      "id": 978479929,
+      "lat": 49.516914,
+      "lon": 6.0984819
+    },
+    {
+      "type": "node",
+      "id": 978479933,
+      "lat": 49.5171091,
+      "lon": 6.0984028
+    },
+    {
+      "type": "node",
+      "id": 978479936,
+      "lat": 49.5167483,
+      "lon": 6.0984304
+    },
+    {
+      "type": "node",
+      "id": 978479938,
+      "lat": 49.516513,
+      "lon": 6.0984368
+    },
+    {
+      "type": "node",
+      "id": 978479939,
+      "lat": 49.5168346,
+      "lon": 6.0987402
+    },
+    {
+      "type": "node",
+      "id": 978479942,
+      "lat": 49.5165609,
+      "lon": 6.0984517
+    },
+    {
+      "type": "node",
+      "id": 978479956,
+      "lat": 49.5167179,
+      "lon": 6.0982878
+    },
+    {
+      "type": "node",
+      "id": 978479959,
+      "lat": 49.5170735,
+      "lon": 6.0988082
+    },
+    {
+      "type": "node",
+      "id": 5318314190,
+      "lat": 49.5169815,
+      "lon": 6.0983375
+    },
+    {
+      "type": "node",
+      "id": 5318314191,
+      "lat": 49.5169783,
+      "lon": 6.0983621
+    },
+    {
+      "type": "node",
+      "id": 5318314192,
+      "lat": 49.5167549,
+      "lon": 6.0987154
+    },
+    {
+      "type": "node",
+      "id": 5318314193,
+      "lat": 49.5167448,
+      "lon": 6.0987921
+    },
+    {
+      "type": "node",
+      "id": 6799734664,
+      "lat": 49.5167689,
+      "lon": 6.0982741
+    },
+    {
+      "type": "node",
+      "id": 8615075232,
+      "lat": 49.5165398,
+      "lon": 6.0982324
+    },
+    {
+      "type": "node",
+      "id": 1212152196,
+      "lat": 49.5344829,
+      "lon": 6.181367
+    },
+    {
+      "type": "node",
+      "id": 1212152210,
+      "lat": 49.5344301,
+      "lon": 6.181136
+    },
+    {
+      "type": "node",
+      "id": 1212152228,
+      "lat": 49.5346011,
+      "lon": 6.1813028
+    },
+    {
+      "type": "node",
+      "id": 1212152242,
+      "lat": 49.5346265,
+      "lon": 6.1810294
+    },
+    {
+      "type": "node",
+      "id": 5824355158,
+      "lat": 49.5349169,
+      "lon": 6.1813062
+    },
+    {
+      "type": "node",
+      "id": 5824355161,
+      "lat": 49.5349556,
+      "lon": 6.1814754
+    },
+    {
+      "type": "node",
+      "id": 8506767823,
+      "lat": 49.5346799,
+      "lon": 6.181263
+    },
+    {
+      "type": "node",
+      "id": 8506767825,
+      "lat": 49.5346102,
+      "lon": 6.1813424
+    },
+    {
+      "type": "node",
+      "id": 8506767826,
+      "lat": 49.5346504,
+      "lon": 6.1813389
+    },
+    {
+      "type": "node",
+      "id": 8506767827,
+      "lat": 49.5346887,
+      "lon": 6.1813015
+    },
+    {
+      "type": "node",
+      "id": 8506767828,
+      "lat": 49.5350015,
+      "lon": 6.1812601
+    },
+    {
+      "type": "node",
+      "id": 8506767829,
+      "lat": 49.5350403,
+      "lon": 6.1814293
+    },
+    {
+      "type": "node",
+      "id": 339581848,
+      "lat": 49.584548,
+      "lon": 6.1190073
+    },
+    {
+      "type": "node",
+      "id": 339581849,
+      "lat": 49.5844981,
+      "lon": 6.1196184
+    },
+    {
+      "type": "node",
+      "id": 339581850,
+      "lat": 49.5843685,
+      "lon": 6.1195946
+    },
+    {
+      "type": "node",
+      "id": 6800743818,
+      "lat": 49.5845455,
+      "lon": 6.119038
+    },
+    {
+      "type": "node",
+      "id": 6800743821,
+      "lat": 49.5844994,
+      "lon": 6.1196025
+    },
+    {
+      "type": "node",
+      "id": 8855976190,
+      "lat": 49.584417,
+      "lon": 6.1189778
+    },
+    {
+      "type": "node",
+      "id": 937185663,
+      "lat": 49.5839872,
+      "lon": 6.1318194
+    },
+    {
+      "type": "node",
+      "id": 937185696,
+      "lat": 49.58509,
+      "lon": 6.1332696
+    },
+    {
+      "type": "node",
+      "id": 4642863105,
+      "lat": 49.5852672,
+      "lon": 6.1332194
+    },
+    {
+      "type": "node",
+      "id": 4754517034,
+      "lat": 49.5851377,
+      "lon": 6.1332859
+    },
+    {
+      "type": "node",
+      "id": 4754517079,
+      "lat": 49.5848819,
+      "lon": 6.1295505
+    },
+    {
+      "type": "node",
+      "id": 4754517083,
+      "lat": 49.5840585,
+      "lon": 6.1292229
+    },
+    {
+      "type": "node",
+      "id": 4754517090,
+      "lat": 49.5848218,
+      "lon": 6.129018
+    },
+    {
+      "type": "node",
+      "id": 5253308853,
+      "lat": 49.5852816,
+      "lon": 6.1331667
+    },
+    {
+      "type": "node",
+      "id": 5253308857,
+      "lat": 49.5851824,
+      "lon": 6.1332847
+    },
+    {
+      "type": "node",
+      "id": 5253308858,
+      "lat": 49.5852331,
+      "lon": 6.1332626
+    },
+    {
+      "type": "node",
+      "id": 5416638674,
+      "lat": 49.5839422,
+      "lon": 6.129152
+    },
+    {
+      "type": "node",
+      "id": 5424131765,
+      "lat": 49.5840954,
+      "lon": 6.1320616
+    },
+    {
+      "type": "node",
+      "id": 6080945922,
+      "lat": 49.584166,
+      "lon": 6.1302244
+    },
+    {
+      "type": "node",
+      "id": 6815103068,
+      "lat": 49.584358,
+      "lon": 6.130172
+    },
+    {
+      "type": "node",
+      "id": 6815103069,
+      "lat": 49.5842148,
+      "lon": 6.1302105
+    },
+    {
+      "type": "node",
+      "id": 6815103070,
+      "lat": 49.5849387,
+      "lon": 6.1300161
+    },
+    {
+      "type": "node",
+      "id": 6815103071,
+      "lat": 49.5847056,
+      "lon": 6.1300787
+    },
+    {
+      "type": "node",
+      "id": 6815103073,
+      "lat": 49.5842325,
+      "lon": 6.1304639
+    },
+    {
+      "type": "node",
+      "id": 6815103074,
+      "lat": 49.584734,
+      "lon": 6.1303299
+    },
+    {
+      "type": "node",
+      "id": 7017432248,
+      "lat": 49.5831807,
+      "lon": 6.1295586
+    },
+    {
+      "type": "node",
+      "id": 7017432250,
+      "lat": 49.582938,
+      "lon": 6.1297072
+    },
+    {
+      "type": "node",
+      "id": 7017432251,
+      "lat": 49.5830348,
+      "lon": 6.1300087
+    },
+    {
+      "type": "node",
+      "id": 7017432253,
+      "lat": 49.5833643,
+      "lon": 6.1307105
+    },
+    {
+      "type": "node",
+      "id": 7017432254,
+      "lat": 49.5830868,
+      "lon": 6.1301429
+    },
+    {
+      "type": "node",
+      "id": 7017432255,
+      "lat": 49.5852741,
+      "lon": 6.133035
+    },
+    {
+      "type": "node",
+      "id": 7017432257,
+      "lat": 49.5845345,
+      "lon": 6.1326555
+    },
+    {
+      "type": "node",
+      "id": 7023849251,
+      "lat": 49.5843922,
+      "lon": 6.1324768
+    },
+    {
+      "type": "node",
+      "id": 7023849252,
+      "lat": 49.5832173,
+      "lon": 6.1304224
+    },
+    {
+      "type": "node",
+      "id": 7023849255,
+      "lat": 49.5838175,
+      "lon": 6.1291996
+    },
+    {
+      "type": "node",
+      "id": 7023849256,
+      "lat": 49.5840514,
+      "lon": 6.1291657
+    },
+    {
+      "type": "node",
+      "id": 7044743473,
+      "lat": 49.5831725,
+      "lon": 6.1303319
+    },
+    {
+      "type": "node",
+      "id": 7044743477,
+      "lat": 49.5833615,
+      "lon": 6.1294577
+    },
+    {
+      "type": "node",
+      "id": 7044743478,
+      "lat": 49.5835712,
+      "lon": 6.129339
+    },
+    {
+      "type": "node",
+      "id": 7044743479,
+      "lat": 49.5852821,
+      "lon": 6.1331205
+    },
+    {
+      "type": "node",
+      "id": 7044743480,
+      "lat": 49.5838564,
+      "lon": 6.1315582
+    },
+    {
+      "type": "node",
+      "id": 7044743481,
+      "lat": 49.5839183,
+      "lon": 6.1316668
+    },
+    {
+      "type": "node",
+      "id": 7044743482,
+      "lat": 49.5839518,
+      "lon": 6.1317423
+    },
+    {
+      "type": "node",
+      "id": 8869679256,
+      "lat": 49.5831198,
+      "lon": 6.1302212
+    },
+    {
+      "type": "node",
+      "id": 8869679260,
+      "lat": 49.5838294,
+      "lon": 6.1292127
+    },
+    {
+      "type": "node",
+      "id": 8869679269,
+      "lat": 49.5829965,
+      "lon": 6.1298887
+    },
+    {
+      "type": "node",
+      "id": 8869679305,
+      "lat": 49.5839472,
+      "lon": 6.1291939
+    },
+    {
+      "type": "node",
+      "id": 9677552482,
+      "lat": 49.5842564,
+      "lon": 6.130458
+    },
+    {
+      "type": "node",
+      "id": 9677552484,
+      "lat": 49.5841887,
+      "lon": 6.1304749
+    },
+    {
+      "type": "node",
+      "id": 9677552485,
+      "lat": 49.5842159,
+      "lon": 6.1304683
+    },
+    {
+      "type": "node",
+      "id": 9677552486,
+      "lat": 49.5841937,
+      "lon": 6.130285
+    },
+    {
+      "type": "node",
+      "id": 9677552487,
+      "lat": 49.5842146,
+      "lon": 6.1302787
+    },
+    {
+      "type": "node",
+      "id": 9677552498,
+      "lat": 49.5838809,
+      "lon": 6.1292385
+    },
+    {
+      "type": "node",
+      "id": 9677552499,
+      "lat": 49.5838672,
+      "lon": 6.1292393
+    },
+    {
+      "type": "node",
+      "id": 9677552502,
+      "lat": 49.5835154,
+      "lon": 6.1309809
+    },
+    {
+      "type": "node",
+      "id": 9677552503,
+      "lat": 49.5840711,
+      "lon": 6.1320026
+    },
+    {
+      "type": "node",
+      "id": 9677552504,
+      "lat": 49.5836911,
+      "lon": 6.1312986
+    },
+    {
+      "type": "node",
+      "id": 9677552505,
+      "lat": 49.5835613,
+      "lon": 6.1310629
+    },
+    {
+      "type": "node",
+      "id": 9677552506,
+      "lat": 49.5849916,
+      "lon": 6.133168
+    },
+    {
+      "type": "node",
+      "id": 9677552507,
+      "lat": 49.5846601,
+      "lon": 6.1328131
+    },
+    {
+      "type": "node",
+      "id": 9677552513,
+      "lat": 49.5839103,
+      "lon": 6.1291587
+    },
+    {
+      "type": "node",
+      "id": 9677552514,
+      "lat": 49.5839183,
+      "lon": 6.1292295
+    },
+    {
+      "type": "node",
+      "id": 9677573166,
+      "lat": 49.5848391,
+      "lon": 6.1330047
+    },
+    {
+      "type": "node",
+      "id": 9677573194,
+      "lat": 49.5832747,
+      "lon": 6.1295061
+    },
+    {
+      "type": "node",
+      "id": 9677573195,
+      "lat": 49.58345,
+      "lon": 6.1294076
+    },
+    {
+      "type": "node",
+      "id": 9677573198,
+      "lat": 49.5836934,
+      "lon": 6.1292698
+    },
+    {
+      "type": "node",
+      "id": 9677573200,
+      "lat": 49.5849539,
+      "lon": 6.130151
+    },
+    {
+      "type": "node",
+      "id": 9677573201,
+      "lat": 49.5850594,
+      "lon": 6.1301221
+    },
+    {
+      "type": "node",
+      "id": 9677573202,
+      "lat": 49.5853018,
+      "lon": 6.1322693
+    },
+    {
+      "type": "node",
+      "id": 9677573203,
+      "lat": 49.585188,
+      "lon": 6.1323036
+    },
+    {
+      "type": "node",
+      "id": 9677573210,
+      "lat": 49.5839254,
+      "lon": 6.1291555
+    },
+    {
+      "type": "node",
+      "id": 9677573211,
+      "lat": 49.583895,
+      "lon": 6.1292351
+    },
+    {
+      "type": "node",
+      "id": 10031347000,
+      "lat": 49.5852025,
+      "lon": 6.1324267
+    },
+    {
+      "type": "node",
+      "id": 5460223628,
+      "lat": 49.5765313,
+      "lon": 6.1667432
+    },
+    {
+      "type": "node",
+      "id": 5460223623,
+      "lat": 49.5764319,
+      "lon": 6.1670969
+    },
+    {
+      "type": "node",
+      "id": 5460223624,
+      "lat": 49.5766878,
+      "lon": 6.1675304
+    },
+    {
+      "type": "node",
+      "id": 5460223625,
+      "lat": 49.5763982,
+      "lon": 6.1671442
+    },
+    {
+      "type": "node",
+      "id": 5460223626,
+      "lat": 49.5763278,
+      "lon": 6.1670248
+    },
+    {
+      "type": "node",
+      "id": 5460223627,
+      "lat": 49.5767396,
+      "lon": 6.1676769
+    },
+    {
+      "type": "node",
+      "id": 5460223629,
+      "lat": 49.5769174,
+      "lon": 6.1674044
+    },
+    {
+      "type": "node",
+      "id": 1149355984,
+      "lat": 49.6110793,
+      "lon": 6.1672817
+    },
+    {
+      "type": "node",
+      "id": 1149355987,
+      "lat": 49.610975,
+      "lon": 6.167414
+    },
+    {
+      "type": "node",
+      "id": 1149355991,
+      "lat": 49.61094,
+      "lon": 6.1673482
+    },
+    {
+      "type": "node",
+      "id": 1149355992,
+      "lat": 49.6110443,
+      "lon": 6.1672159
+    },
+    {
+      "type": "node",
+      "id": 1957077409,
+      "lat": 49.5144166,
+      "lon": 6.1890779
+    },
+    {
+      "type": "node",
+      "id": 1957077413,
+      "lat": 49.5145036,
+      "lon": 6.1894051
+    },
+    {
+      "type": "node",
+      "id": 1957077414,
+      "lat": 49.5143521,
+      "lon": 6.1891208
+    },
+    {
+      "type": "node",
+      "id": 1957077415,
+      "lat": 49.5144392,
+      "lon": 6.189448
+    },
+    {
+      "type": "node",
+      "id": 4095081589,
+      "lat": 49.5843873,
+      "lon": 6.2255903
+    },
+    {
+      "type": "node",
+      "id": 4095081590,
+      "lat": 49.5844356,
+      "lon": 6.225532
+    },
+    {
+      "type": "node",
+      "id": 4095081591,
+      "lat": 49.5843778,
+      "lon": 6.2253665
+    },
+    {
+      "type": "node",
+      "id": 4095081592,
+      "lat": 49.5844537,
+      "lon": 6.2252562
+    },
+    {
+      "type": "node",
+      "id": 4095081593,
+      "lat": 49.5843448,
+      "lon": 6.2252391
+    },
+    {
+      "type": "node",
+      "id": 4095081594,
+      "lat": 49.584287,
+      "lon": 6.2253173
+    },
+    {
+      "type": "node",
+      "id": 5866078400,
+      "lat": 49.5844126,
+      "lon": 6.2251407
+    },
+    {
+      "type": "node",
+      "id": 1244135348,
+      "lat": 49.6119416,
+      "lon": 6.2099065
+    },
+    {
+      "type": "node",
+      "id": 1244135354,
+      "lat": 49.6116377,
+      "lon": 6.2101986
+    },
+    {
+      "type": "node",
+      "id": 1244135360,
+      "lat": 49.6114888,
+      "lon": 6.2098296
+    },
+    {
+      "type": "node",
+      "id": 6176069211,
+      "lat": 49.6117928,
+      "lon": 6.2095375
+    },
+    {
+      "type": "node",
+      "id": 8357685720,
+      "lat": 49.6117796,
+      "lon": 6.2095502
+    },
+    {
+      "type": "node",
+      "id": 3483639310,
+      "lat": 49.5869163,
+      "lon": 6.2572553
+    },
+    {
+      "type": "node",
+      "id": 3483639311,
+      "lat": 49.5869634,
+      "lon": 6.2573901
+    },
+    {
+      "type": "node",
+      "id": 3483639312,
+      "lat": 49.5868878,
+      "lon": 6.2574508
+    },
+    {
+      "type": "node",
+      "id": 3483639313,
+      "lat": 49.5868362,
+      "lon": 6.2573161
+    },
+    {
+      "type": "node",
+      "id": 4095067428,
+      "lat": 49.5879561,
+      "lon": 6.255758
+    },
+    {
+      "type": "node",
+      "id": 4095067429,
+      "lat": 49.5881194,
+      "lon": 6.2560496
+    },
+    {
+      "type": "node",
+      "id": 4095067430,
+      "lat": 49.588239,
+      "lon": 6.2558972
+    },
+    {
+      "type": "node",
+      "id": 4095067431,
+      "lat": 49.5880729,
+      "lon": 6.2556067
+    },
+    {
+      "type": "node",
+      "id": 1737731121,
+      "lat": 49.621411,
+      "lon": 6.1062086
+    },
+    {
+      "type": "node",
+      "id": 1737731123,
+      "lat": 49.6214117,
+      "lon": 6.1060707
+    },
+    {
+      "type": "node",
+      "id": 1737731203,
+      "lat": 49.6216115,
+      "lon": 6.1062109
+    },
+    {
+      "type": "node",
+      "id": 1737731206,
+      "lat": 49.6216122,
+      "lon": 6.106073
+    },
+    {
+      "type": "node",
+      "id": 1737731578,
+      "lat": 49.6230971,
+      "lon": 6.1055162
+    },
+    {
+      "type": "node",
+      "id": 1737731580,
+      "lat": 49.6231052,
+      "lon": 6.1056673
+    },
+    {
+      "type": "node",
+      "id": 1737731617,
+      "lat": 49.6231949,
+      "lon": 6.1055083
+    },
+    {
+      "type": "node",
+      "id": 1737731618,
+      "lat": 49.6232104,
+      "lon": 6.1056627
+    },
+    {
+      "type": "node",
+      "id": 2238713044,
+      "lat": 49.6231976,
+      "lon": 6.1055356
+    },
+    {
+      "type": "node",
+      "id": 252019172,
+      "lat": 49.6151411,
+      "lon": 6.1121277
+    },
+    {
+      "type": "node",
+      "id": 252019173,
+      "lat": 49.6146271,
+      "lon": 6.1119438
+    },
+    {
+      "type": "node",
+      "id": 252019174,
+      "lat": 49.6145337,
+      "lon": 6.1126225
+    },
+    {
+      "type": "node",
+      "id": 252019175,
+      "lat": 49.6150893,
+      "lon": 6.112814
+    },
+    {
+      "type": "node",
+      "id": 590682168,
+      "lat": 49.6150058,
+      "lon": 6.1120834
+    },
+    {
+      "type": "node",
+      "id": 590682169,
+      "lat": 49.6147604,
+      "lon": 6.1119875
+    },
+    {
+      "type": "node",
+      "id": 590682170,
+      "lat": 49.6149333,
+      "lon": 6.1126109
+    },
+    {
+      "type": "node",
+      "id": 590682171,
+      "lat": 49.6146858,
+      "lon": 6.1125298
+    },
+    {
+      "type": "node",
+      "id": 10557707585,
+      "lat": 49.6150797,
+      "lon": 6.1125643
+    },
+    {
+      "type": "node",
+      "id": 10557707586,
+      "lat": 49.6151267,
+      "lon": 6.1125753
+    },
+    {
+      "type": "node",
+      "id": 1412443552,
+      "lat": 49.6155097,
+      "lon": 6.1328082
+    },
+    {
+      "type": "node",
+      "id": 1412443556,
+      "lat": 49.6155704,
+      "lon": 6.1327964
+    },
+    {
+      "type": "node",
+      "id": 1412443558,
+      "lat": 49.6156136,
+      "lon": 6.133027
+    },
+    {
+      "type": "node",
+      "id": 1412443567,
+      "lat": 49.6156219,
+      "lon": 6.1330445
+    },
+    {
+      "type": "node",
+      "id": 1412443571,
+      "lat": 49.615665,
+      "lon": 6.1329956
+    },
+    {
+      "type": "node",
+      "id": 6466506810,
+      "lat": 49.6155528,
+      "lon": 6.1327594
+    },
+    {
+      "type": "node",
+      "id": 5555362226,
+      "lat": 49.7017275,
+      "lon": 6.141353
+    },
+    {
+      "type": "node",
+      "id": 5555362227,
+      "lat": 49.7017199,
+      "lon": 6.1413036
+    },
+    {
+      "type": "node",
+      "id": 5555362228,
+      "lat": 49.7017036,
+      "lon": 6.1413095
+    },
+    {
+      "type": "node",
+      "id": 5555362229,
+      "lat": 49.7017112,
+      "lon": 6.141359
+    },
+    {
+      "type": "node",
+      "id": 5555362239,
+      "lat": 49.7017187,
+      "lon": 6.1414084
+    },
+    {
+      "type": "node",
+      "id": 5555362240,
+      "lat": 49.7015334,
+      "lon": 6.1414762
+    },
+    {
+      "type": "node",
+      "id": 5555362241,
+      "lat": 49.7015107,
+      "lon": 6.1413279
+    },
+    {
+      "type": "node",
+      "id": 5555362242,
+      "lat": 49.701696,
+      "lon": 6.1412601
+    },
+    {
+      "type": "node",
+      "id": 1626889438,
+      "lat": 49.6255238,
+      "lon": 6.201392
+    },
+    {
+      "type": "node",
+      "id": 1626889440,
+      "lat": 49.6256161,
+      "lon": 6.2007492
+    },
+    {
+      "type": "node",
+      "id": 1626889441,
+      "lat": 49.6255132,
+      "lon": 6.2014182
+    },
+    {
+      "type": "node",
+      "id": 1626889443,
+      "lat": 49.6254759,
+      "lon": 6.2013057
+    },
+    {
+      "type": "node",
+      "id": 1626889455,
+      "lat": 49.6256188,
+      "lon": 6.2012242
+    },
+    {
+      "type": "node",
+      "id": 1626889459,
+      "lat": 49.6255872,
+      "lon": 6.2014891
+    },
+    {
+      "type": "node",
+      "id": 1626889461,
+      "lat": 49.6256729,
+      "lon": 6.201276
+    },
+    {
+      "type": "node",
+      "id": 1626889467,
+      "lat": 49.6254995,
+      "lon": 6.2007343
+    },
+    {
+      "type": "node",
+      "id": 1626889469,
+      "lat": 49.6253946,
+      "lon": 6.201414
+    },
+    {
+      "type": "node",
+      "id": 1626889471,
+      "lat": 49.6257697,
+      "lon": 6.2010245
+    },
+    {
+      "type": "node",
+      "id": 1626889477,
+      "lat": 49.6252894,
+      "lon": 6.201014
+    },
+    {
+      "type": "node",
+      "id": 1626889479,
+      "lat": 49.625554,
+      "lon": 6.2008319
+    },
+    {
+      "type": "node",
+      "id": 2239583579,
+      "lat": 49.625348,
+      "lon": 6.2011189
+    },
+    {
+      "type": "node",
+      "id": 2239583584,
+      "lat": 49.6252802,
+      "lon": 6.2012092
+    },
+    {
+      "type": "node",
+      "id": 6184416868,
+      "lat": 49.6531809,
+      "lon": 6.245495
+    },
+    {
+      "type": "node",
+      "id": 6184416869,
+      "lat": 49.6532905,
+      "lon": 6.2455201
+    },
+    {
+      "type": "node",
+      "id": 6184416870,
+      "lat": 49.6532887,
+      "lon": 6.2455396
+    },
+    {
+      "type": "node",
+      "id": 310358862,
+      "lat": 49.6531451,
+      "lon": 6.245683
+    },
+    {
+      "type": "node",
+      "id": 6184416866,
+      "lat": 49.653147,
+      "lon": 6.2456634
+    },
+    {
+      "type": "node",
+      "id": 6184416867,
+      "lat": 49.6531643,
+      "lon": 6.2456673
+    },
+    {
+      "type": "node",
+      "id": 310358860,
+      "lat": 49.6533918,
+      "lon": 6.2455631
+    },
+    {
+      "type": "node",
+      "id": 310358863,
+      "lat": 49.6533752,
+      "lon": 6.2457356
+    },
+    {
+      "type": "node",
+      "id": 7829786737,
+      "lat": 49.6533773,
+      "lon": 6.245714
+    },
+    {
+      "type": "node",
+      "id": 8571550583,
+      "lat": 49.6589958,
+      "lon": 6.2889151
+    },
+    {
+      "type": "node",
+      "id": 9410659267,
+      "lat": 49.6583117,
+      "lon": 6.2893766
+    },
+    {
+      "type": "node",
+      "id": 9410659268,
+      "lat": 49.6582916,
+      "lon": 6.2893088
+    },
+    {
+      "type": "node",
+      "id": 9410659269,
+      "lat": 49.6584896,
+      "lon": 6.2891688
+    },
+    {
+      "type": "node",
+      "id": 9410659270,
+      "lat": 49.6585097,
+      "lon": 6.2892367
+    },
+    {
+      "type": "node",
+      "id": 9410659272,
+      "lat": 49.6585394,
+      "lon": 6.2889751
+    },
+    {
+      "type": "node",
+      "id": 9410659275,
+      "lat": 49.6584306,
+      "lon": 6.288148
+    },
+    {
+      "type": "node",
+      "id": 9410659283,
+      "lat": 49.6585281,
+      "lon": 6.2884691
+    },
+    {
+      "type": "node",
+      "id": 9410659284,
+      "lat": 49.6583972,
+      "lon": 6.288032
+    },
+    {
+      "type": "node",
+      "id": 9410659285,
+      "lat": 49.6586442,
+      "lon": 6.2887991
+    },
+    {
+      "type": "node",
+      "id": 9410659286,
+      "lat": 49.6588595,
+      "lon": 6.2891411
+    },
+    {
+      "type": "node",
+      "id": 9410659301,
+      "lat": 49.6581902,
+      "lon": 6.289027
+    },
+    {
+      "type": "node",
+      "id": 9410659302,
+      "lat": 49.6582297,
+      "lon": 6.2889987
+    },
+    {
+      "type": "node",
+      "id": 9410659303,
+      "lat": 49.6582048,
+      "lon": 6.2889156
+    },
+    {
+      "type": "node",
+      "id": 9410659304,
+      "lat": 49.6583094,
+      "lon": 6.2888406
+    },
+    {
+      "type": "node",
+      "id": 9410659305,
+      "lat": 49.6581993,
+      "lon": 6.2884738
+    },
+    {
+      "type": "node",
+      "id": 9410659306,
+      "lat": 49.6582444,
+      "lon": 6.2892074
+    },
+    {
+      "type": "node",
+      "id": 9410659307,
+      "lat": 49.6584946,
+      "lon": 6.2890281
+    },
+    {
+      "type": "node",
+      "id": 9410659308,
+      "lat": 49.6583054,
+      "lon": 6.2883978
+    },
+    {
+      "type": "node",
+      "id": 9466044084,
+      "lat": 49.6587276,
+      "lon": 6.2889317
+    },
+    {
+      "type": "node",
+      "id": 9466044091,
+      "lat": 49.6588387,
+      "lon": 6.2889805
+    },
+    {
+      "type": "node",
+      "id": 9466044092,
+      "lat": 49.6587697,
+      "lon": 6.2888776
+    },
+    {
+      "type": "node",
+      "id": 9466044093,
+      "lat": 49.6587988,
+      "lon": 6.2889427
+    },
+    {
+      "type": "node",
+      "id": 9466044094,
+      "lat": 49.6588852,
+      "lon": 6.2889894
+    },
+    {
+      "type": "node",
+      "id": 9466044095,
+      "lat": 49.6589299,
+      "lon": 6.2889679
+    },
+    {
+      "type": "node",
+      "id": 9466044100,
+      "lat": 49.6586459,
+      "lon": 6.2890901
+    },
+    {
+      "type": "node",
+      "id": 9466044102,
+      "lat": 49.6586407,
+      "lon": 6.2891572
+    },
+    {
+      "type": "node",
+      "id": 9466044106,
+      "lat": 49.6590296,
+      "lon": 6.2889956
+    },
+    {
+      "type": "node",
+      "id": 9466044107,
+      "lat": 49.658724,
+      "lon": 6.2892625
+    },
+    {
+      "type": "node",
+      "id": 9466188985,
+      "lat": 49.658363,
+      "lon": 6.2880564
+    },
+    {
+      "type": "node",
+      "id": 9466188986,
+      "lat": 49.6586243,
+      "lon": 6.2890093
+    },
+    {
+      "type": "node",
+      "id": 9466188987,
+      "lat": 49.6585792,
+      "lon": 6.2890413
+    },
+    {
+      "type": "node",
+      "id": 9466188988,
+      "lat": 49.658556,
+      "lon": 6.2889633
+    },
+    {
+      "type": "node",
+      "id": 9466188989,
+      "lat": 49.6585599,
+      "lon": 6.2890459
+    },
+    {
+      "type": "node",
+      "id": 9466188990,
+      "lat": 49.6585624,
+      "lon": 6.289077
+    },
+    {
+      "type": "node",
+      "id": 9466188991,
+      "lat": 49.6585565,
+      "lon": 6.289107
+    },
+    {
+      "type": "node",
+      "id": 9466188992,
+      "lat": 49.6585434,
+      "lon": 6.2891308
+    },
+    {
+      "type": "node",
+      "id": 9466188994,
+      "lat": 49.6581892,
+      "lon": 6.2893845
+    },
+    {
+      "type": "node",
+      "id": 9466188995,
+      "lat": 49.6579023,
+      "lon": 6.288488
+    },
+    {
+      "type": "node",
+      "id": 9466188996,
+      "lat": 49.6579262,
+      "lon": 6.288486
+    },
+    {
+      "type": "node",
+      "id": 9466188997,
+      "lat": 49.6579423,
+      "lon": 6.2884605
+    },
+    {
+      "type": "node",
+      "id": 9466188998,
+      "lat": 49.657941,
+      "lon": 6.2884317
+    },
+    {
+      "type": "node",
+      "id": 9466188999,
+      "lat": 49.6582934,
+      "lon": 6.2881722
+    },
+    {
+      "type": "node",
+      "id": 9466189000,
+      "lat": 49.6583386,
+      "lon": 6.2880971
+    },
+    {
+      "type": "node",
+      "id": 1023457021,
+      "lat": 49.7039338,
+      "lon": 6.251795
+    },
+    {
+      "type": "node",
+      "id": 1023457041,
+      "lat": 49.7039808,
+      "lon": 6.2520261
+    },
+    {
+      "type": "node",
+      "id": 1023457062,
+      "lat": 49.704,
+      "lon": 6.2520184
+    },
+    {
+      "type": "node",
+      "id": 1023457092,
+      "lat": 49.7037618,
+      "lon": 6.2518734
+    },
+    {
+      "type": "node",
+      "id": 6184481291,
+      "lat": 49.7039488,
+      "lon": 6.2518655
+    },
+    {
+      "type": "node",
+      "id": 6184481292,
+      "lat": 49.7039677,
+      "lon": 6.2518553
+    },
+    {
+      "type": "node",
+      "id": 6184481293,
+      "lat": 49.7039704,
+      "lon": 6.2518656
+    },
+    {
+      "type": "node",
+      "id": 6184481294,
+      "lat": 49.7039792,
+      "lon": 6.2518663
+    },
+    {
+      "type": "node",
+      "id": 6184481295,
+      "lat": 49.7039879,
+      "lon": 6.2518795
+    },
+    {
+      "type": "node",
+      "id": 6184481296,
+      "lat": 49.7039865,
+      "lon": 6.2518977
+    },
+    {
+      "type": "node",
+      "id": 6184481297,
+      "lat": 49.7039798,
+      "lon": 6.2519091
+    },
+    {
+      "type": "node",
+      "id": 6184481298,
+      "lat": 49.7039591,
+      "lon": 6.2519191
+    },
+    {
+      "type": "node",
+      "id": 6184481299,
+      "lat": 49.7039556,
+      "lon": 6.2519289
+    },
+    {
+      "type": "node",
+      "id": 6184481300,
+      "lat": 49.7039617,
+      "lon": 6.2519273
+    },
+    {
+      "type": "node",
+      "id": 9841490709,
+      "lat": 49.7039672,
+      "lon": 6.2519556
+    },
+    {
+      "type": "node",
+      "id": 1023457016,
+      "lat": 49.7040851,
+      "lon": 6.2525144
+    },
+    {
+      "type": "node",
+      "id": 1023457030,
+      "lat": 49.7041004,
+      "lon": 6.2527136
+    },
+    {
+      "type": "node",
+      "id": 1023457067,
+      "lat": 49.7039542,
+      "lon": 6.252786
+    },
+    {
+      "type": "node",
+      "id": 1023457075,
+      "lat": 49.7041002,
+      "lon": 6.2525068
+    },
+    {
+      "type": "node",
+      "id": 2531356205,
+      "lat": 49.7041039,
+      "lon": 6.2526101
+    },
+    {
+      "type": "node",
+      "id": 6184481285,
+      "lat": 49.7041055,
+      "lon": 6.2527455
+    },
+    {
+      "type": "node",
+      "id": 6184481286,
+      "lat": 49.7041217,
+      "lon": 6.2527713
+    },
+    {
+      "type": "node",
+      "id": 6184481287,
+      "lat": 49.7041436,
+      "lon": 6.2527616
+    },
+    {
+      "type": "node",
+      "id": 6184481288,
+      "lat": 49.7041363,
+      "lon": 6.2527213
+    },
+    {
+      "type": "node",
+      "id": 6184481289,
+      "lat": 49.7041243,
+      "lon": 6.2527068
+    },
+    {
+      "type": "node",
+      "id": 2440397231,
+      "lat": 49.7249369,
+      "lon": 5.899482
+    },
+    {
+      "type": "node",
+      "id": 2440397233,
+      "lat": 49.7251276,
+      "lon": 5.8991975
+    },
+    {
+      "type": "node",
+      "id": 2440397234,
+      "lat": 49.7252145,
+      "lon": 5.8993431
+    },
+    {
+      "type": "node",
+      "id": 8179194296,
+      "lat": 49.7251555,
+      "lon": 5.8994231
+    },
+    {
+      "type": "node",
+      "id": 8179194391,
+      "lat": 49.725036,
+      "lon": 5.8996104
+    },
+    {
+      "type": "node",
+      "id": 4721254140,
+      "lat": 49.7264329,
+      "lon": 5.9858531
+    },
+    {
+      "type": "node",
+      "id": 4721254146,
+      "lat": 49.7264103,
+      "lon": 5.9858022
+    },
+    {
+      "type": "node",
+      "id": 4721254147,
+      "lat": 49.7264971,
+      "lon": 5.98598
+    },
+    {
+      "type": "node",
+      "id": 4721254148,
+      "lat": 49.7265576,
+      "lon": 5.985919
+    },
+    {
+      "type": "node",
+      "id": 4721254149,
+      "lat": 49.7265512,
+      "lon": 5.9859074
+    },
+    {
+      "type": "node",
+      "id": 4721254150,
+      "lat": 49.7266438,
+      "lon": 5.9858175
+    },
+    {
+      "type": "node",
+      "id": 4721254151,
+      "lat": 49.7265986,
+      "lon": 5.9857119
+    },
+    {
+      "type": "node",
+      "id": 4721254152,
+      "lat": 49.7265088,
+      "lon": 5.9858049
+    },
+    {
+      "type": "node",
+      "id": 4721254153,
+      "lat": 49.7264783,
+      "lon": 5.9857366
+    },
+    {
+      "type": "node",
+      "id": 6800742681,
+      "lat": 49.7264735,
+      "lon": 5.9859336
+    },
+    {
+      "type": "node",
+      "id": 6800742682,
+      "lat": 49.7264436,
+      "lon": 5.9857728
+    },
+    {
+      "type": "node",
+      "id": 2094675309,
+      "lat": 49.7761127,
+      "lon": 5.977343
+    },
+    {
+      "type": "node",
+      "id": 3452070799,
+      "lat": 49.7758563,
+      "lon": 5.9773388
+    },
+    {
+      "type": "node",
+      "id": 3452070801,
+      "lat": 49.7759773,
+      "lon": 5.9771427
+    },
+    {
+      "type": "node",
+      "id": 5321595784,
+      "lat": 49.775869,
+      "lon": 5.9773183
+    },
+    {
+      "type": "node",
+      "id": 6726986959,
+      "lat": 49.7759917,
+      "lon": 5.9775391
+    },
+    {
+      "type": "node",
+      "id": 6810267736,
+      "lat": 49.8036616,
+      "lon": 5.9962106
+    },
+    {
+      "type": "node",
+      "id": 7919798622,
+      "lat": 49.8035834,
+      "lon": 5.9963791
+    },
+    {
+      "type": "node",
+      "id": 7919798623,
+      "lat": 49.8034663,
+      "lon": 5.9962487
+    },
+    {
+      "type": "node",
+      "id": 7919798624,
+      "lat": 49.803523,
+      "lon": 5.9961266
+    },
+    {
+      "type": "node",
+      "id": 7919798625,
+      "lat": 49.803561,
+      "lon": 5.996169
+    },
+    {
+      "type": "node",
+      "id": 7919798626,
+      "lat": 49.8035825,
+      "lon": 5.9961226
+    },
+    {
+      "type": "node",
+      "id": 633707564,
+      "lat": 49.7892769,
+      "lon": 6.0657927
+    },
+    {
+      "type": "node",
+      "id": 633707565,
+      "lat": 49.7892951,
+      "lon": 6.0657691
+    },
+    {
+      "type": "node",
+      "id": 633707567,
+      "lat": 49.7892246,
+      "lon": 6.0656385
+    },
+    {
+      "type": "node",
+      "id": 633707569,
+      "lat": 49.7892653,
+      "lon": 6.0655859
+    },
+    {
+      "type": "node",
+      "id": 633707570,
+      "lat": 49.7892321,
+      "lon": 6.0655245
+    },
+    {
+      "type": "node",
+      "id": 633707573,
+      "lat": 49.789657,
+      "lon": 6.065412
+    },
+    {
+      "type": "node",
+      "id": 633707575,
+      "lat": 49.7895879,
+      "lon": 6.0655015
+    },
+    {
+      "type": "node",
+      "id": 633707577,
+      "lat": 49.7893406,
+      "lon": 6.0658237
+    },
+    {
+      "type": "node",
+      "id": 633707579,
+      "lat": 49.7896019,
+      "lon": 6.0655274
+    },
+    {
+      "type": "node",
+      "id": 633707581,
+      "lat": 49.7893466,
+      "lon": 6.0658347
+    },
+    {
+      "type": "node",
+      "id": 633707583,
+      "lat": 49.789577,
+      "lon": 6.0655596
+    },
+    {
+      "type": "node",
+      "id": 633707585,
+      "lat": 49.789518,
+      "lon": 6.0651544
+    },
+    {
+      "type": "node",
+      "id": 633707596,
+      "lat": 49.7893189,
+      "lon": 6.0658706
+    },
+    {
+      "type": "node",
+      "id": 1880646350,
+      "lat": 49.7895636,
+      "lon": 6.0655349
+    },
+    {
+      "type": "node",
+      "id": 2185092055,
+      "lat": 49.885026,
+      "lon": 5.9591658
+    },
+    {
+      "type": "node",
+      "id": 2185092056,
+      "lat": 49.8851944,
+      "lon": 5.9591395
+    },
+    {
+      "type": "node",
+      "id": 2185092057,
+      "lat": 49.885183,
+      "lon": 5.9589641
+    },
+    {
+      "type": "node",
+      "id": 2185092058,
+      "lat": 49.8848976,
+      "lon": 5.9590086
+    },
+    {
+      "type": "node",
+      "id": 2185092059,
+      "lat": 49.8850408,
+      "lon": 5.9593953
+    },
+    {
+      "type": "node",
+      "id": 2185092060,
+      "lat": 49.8849238,
+      "lon": 5.9594135
+    },
+    {
+      "type": "node",
+      "id": 2117638608,
+      "lat": 49.833343,
+      "lon": 6.0041702
+    },
+    {
+      "type": "node",
+      "id": 2117638609,
+      "lat": 49.8332075,
+      "lon": 6.0038892
+    },
+    {
+      "type": "node",
+      "id": 2117638610,
+      "lat": 49.8329366,
+      "lon": 6.0042032
+    },
+    {
+      "type": "node",
+      "id": 2117638611,
+      "lat": 49.8330721,
+      "lon": 6.0044842
+    },
+    {
+      "type": "node",
+      "id": 2302780643,
+      "lat": 49.8577748,
+      "lon": 6.0376528
+    },
+    {
+      "type": "node",
+      "id": 2302780644,
+      "lat": 49.85788,
+      "lon": 6.0377705
+    },
+    {
+      "type": "node",
+      "id": 3218544528,
+      "lat": 49.8579226,
+      "lon": 6.0372901
+    },
+    {
+      "type": "node",
+      "id": 3218544530,
+      "lat": 49.8579364,
+      "lon": 6.0373055
+    },
+    {
+      "type": "node",
+      "id": 3218544533,
+      "lat": 49.8579751,
+      "lon": 6.0371773
+    },
+    {
+      "type": "node",
+      "id": 3218544536,
+      "lat": 49.8580415,
+      "lon": 6.0374232
+    },
+    {
+      "type": "node",
+      "id": 3218544537,
+      "lat": 49.858053,
+      "lon": 6.037436
+    },
+    {
+      "type": "node",
+      "id": 3218544538,
+      "lat": 49.8581055,
+      "lon": 6.0373232
+    },
+    {
+      "type": "node",
+      "id": 3221546079,
+      "lat": 49.7438265,
+      "lon": 6.1013497
+    },
+    {
+      "type": "node",
+      "id": 3221546080,
+      "lat": 49.7435509,
+      "lon": 6.1015784
+    },
+    {
+      "type": "node",
+      "id": 3221546082,
+      "lat": 49.7436321,
+      "lon": 6.1019209
+    },
+    {
+      "type": "node",
+      "id": 3221546083,
+      "lat": 49.7436768,
+      "lon": 6.1020429
+    },
+    {
+      "type": "node",
+      "id": 3221546084,
+      "lat": 49.7439237,
+      "lon": 6.1018315
+    },
+    {
+      "type": "node",
+      "id": 3221546085,
+      "lat": 49.7439421,
+      "lon": 6.1018071
+    },
+    {
+      "type": "node",
+      "id": 3221546086,
+      "lat": 49.7439618,
+      "lon": 6.1017705
+    },
+    {
+      "type": "node",
+      "id": 3221546087,
+      "lat": 49.7439802,
+      "lon": 6.1017217
+    },
+    {
+      "type": "node",
+      "id": 3221546088,
+      "lat": 49.7439947,
+      "lon": 6.101675
+    },
+    {
+      "type": "node",
+      "id": 3221546089,
+      "lat": 49.7439999,
+      "lon": 6.1016221
+    },
+    {
+      "type": "node",
+      "id": 3221546090,
+      "lat": 49.7439907,
+      "lon": 6.1015611
+    },
+    {
+      "type": "node",
+      "id": 3221546091,
+      "lat": 49.743971,
+      "lon": 6.1014981
+    },
+    {
+      "type": "node",
+      "id": 3221546092,
+      "lat": 49.7438962,
+      "lon": 6.1015591
+    },
+    {
+      "type": "node",
+      "id": 8926621520,
+      "lat": 49.7436573,
+      "lon": 6.1019016
+    },
+    {
+      "type": "node",
+      "id": 8926621521,
+      "lat": 49.7437423,
+      "lon": 6.102017
+    },
+    {
+      "type": "node",
+      "id": 8926621522,
+      "lat": 49.7436851,
+      "lon": 6.102066
+    },
+    {
+      "type": "node",
+      "id": 8926621523,
+      "lat": 49.743734,
+      "lon": 6.1019939
+    },
+    {
+      "type": "node",
+      "id": 3231711800,
+      "lat": 49.7412467,
+      "lon": 6.1138897
+    },
+    {
+      "type": "node",
+      "id": 3231711801,
+      "lat": 49.7411373,
+      "lon": 6.1138297
+    },
+    {
+      "type": "node",
+      "id": 3231711802,
+      "lat": 49.741105,
+      "lon": 6.1139703
+    },
+    {
+      "type": "node",
+      "id": 3231711803,
+      "lat": 49.741117,
+      "lon": 6.1139769
+    },
+    {
+      "type": "node",
+      "id": 3231711804,
+      "lat": 49.7410724,
+      "lon": 6.1141714
+    },
+    {
+      "type": "node",
+      "id": 3231711805,
+      "lat": 49.7411698,
+      "lon": 6.1142249
+    },
+    {
+      "type": "node",
+      "id": 3581755196,
+      "lat": 49.7538449,
+      "lon": 6.1666167
+    },
+    {
+      "type": "node",
+      "id": 3581755202,
+      "lat": 49.753848,
+      "lon": 6.1669017
+    },
+    {
+      "type": "node",
+      "id": 3581755290,
+      "lat": 49.7538444,
+      "lon": 6.166572
+    },
+    {
+      "type": "node",
+      "id": 3581755291,
+      "lat": 49.7536575,
+      "lon": 6.1665769
+    },
+    {
+      "type": "node",
+      "id": 3581755292,
+      "lat": 49.7536635,
+      "lon": 6.1671331
+    },
+    {
+      "type": "node",
+      "id": 3581758193,
+      "lat": 49.7538505,
+      "lon": 6.1671282
+    },
+    {
+      "type": "node",
+      "id": 3043497367,
+      "lat": 49.8025864,
+      "lon": 6.0996564
+    },
+    {
+      "type": "node",
+      "id": 3043497372,
+      "lat": 49.8026413,
+      "lon": 6.0999016
+    },
+    {
+      "type": "node",
+      "id": 3043497381,
+      "lat": 49.802879,
+      "lon": 6.0994991
+    },
+    {
+      "type": "node",
+      "id": 3043497385,
+      "lat": 49.8029339,
+      "lon": 6.0997443
+    },
+    {
+      "type": "node",
+      "id": 7476035829,
+      "lat": 49.8000066,
+      "lon": 6.1309962
+    },
+    {
+      "type": "node",
+      "id": 7476035830,
+      "lat": 49.8001312,
+      "lon": 6.1311831
+    },
+    {
+      "type": "node",
+      "id": 7476035831,
+      "lat": 49.8000884,
+      "lon": 6.1312599
+    },
+    {
+      "type": "node",
+      "id": 7476035832,
+      "lat": 49.8000535,
+      "lon": 6.1312742
+    },
+    {
+      "type": "node",
+      "id": 7476035833,
+      "lat": 49.7999376,
+      "lon": 6.1311183
+    },
+    {
+      "type": "node",
+      "id": 5200058773,
+      "lat": 49.7531144,
+      "lon": 6.260574
+    },
+    {
+      "type": "node",
+      "id": 5200058774,
+      "lat": 49.75296,
+      "lon": 6.2604209
+    },
+    {
+      "type": "node",
+      "id": 5200058775,
+      "lat": 49.7528802,
+      "lon": 6.2606159
+    },
+    {
+      "type": "node",
+      "id": 5200058776,
+      "lat": 49.7530339,
+      "lon": 6.2607683
+    },
+    {
+      "type": "node",
+      "id": 8906498836,
+      "lat": 49.7530576,
+      "lon": 6.2607111
+    },
+    {
+      "type": "node",
+      "id": 8920072935,
+      "lat": 49.75287,
+      "lon": 6.2604595
+    },
+    {
+      "type": "node",
+      "id": 8920072936,
+      "lat": 49.7528219,
+      "lon": 6.2605757
+    },
+    {
+      "type": "node",
+      "id": 8920072937,
+      "lat": 49.752875,
+      "lon": 6.2606284
+    },
+    {
+      "type": "node",
+      "id": 8920072938,
+      "lat": 49.752879,
+      "lon": 6.2604685
+    },
+    {
+      "type": "node",
+      "id": 8920072939,
+      "lat": 49.7529045,
+      "lon": 6.2604068
+    },
+    {
+      "type": "node",
+      "id": 8920072940,
+      "lat": 49.752948,
+      "lon": 6.26045
+    },
+    {
+      "type": "node",
+      "id": 5758799527,
+      "lat": 49.7822099,
+      "lon": 6.2181098
+    },
+    {
+      "type": "node",
+      "id": 5758799528,
+      "lat": 49.7818583,
+      "lon": 6.2179194
+    },
+    {
+      "type": "node",
+      "id": 5758799529,
+      "lat": 49.7818046,
+      "lon": 6.2181366
+    },
+    {
+      "type": "node",
+      "id": 5758799530,
+      "lat": 49.7819363,
+      "lon": 6.2182037
+    },
+    {
+      "type": "node",
+      "id": 5758799531,
+      "lat": 49.7819501,
+      "lon": 6.2181393
+    },
+    {
+      "type": "node",
+      "id": 5758799532,
+      "lat": 49.782177,
+      "lon": 6.2182546
+    },
+    {
+      "type": "node",
+      "id": 7770926817,
+      "lat": 49.8115132,
+      "lon": 6.2184673
+    },
+    {
+      "type": "node",
+      "id": 7770926818,
+      "lat": 49.8115163,
+      "lon": 6.218633
+    },
+    {
+      "type": "node",
+      "id": 7770926819,
+      "lat": 49.8115128,
+      "lon": 6.2187181
+    },
+    {
+      "type": "node",
+      "id": 7770926820,
+      "lat": 49.8111627,
+      "lon": 6.2187906
+    },
+    {
+      "type": "node",
+      "id": 7770926821,
+      "lat": 49.8111593,
+      "lon": 6.2187034
+    },
+    {
+      "type": "node",
+      "id": 7770926822,
+      "lat": 49.8111459,
+      "lon": 6.2185424
+    },
+    {
+      "type": "node",
+      "id": 1595918019,
+      "lat": 49.8293196,
+      "lon": 6.1013671
+    },
+    {
+      "type": "node",
+      "id": 1595918020,
+      "lat": 49.8293592,
+      "lon": 6.1013753
+    },
+    {
+      "type": "node",
+      "id": 1595918021,
+      "lat": 49.8293613,
+      "lon": 6.1013512
+    },
+    {
+      "type": "node",
+      "id": 1595918023,
+      "lat": 49.8294434,
+      "lon": 6.1013681
+    },
+    {
+      "type": "node",
+      "id": 1595918024,
+      "lat": 49.8294546,
+      "lon": 6.1012381
+    },
+    {
+      "type": "node",
+      "id": 8634262463,
+      "lat": 49.8295211,
+      "lon": 6.1012519
+    },
+    {
+      "type": "node",
+      "id": 1595918018,
+      "lat": 49.8292773,
+      "lon": 6.1018594
+    },
+    {
+      "type": "node",
+      "id": 1595918022,
+      "lat": 49.8294251,
+      "lon": 6.1018919
+    },
+    {
+      "type": "node",
+      "id": 1595918027,
+      "lat": 49.8294631,
+      "lon": 6.1018517
+    },
+    {
+      "type": "node",
+      "id": 1595918029,
+      "lat": 49.8294732,
+      "lon": 6.1017929
+    },
+    {
+      "type": "node",
+      "id": 1576448672,
+      "lat": 49.8496223,
+      "lon": 6.101331
+    },
+    {
+      "type": "node",
+      "id": 6797535217,
+      "lat": 49.8494878,
+      "lon": 6.1012949
+    },
+    {
+      "type": "node",
+      "id": 6797535218,
+      "lat": 49.8494537,
+      "lon": 6.101248
+    },
+    {
+      "type": "node",
+      "id": 6797535219,
+      "lat": 49.8495011,
+      "lon": 6.1011648
+    },
+    {
+      "type": "node",
+      "id": 8400770785,
+      "lat": 49.8495256,
+      "lon": 6.1011984
+    },
+    {
+      "type": "node",
+      "id": 8400770788,
+      "lat": 49.8495813,
+      "lon": 6.1012748
+    },
+    {
+      "type": "node",
+      "id": 1576448671,
+      "lat": 49.8494988,
+      "lon": 6.1015644
+    },
+    {
+      "type": "node",
+      "id": 1576448673,
+      "lat": 49.8496308,
+      "lon": 6.1017455
+    },
+    {
+      "type": "node",
+      "id": 1576448674,
+      "lat": 49.8497597,
+      "lon": 6.1015195
+    },
+    {
+      "type": "node",
+      "id": 6797535213,
+      "lat": 49.8493401,
+      "lon": 6.1018425
+    },
+    {
+      "type": "node",
+      "id": 6797535214,
+      "lat": 49.8492398,
+      "lon": 6.101705
+    },
+    {
+      "type": "node",
+      "id": 6797535215,
+      "lat": 49.8493536,
+      "lon": 6.1015056
+    },
+    {
+      "type": "node",
+      "id": 6797535216,
+      "lat": 49.8493615,
+      "lon": 6.1015164
+    },
+    {
+      "type": "node",
+      "id": 8400770813,
+      "lat": 49.8495969,
+      "lon": 6.101699
+    },
+    {
+      "type": "node",
+      "id": 3213013164,
+      "lat": 49.8519793,
+      "lon": 6.1337791
+    },
+    {
+      "type": "node",
+      "id": 3213013169,
+      "lat": 49.8520237,
+      "lon": 6.133714
+    },
+    {
+      "type": "node",
+      "id": 3213013170,
+      "lat": 49.8520315,
+      "lon": 6.1337374
+    },
+    {
+      "type": "node",
+      "id": 3213013171,
+      "lat": 49.8520396,
+      "lon": 6.1339605
+    },
+    {
+      "type": "node",
+      "id": 3213013176,
+      "lat": 49.8521276,
+      "lon": 6.1336309
+    },
+    {
+      "type": "node",
+      "id": 3213013177,
+      "lat": 49.8521354,
+      "lon": 6.1336544
+    },
+    {
+      "type": "node",
+      "id": 3213013181,
+      "lat": 49.8521754,
+      "lon": 6.1336224
+    },
+    {
+      "type": "node",
+      "id": 3213013184,
+      "lat": 49.8522357,
+      "lon": 6.1338038
+    },
+    {
+      "type": "node",
+      "id": 7606197524,
+      "lat": 49.8294676,
+      "lon": 6.1700218
+    },
+    {
+      "type": "node",
+      "id": 7606197525,
+      "lat": 49.8294477,
+      "lon": 6.1702154
+    },
+    {
+      "type": "node",
+      "id": 7606197526,
+      "lat": 49.8292248,
+      "lon": 6.1701602
+    },
+    {
+      "type": "node",
+      "id": 7606197527,
+      "lat": 49.8292448,
+      "lon": 6.1699666
+    },
+    {
+      "type": "node",
+      "id": 1568918394,
+      "lat": 49.8657876,
+      "lon": 6.1528928
+    },
+    {
+      "type": "node",
+      "id": 1568918395,
+      "lat": 49.8659566,
+      "lon": 6.1532251
+    },
+    {
+      "type": "node",
+      "id": 1568918396,
+      "lat": 49.8658924,
+      "lon": 6.1527641
+    },
+    {
+      "type": "node",
+      "id": 1568918398,
+      "lat": 49.8661436,
+      "lon": 6.1532826
+    },
+    {
+      "type": "node",
+      "id": 6185965530,
+      "lat": 49.8659767,
+      "lon": 6.1531989
+    },
+    {
+      "type": "node",
+      "id": 6185965531,
+      "lat": 49.8660621,
+      "lon": 6.1533825
+    },
+    {
+      "type": "node",
+      "id": 6185965533,
+      "lat": 49.8660542,
+      "lon": 6.1531009
+    },
+    {
+      "type": "node",
+      "id": 7993350679,
+      "lat": 49.8660721,
+      "lon": 6.1531437
+    },
+    {
+      "type": "node",
+      "id": 316780514,
+      "lat": 49.911034,
+      "lon": 6.1391559
+    },
+    {
+      "type": "node",
+      "id": 4960097604,
+      "lat": 49.9111344,
+      "lon": 6.1390382
+    },
+    {
+      "type": "node",
+      "id": 6481752991,
+      "lat": 49.911088,
+      "lon": 6.1389989
+    },
+    {
+      "type": "node",
+      "id": 6481752992,
+      "lat": 49.911084,
+      "lon": 6.1390103
+    },
+    {
+      "type": "node",
+      "id": 6481752993,
+      "lat": 49.911049,
+      "lon": 6.1389805
+    },
+    {
+      "type": "node",
+      "id": 6481752994,
+      "lat": 49.911001,
+      "lon": 6.1391171
+    },
+    {
+      "type": "node",
+      "id": 6481752995,
+      "lat": 49.911037,
+      "lon": 6.1391477
+    },
+    {
+      "type": "node",
+      "id": 6481752997,
+      "lat": 49.9111728,
+      "lon": 6.1390708
+    },
+    {
+      "type": "node",
+      "id": 6481752998,
+      "lat": 49.9111176,
+      "lon": 6.1392277
+    },
+    {
+      "type": "node",
+      "id": 1204271813,
+      "lat": 49.8723,
+      "lon": 6.2205363
+    },
+    {
+      "type": "node",
+      "id": 1204271820,
+      "lat": 49.872438,
+      "lon": 6.2204563
+    },
+    {
+      "type": "node",
+      "id": 1204271826,
+      "lat": 49.8723425,
+      "lon": 6.2200545
+    },
+    {
+      "type": "node",
+      "id": 1204271852,
+      "lat": 49.8722125,
+      "lon": 6.2201292
+    },
+    {
+      "type": "node",
+      "id": 8345935266,
+      "lat": 49.8723645,
+      "lon": 6.220499
+    },
+    {
+      "type": "node",
+      "id": 2989913828,
+      "lat": 49.5551178,
+      "lon": 6.3296073
+    },
+    {
+      "type": "node",
+      "id": 2989913829,
+      "lat": 49.5552598,
+      "lon": 6.3295428
+    },
+    {
+      "type": "node",
+      "id": 2989913830,
+      "lat": 49.5552832,
+      "lon": 6.3296649
+    },
+    {
+      "type": "node",
+      "id": 2989913831,
+      "lat": 49.5551412,
+      "lon": 6.3297295
+    },
+    {
+      "type": "node",
+      "id": 4958832991,
+      "lat": 49.7006941,
+      "lon": 6.3788228
+    },
+    {
+      "type": "node",
+      "id": 4958832992,
+      "lat": 49.7004122,
+      "lon": 6.3791863
+    },
+    {
+      "type": "node",
+      "id": 4958832993,
+      "lat": 49.7003441,
+      "lon": 6.3790615
+    },
+    {
+      "type": "node",
+      "id": 5083931363,
+      "lat": 49.7006244,
+      "lon": 6.3786958
+    },
+    {
+      "type": "node",
+      "id": 2293755653,
+      "lat": 49.6754689,
+      "lon": 6.4407784
+    },
+    {
+      "type": "node",
+      "id": 2293755654,
+      "lat": 49.6754654,
+      "lon": 6.4406992
+    },
+    {
+      "type": "node",
+      "id": 2293755655,
+      "lat": 49.6754968,
+      "lon": 6.4408651
+    },
+    {
+      "type": "node",
+      "id": 2293755656,
+      "lat": 49.6755528,
+      "lon": 6.4407383
+    },
+    {
+      "type": "node",
+      "id": 2293755657,
+      "lat": 49.67549,
+      "lon": 6.4406011
+    },
+    {
+      "type": "node",
+      "id": 2293755659,
+      "lat": 49.6756865,
+      "lon": 6.441148
+    },
+    {
+      "type": "node",
+      "id": 6184457082,
+      "lat": 49.6756257,
+      "lon": 6.4411084
+    },
+    {
+      "type": "node",
+      "id": 6255972024,
+      "lat": 49.6757419,
+      "lon": 6.4409979
+    },
+    {
+      "type": "node",
+      "id": 6255972454,
+      "lat": 49.6757234,
+      "lon": 6.4410481
+    },
+    {
+      "type": "node",
+      "id": 6255972456,
+      "lat": 49.6757429,
+      "lon": 6.4409954
+    },
+    {
+      "type": "node",
+      "id": 6255972457,
+      "lat": 49.6755932,
+      "lon": 6.4406919
+    },
+    {
+      "type": "node",
+      "id": 6255972458,
+      "lat": 49.6756524,
+      "lon": 6.4410755
+    },
+    {
+      "type": "node",
+      "id": 6255972459,
+      "lat": 49.6755836,
+      "lon": 6.4410209
+    },
+    {
+      "type": "node",
+      "id": 6255972460,
+      "lat": 49.6755682,
+      "lon": 6.4409895
+    },
+    {
+      "type": "node",
+      "id": 6255972461,
+      "lat": 49.6756,
+      "lon": 6.4410758
+    },
+    {
+      "type": "node",
+      "id": 6255972462,
+      "lat": 49.6756061,
+      "lon": 6.441069
+    },
+    {
+      "type": "node",
+      "id": 6255972463,
+      "lat": 49.6755767,
+      "lon": 6.4410291
+    },
+    {
+      "type": "node",
+      "id": 6255972464,
+      "lat": 49.6755614,
+      "lon": 6.4409976
+    },
+    {
+      "type": "node",
+      "id": 6262573280,
+      "lat": 49.6755552,
+      "lon": 6.4401007
+    },
+    {
+      "type": "node",
+      "id": 6262573281,
+      "lat": 49.6755352,
+      "lon": 6.4401421
+    },
+    {
+      "type": "node",
+      "id": 6262573832,
+      "lat": 49.6755428,
+      "lon": 6.4401508
+    },
+    {
+      "type": "node",
+      "id": 6262573833,
+      "lat": 49.6755101,
+      "lon": 6.4402186
+    },
+    {
+      "type": "node",
+      "id": 6262573834,
+      "lat": 49.6752907,
+      "lon": 6.4399659
+    },
+    {
+      "type": "node",
+      "id": 6262573885,
+      "lat": 49.6754146,
+      "lon": 6.4397093
+    },
+    {
+      "type": "node",
+      "id": 6262573886,
+      "lat": 49.6757788,
+      "lon": 6.440129
+    },
+    {
+      "type": "node",
+      "id": 6262573887,
+      "lat": 49.6757077,
+      "lon": 6.4402765
+    },
+    {
+      "type": "node",
+      "id": 7508832127,
+      "lat": 49.6756465,
+      "lon": 6.4399758
+    },
+    {
+      "type": "node",
+      "id": 6596057445,
+      "lat": 49.7023159,
+      "lon": 6.4749558
+    },
+    {
+      "type": "node",
+      "id": 6596057446,
+      "lat": 49.7022561,
+      "lon": 6.4747399
+    },
+    {
+      "type": "node",
+      "id": 6596057447,
+      "lat": 49.7021932,
+      "lon": 6.4745522
+    },
+    {
+      "type": "node",
+      "id": 6596057448,
+      "lat": 49.7020562,
+      "lon": 6.474233
+    },
+    {
+      "type": "node",
+      "id": 6596057449,
+      "lat": 49.7023316,
+      "lon": 6.4740291
+    },
+    {
+      "type": "node",
+      "id": 6596057450,
+      "lat": 49.7023554,
+      "lon": 6.4740285
+    },
+    {
+      "type": "node",
+      "id": 6596057451,
+      "lat": 49.7026529,
+      "lon": 6.4745522
+    },
+    {
+      "type": "node",
+      "id": 9228611178,
+      "lat": 49.7020922,
+      "lon": 6.4743148
+    },
+    {
+      "type": "node",
+      "id": 9228611179,
+      "lat": 49.7021533,
+      "lon": 6.4742088
+    },
+    {
+      "type": "node",
+      "id": 6596057441,
+      "lat": 49.702806,
+      "lon": 6.4753421
+    },
+    {
+      "type": "node",
+      "id": 6596057442,
+      "lat": 49.7026239,
+      "lon": 6.4755587
+    },
+    {
+      "type": "node",
+      "id": 6596057443,
+      "lat": 49.7025549,
+      "lon": 6.4754561
+    },
+    {
+      "type": "node",
+      "id": 6596057444,
+      "lat": 49.7024166,
+      "lon": 6.4753689
+    },
+    {
+      "type": "node",
+      "id": 6596057452,
+      "lat": 49.702741,
+      "lon": 6.4751852
+    },
+    {
+      "type": "node",
+      "id": 6596057453,
+      "lat": 49.7028971,
+      "lon": 6.4750155
+    },
+    {
+      "type": "node",
+      "id": 9228608883,
+      "lat": 49.7025416,
+      "lon": 6.475377
+    },
+    {
+      "type": "node",
+      "id": 9228611122,
+      "lat": 49.7025098,
+      "lon": 6.4753253
+    },
+    {
+      "type": "node",
+      "id": 1019213460,
+      "lat": 49.7798907,
+      "lon": 6.3402063
+    },
+    {
+      "type": "node",
+      "id": 1019213468,
+      "lat": 49.7800958,
+      "lon": 6.3397838
+    },
+    {
+      "type": "node",
+      "id": 1019213496,
+      "lat": 49.7801588,
+      "lon": 6.3400593
+    },
+    {
+      "type": "node",
+      "id": 1019213538,
+      "lat": 49.7798277,
+      "lon": 6.3399308
+    },
+    {
+      "type": "node",
+      "id": 1020362519,
+      "lat": 49.7871916,
+      "lon": 6.4419911
+    },
+    {
+      "type": "node",
+      "id": 1020362599,
+      "lat": 49.787083,
+      "lon": 6.4420962
+    },
+    {
+      "type": "node",
+      "id": 1020362471,
+      "lat": 49.7871848,
+      "lon": 6.4423485
+    },
+    {
+      "type": "node",
+      "id": 1020362508,
+      "lat": 49.7872934,
+      "lon": 6.4422434
+    },
+    {
+      "type": "node",
+      "id": 5460224071,
+      "lat": 49.8047558,
+      "lon": 6.4041204
+    },
+    {
+      "type": "node",
+      "id": 5460224072,
+      "lat": 49.8049786,
+      "lon": 6.4041045
+    },
+    {
+      "type": "node",
+      "id": 5496238433,
+      "lat": 49.8052004,
+      "lon": 6.4040874
+    },
+    {
+      "type": "node",
+      "id": 5496238434,
+      "lat": 49.8047441,
+      "lon": 6.4037552
+    },
+    {
+      "type": "node",
+      "id": 5496238435,
+      "lat": 49.8047839,
+      "lon": 6.4037526
+    },
+    {
+      "type": "node",
+      "id": 5496238436,
+      "lat": 49.8047783,
+      "lon": 6.4036399
+    },
+    {
+      "type": "node",
+      "id": 5496238437,
+      "lat": 49.8048168,
+      "lon": 6.4035769
+    },
+    {
+      "type": "node",
+      "id": 5496238438,
+      "lat": 49.8049691,
+      "lon": 6.4035675
+    },
+    {
+      "type": "node",
+      "id": 5496238439,
+      "lat": 49.8049726,
+      "lon": 6.403711
+    },
+    {
+      "type": "node",
+      "id": 5496238440,
+      "lat": 49.8050141,
+      "lon": 6.403707
+    },
+    {
+      "type": "node",
+      "id": 5496238441,
+      "lat": 49.8050159,
+      "lon": 6.4037378
+    },
+    {
+      "type": "node",
+      "id": 5496238442,
+      "lat": 49.8051873,
+      "lon": 6.4037204
+    },
+    {
+      "type": "node",
+      "id": 8315931006,
+      "lat": 49.8051195,
+      "lon": 6.4040936
+    },
+    {
+      "type": "node",
+      "id": 314706040,
+      "lat": 49.8190836,
+      "lon": 6.4739799
+    },
+    {
+      "type": "node",
+      "id": 314706042,
+      "lat": 49.8190263,
+      "lon": 6.4741814
+    },
+    {
+      "type": "node",
+      "id": 314706044,
+      "lat": 49.818916,
+      "lon": 6.4741059
+    },
+    {
+      "type": "node",
+      "id": 314706046,
+      "lat": 49.8189733,
+      "lon": 6.4739044
+    },
+    {
+      "type": "node",
+      "id": 7543627411,
+      "lat": 49.8189341,
+      "lon": 6.4740421
+    },
+    {
+      "type": "node",
+      "id": 5374430729,
+      "lat": 49.8375695,
+      "lon": 6.2932518
+    },
+    {
+      "type": "node",
+      "id": 5374430730,
+      "lat": 49.8376696,
+      "lon": 6.2934594
+    },
+    {
+      "type": "node",
+      "id": 5374430731,
+      "lat": 49.8374328,
+      "lon": 6.2937339
+    },
+    {
+      "type": "node",
+      "id": 5374430732,
+      "lat": 49.8373327,
+      "lon": 6.2935263
+    },
+    {
+      "type": "node",
+      "id": 736335205,
+      "lat": 49.825272,
+      "lon": 6.3447346
+    },
+    {
+      "type": "node",
+      "id": 736335215,
+      "lat": 49.8252599,
+      "lon": 6.344994
+    },
+    {
+      "type": "node",
+      "id": 736335223,
+      "lat": 49.825106,
+      "lon": 6.3449768
+    },
+    {
+      "type": "node",
+      "id": 736335233,
+      "lat": 49.8251181,
+      "lon": 6.3447174
+    },
+    {
+      "type": "node",
+      "id": 7341752082,
+      "lat": 49.9315837,
+      "lon": 5.7885209
+    },
+    {
+      "type": "node",
+      "id": 7341752083,
+      "lat": 49.9316176,
+      "lon": 5.7886643
+    },
+    {
+      "type": "node",
+      "id": 7341752084,
+      "lat": 49.9314707,
+      "lon": 5.7887447
+    },
+    {
+      "type": "node",
+      "id": 7341776585,
+      "lat": 49.9314323,
+      "lon": 5.788592
+    },
+    {
+      "type": "node",
+      "id": 8100918951,
+      "lat": 49.9314435,
+      "lon": 5.7886357
+    },
+    {
+      "type": "node",
+      "id": 6396617335,
+      "lat": 49.9692339,
+      "lon": 5.8347668
+    },
+    {
+      "type": "node",
+      "id": 6396617336,
+      "lat": 49.9692044,
+      "lon": 5.8346526
+    },
+    {
+      "type": "node",
+      "id": 6396617337,
+      "lat": 49.9690997,
+      "lon": 5.8345839
+    },
+    {
+      "type": "node",
+      "id": 6396617338,
+      "lat": 49.9691817,
+      "lon": 5.8345328
+    },
+    {
+      "type": "node",
+      "id": 6396617339,
+      "lat": 49.9692025,
+      "lon": 5.834386
+    },
+    {
+      "type": "node",
+      "id": 6396617340,
+      "lat": 49.969262,
+      "lon": 5.8346166
+    },
+    {
+      "type": "node",
+      "id": 6396617341,
+      "lat": 49.969159,
+      "lon": 5.8348135
+    },
+    {
+      "type": "node",
+      "id": 6396617342,
+      "lat": 49.9691519,
+      "lon": 5.8344175
+    },
+    {
+      "type": "node",
+      "id": 826218368,
+      "lat": 49.9655668,
+      "lon": 5.925914
+    },
+    {
+      "type": "node",
+      "id": 826218381,
+      "lat": 49.9651365,
+      "lon": 5.9260658
+    },
+    {
+      "type": "node",
+      "id": 826218382,
+      "lat": 49.965473,
+      "lon": 5.9252717
+    },
+    {
+      "type": "node",
+      "id": 826218464,
+      "lat": 49.9650427,
+      "lon": 5.9254235
+    },
+    {
+      "type": "node",
+      "id": 6444908821,
+      "lat": 49.9652675,
+      "lon": 5.9253442
+    },
+    {
+      "type": "node",
+      "id": 6444908822,
+      "lat": 49.965292,
+      "lon": 5.9255235
+    },
+    {
+      "type": "node",
+      "id": 6444908823,
+      "lat": 49.9651596,
+      "lon": 5.9255725
+    },
+    {
+      "type": "node",
+      "id": 6444908824,
+      "lat": 49.965206,
+      "lon": 5.9258756
+    },
+    {
+      "type": "node",
+      "id": 6444908825,
+      "lat": 49.965466,
+      "lon": 5.9257795
+    },
+    {
+      "type": "node",
+      "id": 6444908826,
+      "lat": 49.9654196,
+      "lon": 5.9254763
+    },
+    {
+      "type": "node",
+      "id": 6138857949,
+      "lat": 49.9311112,
+      "lon": 6.0622203
+    },
+    {
+      "type": "node",
+      "id": 6138857950,
+      "lat": 49.9311297,
+      "lon": 6.0620956
+    },
+    {
+      "type": "node",
+      "id": 6138857951,
+      "lat": 49.9312773,
+      "lon": 6.0621484
+    },
+    {
+      "type": "node",
+      "id": 7757252982,
+      "lat": 49.9312606,
+      "lon": 6.0622606
+    },
+    {
+      "type": "node",
+      "id": 7757270485,
+      "lat": 49.9312587,
+      "lon": 6.0622732
+    },
+    {
+      "type": "node",
+      "id": 810133335,
+      "lat": 49.9744217,
+      "lon": 6.0511527
+    },
+    {
+      "type": "node",
+      "id": 810133343,
+      "lat": 49.974357,
+      "lon": 6.0516288
+    },
+    {
+      "type": "node",
+      "id": 810133345,
+      "lat": 49.9744312,
+      "lon": 6.0514652
+    },
+    {
+      "type": "node",
+      "id": 810133346,
+      "lat": 49.9744545,
+      "lon": 6.0517395
+    },
+    {
+      "type": "node",
+      "id": 810133350,
+      "lat": 49.9743169,
+      "lon": 6.0513365
+    },
+    {
+      "type": "node",
+      "id": 810133352,
+      "lat": 49.9743177,
+      "lon": 6.0511956
+    },
+    {
+      "type": "node",
+      "id": 810133354,
+      "lat": 49.9743829,
+      "lon": 6.0517301
+    },
+    {
+      "type": "node",
+      "id": 810133342,
+      "lat": 49.9745097,
+      "lon": 6.0512841
+    },
+    {
+      "type": "node",
+      "id": 810133347,
+      "lat": 49.9745886,
+      "lon": 6.0512949
+    },
+    {
+      "type": "node",
+      "id": 810133351,
+      "lat": 49.9746175,
+      "lon": 6.0513961
+    },
+    {
+      "type": "node",
+      "id": 8003814277,
+      "lat": 49.9744898,
+      "lon": 6.0512245
+    },
+    {
+      "type": "node",
+      "id": 2143160527,
+      "lat": 50.061654,
+      "lon": 6.018666
+    },
+    {
+      "type": "node",
+      "id": 2143160529,
+      "lat": 50.0616656,
+      "lon": 6.0181837
+    },
+    {
+      "type": "node",
+      "id": 2143160560,
+      "lat": 50.0617937,
+      "lon": 6.0186741
+    },
+    {
+      "type": "node",
+      "id": 2143160561,
+      "lat": 50.0618052,
+      "lon": 6.0181957
+    },
+    {
+      "type": "node",
+      "id": 6800614769,
+      "lat": 50.0617886,
+      "lon": 6.0188158
+    },
+    {
+      "type": "node",
+      "id": 6800614770,
+      "lat": 50.0616216,
+      "lon": 6.0188028
+    },
+    {
+      "type": "node",
+      "id": 6800614771,
+      "lat": 50.0616256,
+      "lon": 6.0186678
+    },
+    {
+      "type": "node",
+      "id": 6399502318,
+      "lat": 50.1238911,
+      "lon": 6.0020456
+    },
+    {
+      "type": "node",
+      "id": 6399502319,
+      "lat": 50.123893,
+      "lon": 6.0020611
+    },
+    {
+      "type": "node",
+      "id": 6399502320,
+      "lat": 50.1238505,
+      "lon": 6.0019652
+    },
+    {
+      "type": "node",
+      "id": 6399502321,
+      "lat": 50.1238783,
+      "lon": 6.0019567
+    },
+    {
+      "type": "node",
+      "id": 6399502322,
+      "lat": 50.1239547,
+      "lon": 6.0021462
+    },
+    {
+      "type": "node",
+      "id": 6399502323,
+      "lat": 50.1239421,
+      "lon": 6.0020461
+    },
+    {
+      "type": "node",
+      "id": 6399502324,
+      "lat": 50.1240615,
+      "lon": 6.0021134
+    },
+    {
+      "type": "node",
+      "id": 6399502325,
+      "lat": 50.1238617,
+      "lon": 6.0020546
+    },
+    {
+      "type": "node",
+      "id": 6399502326,
+      "lat": 50.1238731,
+      "lon": 6.0019147
+    },
+    {
+      "type": "node",
+      "id": 6399502327,
+      "lat": 50.1240304,
+      "lon": 6.0018665
+    },
+    {
+      "type": "node",
+      "id": 7560416324,
+      "lat": 49.9618517,
+      "lon": 6.1249767
+    },
+    {
+      "type": "node",
+      "id": 7560416325,
+      "lat": 49.9618836,
+      "lon": 6.1249952
+    },
+    {
+      "type": "node",
+      "id": 7560416326,
+      "lat": 49.9618576,
+      "lon": 6.1250981
+    },
+    {
+      "type": "node",
+      "id": 7560416327,
+      "lat": 49.9618531,
+      "lon": 6.1251628
+    },
+    {
+      "type": "node",
+      "id": 7560416328,
+      "lat": 49.9616933,
+      "lon": 6.1251408
+    },
+    {
+      "type": "node",
+      "id": 7560416329,
+      "lat": 49.9616992,
+      "lon": 6.1250299
+    },
+    {
+      "type": "node",
+      "id": 7560416330,
+      "lat": 49.9617245,
+      "lon": 6.1248784
+    },
+    {
+      "type": "node",
+      "id": 7560416331,
+      "lat": 49.9618613,
+      "lon": 6.1249385
+    },
+    {
+      "type": "node",
+      "id": 2974346905,
+      "lat": 50.011016,
+      "lon": 6.0897674
+    },
+    {
+      "type": "node",
+      "id": 2974346906,
+      "lat": 50.0110515,
+      "lon": 6.0893795
+    },
+    {
+      "type": "node",
+      "id": 2974346907,
+      "lat": 50.0110834,
+      "lon": 6.0893866
+    },
+    {
+      "type": "node",
+      "id": 2974346908,
+      "lat": 50.0110917,
+      "lon": 6.0892955
+    },
+    {
+      "type": "node",
+      "id": 2974346909,
+      "lat": 50.0111435,
+      "lon": 6.0897956
+    },
+    {
+      "type": "node",
+      "id": 2974346910,
+      "lat": 50.0111736,
+      "lon": 6.0894663
+    },
+    {
+      "type": "node",
+      "id": 2974346912,
+      "lat": 50.0113478,
+      "lon": 6.089507
+    },
+    {
+      "type": "node",
+      "id": 2974346913,
+      "lat": 50.011431,
+      "lon": 6.0895233
+    },
+    {
+      "type": "node",
+      "id": 2974346914,
+      "lat": 50.0114488,
+      "lon": 6.0893286
+    },
+    {
+      "type": "node",
+      "id": 5574308450,
+      "lat": 50.0111505,
+      "lon": 6.0893085
+    },
+    {
+      "type": "node",
+      "id": 5574308451,
+      "lat": 50.0111547,
+      "lon": 6.0892634
+    },
+    {
+      "type": "way",
+      "id": 68748603,
+      "nodes": [
+        826218382,
+        826218368,
+        826218381,
+        826218464,
+        6444908821,
+        826218382
+      ]
+    },
+    {
+      "type": "way",
+      "id": 687530572,
+      "nodes": [
+        6444908826,
+        6444908825,
+        6444908824,
+        6444908823,
+        6444908822,
+        6444908826
+      ]
+    }
+  ]
+}
