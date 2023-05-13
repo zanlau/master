@@ -1,0 +1,197 @@
+{
+    "source": "H\u00e4ndische Erfassung mit Beizug der Literaturhttps://www.neurovasc.ch/portrait/stroke-center-stroke-units/?L=106",
+    "data": [
+        {
+            "lat": "46.996919199999994",
+            "lon": "6.942923586966937",
+            "institut": "Maladi\u00e8re 45",
+            "stand_address": 2000,
+            "stand_plz": "Neuch\u00e2tel",
+            "stand_ort": "stroke_units"
+        },
+        {
+            "lat": "46.2347703",
+            "lon": "7.3877684",
+            "institut": "Avenue Grand-Champsec 80",
+            "stand_address": 1950,
+            "stand_plz": "Sion",
+            "stand_ort": "stroke_units"
+        },
+        {
+            "lat": "47.3664471",
+            "lon": "8.497290184035592",
+            "institut": "Birmensdorferstrasse 497",
+            "stand_address": 8063,
+            "stand_plz": "Z\u00fcrich",
+            "stand_ort": "stroke_units"
+        },
+        {
+            "lat": "47.14643975",
+            "lon": "7.245180350694886",
+            "institut": "Vogelsang 84",
+            "stand_address": 2502,
+            "stand_plz": "Biel",
+            "stand_ort": "stroke_units"
+        },
+        {
+            "lat": "47.17342105",
+            "lon": "9.448926224140056",
+            "institut": "Spitalstrasse 44",
+            "stand_address": 9472,
+            "stand_plz": "Grabs",
+            "stand_ort": "stroke_units"
+        },
+        {
+            "lat": "47.506859899999995",
+            "lon": "8.728524077691285",
+            "institut": "Brauerstrasse 15",
+            "stand_address": 8401,
+            "stand_plz": "Winterthur",
+            "stand_ort": "stroke_units"
+        },
+        {
+            "lat": "47.39356545",
+            "lon": "8.430542580571107",
+            "institut": "Urdorferstrasse 100",
+            "stand_address": 8952,
+            "stand_plz": "Schlieren",
+            "stand_ort": "stroke_units"
+        },
+        {
+            "lat": "46.80191755",
+            "lon": "7.137948440709019",
+            "institut": "Chemin des Pensionnats 2",
+            "stand_address": 1752,
+            "stand_plz": "Villars-sur-Gl\u00e2ne",
+            "stand_ort": "stroke_units"
+        },
+        {
+            "lat": "47.45470415",
+            "lon": "8.277970718196961",
+            "institut": "Im Ergel 1",
+            "stand_address": 5404,
+            "stand_plz": "Baden",
+            "stand_ort": "stroke_units"
+        },
+        {
+            "lat": "47.1985334",
+            "lon": "7.5385483",
+            "institut": "Sch\u00f6ngr\u00fcnstrasse 42",
+            "stand_address": 4500,
+            "stand_plz": "Solothurn",
+            "stand_ort": "stroke_units"
+        },
+        {
+            "lat": "47.630151850000004",
+            "lon": "9.235874786867209",
+            "institut": "Spitalcampus 1",
+            "stand_address": 8596,
+            "stand_plz": "M\u00fcnsterlingen",
+            "stand_ort": "stroke_units"
+        },
+        {
+            "lat": "46.86026715",
+            "lon": "9.536473817120369",
+            "institut": "Loestrasse 99",
+            "stand_address": 7000,
+            "stand_plz": "Chur",
+            "stand_ort": "stroke_units"
+        },
+        {
+            "lat": "46.3831531",
+            "lon": "6.227391098710791",
+            "institut": "Chemin Monastier 10",
+            "stand_address": 1269,
+            "stand_plz": "Nyon",
+            "stand_ort": "stroke_units"
+        },
+        {
+            "lat": "47.54973705",
+            "lon": "8.90922538767634",
+            "institut": "Pfaffenholzstrasse. 5",
+            "stand_address": 8501,
+            "stand_plz": "Frauenfeld",
+            "stand_ort": "stroke_units"
+        },
+        {
+            "lat": "47.430687199999994",
+            "lon": "9.387328766821327",
+            "institut": "Rorschacher Strasse 95",
+            "stand_address": 9007,
+            "stand_plz": "St. Gallen",
+            "stand_ort": "stroke_centers"
+        },
+        {
+            "lat": "47.38837665",
+            "lon": "8.060297010142904",
+            "institut": "Tellstrasse 25",
+            "stand_address": 5001,
+            "stand_plz": "Aarau",
+            "stand_ort": "stroke_centers"
+        },
+        {
+            "lat": "46.192006750000004",
+            "lon": "6.147949875776305",
+            "institut": "Rue Gabrielle-Perret-Gentil 4",
+            "stand_address": 1205,
+            "stand_plz": "Genf",
+            "stand_ort": "stroke_centers"
+        },
+        {
+            "lat": "46.9483192",
+            "lon": "7.4244133",
+            "institut": "Freiburgstrasse 16",
+            "stand_address": 3010,
+            "stand_plz": "Bern",
+            "stand_ort": "stroke_centers"
+        },
+        {
+            "lat": "46.525507950000005",
+            "lon": "6.642268736084432",
+            "institut": "Rue du Bugnon 46",
+            "stand_address": 1011,
+            "stand_plz": "Lausanne",
+            "stand_ort": "stroke_centers"
+        },
+        {
+            "lat": "46.0176565",
+            "lon": "8.9516753",
+            "institut": "Via Tesserete 46",
+            "stand_address": 6900,
+            "stand_plz": "Lugano",
+            "stand_ort": "stroke_centers"
+        },
+        {
+            "lat": "47.5609784",
+            "lon": "7.5852927",
+            "institut": "Petersgraben 4",
+            "stand_address": 4031,
+            "stand_plz": "Basel",
+            "stand_ort": "stroke_centers"
+        },
+        {
+            "lat": "47.3785149",
+            "lon": "8.5507443",
+            "institut": "Frauenklinikstrasse 26",
+            "stand_address": 8091,
+            "stand_plz": "Z\u00fcrich",
+            "stand_ort": "stroke_centers"
+        },
+        {
+            "lat": "47.3504048",
+            "lon": "8.5762714",
+            "institut": "Witellikerstrasse 40",
+            "stand_address": 8032,
+            "stand_plz": "Z\u00fcrich",
+            "stand_ort": "stroke_centers"
+        },
+        {
+            "lat": "47.0570829",
+            "lon": "8.2960559",
+            "institut": "Spitalstrasse 16",
+            "stand_address": 6000,
+            "stand_plz": "Luzern",
+            "stand_ort": "stroke_centers"
+        }
+    ]
+}
