@@ -30,5 +30,5 @@ data = {
     "data": stations
 }
 
-with open('daten/stroke_lu.json', 'w') as f:
+with open('daten/stroke_untis_lu.json', 'w') as f:
     json.dump(data, f, indent=4)
