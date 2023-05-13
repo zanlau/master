@@ -1,0 +1,85 @@
+{
+    "source": "H\u00e4ndische Erfassung mit Beizug der Literatur https://mediateursante.public.lu/de/soins-luxembourg/prestlux/hopitaux.html undhttps://www.editus.lu/de/karte?q=Notaufnahme&filters=5:7315;",
+    "data": [
+        {
+            "lat": "49.8537875",
+            "lon": "6.095651816560938",
+            "institut": "Centre Hospitalier du Nord",
+            "stand_address": "Avenue Lucien Salentiny 120",
+            "stand_plz": 9080,
+            "stand_ort": "Ettelbruck"
+        },
+        {
+            "lat": "49.965423400000006",
+            "lon": "5.934167937875373",
+            "institut": "Centre Hospitalier du Nord",
+            "stand_address": "Rue Grande-Duchesse Charlotte 10",
+            "stand_plz": 9515,
+            "stand_ort": "Wiltz"
+        },
+        {
+            "lat": "49.6316244",
+            "lon": "6.1351886",
+            "institut": "Centre Hospitalier de Luxembourg",
+            "stand_address": "Rue d'Eich 78",
+            "stand_plz": 1460,
+            "stand_ort": "Eich"
+        },
+        {
+            "lat": "49.6186998",
+            "lon": "6.0983254",
+            "institut": "Centre Hospitalier de Luxembourg",
+            "stand_address": "Rue Nicolas Ernest Barbl\u00e9 4",
+            "stand_plz": 1210,
+            "stand_ort": "Luxembourg"
+        },
+        {
+            "lat": "49.63221025",
+            "lon": "6.176657892592935",
+            "institut": "H\u00f4pitaux Robert Schuman",
+            "stand_address": "Rue Edward Steichen 9",
+            "stand_plz": 2540,
+            "stand_ort": "Luxemburg"
+        },
+        {
+            "lat": "49.6018055",
+            "lon": "6.1260324",
+            "institut": "H\u00f4pitaux Robert Schuman",
+            "stand_address": "Rue d'Anvers 20",
+            "stand_plz": 1130,
+            "stand_ort": "Luxembourg"
+        },
+        {
+            "lat": "49.5013773",
+            "lon": "5.9852162",
+            "institut": "H\u00f4pitaux Robert Schuman",
+            "stand_address": "Rue Wurth-Paquet 7",
+            "stand_plz": 4350,
+            "stand_ort": "Esch-sur-Alzette"
+        },
+        {
+            "lat": "49.5022569",
+            "lon": "5.9824216",
+            "institut": "Centre Hospitalier Emile Mayrisch",
+            "stand_address": "Rue Emile Mayrisch",
+            "stand_plz": 4240,
+            "stand_ort": "Esch-sur-Alzette"
+        },
+        {
+            "lat": "49.53285459999999",
+            "lon": "5.885937478013156",
+            "institut": "Centre Hospitalier Emile Mayrisch",
+            "stand_address": "Avenue de la Libert\u00e9 187",
+            "stand_plz": 4602,
+            "stand_ort": "Niederkorn"
+        },
+        {
+            "lat": "49.47054505",
+            "lon": "6.08900493326934",
+            "institut": "Centre Hospitalier Emile Mayrisch",
+            "stand_address": "Rue de l'H\u00f4pital 98",
+            "stand_plz": 3488,
+            "stand_ort": "Dudelange"
+        }
+    ]
+}
