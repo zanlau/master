@@ -2,268 +2,13 @@
     "source": "BFS - Bundesamt f\u00fcr Statistik",
     "data": [
         {
-            "lat": "47.3967933",
-            "lon": "9.5790683",
-            "institut": "Spitalregion Rheintal Werdenberg Sarganserland",
-            "stand_address": "Alte Landstrasse 106",
-            "stand_plz": 9445,
-            "stand_ort": "Rebstein"
-        },
-        {
-            "lat": "46.697107599999995",
-            "lon": "9.436874512815233",
-            "institut": "Spital Thusis",
-            "stand_address": "Alte Strasse 31",
-            "stand_plz": 7430,
-            "stand_ort": "Thusis"
-        },
-        {
-            "lat": "47.2503235",
-            "lon": "8.6970105",
-            "institut": "Spital M\u00e4nnedorf AG",
-            "stand_address": "Asylstrasse 10",
-            "stand_plz": 8708,
-            "stand_ort": "M\u00e4nnedorf"
-        },
-        {
-            "lat": "47.262713500000004",
-            "lon": "8.589476181923574",
-            "institut": "See-Spital",
-            "stand_address": "Asylstrasse 19",
-            "stand_plz": 8810,
-            "stand_ort": "Horgen"
-        },
-        {
-            "lat": "46.511882",
-            "lon": "6.630548170650359",
-            "institut": "Hirslanden Lausanne SA",
-            "stand_address": "Avenue d'Ouchy 31",
-            "stand_plz": 1006,
-            "stand_ort": "Lausanne"
-        },
-        {
-            "lat": "46.1912004",
-            "lon": "6.1499569",
-            "institut": "Clinique la Colline",
-            "stand_address": "Avenue de Beau-S\u00e9jour 6",
-            "stand_plz": 1206,
-            "stand_ort": "Gen\u00e8ve"
-        },
-        {
-            "lat": "46.818622000000005",
-            "lon": "6.946097710705013",
-            "institut": "H\u00f4pital Intercantonal de la Broye (HIB)",
-            "stand_address": "Avenue de la Colline 3",
-            "stand_plz": 1530,
-            "stand_ort": "Payerne"
-        },
-        {
-            "lat": "46.2347703",
-            "lon": "7.3877684",
-            "institut": "H\u00f4pital du Valais - Centre hospitalier du Valais Romand CHVR",
-            "stand_address": "Avenue du Grand-Champsec 80",
-            "stand_plz": 1950,
-            "stand_ort": "Sion"
-        },
-        {
-            "lat": "46.2293425",
-            "lon": "6.0672531",
-            "institut": "H\u00f4pital de la Tour",
-            "stand_address": "Avenue Jacob-Daniel Maillard 3",
-            "stand_plz": 1217,
-            "stand_ort": "Meyrin"
-        },
-        {
-            "lat": "47.4445539",
-            "lon": "9.141266549106994",
-            "institut": "Thurklinik AG",
-            "stand_address": "Bahnhofstrasse 123a",
-            "stand_plz": 9244,
-            "stand_ort": "Niederuzwil"
-        },
-        {
-            "lat": "47.282062350000004",
-            "lon": "7.374343285221076",
-            "institut": "H\u00f4pital de Moutier SA",
-            "stand_address": "Beausite 49",
-            "stand_plz": 2740,
-            "stand_ort": "Moutier"
-        },
-        {
-            "lat": "47.645751849999996",
-            "lon": "9.161863949296642",
-            "institut": "Klinik Seeschau AG",
-            "stand_address": "Bernrainstrasse 17",
-            "stand_plz": 8280,
-            "stand_ort": "Kreuzlingen"
-        },
-        {
-            "lat": "47.3664471",
-            "lon": "8.497290184035592",
-            "institut": "Stadtspital Triemli",
-            "stand_address": "Birmensdorferstrasse 497",
-            "stand_plz": 8063,
-            "stand_ort": "Z\u00fcrich"
-        },
-        {
-            "lat": "47.1333879",
-            "lon": "7.2638287",
-            "institut": "Hirslanden Klinik Linde AG",
-            "stand_address": "Blumenrain 105",
-            "stand_plz": 2503,
-            "stand_ort": "Biel"
-        },
-        {
-            "lat": "47.506859899999995",
-            "lon": "8.728524077691285",
-            "institut": "Kantonsspital Winterthur",
-            "stand_address": "Brauerstrasse 15",
-            "stand_plz": 8400,
-            "stand_ort": "Winterthur"
-        },
-        {
-            "lat": "47.4452048",
-            "lon": "9.4116324",
-            "institut": "Hirslanden Klinik Stephanshorn",
-            "stand_address": "Brauerstrasse 95",
-            "stand_plz": 9016,
-            "stand_ort": "St. Gallen"
-        },
-        {
-            "lat": "46.9589289",
-            "lon": "7.4278087",
-            "institut": "Lindenhofgruppe AG",
-            "stand_address": "Bremgartenstrasse 117",
-            "stand_plz": 3012,
-            "stand_ort": "Bern"
-        },
-        {
-            "lat": "46.89010145",
-            "lon": "8.245954888352859",
-            "institut": "Kantonsspital Obwalden",
-            "stand_address": "Br\u00fcnigstrasse 181",
-            "stand_plz": 6060,
-            "stand_ort": "Sarnen"
-        },
-        {
-            "lat": "47.352939",
-            "lon": "8.724005962777778",
-            "institut": "Spital Uster",
-            "stand_address": "Brunnenstrasse 42",
-            "stand_plz": 8610,
-            "stand_ort": "Uster"
-        },
-        {
-            "lat": "47.04511515",
-            "lon": "9.065485174131084",
-            "institut": "Kantonsspital Glarus",
-            "stand_address": "Burgstrasse 99",
-            "stand_plz": 8750,
-            "stand_ort": "Glarus"
-        },
-        {
-            "lat": "46.80191755",
-            "lon": "7.137948440709019",
-            "institut": "HFR - H\u00f4pital fribourgeois",
-            "stand_address": "Chemin des Pensionnats 2",
-            "stand_plz": 1708,
-            "stand_ort": "Fribourg"
-        },
-        {
-            "lat": "47.4197262",
-            "lon": "7.0588985",
-            "institut": "H\u00f4pital du Jura",
-            "stand_address": "Chemin de l'H\u00f4pital 9a",
-            "stand_plz": 2900,
-            "stand_ort": "Porrentruy"
-        },
-        {
-            "lat": "46.5221664",
-            "lon": "6.499792298524471",
-            "institut": "EHC Ensemble hospitalier de la C\u00f4te",
-            "stand_address": "Chemin du Cr\u00eat 2",
-            "stand_plz": 1110,
-            "stand_ort": "Morges"
-        },
-        {
-            "lat": "46.3831531",
-            "lon": "6.227391098710791",
-            "institut": "Groupement Hospitalier de l'Ouest L\u00e9manique (GHOL) SA",
-            "stand_address": "Chemin Monastier 10",
-            "stand_plz": 1260,
-            "stand_ort": "Nyon"
-        },
-        {
-            "lat": "46.95979525",
-            "lon": "8.35741871365245",
-            "institut": "Spital Nidwalden AG",
-            "stand_address": "Ennetmooserstrasse 19",
-            "stand_plz": 6370,
-            "stand_ort": "Stans"
-        },
-        {
-            "lat": "46.3366323",
-            "lon": "9.54242998471707",
-            "institut": "Centro Sanitario Bregaglia Reparto Acuto",
-            "stand_address": "Flin 5",
-            "stand_plz": 7606,
-            "stand_ort": "Promontogno"
-        },
-        {
-            "lat": "46.94726285",
-            "lon": "7.424695862081923",
-            "institut": "Inselspital Bern",
-            "stand_address": "Freiburgstrasse 18",
-            "stand_plz": 3010,
-            "stand_ort": "Bern"
-        },
-        {
-            "lat": "47.465417849999994",
-            "lon": "9.057414672773408",
-            "institut": "Spitalregion F\u00fcrstenland Toggenburg",
-            "stand_address": "F\u00fcrstenlandstrasse 32",
-            "stand_plz": 9500,
-            "stand_ort": "Wil"
-        },
-        {
-            "lat": "47.2233763",
-            "lon": "8.995004164934766",
-            "institut": "Spital Linth",
-            "stand_address": "Gasterstrasse 25",
-            "stand_plz": 8730,
-            "stand_ort": "Uznach"
-        },
-        {
-            "lat": "47.712240249999994",
-            "lon": "8.63605074739673",
-            "institut": "Spit\u00e4ler Schaffhausen",
-            "stand_address": "Geissbergstrasse 81",
-            "stand_plz": 8208,
-            "stand_ort": "Schaffhausen"
-        },
-        {
-            "lat": "47.5615014",
-            "lon": "7.57975",
-            "institut": "Universit\u00e4tsspital Basel",
-            "stand_address": "Hebelstrasse 32",
-            "stand_plz": 4031,
-            "stand_ort": "Basel"
-        },
-        {
-            "lat": "47.45470415",
-            "lon": "8.277970718196961",
-            "institut": "Kantonsspital Baden AG",
-            "stand_address": "Im Ergel 1",
-            "stand_plz": 5404,
-            "stand_ort": "Baden"
-        },
-        {
-            "lat": "47.5666028",
-            "lon": "7.6135138",
-            "institut": "St. Claraspital",
-            "stand_address": "Kleinriehenstrasse 30",
-            "stand_plz": 4058,
-            "stand_ort": "Basel"
+            "lat": "47.24591665",
+            "lon": "8.190400861828497",
+            "institut": "Asana Spital Menziken AG",
+            "stand_address": "Spitalstrasse 1",
+            "stand_plz": 5737,
+            "stand_ort": "Menziken",
+            "personal_bestand": 209.5
         },
         {
             "lat": "47.580670049999995",
@@ -271,55 +16,8 @@
             "institut": "Asana Spital Leuggern AG",
             "stand_address": "Kommendeweg 12",
             "stand_plz": 5316,
-            "stand_ort": "Leuggern"
-        },
-        {
-            "lat": "46.760955100000004",
-            "lon": "7.632613588581698",
-            "institut": "Spital STS AG",
-            "stand_address": "Krankenhausstrasse 12",
-            "stand_plz": 3600,
-            "stand_ort": "Thun"
-        },
-        {
-            "lat": "47.3866075",
-            "lon": "9.2650218",
-            "institut": "Spitalverbund Appenzell Ausserrhoden",
-            "stand_address": "Krombach 3",
-            "stand_plz": 9100,
-            "stand_ort": "Herisau"
-        },
-        {
-            "lat": "47.1939185",
-            "lon": "8.517938870819279",
-            "institut": "Zuger Kantonsspital AG",
-            "stand_address": "Landhausstrasse 11",
-            "stand_plz": 6340,
-            "stand_ort": "Baar"
-        },
-        {
-            "lat": "46.863714099999996",
-            "lon": "9.539677758428446",
-            "institut": "Kantonsspital Graub\u00fcnden",
-            "stand_address": "Loestrasse 170",
-            "stand_plz": 7000,
-            "stand_ort": "Chur"
-        },
-        {
-            "lat": "46.996919199999994",
-            "lon": "6.942923586966937",
-            "institut": "R\u00e9seau hospitalier neuch\u00e2telois RHNe",
-            "stand_address": "Maladi\u00e8re 45",
-            "stand_plz": 2000,
-            "stand_ort": "Neuch\u00e2tel"
-        },
-        {
-            "lat": "47.4882406",
-            "lon": "7.7323891",
-            "institut": "Kantonsspital Baselland",
-            "stand_address": "M\u00fchlemattstrasse 26",
-            "stand_plz": 4410,
-            "stand_ort": "Liestal"
+            "stand_ort": "Leuggern",
+            "personal_bestand": 236.55
         },
         {
             "lat": "47.29634455",
@@ -327,127 +25,8 @@
             "institut": "Spital Zofingen AG",
             "stand_address": "M\u00fchlethalstrasse 27",
             "stand_plz": 4800,
-            "stand_ort": "Zofingen"
-        },
-        {
-            "lat": "47.04831525",
-            "lon": "7.620769378759093",
-            "institut": "Regionalspital Emmental AG",
-            "stand_address": "Oberburgstrasse 54",
-            "stand_plz": 3400,
-            "stand_ort": "Burgdorf"
-        },
-        {
-            "lat": "47.1892212",
-            "lon": "8.8590024",
-            "institut": "Spital Lachen",
-            "stand_address": "Oberdorfstrasse 41",
-            "stand_plz": 8853,
-            "stand_ort": "Lachen"
-        },
-        {
-            "lat": "46.2878773",
-            "lon": "7.8836426",
-            "institut": "Spital Wallis - Spitalzentrum Oberwallis (SZO)",
-            "stand_address": "Pflanzettastrasse 8",
-            "stand_plz": 3930,
-            "stand_ort": "Visp"
-        },
-        {
-            "lat": "46.7889044",
-            "lon": "9.8148808",
-            "institut": "Spital Davos AG Akutabteilung",
-            "stand_address": "Promenade 4",
-            "stand_plz": 7270,
-            "stand_ort": "Davos Platz"
-        },
-        {
-            "lat": "47.37775445",
-            "lon": "8.551455174125543",
-            "institut": "Universit\u00e4tsspital Z\u00fcrich",
-            "stand_address": "R\u00e4mistrasse 100",
-            "stand_plz": 8091,
-            "stand_ort": "Z\u00fcrich"
-        },
-        {
-            "lat": "47.55611585",
-            "lon": "7.807021507134829",
-            "institut": "Gesundheitszentrum Fricktal",
-            "stand_address": "Riburgerstrasse 12",
-            "stand_plz": 4310,
-            "stand_ort": "Rheinfelden"
-        },
-        {
-            "lat": "47.1808969",
-            "lon": "8.4557873",
-            "institut": "Andreas Klinik",
-            "stand_address": "Rigistrasse 1",
-            "stand_plz": 6330,
-            "stand_ort": "Cham"
-        },
-        {
-            "lat": "47.430687199999994",
-            "lon": "9.387328766821327",
-            "institut": "Kantonsspital St. Gallen",
-            "stand_address": "Rorschacher Strasse 95",
-            "stand_plz": 9007,
-            "stand_ort": "St. Gallen"
-        },
-        {
-            "lat": "46.47809925",
-            "lon": "7.140711963670858",
-            "institut": "P\u00f4le sant\u00e9 du Pays-d'Enhaut",
-            "stand_address": "Route de l'H\u00f4pital 17",
-            "stand_plz": 1660,
-            "stand_ort": "Ch\u00e2teau-d'Oex"
-        },
-        {
-            "lat": "46.37971385",
-            "lon": "6.920910929804574",
-            "institut": "H\u00f4pital Riviera-Chablais Vaud-Valais",
-            "stand_address": "Route du Vieux S\u00e9quoia 20",
-            "stand_plz": 1847,
-            "stand_ort": "Rennaz"
-        },
-        {
-            "lat": "46.77136015000001",
-            "lon": "6.646299105377675",
-            "institut": "Etablissements Hospitaliers du Nord Vaudois (eHnv)",
-            "stand_address": "Rue d'Entremonts 11",
-            "stand_plz": 1400,
-            "stand_ort": "Yverdon-les-Bains"
-        },
-        {
-            "lat": "46.602193",
-            "lon": "6.222322",
-            "institut": "P\u00f4le sant\u00e9 Vall\u00e9e de Joux - H\u00f4pital de la Vall\u00e9e de Joux",
-            "stand_address": "Rue de l'H\u00f4pital 3",
-            "stand_plz": 1347,
-            "stand_ort": "Le Sentier"
-        },
-        {
-            "lat": "46.8200829",
-            "lon": "6.4958262",
-            "institut": "R\u00e9seau Sant\u00e9 Balcon du Jura.vd (RSBJ)",
-            "stand_address": "Rue des Rosiers 29",
-            "stand_plz": 1450,
-            "stand_ort": "Ste-Croix"
-        },
-        {
-            "lat": "46.524954750000006",
-            "lon": "6.640620278244347",
-            "institut": "CHUV Centre Hospitalier Universitaire Vaudois",
-            "stand_address": "Rue du Bugnon 21",
-            "stand_plz": 1011,
-            "stand_ort": "Lausanne"
-        },
-        {
-            "lat": "46.192006750000004",
-            "lon": "6.147949875776305",
-            "institut": "Les H\u00f4pitaux Universitaires de Gen\u00e8ve HUG",
-            "stand_address": "Rue Gabrielle-Perret-Gentil 4",
-            "stand_plz": 1205,
-            "stand_ort": "Gen\u00e8ve"
+            "stand_ort": "Zofingen",
+            "personal_bestand": 563.13
         },
         {
             "lat": "47.3911754",
@@ -455,71 +34,8 @@
             "institut": "Hirslanden Klinik Aarau",
             "stand_address": "Sch\u00e4nisweg 1",
             "stand_plz": 5000,
-            "stand_ort": "Aarau"
-        },
-        {
-            "lat": "46.95258185",
-            "lon": "7.448750813068182",
-            "institut": "Hirslanden Bern AG",
-            "stand_address": "Sch\u00e4nzlihalde 11",
-            "stand_plz": 3013,
-            "stand_ort": "Bern"
-        },
-        {
-            "lat": "47.20024735",
-            "lon": "7.53811005",
-            "institut": "Solothurner Spit\u00e4ler AG",
-            "stand_address": "Sch\u00f6ngr\u00fcnstrasse 36a",
-            "stand_plz": 4500,
-            "stand_ort": "Solothurn"
-        },
-        {
-            "lat": "46.60656735",
-            "lon": "10.432665391570701",
-            "institut": "Center da Sanda Val M\u00fcstair Akutabteilung",
-            "stand_address": "Sielva 122",
-            "stand_plz": 7536,
-            "stand_ort": "Santa Maria Val M\u00fcstair"
-        },
-        {
-            "lat": "47.2848704",
-            "lon": "8.456604196325719",
-            "institut": "Spital Affoltern AG",
-            "stand_address": "Sonnenbergstrasse 27",
-            "stand_plz": 8910,
-            "stand_ort": "Affoltern am Albis"
-        },
-        {
-            "lat": "47.3340747",
-            "lon": "9.4162836",
-            "institut": "Kantonales Spital Appenzell",
-            "stand_address": "Sonnhalde 2",
-            "stand_plz": 9050,
-            "stand_ort": "Appenzell"
-        },
-        {
-            "lat": "47.0592433",
-            "lon": "8.3017968",
-            "institut": "LUKS Spitalbetriebe AG",
-            "stand_address": "Spitalstrasse",
-            "stand_plz": 6004,
-            "stand_ort": "Luzern"
-        },
-        {
-            "lat": "47.24591665",
-            "lon": "8.190400861828497",
-            "institut": "Asana Spital Menziken AG",
-            "stand_address": "Spitalstrasse 1",
-            "stand_plz": 5737,
-            "stand_ort": "Menziken"
-        },
-        {
-            "lat": "46.8824438",
-            "lon": "8.63784614872173",
-            "institut": "Kantonsspital Uri",
-            "stand_address": "Spitalstrasse 1",
-            "stand_plz": 6460,
-            "stand_ort": "Altdorf"
+            "stand_ort": "Aarau",
+            "personal_bestand": 639.46
         },
         {
             "lat": "47.27781555",
@@ -527,63 +43,26 @@
             "institut": "Stiftung Spital Muri",
             "stand_address": "Spitalstrasse 144",
             "stand_plz": 5630,
-            "stand_ort": "Muri"
+            "stand_ort": "Muri",
+            "personal_bestand": 643
         },
         {
-            "lat": "47.52125945",
-            "lon": "8.533739151526774",
-            "institut": "Spital B\u00fclach AG",
-            "stand_address": "Spitalstrasse 24",
-            "stand_plz": 8180,
-            "stand_ort": "B\u00fclach"
+            "lat": "47.55611585",
+            "lon": "7.807021507134829",
+            "institut": "Gesundheitszentrum Fricktal",
+            "stand_address": "Riburgerstrasse 12",
+            "stand_plz": 4310,
+            "stand_ort": "Rheinfelden",
+            "personal_bestand": 686.34
         },
         {
-            "lat": "47.1304685",
-            "lon": "8.7390454",
-            "institut": "AMEOS Spital Einsiedeln AG",
-            "stand_address": "Spitalstrasse 28",
-            "stand_plz": 8840,
-            "stand_ort": "Einsiedeln"
-        },
-        {
-            "lat": "46.7768388",
-            "lon": "9.2057949",
-            "institut": "Regionalspital Surselva AG",
-            "stand_address": "Spitalstrasse 6",
-            "stand_plz": 7130,
-            "stand_ort": "Ilanz"
-        },
-        {
-            "lat": "47.3221938",
-            "lon": "8.8009724",
-            "institut": "GZO Spital Wetzikon",
-            "stand_address": "Spitalstrasse 66",
-            "stand_plz": 8620,
-            "stand_ort": "Wetzikon"
-        },
-        {
-            "lat": "47.058188",
-            "lon": "8.325621016458957",
-            "institut": "Hirslanden Klinik St. Anna AG",
-            "stand_address": "St. Anna\u00adStrasse 32",
-            "stand_plz": 6006,
-            "stand_ort": "Luzern"
-        },
-        {
-            "lat": "47.2157713",
-            "lon": "7.793523777362488",
-            "institut": "SRO AG",
-            "stand_address": "St. Urbanstrasse 67",
-            "stand_plz": 4900,
-            "stand_ort": "Langenthal"
-        },
-        {
-            "lat": "46.59522185",
-            "lon": "9.600592999999993",
-            "institut": "Center da Sanadad Savognin SA",
-            "stand_address": "Stradung 52",
-            "stand_plz": 7460,
-            "stand_ort": "Savognin"
+            "lat": "47.45470415",
+            "lon": "8.277970718196961",
+            "institut": "Kantonsspital Baden AG",
+            "stand_address": "Im Ergel 1",
+            "stand_plz": 5404,
+            "stand_ort": "Baden",
+            "personal_bestand": 2342.09
         },
         {
             "lat": "47.38837665",
@@ -591,127 +70,35 @@
             "institut": "Kantonsspital Aarau AG",
             "stand_address": "Tellstrasse 25",
             "stand_plz": 5000,
-            "stand_ort": "Aarau"
+            "stand_ort": "Aarau",
+            "personal_bestand": 3775.4
         },
         {
-            "lat": "46.9709255",
-            "lon": "9.686109511277941",
-            "institut": "Flury Stiftung Spital Schiers",
-            "stand_address": "Tersierstrasse 7",
-            "stand_plz": 7220,
-            "stand_ort": "Schiers"
+            "lat": "47.3340747",
+            "lon": "9.4162836",
+            "institut": "Kantonales Spital Appenzell",
+            "stand_address": "Sonnhalde 2",
+            "stand_plz": 9050,
+            "stand_ort": "Appenzell",
+            "personal_bestand": 59.85
         },
         {
-            "lat": "47.39840615",
-            "lon": "8.520246486538461",
-            "institut": "Stadtspital Waid",
-            "stand_address": "Ti\u00e8chestrasse 99",
-            "stand_plz": 8037,
-            "stand_ort": "Z\u00fcrich"
+            "lat": "47.3866075",
+            "lon": "9.2650218",
+            "institut": "Spitalverbund Appenzell Ausserrhoden",
+            "stand_address": "Krombach 3",
+            "stand_plz": 9100,
+            "stand_ort": "Herisau",
+            "personal_bestand": 624.09
         },
         {
-            "lat": "47.3487142",
-            "lon": "8.598455194659852",
-            "institut": "Spital Zollikerberg",
-            "stand_address": "Trichtenhauserstrasse 20",
-            "stand_plz": 8125,
-            "stand_ort": "Zollikerberg"
-        },
-        {
-            "lat": "47.39356545",
-            "lon": "8.430542580571107",
-            "institut": "Spital Limmattal",
-            "stand_address": "Urdorferstrasse 100",
-            "stand_plz": 8952,
-            "stand_ort": "Schlieren"
-        },
-        {
-            "lat": "46.496527650000004",
-            "lon": "9.838331005811192",
-            "institut": "Klinik Gut St. Moritz AG",
-            "stand_address": "Via Arona 34",
-            "stand_plz": 7500,
-            "stand_ort": "St. Moritz"
-        },
-        {
-            "lat": "46.799902",
-            "lon": "10.303854363309597",
-            "institut": "Center da Sanda Engiadina Bassa Ospidal d'Engiadina Bassa",
-            "stand_address": "Via da l'Ospidal 280",
-            "stand_plz": 7550,
-            "stand_ort": "Scuol"
-        },
-        {
-            "lat": "46.322649299999995",
-            "lon": "10.0620316765029",
-            "institut": "Centro Sanitario Valposchiavo Ospedale San Sisto",
-            "stand_address": "Via da li Cl\u00fcs\u00fcri 1",
-            "stand_plz": 7742,
-            "stand_ort": "Poschiavo"
-        },
-        {
-            "lat": "46.005106549999994",
-            "lon": "8.940416245368949",
-            "institut": "Clinica Luganese Moncucco SA",
-            "stand_address": "Via Moncucco 10",
-            "stand_plz": 6900,
-            "stand_ort": "Lugano"
-        },
-        {
-            "lat": "46.5400228",
-            "lon": "9.8786352",
-            "institut": "Spital Oberengadin",
-            "stand_address": "Via Nouva 3",
-            "stand_plz": 7503,
-            "stand_ort": "Samedan"
-        },
-        {
-            "lat": "46.198488",
-            "lon": "9.029333",
-            "institut": "EOC Ente ospedaliero cantonale",
-            "stand_address": "Viale Officina 3",
-            "stand_plz": 6500,
-            "stand_ort": "Bellinzona"
-        },
-        {
-            "lat": "47.14643975",
-            "lon": "7.245180350694886",
-            "institut": "Spitalzentrum Biel AG",
-            "stand_address": "Vogelsang 84",
-            "stand_plz": 2502,
-            "stand_ort": "Biel"
-        },
-        {
-            "lat": "47.015657250000004",
-            "lon": "8.659566522808275",
-            "institut": "Spital Schwyz",
-            "stand_address": "Waldeggstrasse 10",
-            "stand_plz": 6430,
-            "stand_ort": "Schwyz"
-        },
-        {
-            "lat": "47.5497687",
-            "lon": "8.9117667",
-            "institut": "Spital Thurgau AG Kantonsspit\u00e4ler Frauenfeld & M\u00fcnsterlingen",
-            "stand_address": "Waldeggstrasse 8a",
-            "stand_plz": 8501,
-            "stand_ort": "Frauenfeld"
-        },
-        {
-            "lat": "46.680328450000005",
-            "lon": "7.842890993670142",
-            "institut": "Spit\u00e4ler Frutigen Meiringen Interlaken AG",
-            "stand_address": "Weissenaustrasse 27",
-            "stand_plz": 3800,
-            "stand_ort": "Unterseen"
-        },
-        {
-            "lat": "47.3504048",
-            "lon": "8.5762714",
-            "institut": "Klinik Hirslanden AG",
-            "stand_address": "Witellikerstrasse 40",
-            "stand_plz": 8008,
-            "stand_ort": "Z\u00fcrich"
+            "lat": "47.282062350000004",
+            "lon": "7.374343285221076",
+            "institut": "H\u00f4pital de Moutier SA",
+            "stand_address": "Beausite 49",
+            "stand_plz": 2740,
+            "stand_ort": "Moutier",
+            "personal_bestand": 251.47
         },
         {
             "lat": "46.931987199999995",
@@ -719,207 +106,710 @@
             "institut": "Siloah AG",
             "stand_address": "Worbstrasse 316",
             "stand_plz": 3073,
-            "stand_ort": "G\u00fcmligen"
+            "stand_ort": "G\u00fcmligen",
+            "personal_bestand": 373.17
         },
         {
-            "lat": "46.5842547",
-            "lon": "7.6422775",
-            "institut": "Spit\u00e4ler fmi AG, Frutigen",
-            "stand_address": "Adelbodenstrasse 27",
-            "stand_plz": 3714,
-            "stand_ort": "Frutigen"
+            "lat": "47.1333879",
+            "lon": "7.2638287",
+            "institut": "Hirslanden Klinik Linde AG",
+            "stand_address": "Blumenrain 105",
+            "stand_plz": 2503,
+            "stand_ort": "Biel",
+            "personal_bestand": 391.14
         },
         {
-            "lat": "46.2347703",
-            "lon": "7.3877684",
-            "institut": "Spital Wallis - Spitalzentrum Oberwallis (SZO) Sitten",
-            "stand_address": "Avenue Grand-Champsec 80",
-            "stand_plz": 1951,
-            "stand_ort": "Sitten"
+            "lat": "47.2157713",
+            "lon": "7.793523777362488",
+            "institut": "SRO AG",
+            "stand_address": "St. Urbanstrasse 67",
+            "stand_plz": 4900,
+            "stand_ort": "Langenthal",
+            "personal_bestand": 847.86
         },
         {
-            "lat": "46.527334499999995",
-            "lon": "6.627899109027791",
-            "institut": "Clinique de La Source",
-            "stand_address": "Avenue Vinet 30",
-            "stand_plz": 1004,
-            "stand_ort": "Lausanne"
+            "lat": "46.680328450000005",
+            "lon": "7.842890993670142",
+            "institut": "Spit\u00e4ler Frutigen Meiringen Interlaken AG",
+            "stand_address": "Weissenaustrasse 27",
+            "stand_plz": 3800,
+            "stand_ort": "Unterseen",
+            "personal_bestand": 893.2
         },
         {
-            "lat": "46.9427418",
-            "lon": "7.47447504492612",
-            "institut": "Klinik Sonnenhof AG",
-            "stand_address": "Buchserstrasse 30",
-            "stand_plz": 3006,
-            "stand_ort": "Bern"
+            "lat": "47.04831525",
+            "lon": "7.620769378759093",
+            "institut": "Regionalspital Emmental AG",
+            "stand_address": "Oberburgstrasse 54",
+            "stand_plz": 3400,
+            "stand_ort": "Burgdorf",
+            "personal_bestand": 1059.31
         },
         {
-            "lat": "46.94461005",
-            "lon": "7.392244474125923",
-            "institut": "Klinik Permanence",
-            "stand_address": "B\u00fcmplizstrasse 83",
-            "stand_plz": 3018,
-            "stand_ort": "Bern"
+            "lat": "46.95258185",
+            "lon": "7.448750813068182",
+            "institut": "Hirslanden Bern AG",
+            "stand_address": "Sch\u00e4nzlihalde 11",
+            "stand_plz": 3013,
+            "stand_ort": "Bern",
+            "personal_bestand": 1134.2
         },
         {
-            "lat": "46.1998578",
-            "lon": "6.1819624",
-            "institut": "Clinique des Grangettes SA",
-            "stand_address": "Chemin des Grangettes 7",
-            "stand_plz": 1224,
-            "stand_ort": "Ch\u00eane-Bougeries"
+            "lat": "46.94726285",
+            "lon": "7.424695862081923",
+            "institut": "Inselspital Bern",
+            "stand_address": "Freiburgstrasse 18",
+            "stand_plz": 3010,
+            "stand_ort": "Bern",
+            "personal_bestand": 1324.78
         },
         {
-            "lat": "46.943341700000005",
-            "lon": "7.78659391254826",
-            "institut": "RSE AG, Langnau",
-            "stand_address": "Dorfbergstrasse 10",
-            "stand_plz": 3550,
-            "stand_ort": "Langnau im Emmental"
+            "lat": "47.14643975",
+            "lon": "7.245180350694886",
+            "institut": "Spitalzentrum Biel AG",
+            "stand_address": "Vogelsang 84",
+            "stand_plz": 2502,
+            "stand_ort": "Biel",
+            "personal_bestand": 1358.95
         },
         {
-            "lat": "46.8137435",
-            "lon": "7.478213630674681",
-            "institut": "Insel Gruppe AG Riggisberg",
-            "stand_address": "Eyweg 2",
-            "stand_plz": 3132,
-            "stand_ort": "Riggisberg"
+            "lat": "46.760955100000004",
+            "lon": "7.632613588581698",
+            "institut": "Spital STS AG",
+            "stand_address": "Krankenhausstrasse 12",
+            "stand_plz": 3600,
+            "stand_ort": "Thun",
+            "personal_bestand": 1608.04
         },
         {
-            "lat": "47.3688966",
-            "lon": "7.3384441",
-            "institut": "H\u00f4pital du Jura SA",
-            "stand_address": "Faubourg des Capucins 30",
-            "stand_plz": 2800,
-            "stand_ort": "Del\u00e9mont"
+            "lat": "46.9589289",
+            "lon": "7.4278087",
+            "institut": "Lindenhofgruppe AG",
+            "stand_address": "Bremgartenstrasse 117",
+            "stand_plz": 3012,
+            "stand_ort": "Bern",
+            "personal_bestand": 1776.07
         },
         {
-            "lat": "47.5482765",
-            "lon": "7.6168217",
-            "institut": "USB Gellertstrasse",
-            "stand_address": "Gellertstrasse 144",
-            "stand_plz": 4052,
-            "stand_ort": "Basel"
-        },
-        {
-            "lat": "47.52791945",
-            "lon": "7.581820363332692",
-            "institut": "Kantonsspital Bruderholz",
-            "stand_address": "Gemeindeholzweg",
-            "stand_plz": 4101,
-            "stand_ort": "Bruderholz"
-        },
-        {
-            "lat": "47.446422600000005",
-            "lon": "9.52694528015818",
-            "institut": "Hirslanden Klinik am Rosenberg",
-            "stand_address": "Hasenb\u00fchlstrasse 11",
-            "stand_plz": 9410,
-            "stand_ort": "Heiden"
-        },
-        {
-            "lat": "47.0500473",
-            "lon": "8.3802642",
-            "institut": "Hirslanden Klinik St. Anna AG Hirslanden Klinik Meggen",
-            "stand_address": "Huobmattstrasse 9",
-            "stand_plz": 6045,
-            "stand_ort": "Meggen"
-        },
-        {
-            "lat": "46.5579105",
-            "lon": "7.3731042",
-            "institut": "STS AG, Zweisimmen",
-            "stand_address": "Karl Haueter-Strasse 21",
-            "stand_plz": 3770,
-            "stand_ort": "Zweisimmen"
-        },
-        {
-            "lat": "46.8719431",
-            "lon": "7.5681451",
-            "institut": "Insel Gruppe AG M\u00fcnsingen",
-            "stand_address": "Krankenhausweg 18",
-            "stand_plz": 3110,
-            "stand_ort": "M\u00fcnsingen"
-        },
-        {
-            "lat": "47.0480795",
-            "lon": "7.279773606647131",
-            "institut": "Insel Gruppe AG Aarberg",
-            "stand_address": "Lyss-Strasse 31",
-            "stand_plz": 3270,
-            "stand_ort": "Aarberg"
-        },
-        {
-            "lat": "47.493906249999995",
-            "lon": "7.614607745131486",
-            "institut": "Klinik Arlesheim AG",
-            "stand_address": "Pfeffingerweg 1",
-            "stand_plz": 4144,
-            "stand_ort": "Arlesheim"
-        },
-        {
-            "lat": "47.52788805",
-            "lon": "7.605017759011293",
-            "institut": "Hirslanden Klinik Birshof",
-            "stand_address": "Reinacherstrasse 28",
-            "stand_plz": 4142,
-            "stand_ort": "M\u00fcnchenstein"
-        },
-        {
-            "lat": "47.4884053",
-            "lon": "7.731815",
-            "institut": "Kantonsspital Liestal",
-            "stand_address": "Rheinstrasse 26",
+            "lat": "47.4882406",
+            "lon": "7.7323891",
+            "institut": "Kantonsspital Baselland",
+            "stand_address": "M\u00fchlemattstrasse 26",
             "stand_plz": 4410,
-            "stand_ort": "Liestal"
+            "stand_ort": "Liestal",
+            "personal_bestand": 2552.37
         },
         {
-            "lat": "46.80092175",
-            "lon": "7.140799252541637",
-            "institut": "H\u00f4pital Jules Daler",
-            "stand_address": "Route de Bertigny 34",
-            "stand_plz": 1700,
-            "stand_ort": "Fribourg"
+            "lat": "47.5666028",
+            "lon": "7.6135138",
+            "institut": "St. Claraspital",
+            "stand_address": "Kleinriehenstrasse 30",
+            "stand_plz": 4058,
+            "stand_ort": "Basel",
+            "personal_bestand": 796.41
         },
         {
-            "lat": "46.2565621",
-            "lon": "6.944199150000001",
-            "institut": "H\u00f4pital du Valais - Centre hospitalier du Chablais (CHC)",
-            "stand_address": "Route de Morgins 10",
-            "stand_plz": 1870,
-            "stand_ort": "Monthey"
+            "lat": "47.5615014",
+            "lon": "7.57975",
+            "institut": "Universit\u00e4tsspital Basel",
+            "stand_address": "Hebelstrasse 32",
+            "stand_plz": 4031,
+            "stand_ort": "Basel",
+            "personal_bestand": 5469.64
         },
         {
-            "lat": "47.1136975",
-            "lon": "6.832974724999998",
-            "institut": "H\u00f4pital neuch\u00e2telois, La-Chaux-de-Fonds",
-            "stand_address": "Rue de Chasseral 20",
-            "stand_plz": 2300,
-            "stand_ort": "La Chaux-de-Fonds"
+            "lat": "46.80191755",
+            "lon": "7.137948440709019",
+            "institut": "HFR - H\u00f4pital fribourgeois",
+            "stand_address": "Chemin des Pensionnats 2",
+            "stand_plz": 1708,
+            "stand_ort": "Fribourg",
+            "personal_bestand": 2889.83
+        },
+        {
+            "lat": "46.1912004",
+            "lon": "6.1499569",
+            "institut": "Clinique la Colline",
+            "stand_address": "Avenue de Beau-S\u00e9jour 6",
+            "stand_plz": 1206,
+            "stand_ort": "Gen\u00e8ve",
+            "personal_bestand": 251.7
+        },
+        {
+            "lat": "46.2293425",
+            "lon": "6.0672531",
+            "institut": "H\u00f4pital de la Tour",
+            "stand_address": "Avenue Jacob-Daniel Maillard 3",
+            "stand_plz": 1217,
+            "stand_ort": "Meyrin",
+            "personal_bestand": 913.95
+        },
+        {
+            "lat": "46.192006750000004",
+            "lon": "6.147949875776305",
+            "institut": "Les H\u00f4pitaux Universitaires de Gen\u00e8ve HUG",
+            "stand_address": "Rue Gabrielle-Perret-Gentil 4",
+            "stand_plz": 1205,
+            "stand_ort": "Gen\u00e8ve",
+            "personal_bestand": 12101.94
+        },
+        {
+            "lat": "47.04511515",
+            "lon": "9.065485174131084",
+            "institut": "Kantonsspital Glarus",
+            "stand_address": "Burgstrasse 99",
+            "stand_plz": 8750,
+            "stand_ort": "Glarus",
+            "personal_bestand": 536.87
+        },
+        {
+            "lat": "46.60656735",
+            "lon": "10.432665391570701",
+            "institut": "Center da Sanda Val M\u00fcstair Akutabteilung",
+            "stand_address": "Sielva 122",
+            "stand_plz": 7536,
+            "stand_ort": "Santa Maria Val M\u00fcstair",
+            "personal_bestand": 21.71
+        },
+        {
+            "lat": "46.59522185",
+            "lon": "9.600592999999993",
+            "institut": "Center da Sanadad Savognin SA",
+            "stand_address": "Stradung 52",
+            "stand_plz": 7460,
+            "stand_ort": "Savognin",
+            "personal_bestand": 43.39
+        },
+        {
+            "lat": "46.322649299999995",
+            "lon": "10.0620316765029",
+            "institut": "Centro Sanitario Valposchiavo Ospedale San Sisto",
+            "stand_address": "Via da li Cl\u00fcs\u00fcri 1",
+            "stand_plz": 7742,
+            "stand_ort": "Poschiavo",
+            "personal_bestand": 43.55
+        },
+        {
+            "lat": "46.3366323",
+            "lon": "9.54242998471707",
+            "institut": "Centro Sanitario Bregaglia Reparto Acuto",
+            "stand_address": "Flin 5",
+            "stand_plz": 7606,
+            "stand_ort": "Promontogno",
+            "personal_bestand": 52.02
+        },
+        {
+            "lat": "46.799902",
+            "lon": "10.303854363309597",
+            "institut": "Center da Sanda Engiadina Bassa Ospidal d'Engiadina Bassa",
+            "stand_address": "Via da l'Ospidal 280",
+            "stand_plz": 7550,
+            "stand_ort": "Scuol",
+            "personal_bestand": 139.36
+        },
+        {
+            "lat": "46.697107599999995",
+            "lon": "9.436874512815233",
+            "institut": "Spital Thusis",
+            "stand_address": "Alte Strasse 31",
+            "stand_plz": 7430,
+            "stand_ort": "Thusis",
+            "personal_bestand": 173.87
+        },
+        {
+            "lat": "46.496527650000004",
+            "lon": "9.838331005811192",
+            "institut": "Klinik Gut St. Moritz AG",
+            "stand_address": "Via Arona 34",
+            "stand_plz": 7500,
+            "stand_ort": "St. Moritz",
+            "personal_bestand": 182.13
+        },
+        {
+            "lat": "46.9709255",
+            "lon": "9.686109511277941",
+            "institut": "Flury Stiftung Spital Schiers",
+            "stand_address": "Tersierstrasse 7",
+            "stand_plz": 7220,
+            "stand_ort": "Schiers",
+            "personal_bestand": 187.85
+        },
+        {
+            "lat": "46.7768388",
+            "lon": "9.2057949",
+            "institut": "Regionalspital Surselva AG",
+            "stand_address": "Spitalstrasse 6",
+            "stand_plz": 7130,
+            "stand_ort": "Ilanz",
+            "personal_bestand": 209.11
+        },
+        {
+            "lat": "46.7889044",
+            "lon": "9.8148808",
+            "institut": "Spital Davos AG Akutabteilung",
+            "stand_address": "Promenade 4",
+            "stand_plz": 7270,
+            "stand_ort": "Davos Platz",
+            "personal_bestand": 228.65
+        },
+        {
+            "lat": "46.5400228",
+            "lon": "9.8786352",
+            "institut": "Spital Oberengadin",
+            "stand_address": "Via Nouva 3",
+            "stand_plz": 7503,
+            "stand_ort": "Samedan",
+            "personal_bestand": 274.35
+        },
+        {
+            "lat": "46.863714099999996",
+            "lon": "9.539677758428446",
+            "institut": "Kantonsspital Graub\u00fcnden",
+            "stand_address": "Loestrasse 170",
+            "stand_plz": 7000,
+            "stand_ort": "Chur",
+            "personal_bestand": 2003.24
+        },
+        {
+            "lat": "47.4197262",
+            "lon": "7.0588985",
+            "institut": "H\u00f4pital du Jura",
+            "stand_address": "Chemin de l'H\u00f4pital 9a",
+            "stand_plz": 2900,
+            "stand_ort": "Porrentruy",
+            "personal_bestand": 1329.79
+        },
+        {
+            "lat": "47.058188",
+            "lon": "8.325621016458957",
+            "institut": "Hirslanden Klinik St. Anna AG",
+            "stand_address": "St. Anna\u00adStrasse 32",
+            "stand_plz": 6006,
+            "stand_ort": "Luzern",
+            "personal_bestand": 1036.96
+        },
+        {
+            "lat": "47.0592433",
+            "lon": "8.3017968",
+            "institut": "LUKS Spitalbetriebe AG",
+            "stand_address": "Spitalstrasse",
+            "stand_plz": 6004,
+            "stand_ort": "Luzern",
+            "personal_bestand": 5623.33
         },
         {
             "lat": "46.996919199999994",
             "lon": "6.942923586966937",
-            "institut": "H\u00f4pital neuch\u00e2telois, Pourtal\u00e8s",
-            "stand_address": "Rue de la Maladi\u00e8re 45",
+            "institut": "R\u00e9seau hospitalier neuch\u00e2telois RHNe",
+            "stand_address": "Maladi\u00e8re 45",
             "stand_plz": 2000,
-            "stand_ort": "Neuch\u00e2tel"
+            "stand_ort": "Neuch\u00e2tel",
+            "personal_bestand": 2422.63
         },
         {
-            "lat": "46.95209065",
-            "lon": "7.45402605348343",
-            "institut": "Salem\u00adSpital",
-            "stand_address": "Sch\u00e4nzlistrasse 39",
-            "stand_plz": 3013,
-            "stand_ort": "Bern"
+            "lat": "46.95979525",
+            "lon": "8.35741871365245",
+            "institut": "Spital Nidwalden AG",
+            "stand_address": "Ennetmooserstrasse 19",
+            "stand_plz": 6370,
+            "stand_ort": "Stans",
+            "personal_bestand": 462.67
         },
         {
-            "lat": "47.3525221",
-            "lon": "8.5316609",
-            "institut": "Klinik Im Park",
-            "stand_address": "Seestrasse 220",
-            "stand_plz": 8002,
-            "stand_ort": "Z\u00fcrich"
+            "lat": "46.89010145",
+            "lon": "8.245954888352859",
+            "institut": "Kantonsspital Obwalden",
+            "stand_address": "Br\u00fcnigstrasse 181",
+            "stand_plz": 6060,
+            "stand_ort": "Sarnen",
+            "personal_bestand": 360.8
+        },
+        {
+            "lat": "47.4445539",
+            "lon": "9.141266549106994",
+            "institut": "Thurklinik AG",
+            "stand_address": "Bahnhofstrasse 123a",
+            "stand_plz": 9244,
+            "stand_ort": "Niederuzwil",
+            "personal_bestand": 21.09
+        },
+        {
+            "lat": "47.2233763",
+            "lon": "8.995004164934766",
+            "institut": "Spital Linth",
+            "stand_address": "Gasterstrasse 25",
+            "stand_plz": 8730,
+            "stand_ort": "Uznach",
+            "personal_bestand": 420.08
+        },
+        {
+            "lat": "47.4452048",
+            "lon": "9.4116324",
+            "institut": "Hirslanden Klinik Stephanshorn",
+            "stand_address": "Brauerstrasse 95",
+            "stand_plz": 9016,
+            "stand_ort": "St. Gallen",
+            "personal_bestand": 477.84
+        },
+        {
+            "lat": "47.465417849999994",
+            "lon": "9.057414672773408",
+            "institut": "Spitalregion F\u00fcrstenland Toggenburg",
+            "stand_address": "F\u00fcrstenlandstrasse 32",
+            "stand_plz": 9500,
+            "stand_ort": "Wil",
+            "personal_bestand": 585.73
+        },
+        {
+            "lat": "47.3967933",
+            "lon": "9.5790683",
+            "institut": "Spitalregion Rheintal Werdenberg Sarganserland",
+            "stand_address": "Alte Landstrasse 106",
+            "stand_plz": 9445,
+            "stand_ort": "Rebstein",
+            "personal_bestand": 1189.81
+        },
+        {
+            "lat": "47.430687199999994",
+            "lon": "9.387328766821327",
+            "institut": "Kantonsspital St. Gallen",
+            "stand_address": "Rorschacher Strasse 95",
+            "stand_plz": 9007,
+            "stand_ort": "St. Gallen",
+            "personal_bestand": 4939.79
+        },
+        {
+            "lat": "47.712240249999994",
+            "lon": "8.63605074739673",
+            "institut": "Spit\u00e4ler Schaffhausen",
+            "stand_address": "Geissbergstrasse 81",
+            "stand_plz": 8208,
+            "stand_ort": "Schaffhausen",
+            "personal_bestand": 1039.54
+        },
+        {
+            "lat": "47.20024735",
+            "lon": "7.53811005",
+            "institut": "Solothurner Spit\u00e4ler AG",
+            "stand_address": "Sch\u00f6ngr\u00fcnstrasse 36a",
+            "stand_plz": 4500,
+            "stand_ort": "Solothurn",
+            "personal_bestand": 2985.29
+        },
+        {
+            "lat": "47.1304685",
+            "lon": "8.7390454",
+            "institut": "AMEOS Spital Einsiedeln AG",
+            "stand_address": "Spitalstrasse 28",
+            "stand_plz": 8840,
+            "stand_ort": "Einsiedeln",
+            "personal_bestand": 242.89
+        },
+        {
+            "lat": "47.015657250000004",
+            "lon": "8.659566522808275",
+            "institut": "Spital Schwyz",
+            "stand_address": "Waldeggstrasse 10",
+            "stand_plz": 6430,
+            "stand_ort": "Schwyz",
+            "personal_bestand": 493.02
+        },
+        {
+            "lat": "47.1892212",
+            "lon": "8.8590024",
+            "institut": "Spital Lachen",
+            "stand_address": "Oberdorfstrasse 41",
+            "stand_plz": 8853,
+            "stand_ort": "Lachen",
+            "personal_bestand": 545.51
+        },
+        {
+            "lat": "47.645751849999996",
+            "lon": "9.161863949296642",
+            "institut": "Klinik Seeschau AG",
+            "stand_address": "Bernrainstrasse 17",
+            "stand_plz": 8280,
+            "stand_ort": "Kreuzlingen",
+            "personal_bestand": 77.45
+        },
+        {
+            "lat": "47.5497687",
+            "lon": "8.9117667",
+            "institut": "Spital Thurgau AG Kantonsspit\u00e4ler Frauenfeld & M\u00fcnsterlingen",
+            "stand_address": "Waldeggstrasse 8a",
+            "stand_plz": 8501,
+            "stand_ort": "Frauenfeld",
+            "personal_bestand": 2352.49
+        },
+        {
+            "lat": "46.005106549999994",
+            "lon": "8.940416245368949",
+            "institut": "Clinica Luganese Moncucco SA",
+            "stand_address": "Via Moncucco 10",
+            "stand_plz": 6900,
+            "stand_ort": "Lugano",
+            "personal_bestand": 726.4
+        },
+        {
+            "lat": "46.198488",
+            "lon": "9.029333",
+            "institut": "EOC Ente ospedaliero cantonale",
+            "stand_address": "Viale Officina 3",
+            "stand_plz": 6500,
+            "stand_ort": "Bellinzona",
+            "personal_bestand": 5115.78
+        },
+        {
+            "lat": "46.8824438",
+            "lon": "8.63784614872173",
+            "institut": "Kantonsspital Uri",
+            "stand_address": "Spitalstrasse 1",
+            "stand_plz": 6460,
+            "stand_ort": "Altdorf",
+            "personal_bestand": 459.65
+        },
+        {
+            "lat": "46.47809925",
+            "lon": "7.140711963670858",
+            "institut": "P\u00f4le sant\u00e9 du Pays-d'Enhaut",
+            "stand_address": "Route de l'H\u00f4pital 17",
+            "stand_plz": 1660,
+            "stand_ort": "Ch\u00e2teau-d'Oex",
+            "personal_bestand": 99.32
+        },
+        {
+            "lat": "46.602193",
+            "lon": "6.222322",
+            "institut": "P\u00f4le sant\u00e9 Vall\u00e9e de Joux - H\u00f4pital de la Vall\u00e9e de Joux",
+            "stand_address": "Rue de l'H\u00f4pital 3",
+            "stand_plz": 1347,
+            "stand_ort": "Le Sentier",
+            "personal_bestand": 125.04
+        },
+        {
+            "lat": "46.8200829",
+            "lon": "6.4958262",
+            "institut": "R\u00e9seau Sant\u00e9 Balcon du Jura.vd (RSBJ)",
+            "stand_address": "Rue des Rosiers 29",
+            "stand_plz": 1450,
+            "stand_ort": "Ste-Croix",
+            "personal_bestand": 193.4
+        },
+        {
+            "lat": "46.3831531",
+            "lon": "6.227391098710791",
+            "institut": "Groupement Hospitalier de l'Ouest L\u00e9manique (GHOL) SA",
+            "stand_address": "Chemin Monastier 10",
+            "stand_plz": 1260,
+            "stand_ort": "Nyon",
+            "personal_bestand": 650.02
+        },
+        {
+            "lat": "46.818622000000005",
+            "lon": "6.946097710705013",
+            "institut": "H\u00f4pital Intercantonal de la Broye (HIB)",
+            "stand_address": "Avenue de la Colline 3",
+            "stand_plz": 1530,
+            "stand_ort": "Payerne",
+            "personal_bestand": 662.27
+        },
+        {
+            "lat": "46.511882",
+            "lon": "6.630548170650359",
+            "institut": "Hirslanden Lausanne SA",
+            "stand_address": "Avenue d'Ouchy 31",
+            "stand_plz": 1006,
+            "stand_ort": "Lausanne",
+            "personal_bestand": 696.65
+        },
+        {
+            "lat": "46.5221664",
+            "lon": "6.499792298524471",
+            "institut": "EHC Ensemble hospitalier de la C\u00f4te",
+            "stand_address": "Chemin du Cr\u00eat 2",
+            "stand_plz": 1110,
+            "stand_ort": "Morges",
+            "personal_bestand": 1148.39
+        },
+        {
+            "lat": "46.77136015000001",
+            "lon": "6.646299105377675",
+            "institut": "Etablissements Hospitaliers du Nord Vaudois (eHnv)",
+            "stand_address": "Rue d'Entremonts 11",
+            "stand_plz": 1400,
+            "stand_ort": "Yverdon-les-Bains",
+            "personal_bestand": 1304.31
+        },
+        {
+            "lat": "46.37971385",
+            "lon": "6.920910929804574",
+            "institut": "H\u00f4pital Riviera-Chablais Vaud-Valais",
+            "stand_address": "Route du Vieux S\u00e9quoia 20",
+            "stand_plz": 1847,
+            "stand_ort": "Rennaz",
+            "personal_bestand": 1656.14
+        },
+        {
+            "lat": "46.524954750000006",
+            "lon": "6.640620278244347",
+            "institut": "CHUV Centre Hospitalier Universitaire Vaudois",
+            "stand_address": "Rue du Bugnon 21",
+            "stand_plz": 1011,
+            "stand_ort": "Lausanne",
+            "personal_bestand": 10803.24
+        },
+        {
+            "lat": "46.2878773",
+            "lon": "7.8836426",
+            "institut": "Spital Wallis - Spitalzentrum Oberwallis (SZO)",
+            "stand_address": "Pflanzettastrasse 8",
+            "stand_plz": 3930,
+            "stand_ort": "Visp",
+            "personal_bestand": 985.77
+        },
+        {
+            "lat": "46.2347703",
+            "lon": "7.3877684",
+            "institut": "H\u00f4pital du Valais - Centre hospitalier du Valais Romand CHVR",
+            "stand_address": "Avenue du Grand-Champsec 80",
+            "stand_plz": 1950,
+            "stand_ort": "Sion",
+            "personal_bestand": 2936.47
+        },
+        {
+            "lat": "47.1808969",
+            "lon": "8.4557873",
+            "institut": "Andreas Klinik",
+            "stand_address": "Rigistrasse 1",
+            "stand_plz": 6330,
+            "stand_ort": "Cham",
+            "personal_bestand": 264.92
+        },
+        {
+            "lat": "47.1939185",
+            "lon": "8.517938870819279",
+            "institut": "Zuger Kantonsspital AG",
+            "stand_address": "Landhausstrasse 11",
+            "stand_plz": 6340,
+            "stand_ort": "Baar",
+            "personal_bestand": 941.19
+        },
+        {
+            "lat": "47.2848704",
+            "lon": "8.456604196325719",
+            "institut": "Spital Affoltern AG",
+            "stand_address": "Sonnenbergstrasse 27",
+            "stand_plz": 8910,
+            "stand_ort": "Affoltern am Albis",
+            "personal_bestand": 367.24
+        },
+        {
+            "lat": "47.3221938",
+            "lon": "8.8009724",
+            "institut": "GZO Spital Wetzikon",
+            "stand_address": "Spitalstrasse 66",
+            "stand_plz": 8620,
+            "stand_ort": "Wetzikon",
+            "personal_bestand": 709.06
+        },
+        {
+            "lat": "47.262713500000004",
+            "lon": "8.589476181923574",
+            "institut": "See-Spital",
+            "stand_address": "Asylstrasse 19",
+            "stand_plz": 8810,
+            "stand_ort": "Horgen",
+            "personal_bestand": 730.15
+        },
+        {
+            "lat": "47.2503235",
+            "lon": "8.6970105",
+            "institut": "Spital M\u00e4nnedorf AG",
+            "stand_address": "Asylstrasse 10",
+            "stand_plz": 8708,
+            "stand_ort": "M\u00e4nnedorf",
+            "personal_bestand": 775
+        },
+        {
+            "lat": "47.39840615",
+            "lon": "8.520246486538461",
+            "institut": "Stadtspital Waid",
+            "stand_address": "Ti\u00e8chestrasse 99",
+            "stand_plz": 8037,
+            "stand_ort": "Z\u00fcrich",
+            "personal_bestand": 870.52
+        },
+        {
+            "lat": "47.3487142",
+            "lon": "8.598455194659852",
+            "institut": "Spital Zollikerberg",
+            "stand_address": "Trichtenhauserstrasse 20",
+            "stand_plz": 8125,
+            "stand_ort": "Zollikerberg",
+            "personal_bestand": 876.29
+        },
+        {
+            "lat": "47.52125945",
+            "lon": "8.533739151526774",
+            "institut": "Spital B\u00fclach AG",
+            "stand_address": "Spitalstrasse 24",
+            "stand_plz": 8180,
+            "stand_ort": "B\u00fclach",
+            "personal_bestand": 883.87
+        },
+        {
+            "lat": "47.352939",
+            "lon": "8.724005962777778",
+            "institut": "Spital Uster",
+            "stand_address": "Brunnenstrasse 42",
+            "stand_plz": 8610,
+            "stand_ort": "Uster",
+            "personal_bestand": 993.38
+        },
+        {
+            "lat": "47.39356545",
+            "lon": "8.430542580571107",
+            "institut": "Spital Limmattal",
+            "stand_address": "Urdorferstrasse 100",
+            "stand_plz": 8952,
+            "stand_ort": "Schlieren",
+            "personal_bestand": 1054.82
+        },
+        {
+            "lat": "47.3504048",
+            "lon": "8.5762714",
+            "institut": "Klinik Hirslanden AG",
+            "stand_address": "Witellikerstrasse 40",
+            "stand_plz": 8008,
+            "stand_ort": "Z\u00fcrich",
+            "personal_bestand": 1533.15
+        },
+        {
+            "lat": "47.3664471",
+            "lon": "8.497290184035592",
+            "institut": "Stadtspital Triemli",
+            "stand_address": "Birmensdorferstrasse 497",
+            "stand_plz": 8063,
+            "stand_ort": "Z\u00fcrich",
+            "personal_bestand": 2695.39
+        },
+        {
+            "lat": "47.506859899999995",
+            "lon": "8.728524077691285",
+            "institut": "Kantonsspital Winterthur",
+            "stand_address": "Brauerstrasse 15",
+            "stand_plz": 8400,
+            "stand_ort": "Winterthur",
+            "personal_bestand": 3028.76
+        },
+        {
+            "lat": "47.37775445",
+            "lon": "8.551455174125543",
+            "institut": "Universit\u00e4tsspital Z\u00fcrich",
+            "stand_address": "R\u00e4mistrasse 100",
+            "stand_plz": 8091,
+            "stand_ort": "Z\u00fcrich",
+            "personal_bestand": 7657.61
         },
         {
             "lat": "47.56207405000001",
@@ -927,39 +817,98 @@
             "institut": "Gesundheitszentrum Fricktal, Laufenburg",
             "stand_address": "Spitalstrasse 10",
             "stand_plz": 5080,
-            "stand_ort": "Laufenburg"
+            "stand_ort": "Laufenburg",
+            "personal_bestand": "x"
         },
         {
-            "lat": "47.168364600000004",
-            "lon": "8.117642164462204",
-            "institut": "Luzerner Kantonsspital, Sursee",
-            "stand_address": "Spitalstrasse 16A",
-            "stand_plz": 6210,
-            "stand_ort": "Sursee"
+            "lat": "47.446422600000005",
+            "lon": "9.52694528015818",
+            "institut": "Hirslanden Klinik am Rosenberg",
+            "stand_address": "Hasenb\u00fchlstrasse 11",
+            "stand_plz": 9410,
+            "stand_ort": "Heiden",
+            "personal_bestand": "x"
         },
         {
-            "lat": "47.0654385",
-            "lon": "8.0742947",
-            "institut": "Luzerner Kantonsspital, Wolhusen",
-            "stand_address": "Spitalstrasse 50",
-            "stand_plz": 6110,
-            "stand_ort": "Wolhusen"
+            "lat": "46.5842547",
+            "lon": "7.6422775",
+            "institut": "Spit\u00e4ler fmi AG, Frutigen",
+            "stand_address": "Adelbodenstrasse 27",
+            "stand_plz": 3714,
+            "stand_ort": "Frutigen",
+            "personal_bestand": "x"
         },
         {
-            "lat": "47.48651375",
-            "lon": "7.6137166755666",
-            "institut": "soH Spital Dornach",
-            "stand_address": "Spitalweg 11",
-            "stand_plz": 4143,
-            "stand_ort": "Dornach"
+            "lat": "46.9427418",
+            "lon": "7.47447504492612",
+            "institut": "Klinik Sonnenhof AG",
+            "stand_address": "Buchserstrasse 30",
+            "stand_plz": 3006,
+            "stand_ort": "Bern",
+            "personal_bestand": "x"
         },
         {
-            "lat": "47.2988801",
-            "lon": "9.0826745",
-            "institut": "Berit Klinik Wattwil",
-            "stand_address": "Steig",
-            "stand_plz": 9630,
-            "stand_ort": "Wattwil"
+            "lat": "46.94461005",
+            "lon": "7.392244474125923",
+            "institut": "Klinik Permanence",
+            "stand_address": "B\u00fcmplizstrasse 83",
+            "stand_plz": 3018,
+            "stand_ort": "Bern",
+            "personal_bestand": "x"
+        },
+        {
+            "lat": "46.943341700000005",
+            "lon": "7.78659391254826",
+            "institut": "RSE AG, Langnau",
+            "stand_address": "Dorfbergstrasse 10",
+            "stand_plz": 3550,
+            "stand_ort": "Langnau im Emmental",
+            "personal_bestand": "x"
+        },
+        {
+            "lat": "46.8137435",
+            "lon": "7.478213630674681",
+            "institut": "Insel Gruppe AG Riggisberg",
+            "stand_address": "Eyweg 2",
+            "stand_plz": 3132,
+            "stand_ort": "Riggisberg",
+            "personal_bestand": "x"
+        },
+        {
+            "lat": "46.5579105",
+            "lon": "7.3731042",
+            "institut": "STS AG, Zweisimmen",
+            "stand_address": "Karl Haueter-Strasse 21",
+            "stand_plz": 3770,
+            "stand_ort": "Zweisimmen",
+            "personal_bestand": "x"
+        },
+        {
+            "lat": "46.8719431",
+            "lon": "7.5681451",
+            "institut": "Insel Gruppe AG M\u00fcnsingen",
+            "stand_address": "Krankenhausweg 18",
+            "stand_plz": 3110,
+            "stand_ort": "M\u00fcnsingen",
+            "personal_bestand": "x"
+        },
+        {
+            "lat": "47.0480795",
+            "lon": "7.279773606647131",
+            "institut": "Insel Gruppe AG Aarberg",
+            "stand_address": "Lyss-Strasse 31",
+            "stand_plz": 3270,
+            "stand_ort": "Aarberg",
+            "personal_bestand": "x"
+        },
+        {
+            "lat": "46.95209065",
+            "lon": "7.45402605348343",
+            "institut": "Salem\u00adSpital",
+            "stand_address": "Sch\u00e4nzlistrasse 39",
+            "stand_plz": 3013,
+            "stand_ort": "Bern",
+            "personal_bestand": "x"
         },
         {
             "lat": "46.9746491",
@@ -967,7 +916,143 @@
             "institut": "Insel Gruppe AG Tiefenau",
             "stand_address": "Tiefenaustrasse 112",
             "stand_plz": 3004,
-            "stand_ort": "Bern"
+            "stand_ort": "Bern",
+            "personal_bestand": "x"
+        },
+        {
+            "lat": "47.52791945",
+            "lon": "7.581820363332692",
+            "institut": "Kantonsspital Bruderholz",
+            "stand_address": "Gemeindeholzweg",
+            "stand_plz": 4101,
+            "stand_ort": "Bruderholz",
+            "personal_bestand": "x"
+        },
+        {
+            "lat": "47.493906249999995",
+            "lon": "7.614607745131486",
+            "institut": "Klinik Arlesheim AG",
+            "stand_address": "Pfeffingerweg 1",
+            "stand_plz": 4144,
+            "stand_ort": "Arlesheim",
+            "personal_bestand": "x"
+        },
+        {
+            "lat": "47.52788805",
+            "lon": "7.605017759011293",
+            "institut": "Hirslanden Klinik Birshof",
+            "stand_address": "Reinacherstrasse 28",
+            "stand_plz": 4142,
+            "stand_ort": "M\u00fcnchenstein",
+            "personal_bestand": "x"
+        },
+        {
+            "lat": "47.4884053",
+            "lon": "7.731815",
+            "institut": "Kantonsspital Liestal",
+            "stand_address": "Rheinstrasse 26",
+            "stand_plz": 4410,
+            "stand_ort": "Liestal",
+            "personal_bestand": "x"
+        },
+        {
+            "lat": "47.5482765",
+            "lon": "7.6168217",
+            "institut": "USB Gellertstrasse",
+            "stand_address": "Gellertstrasse 144",
+            "stand_plz": 4052,
+            "stand_ort": "Basel",
+            "personal_bestand": "x"
+        },
+        {
+            "lat": "46.80092175",
+            "lon": "7.140799252541637",
+            "institut": "H\u00f4pital Jules Daler",
+            "stand_address": "Route de Bertigny 34",
+            "stand_plz": 1700,
+            "stand_ort": "Fribourg",
+            "personal_bestand": "x"
+        },
+        {
+            "lat": "46.1998578",
+            "lon": "6.1819624",
+            "institut": "Clinique des Grangettes SA",
+            "stand_address": "Chemin des Grangettes 7",
+            "stand_plz": 1224,
+            "stand_ort": "Ch\u00eane-Bougeries",
+            "personal_bestand": "x"
+        },
+        {
+            "lat": "47.3688966",
+            "lon": "7.3384441",
+            "institut": "H\u00f4pital du Jura SA",
+            "stand_address": "Faubourg des Capucins 30",
+            "stand_plz": 2800,
+            "stand_ort": "Del\u00e9mont",
+            "personal_bestand": "x"
+        },
+        {
+            "lat": "47.0500473",
+            "lon": "8.3802642",
+            "institut": "Hirslanden Klinik St. Anna AG Hirslanden Klinik Meggen",
+            "stand_address": "Huobmattstrasse 9",
+            "stand_plz": 6045,
+            "stand_ort": "Meggen",
+            "personal_bestand": "x"
+        },
+        {
+            "lat": "47.168364600000004",
+            "lon": "8.117642164462204",
+            "institut": "Luzerner Kantonsspital, Sursee",
+            "stand_address": "Spitalstrasse 16A",
+            "stand_plz": 6210,
+            "stand_ort": "Sursee",
+            "personal_bestand": "x"
+        },
+        {
+            "lat": "47.0654385",
+            "lon": "8.0742947",
+            "institut": "Luzerner Kantonsspital, Wolhusen",
+            "stand_address": "Spitalstrasse 50",
+            "stand_plz": 6110,
+            "stand_ort": "Wolhusen",
+            "personal_bestand": "x"
+        },
+        {
+            "lat": "47.1136975",
+            "lon": "6.832974724999998",
+            "institut": "H\u00f4pital neuch\u00e2telois, La-Chaux-de-Fonds",
+            "stand_address": "Rue de Chasseral 20",
+            "stand_plz": 2300,
+            "stand_ort": "La Chaux-de-Fonds",
+            "personal_bestand": "x"
+        },
+        {
+            "lat": "46.996919199999994",
+            "lon": "6.942923586966937",
+            "institut": "H\u00f4pital neuch\u00e2telois, Pourtal\u00e8s",
+            "stand_address": "Rue de la Maladi\u00e8re 45",
+            "stand_plz": 2000,
+            "stand_ort": "Neuch\u00e2tel",
+            "personal_bestand": "x"
+        },
+        {
+            "lat": "47.2988801",
+            "lon": "9.0826745",
+            "institut": "Berit Klinik Wattwil",
+            "stand_address": "Steig",
+            "stand_plz": 9630,
+            "stand_ort": "Wattwil",
+            "personal_bestand": "x"
+        },
+        {
+            "lat": "47.48651375",
+            "lon": "7.6137166755666",
+            "institut": "soH Spital Dornach",
+            "stand_address": "Spitalweg 11",
+            "stand_plz": 4143,
+            "stand_ort": "Dornach",
+            "personal_bestand": "x"
         },
         {
             "lat": "45.8670756",
@@ -975,7 +1060,8 @@
             "institut": "Ospedale Regionale di Mendrisio Beata Vergine",
             "stand_address": "Via Alfonso Turconi 23",
             "stand_plz": 6850,
-            "stand_ort": "Mendrisio"
+            "stand_ort": "Mendrisio",
+            "personal_bestand": "x"
         },
         {
             "lat": "46.169326",
@@ -983,7 +1069,8 @@
             "institut": "Ospedale Regionale di Locarno",
             "stand_address": "Via dell'Ospedale 1",
             "stand_plz": 6600,
-            "stand_ort": "Locarno"
+            "stand_ort": "Locarno",
+            "personal_bestand": "x"
         },
         {
             "lat": "46.1841758",
@@ -991,7 +1078,8 @@
             "institut": "EOC Ospedale Regionale di Bellinzona e Valli",
             "stand_address": "Via Ospedale 12",
             "stand_plz": 6500,
-            "stand_ort": "Bellinzona"
+            "stand_ort": "Bellinzona",
+            "personal_bestand": "x"
         },
         {
             "lat": "46.16717825",
@@ -999,7 +1087,8 @@
             "institut": "Clinica Santa Chiara SA",
             "stand_address": "Via Stefano Franscini 4",
             "stand_plz": 6600,
-            "stand_ort": "Locarno"
+            "stand_ort": "Locarno",
+            "personal_bestand": "x"
         },
         {
             "lat": "46.0176565",
@@ -1007,7 +1096,35 @@
             "institut": "Ospedale Regionale di Lugano",
             "stand_address": "Via Tesserete 46",
             "stand_plz": 6900,
-            "stand_ort": "Lugano"
+            "stand_ort": "Lugano",
+            "personal_bestand": "x"
+        },
+        {
+            "lat": "46.527334499999995",
+            "lon": "6.627899109027791",
+            "institut": "Clinique de La Source",
+            "stand_address": "Avenue Vinet 30",
+            "stand_plz": 1004,
+            "stand_ort": "Lausanne",
+            "personal_bestand": "x"
+        },
+        {
+            "lat": "46.2347703",
+            "lon": "7.3877684",
+            "institut": "Spital Wallis - Spitalzentrum Oberwallis (SZO) Sitten",
+            "stand_address": "Avenue Grand-Champsec 80",
+            "stand_plz": 1951,
+            "stand_ort": "Sitten",
+            "personal_bestand": "x"
+        },
+        {
+            "lat": "46.2565621",
+            "lon": "6.944199150000001",
+            "institut": "H\u00f4pital du Valais - Centre hospitalier du Chablais (CHC)",
+            "stand_address": "Route de Morgins 10",
+            "stand_plz": 1870,
+            "stand_ort": "Monthey",
+            "personal_bestand": "x"
         },
         {
             "lat": "46.099287",
@@ -1015,7 +1132,8 @@
             "institut": "Spital Wallis - Spitalzentrum Oberwallis (SZO) Martinach",
             "stand_address": "Avenue de la Fusion 27",
             "stand_plz": 1920,
-            "stand_ort": "Martinach"
+            "stand_ort": "Martinach",
+            "personal_bestand": "x"
         },
         {
             "lat": "46.317501",
@@ -1023,7 +1141,17 @@
             "institut": "Spital Wallis - Spitalzentrum Oberwallis (SZO) Brig",
             "stand_address": "Ueberlandstrasse 14",
             "stand_plz": 3900,
-            "stand_ort": "Brig"
+            "stand_ort": "Brig",
+            "personal_bestand": "x"
+        },
+        {
+            "lat": "47.3525221",
+            "lon": "8.5316609",
+            "institut": "Klinik Im Park",
+            "stand_address": "Seestrasse 220",
+            "stand_plz": 8002,
+            "stand_ort": "Z\u00fcrich",
+            "personal_bestand": "x"
         }
     ]
 }
