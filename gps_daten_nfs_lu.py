@@ -21,8 +21,7 @@ for row in worksheet.iter_rows(min_row=2): #von erster Spalte über alle Element
         "stand_address": row[1].value,
         "stand_plz": row[2].value,
         "stand_ort": row[3].value,
-        "personal_bestand_total": row[4].value,
-        "personal_bestand_unit": row[5].value,
+        "personal_bestand": row[5].value,
     })
 
 data = {
