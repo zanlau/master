@@ -1,0 +1,117 @@
+{
+    "source": "H\u00e4ndische Erfassung mit Beizug der Literatur https://www.rega.ch/im-einsatz/rega-drohne",
+    "data": [
+        {
+            "lat": "47.39545625",
+            "lon": "8.640343139859207",
+            "institut": "Rega Z\u00fcrich",
+            "stand_address": "\u00dcberlandstrasse 299",
+            "stand_plz": 8600,
+            "stand_ort": "D\u00fcbendorf"
+        },
+        {
+            "lat": "47.60597425",
+            "lon": "7.523392355367726",
+            "institut": "Rega Basel",
+            "stand_address": "Rue de l'A\u00e9roport 48",
+            "stand_plz": 68300,
+            "stand_ort": "Saint-Louis"
+        },
+        {
+            "lat": "46.9097291",
+            "lon": "7.504828721054604",
+            "institut": "Rega Bern",
+            "stand_address": "Flugplatzstrasse 1",
+            "stand_plz": 3123,
+            "stand_ort": "Belp"
+        },
+        {
+            "lat": "46.54742065",
+            "lon": "6.6182020497011305",
+            "institut": "Rega Lausanne",
+            "stand_address": "Route de Romanel 33",
+            "stand_plz": 1018,
+            "stand_ort": "Lausanne"
+        },
+        {
+            "lat": "46.9131935",
+            "lon": "9.5514924",
+            "institut": "Rega Untervaz",
+            "stand_address": "Polenl\u00f6serweg 30a",
+            "stand_plz": 7204,
+            "stand_ort": "Untervaz"
+        },
+        {
+            "lat": "46.1630368",
+            "lon": "8.881049358181258",
+            "institut": "Rega Locarno",
+            "stand_address": "Via Aeroporto 15",
+            "stand_plz": 6596,
+            "stand_ort": "Gordola"
+        },
+        {
+            "lat": "47.40559475",
+            "lon": "9.290089113756391",
+            "institut": "Rega St. Gallen",
+            "stand_address": "Wehrstrasse 8",
+            "stand_plz": 9015,
+            "stand_ort": "St. Gallen"
+        },
+        {
+            "lat": "46.83415345",
+            "lon": "8.638303728681784",
+            "institut": "Rega Erstfeld",
+            "stand_address": "Reussstrasse 40",
+            "stand_plz": 6482,
+            "stand_ort": "Erstfeld"
+        },
+        {
+            "lat": "46.5299837",
+            "lon": "9.8776399",
+            "institut": "Rega Samedan",
+            "stand_address": "Plazza Aviatica 6",
+            "stand_plz": 7503,
+            "stand_ort": "Samedan"
+        },
+        {
+            "lat": "46.669895",
+            "lon": "7.876531517569042",
+            "institut": "Rega Wilderswil",
+            "stand_address": "B\u00f6nigstrasse 17",
+            "stand_plz": 3812,
+            "stand_ort": "Wilderswil"
+        },
+        {
+            "lat": "47.07756905",
+            "lon": "9.065626854865023",
+            "institut": "Rega Mollis",
+            "stand_address": "Flugplatzareal 3",
+            "stand_plz": 8753,
+            "stand_ort": "Mollis"
+        },
+        {
+            "lat": "46.5551875",
+            "lon": "7.37923031611111",
+            "institut": "Rega Zweisimmen",
+            "stand_address": "Lischerengasse 5",
+            "stand_plz": 3770,
+            "stand_ort": "Zweisimmen"
+        },
+        {
+            "lat": "46.233249",
+            "lon": "6.0959949",
+            "institut": "Rega Genf",
+            "stand_address": "Route Henry-Claudius-Forestier 32",
+            "stand_plz": 1217,
+            "stand_ort": "Meyrin"
+        },
+        {
+            "lat": "46.2236772",
+            "lon": "7.3477037",
+            "institut": "Rega Sion",
+            "stand_address": "Route de l'A\u00e9roport",
+            "stand_plz": 1950,
+            "stand_ort": "Sion"
+        }
+    ]
+}

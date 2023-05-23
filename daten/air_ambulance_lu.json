@@ -1,0 +1,21 @@
+{
+    "source": "H\u00e4ndische Erfassung mit Beizug der Literatur https://www.lar.lu/de/unsere-aktivitaten/luftrettung",
+    "data": [
+        {
+            "lat": "49.62636605",
+            "lon": "6.203863117655136",
+            "institut": "Luxembourg Air Rescue",
+            "stand_address": "Rue de Tr\u00e8ves 4",
+            "stand_plz": 2632,
+            "stand_ort": "Findel"
+        },
+        {
+            "lat": "49.8537875",
+            "lon": "6.095651816560938",
+            "institut": "Hangar Ettelbr\u00fcck",
+            "stand_address": "Avenue Salentiny 120",
+            "stand_plz": 9080,
+            "stand_ort": "Ettelbruck"
+        }
+    ]
+}
