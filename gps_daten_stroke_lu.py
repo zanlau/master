@@ -32,3 +32,6 @@ data = {
 
 with open('daten/stroke_untis_lu.json', 'w') as f:
     json.dump(data, f, indent=4)
+
+
+
