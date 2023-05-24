@@ -1,0 +1,116 @@
+﻿DATAFLOW,FREQ: Frequency,SPECIFICATION: Specification,TIME_PERIOD: Time period,OBS_VALUE,NOTE_YEAR_2: Note year 2,NOTE_YEAR_1: Note year 1,NOTE_SPECIFICATION_2: Note specification 2,NOTE_SPECIFICATION_1: Note specification 1,OBS_STATUS: Observation status,DECIMALS: Decimals
+LU1:DF_X021(1.0),A: Annual,CM10004: Esch-sur-Alzette,2023,36625,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM11008: Steinsel,2023,5539,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM12004: Heffingen,2023,1549,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM01004: Weiswampach,2023,2313,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM03004: Préizerdaul,2023,1827,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM06002: Bech,2023,1357,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CT07: Canton Grevenmacher,2023,32524,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM08005: Remich,2023,4015,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CT11: Canton Luxembourg,2023,204358,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM01005: Wincrange,2023,4804,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM03002: Ell,2023,1582,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM05004: Kiischpelt,2023,1260,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM07002: Biwer,2023,1926,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM08007: Stadtbredimus,2023,1984,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM09001: Dippach,2023,4635,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM11011: Weiler-la-Tour,2023,2498,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CT12: Canton Mersch,2023,35579,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM02010: Vallée de l'Ernz,2023,2770,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CT03: Canton Redange,2023,20874,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM03010: Wahl,2023,1087,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM05006: Wiltz,2023,7949,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM06007: Waldbillig,2023,1960,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM08001: Bous,2023,1752,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM11002: Contern,2023,4374,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM11005: Niederanven,2023,6660,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM12001: Bissen,2023,3450,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM06003: Berdorf,2023,2219,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM09005: Kehlen,2023,6391,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM10012: Rumelange,2023,5692,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM11007: Schuttrange,2023,4387,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM12003: Fischbach,2023,1308,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM02007: Mertzig,2023,2370,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM05001: Boulaide,2023,1499,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM07004: Grevenmacher,2023,5092,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CT08: Canton Remich,2023,24186,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM08006: Schengen,2023,5196,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM09002: Garnich,2023,2289,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM11001: Bertrange,2023,8668,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM12007: Lintgen,2023,3436,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM01002: Parc Hosingen,2023,4036,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM04002: Tandel,2023,2238,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM07005: Junglinster,2023,8622,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM08002: Dalheim,2023,2408,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM09009: Steinfort,2023,5871,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM10001: Bettembourg,2023,11422,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM10007: Leudelange,2023,2766,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM10008: Mondercange,2023,7119,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM10009: Pétange,2023,20563,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM12009: Mersch,2023,10393,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CT04: Canton Vianden,2023,5594,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM05005: Lac de la Haute-Sûre,2023,2253,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,LU: Grand Duchy of Luxembourg,2023,660809,,,"LU: Situation as of 1st January. Exception for the following years: Until 1970 and for 1981, 1991, 2001, 2011 : date of general population census. Break in series: as from 1821, Source: STATEC, as from 2017, Source: STATEC and CTIE",,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM09003: Habscht,2023,4992,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM10011: Roeser,2023,6657,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM10014: Schifflange,2023,11363,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CT02: Canton Diekirch,2023,35150,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM04001: Putscheid,2023,1153,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM07006: Manternach,2023,2298,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CT09: Canton Capellen,2023,52828,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM10003: Dudelange,2023,21953,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM10013: Sanem,2023,18333,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM11009: Strassen,2023,10538,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM01003: Troisvierges,2023,3513,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM04003: Vianden,2023,2203,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM08004: Mondorf-les-Bains,2023,5424,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM09004: Käerjeng,2023,11015,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM10002: Differdange,2023,29536,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM11006: Sandweiler,2023,3751,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM12010: Nommern,2023,1437,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM02005: Ettelbruck,2023,9688,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM03007: Saeul,2023,983,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CT06: Canton Echternach,2023,20280,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM06004: Consdorf,2023,2117,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM11003: Hesperange,2023,16433,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM02002: Bourscheid,2023,1678,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM02003: Diekirch,2023,7295,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM02009: Schieren,2023,2149,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM03001: Beckerich,2023,2866,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM05007: Winseler,2023,1455,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM06005: Echternach,2023,5870,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM06006: Rosport - Mompach,2023,3704,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CT10: Canton Esch,2023,189540,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM10006: Kayl,2023,9865,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM01001: Clervaux,2023,6021,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM02001: Bettendorf,2023,3052,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM02006: Feulen,2023,2366,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM03003: Grosbous,2023,1134,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM03006: Redange-sur-Attert,2023,3059,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM05003: Goesdorf,2023,1664,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM08008: Waldbredimus,2023,1337,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM09006: Koerich,2023,2706,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM12005: Helperknapp,2023,4941,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM03005: Rambrouch,2023,4836,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM05002: Esch-sur-Sûre,2023,3129,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM06001: Beaufort,2023,3053,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM07003: Flaxweiler,2023,2193,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM09007: Kopstal,2023,4286,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM10005: Frisange,2023,4912,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM10010: Reckange-sur-Mess,2023,2734,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM12002: Colmar-Berg,2023,2336,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CT01: Canton Clervaux,2023,20687,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM07007: Mertert,2023,5117,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM11004: Luxembourg,2023,132780,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM12008: Lorentzweiler,2023,4521,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM02004: Erpeldange-sur-Sûre,2023,2429,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM03009: Vichten,2023,1425,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM07008: Wormeldange,2023,3171,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM09008: Mamer,2023,10643,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM11010: Walferdange,2023,8730,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM12006: Larochette,2023,2208,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM02008: Reisdorf,2023,1353,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM03008: Useldange,2023,2075,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CT05: Canton Wiltz,2023,19209,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM07001: Betzdorf,2023,4105,,,,,,0: Zero
+LU1:DF_X021(1.0),A: Annual,CM08003: Lenningen,2023,2070,,,,,,0: Zero
