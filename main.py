@@ -12,7 +12,6 @@ from dash import html
 from dash.dependencies import Input, Output
 from flask import Flask
 from openpyxl import load_workbook
-wb = load_workbook('daten/notfallstationen_ch.xlsx')
 from plotly.subplots import make_subplots
 
 
@@ -117,9 +116,11 @@ def get_fig():
     fig.add_trace(
             go.Scattermapbox(
                 lat=[x["lat"] for x in data_1["data"]] + [x["lat"] for x in data_2["data"]]
-                    + [x["lat"] for x in data_3["data"]] + [x["lat"] for x in data_4["data"]],
+                    + [x["lat"] for x in data_3["data"]] + [x["lat"] for x in data_4["data"]]
+                    + [x.get("lat", None) for x in data_5["elements"]] + [x.get("lat", None) for x in data_6["elements"]],
                 lon=[x["lon"] for x in data_1["data"]] + [x["lon"] for x in data_2["data"]]
-                    + [x["lon"] for x in data_3["data"]] + [x["lon"] for x in data_4["data"]],
+                    + [x["lon"] for x in data_3["data"]] + [x["lon"] for x in data_4["data"]]
+                    + [x.get("lon", None) for x in data_5["elements"]] + [x.get("lon", None) for x in data_6["elements"]],
                 mode="markers",
                 marker=go.scattermapbox.Marker(size=15),
             )
