@@ -30,9 +30,9 @@ def graph(id): return dcc.Graph(id=id, figure={})
 def emergency_dropdown(id):
     return dcc.Dropdown(id=id,
                         options=[
-                            {"label": "Medizinischer Notfall", "value": 'nfs'},
-                            {"label": "Feuerwehr", "value": 'fire_fighter'},
-                            {"label": "Schlaganfall", "value": 'stroke'}],
+                            {"label": "Medizinische Notfallstation", "value": 'nfs'},
+                            {"label": "Feuerwehrstützpunk", "value": 'fire_fighter'},
+                            {"label": "Schlaganfallzentren", "value": 'stroke'}],
                         multi=False,
                         value='emergency',
                         style={"width": "40%"})
@@ -41,7 +41,7 @@ def area_criteria(id):
     return dcc.Dropdown(id=id,
                         options=[
                             {"label": "15 Minuten", "value": 'minutes'},
-                            {"label": "80 Kilometer", "value": 'kilometers'},
+                            {"label": "Gebietsfläche", "value": 'kilometer'},
                             {"label": "Bevölkerungsgrösse", "value": 'population'}],
                         multi=False,
                         value='minutes',
@@ -98,18 +98,19 @@ app.layout = html.Div(
 #create graphs in dashboard
 #map in dash to deploy stations (OSM)
 def get_fig():
-    with open("daten/notfallstationen_ch.json") as f:
-        data = json.load(f)
+    with open("daten/notfallstationen_ch.json") as f1, open("daten/notfallstationen_lu.json") as f2:
+        data_1 = json.load(f1)
+        data_2 = json.load(f2)
 
 
     fig = go.Figure()
     # blue point - should be in center of map , vhy is not ?
     fig.add_trace(
             go.Scattermapbox(
-                lat=[x["lat"] for x in data["data"]],
-                lon=[x["lon"] for x in data ["data"]],
+                lat=[x["lat"] for x in data_1["data"]] + [x["lat"] for x in data_2["data"]],
+                lon=[x["lon"] for x in data_1["data"]] + [x["lon"] for x in data_2["data"]],
                 mode="markers",
-                marker=go.scattermapbox.Marker(size=20),
+                marker=go.scattermapbox.Marker(size=15),
             )
         )
 
@@ -119,7 +120,7 @@ def get_fig():
             width=2500,
             margin={"r": 2, "t": 2, "b": 2, "l": 2},
             autosize=False,
-            mapbox=dict(style="open-street-map", center=dict(lat=46.95, lon=7.45), zoom=10),
+            mapbox=dict(style="open-street-map", center=dict(lat=47.95, lon=7.45), zoom=7),
         )
     return fig
 
