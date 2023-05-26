@@ -98,14 +98,17 @@ app.layout = html.Div(
 #create graphs in dashboard
 #map in dash to deploy stations (OSM)
 def get_fig():
-    with open("daten/notfallstationen_ch.json") as f1, open("daten/notfallstationen_lu.json") as f2,\
-            open("daten/stroke_unit_ch.json") as f3, open("daten/stroke_unit_lu.json") as f4,\
-            open("daten/fire_station_ch.json") as f5, open("daten/fire_station_lu.json") as f6:
+    with open("daten/notfallstationen_ch.json") as f1:
         data_1 = json.load(f1)
+    with open("daten/notfallstationen_lu.json") as f2:
         data_2 = json.load(f2)
+    with open("daten/stroke_units_ch.json") as f3:
         data_3 = json.load(f3)
+    with open("daten/stroke_untis_lu.json") as f4:
         data_4 = json.load(f4)
+    with open("daten/fire_station_ch.json") as f5:
         data_5 = json.load(f5)
+    with open("daten/fire_station_lu.json") as f6:
         data_6 = json.load(f6)
 
 
@@ -113,8 +116,10 @@ def get_fig():
     # blue point - should be in center of map , vhy is not ?
     fig.add_trace(
             go.Scattermapbox(
-                lat=[x["lat"] for x in data_1["data"]] + [x["lat"] for x in data_2["data"]],
-                lon=[x["lon"] for x in data_1["data"]] + [x["lon"] for x in data_2["data"]],
+                lat=[x["lat"] for x in data_1["data"]] + [x["lat"] for x in data_2["data"]]
+                    + [x["lat"] for x in data_3["data"]] + [x["lat"] for x in data_4["data"]],
+                lon=[x["lon"] for x in data_1["data"]] + [x["lon"] for x in data_2["data"]]
+                    + [x["lon"] for x in data_3["data"]] + [x["lon"] for x in data_4["data"]],
                 mode="markers",
                 marker=go.scattermapbox.Marker(size=15),
             )
