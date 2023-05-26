@@ -98,9 +98,15 @@ app.layout = html.Div(
 #create graphs in dashboard
 #map in dash to deploy stations (OSM)
 def get_fig():
-    with open("daten/notfallstationen_ch.json") as f1, open("daten/notfallstationen_lu.json") as f2:
+    with open("daten/notfallstationen_ch.json") as f1, open("daten/notfallstationen_lu.json") as f2,\
+            open("daten/stroke_unit_ch.json") as f3, open("daten/stroke_unit_lu.json") as f4,\
+            open("daten/fire_station_ch.json") as f5, open("daten/fire_station_lu.json") as f6:
         data_1 = json.load(f1)
         data_2 = json.load(f2)
+        data_3 = json.load(f3)
+        data_4 = json.load(f4)
+        data_5 = json.load(f5)
+        data_6 = json.load(f6)
 
 
     fig = go.Figure()
