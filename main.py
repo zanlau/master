@@ -16,7 +16,6 @@ from plotly.subplots import make_subplots
 
 
 
-
 def h1(text): return html.H1(text, style={'text-align': 'center'})
 
 def h4(text): return html.H4(text, style={'text-align': 'left'})
@@ -28,7 +27,7 @@ def emergency_dropdown(id):
     return dcc.Dropdown(id=id,
                         options=[
                             {"label": "Medizinische Notfallstation", "value": 'nfs'},
-                            {"label": "Feuerwehrstützpunk", "value": 'fire_fighter'},
+                            {"label": "Feuerwehrstützpunk", "value": 'fire_station'},
                             {"label": "Schlaganfallzentren", "value": 'stroke'}],
                         multi=False,
                         value='emergency',
@@ -50,7 +49,6 @@ def row(children):
 
 server = Flask(__name__)
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP], server=server)
-app.layout = html.Div()
 app.title = "Dashboard Notfallversorgungen"
 
 app.layout = html.Div(
@@ -130,7 +128,7 @@ def get_fig():
             )
         )
 
-    # open street map with center at lat:lon
+    # open street map mit Standardposition
     fig.update_layout(
             height=1500,
             width=2500,
@@ -142,10 +140,13 @@ def get_fig():
 
 @app.callback(
     Output("graph", "figure"),
-    Input("my_interval", "n_intervals"))
+    Input("my_interval", "n_intervals")
+)
+
+
+
 def update_bar_chart(dummy):
     return get_fig()
-
 
 if __name__ == '__main__':
     app.run_server()
