@@ -17,8 +17,6 @@ from plotly.subplots import make_subplots
 
 
 
-
-
 def h1(text): return html.H1(text, style={'text-align': 'center'})
 
 def h4(text): return html.H4(text, style={'text-align': 'left'})
@@ -110,9 +108,10 @@ def get_fig():
     with open("daten/fire_station_lu.json") as f6:
         data_6 = json.load(f6)
 
+    colors = ["blue", "green", "red"]
 
     fig = go.Figure()
-    # blue point - should be in center of map , vhy is not ?
+
     fig.add_trace(
             go.Scattermapbox(
                 lat=[x["lat"] for x in data_1["data"]] + [x["lat"] for x in data_2["data"]]
@@ -122,7 +121,12 @@ def get_fig():
                     + [x["lon"] for x in data_3["data"]] + [x["lon"] for x in data_4["data"]]
                     + [x.get("lon", None) for x in data_5["elements"]] + [x.get("lon", None) for x in data_6["elements"]],
                 mode="markers",
-                marker=go.scattermapbox.Marker(size=15),
+                marker=dict(size=15, color=[colors[0]] * len(data_1["data"])
+                                                              + [colors[0]] * len(data_2["data"])
+                                                              + [colors[1]] * len(data_3["data"])
+                                                              + [colors[1]] * len(data_4["data"])
+                                                              + [colors[2]] * len(data_5["elements"])
+                                                              + [colors[2]] * len(data_6["elements"])),
             )
         )
 
@@ -130,9 +134,9 @@ def get_fig():
     fig.update_layout(
             height=1500,
             width=2500,
-            margin={"r": 2, "t": 2, "b": 2, "l": 2},
+            margin={"r": 10, "t": 10, "b": 10, "l": 10},
             autosize=False,
-            mapbox=dict(style="open-street-map", center=dict(lat=47.95, lon=7.45), zoom=7),
+            mapbox=dict(style="open-street-map", center=dict(lat=47.95, lon=7.45), zoom=7, uirevision="true"), #Deaktivierung der automatischen Rückkehr zur Standardposition
         )
     return fig
 
