@@ -19,15 +19,13 @@ def h1(text): return html.H1(text, style={'text-align': 'center'})
 
 def h4(text): return html.H4(text, style={'text-align': 'left'})
 
-def graph(id): return dcc.Graph(id=id, figure={})
-
 #Interaktionsmöglichkeiten
 def emergency_dropdown(id):
     return dcc.Dropdown(id=id,
                         options=[
-                            {"label": "Medizinische Notfallstation", "value": 'nfs'},
+                            {"label": "Medizinische Notfallstation", "value": 'notfallstation'},
                             {"label": "Feuerwehrstützpunkt", "value": 'fire_station'},
-                            {"label": "Schlaganfallzentrum", "value": 'stroke'}],
+                            {"label": "Schlaganfallzentrum", "value": 'stroke_unit'}],
                         multi=False,
                         value='emergency',
                         style={"width": "40%"})
@@ -89,43 +87,46 @@ app.layout = html.Div(
     ]
 )
 
+class Cord:
+    def __init__(self, lat, lon):
+        self.lat = lat
+        self.lon = lon
+
+class NFS:
+    def __init__(self, kind, country, coordinates):
+        self.kind = kind
+        self.country = country
+        self.coordinates = coordinates
+        self.color = {"notfallstation": "blue", "stroke_unit": "green", "fire_station": "red"}[self.kind]
+
+def open_data():
+    data = []
+    with open("daten/notfallstationen_ch.json") as f:
+        data.extend([NFS("notfallstation", "CH", Cord(x["lat"], x["lon"])) for x in json.load(f)["data"]])
+    with open("daten/notfallstationen_lu.json") as f:
+        data.extend([NFS("notfallstation", "LU", Cord(x["lat"], x["lon"])) for x in json.load(f)["data"]])
+    with open("daten/stroke_units_ch.json") as f:
+        data.extend([NFS("stroke_unit", "CH", Cord(x["lat"], x["lon"])) for x in json.load(f)["data"]])
+    with open("daten/stroke_untis_lu.json") as f:
+        data.extend([NFS("stroke_unit", "LU", Cord(x["lat"], x["lon"])) for x in json.load(f)["data"]])
+    with open("daten/fire_station_ch.json") as f:
+        data.extend([NFS("fire_station", "CH", Cord(x.get("lat"), x.get("lon"))) for x in json.load(f)["elements"]])
+    with open("daten/fire_station_lu.json") as f:
+        data.extend([NFS("fire_station", "LU", Cord(x.get("lat"), x.get("lon"))) for x in json.load(f)["elements"]])
+    return data
+
+
 #Diagramme im Dashboard generieren
 #Positionen in OpenStreetMap erzeugen
-def get_fig(emergency_type):
-    with open("daten/notfallstationen_ch.json") as f1:
-        data_1 = json.load(f1)
-    with open("daten/notfallstationen_lu.json") as f2:
-        data_2 = json.load(f2)
-    with open("daten/stroke_units_ch.json") as f3:
-        data_3 = json.load(f3)
-    with open("daten/stroke_untis_lu.json") as f4:
-        data_4 = json.load(f4)
-    with open("daten/fire_station_ch.json") as f5:
-        data_5 = json.load(f5)
-        data_5["data"] = data_5.pop("elements")
-    with open("daten/fire_station_lu.json") as f6:
-        data_6 = json.load(f6)
-        data_6["data"] = data_6.pop("elements")
-
-    colors = ["blue", "green", "red"]
-
+def get_fig(data):
     fig = go.Figure()
 
     fig.add_trace(
             go.Scattermapbox(
-                lat=[x["lat"] for x in data_1["data"]] + [x["lat"] for x in data_2["data"]]
-                    + [x["lat"] for x in data_3["data"]] + [x["lat"] for x in data_4["data"]]
-                    + [x.get("lat", None) for x in data_5["data"]] + [x.get("lat", None) for x in data_6["data"]],
-                lon=[x["lon"] for x in data_1["data"]] + [x["lon"] for x in data_2["data"]]
-                    + [x["lon"] for x in data_3["data"]] + [x["lon"] for x in data_4["data"]]
-                    + [x.get("lon", None) for x in data_5["data"]] + [x.get("lon", None) for x in data_6["data"]],
+                lat=[x.coordinates.lat for x in data],
+                lon=[x.coordinates.lon for x in data],
                 mode="markers",
-                marker=dict(size=15, color=[colors[0]] * len(data_1["data"])
-                                                              + [colors[0]] * len(data_2["data"])
-                                                              + [colors[1]] * len(data_3["data"])
-                                                              + [colors[1]] * len(data_4["data"])
-                                                              + [colors[2]] * len(data_5["data"])
-                                                              + [colors[2]] * len(data_6["data"])),
+                marker=dict(size=15, color=[x.color for x in data]),
             )
         )
 
@@ -140,22 +141,10 @@ def get_fig(emergency_type):
     return fig
 
 
-
-def filter_data_based_on_criteria(emergency_type):
-    # Filter basierend auf Notfallart + Laden der Daten
-    if emergency_type == 'Medizinische Notfallstation':
-        df_1 = pd.read_json("daten/notfallstationen_ch.json")
-        df_2 = pd.read_json("daten/notfallstationen_lu.json")
-        return pd.concat([df_1, df_2])
-    elif emergency_type == 'Schlaganfallzentrum':
-        df_3 = pd.read_json("daten/stroke_units_ch.json")
-        df_4 = pd.read_json("daten/stroke_untis_lu.json")
-        return pd.concat([df_3, df_4])
-    elif emergency_type == 'Feuerwehrstützpunkt':
-        df_5 = pd.read_json("daten/fire_station_ch.json")
-        df_6 = pd.read_json("daten/fire_station_lu.json")
-        return pd.concat([df_5, df_6])
-    raise "Keine gültige Notfallart" #wenn keine der obigen Arten
+def filter_data_based_on_criteria(data, kind):
+    if kind:
+        return [x for x in data if x.kind == kind]
+    return data
 
 
 @app.callback(
@@ -167,15 +156,17 @@ def filter_data_based_on_criteria(emergency_type):
         }
     },
 )
-def update_bar_chart(all_inputs):
-    #data = filter_data_based_on_criteria(value)
+def update_map(all_inputs):
+    data = open_data()
     c = ctx.args_grouping.all_inputs
     if c.emergency_type.triggered:
         print(f"{c.emergency_type.value}")
+        data = filter_data_based_on_criteria(data, c.emergency_type.value)
     elif c.my_interval.triggered:
         print(f"{c.my_interval.value}")
-    fig = get_fig(c.emergency_type.value)
-    return fig
+
+    return get_fig(data)
+
 
 if __name__ == '__main__':
     app.run_server()
