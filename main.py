@@ -97,6 +97,7 @@ class NFS:
         self.kind = kind
         self.country = country
         self.coordinates = coordinates
+        self.personal = personal
         self.color = {"notfallstation": "blue", "stroke_unit": "green", "fire_station": "red"}[self.kind]
 
 def open_data():
