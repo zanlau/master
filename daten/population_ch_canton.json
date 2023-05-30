@@ -1,0 +1,140 @@
+{
+    "source": "Bundesamt f\u00fcr Statistik - Bev\u00f6lkerunghttps://www.pxweb.bfs.admin.ch/pxweb/de/px-x-0102010000_101/px-x-0102010000_101/px-x-0102010000_101.px",
+    "data": [
+        {
+            "number": "ZH",
+            "name": "Z\u00fcrich",
+            "population": 1564662
+        },
+        {
+            "number": "BE",
+            "name": "Bern",
+            "population": 1047473
+        },
+        {
+            "number": "LU",
+            "name": "Luzern",
+            "population": 420326
+        },
+        {
+            "number": "UR",
+            "name": "Uri",
+            "population": 37047
+        },
+        {
+            "number": "SZ",
+            "name": "Schwyz",
+            "population": 163689
+        },
+        {
+            "number": "OW",
+            "name": "Obwalden",
+            "population": 38435
+        },
+        {
+            "number": "NW",
+            "name": "Nidwalden",
+            "population": 43894
+        },
+        {
+            "number": "GL",
+            "name": "Glarus",
+            "population": 41190
+        },
+        {
+            "number": "ZG",
+            "name": "Zug",
+            "population": 129787
+        },
+        {
+            "number": "FR",
+            "name": "Freiburg",
+            "population": 329809
+        },
+        {
+            "number": "SO",
+            "name": "Solothurn",
+            "population": 280245
+        },
+        {
+            "number": "BS",
+            "name": "Basel Stadt",
+            "population": 196036
+        },
+        {
+            "number": "BL",
+            "name": "Basel Landschaft",
+            "population": 292817
+        },
+        {
+            "number": "SH",
+            "name": "Schaffhausen",
+            "population": 83995
+        },
+        {
+            "number": "AR",
+            "name": "Appenzell Ausserrhoden",
+            "population": 55585
+        },
+        {
+            "number": "AI",
+            "name": "Appenzell Innerrhoden",
+            "population": 16360
+        },
+        {
+            "number": "SG",
+            "name": "St.Gallen",
+            "population": 519245
+        },
+        {
+            "number": "GR",
+            "name": "Graub\u00fcnden",
+            "population": 201376
+        },
+        {
+            "number": "AG",
+            "name": "Aargau",
+            "population": 703086
+        },
+        {
+            "number": "TG",
+            "name": "Thurgau",
+            "population": 285964
+        },
+        {
+            "number": "TI",
+            "name": "Ticino",
+            "population": 352181
+        },
+        {
+            "number": "VD",
+            "name": "Waadt",
+            "population": 822968
+        },
+        {
+            "number": "VS",
+            "name": "Wallis",
+            "population": 353209
+        },
+        {
+            "number": "NE",
+            "name": "Neuenburg",
+            "population": 176166
+        },
+        {
+            "number": "GE",
+            "name": "Genf",
+            "population": 509448
+        },
+        {
+            "number": "JU",
+            "name": "Jura",
+            "population": 73798
+        },
+        {
+            "number": null,
+            "name": null,
+            "population": null
+        }
+    ]
+}

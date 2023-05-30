@@ -1,0 +1,725 @@
+{
+    "source": "Bundesamt f\u00fcr Statistik - Bev\u00f6lkerunghttps://www.pxweb.bfs.admin.ch/pxweb/de/px-x-0102010000_101/px-x-0102010000_101/px-x-0102010000_101.px",
+    "data": [
+        {
+            "number": "000101",
+            "name": "Bezirk Affoltern",
+            "population": 56370
+        },
+        {
+            "number": "000102",
+            "name": "Bezirk Andelfingen",
+            "population": 32136
+        },
+        {
+            "number": "000103",
+            "name": "Bezirk B\u00fclach",
+            "population": 158566
+        },
+        {
+            "number": "000104",
+            "name": "Bezirk Dielsdorf",
+            "population": 92479
+        },
+        {
+            "number": "000105",
+            "name": "Bezirk Hinwil",
+            "population": 98201
+        },
+        {
+            "number": "000106",
+            "name": "Bezirk Horgen",
+            "population": 128224
+        },
+        {
+            "number": "000107",
+            "name": "Bezirk Meilen",
+            "population": 107006
+        },
+        {
+            "number": "000108",
+            "name": "Bezirk Pf\u00e4ffikon",
+            "population": 61597
+        },
+        {
+            "number": "000109",
+            "name": "Bezirk Uster",
+            "population": 136806
+        },
+        {
+            "number": "000110",
+            "name": "Bezirk Winterthur",
+            "population": 174646
+        },
+        {
+            "number": "000111",
+            "name": "Bezirk Dietikon",
+            "population": 95438
+        },
+        {
+            "number": "000112",
+            "name": "Bezirk Z\u00fcrich",
+            "population": 423193
+        },
+        {
+            "number": "000241",
+            "name": "Arrondissement administratif Jura bernois",
+            "population": 53744
+        },
+        {
+            "number": "000242",
+            "name": "Verwaltungskreis Biel/Bienne",
+            "population": 103148
+        },
+        {
+            "number": "000243",
+            "name": "Verwaltungskreis Seeland",
+            "population": 77083
+        },
+        {
+            "number": "000244",
+            "name": "Verwaltungskreis Oberaargau",
+            "population": 83002
+        },
+        {
+            "number": "000245",
+            "name": "Verwaltungskreis Emmental",
+            "population": 98310
+        },
+        {
+            "number": "000246",
+            "name": "Verwaltungskreis Bern-Mittelland",
+            "population": 418858
+        },
+        {
+            "number": "000247",
+            "name": "Verwaltungskreis Thun",
+            "population": 108246
+        },
+        {
+            "number": "000248",
+            "name": "Verwaltungskreis Obersimmental-Saanen",
+            "population": 16597
+        },
+        {
+            "number": "000249",
+            "name": "Verwaltungskreis Frutigen-Niedersimmental",
+            "population": 40674
+        },
+        {
+            "number": "000250",
+            "name": "Verwaltungskreis Interlaken-Oberhasli",
+            "population": 47811
+        },
+        {
+            "number": "000311",
+            "name": "Wahlkreis Luzern-Stadt",
+            "population": 82922
+        },
+        {
+            "number": "000312",
+            "name": "Wahlkreis Luzern-Land",
+            "population": 106450
+        },
+        {
+            "number": "000313",
+            "name": "Wahlkreis Hochdorf",
+            "population": 74724
+        },
+        {
+            "number": "000314",
+            "name": "Wahlkreis Sursee",
+            "population": 77068
+        },
+        {
+            "number": "000315",
+            "name": "Wahlkreis Willisau",
+            "population": 55826
+        },
+        {
+            "number": "000316",
+            "name": "Wahlkreis Entlebuch",
+            "population": 23336
+        },
+        {
+            "number": "000400",
+            "name": "Kanton Uri",
+            "population": 37047
+        },
+        {
+            "number": "000501",
+            "name": "Bezirk Einsiedeln",
+            "population": 16253
+        },
+        {
+            "number": "000502",
+            "name": "Bezirk Gersau",
+            "population": 2384
+        },
+        {
+            "number": "000503",
+            "name": "Bezirk H\u00f6fe",
+            "population": 29545
+        },
+        {
+            "number": "000504",
+            "name": "Bezirk K\u00fcssnacht (SZ)",
+            "population": 13809
+        },
+        {
+            "number": "000505",
+            "name": "Bezirk March",
+            "population": 45151
+        },
+        {
+            "number": "000506",
+            "name": "Bezirk Schwyz",
+            "population": 56547
+        },
+        {
+            "number": "000600",
+            "name": "Kanton Obwalden",
+            "population": 38435
+        },
+        {
+            "number": "000700",
+            "name": "Kanton Nidwalden",
+            "population": 43894
+        },
+        {
+            "number": "000800",
+            "name": "Kanton Glarus",
+            "population": 41190
+        },
+        {
+            "number": "000900",
+            "name": "Kanton Zug",
+            "population": 129787
+        },
+        {
+            "number": "001001",
+            "name": "District de la Broye",
+            "population": 34615
+        },
+        {
+            "number": "001002",
+            "name": "District de la Gl\u00e2ne",
+            "population": 25502
+        },
+        {
+            "number": "001003",
+            "name": "District de la Gruy\u00e8re",
+            "population": 58798
+        },
+        {
+            "number": "001004",
+            "name": "District de la Sarine",
+            "population": 107592
+        },
+        {
+            "number": "001005",
+            "name": "Bezirk See / District du Lac",
+            "population": 38050
+        },
+        {
+            "number": "001006",
+            "name": "Bezirk Sense",
+            "population": 45135
+        },
+        {
+            "number": "001007",
+            "name": "District de la Veveyse",
+            "population": 20117
+        },
+        {
+            "number": "001101",
+            "name": "Bezirk G\u00e4u",
+            "population": 22473
+        },
+        {
+            "number": "001102",
+            "name": "Bezirk Thal",
+            "population": 14909
+        },
+        {
+            "number": "001103",
+            "name": "Bezirk Bucheggberg",
+            "population": 8054
+        },
+        {
+            "number": "001104",
+            "name": "Bezirk Dorneck",
+            "population": 20897
+        },
+        {
+            "number": "001105",
+            "name": "Bezirk G\u00f6sgen",
+            "population": 25060
+        },
+        {
+            "number": "001106",
+            "name": "Bezirk Wasseramt",
+            "population": 53689
+        },
+        {
+            "number": "001107",
+            "name": "Bezirk Lebern",
+            "population": 46917
+        },
+        {
+            "number": "001108",
+            "name": "Bezirk Olten",
+            "population": 56532
+        },
+        {
+            "number": "001109",
+            "name": "Bezirk Solothurn",
+            "population": 16807
+        },
+        {
+            "number": "001110",
+            "name": "Bezirk Thierstein",
+            "population": 14907
+        },
+        {
+            "number": "001200",
+            "name": "Kanton Basel-Stadt",
+            "population": 196036
+        },
+        {
+            "number": "001301",
+            "name": "Bezirk Arlesheim",
+            "population": 157641
+        },
+        {
+            "number": "001302",
+            "name": "Bezirk Laufen",
+            "population": 20568
+        },
+        {
+            "number": "001303",
+            "name": "Bezirk Liestal",
+            "population": 62061
+        },
+        {
+            "number": "001304",
+            "name": "Bezirk Sissach",
+            "population": 36420
+        },
+        {
+            "number": "001305",
+            "name": "Bezirk Waldenburg",
+            "population": 16127
+        },
+        {
+            "number": "001401",
+            "name": "Bezirk Oberklettgau",
+            "population": 4918
+        },
+        {
+            "number": "001402",
+            "name": "Bezirk Reiat",
+            "population": 9271
+        },
+        {
+            "number": "001403",
+            "name": "Bezirk Schaffhausen",
+            "population": 55740
+        },
+        {
+            "number": "001404",
+            "name": "Bezirk Schleitheim",
+            "population": 3073
+        },
+        {
+            "number": "001405",
+            "name": "Bezirk Stein",
+            "population": 5884
+        },
+        {
+            "number": "001406",
+            "name": "Bezirk Unterklettgau",
+            "population": 5109
+        },
+        {
+            "number": "001501",
+            "name": "Bezirk Hinterland",
+            "population": 24199
+        },
+        {
+            "number": "001502",
+            "name": "Bezirk Mittelland",
+            "population": 17672
+        },
+        {
+            "number": "001503",
+            "name": "Bezirk Vorderland",
+            "population": 13714
+        },
+        {
+            "number": "001600",
+            "name": "Kanton Appenzell Innerrhoden",
+            "population": 16360
+        },
+        {
+            "number": "001721",
+            "name": "Wahlkreis St. Gallen",
+            "population": 123274
+        },
+        {
+            "number": "001722",
+            "name": "Wahlkreis Rorschach",
+            "population": 44146
+        },
+        {
+            "number": "001723",
+            "name": "Wahlkreis Rheintal",
+            "population": 75399
+        },
+        {
+            "number": "001724",
+            "name": "Wahlkreis Werdenberg",
+            "population": 40568
+        },
+        {
+            "number": "001725",
+            "name": "Wahlkreis Sarganserland",
+            "population": 42126
+        },
+        {
+            "number": "001726",
+            "name": "Wahlkreis See-Gaster",
+            "population": 69386
+        },
+        {
+            "number": "001727",
+            "name": "Wahlkreis Toggenburg",
+            "population": 47411
+        },
+        {
+            "number": "001728",
+            "name": "Wahlkreis Wil",
+            "population": 76935
+        },
+        {
+            "number": "001841",
+            "name": "Region Albula",
+            "population": 8144
+        },
+        {
+            "number": "001842",
+            "name": "Region Bernina",
+            "population": 4571
+        },
+        {
+            "number": "001843",
+            "name": "Region Engiadina Bassa / Val M\u00fcstair",
+            "population": 9189
+        },
+        {
+            "number": "001844",
+            "name": "Region Imboden",
+            "population": 21702
+        },
+        {
+            "number": "001845",
+            "name": "Region Landquart",
+            "population": 25865
+        },
+        {
+            "number": "001846",
+            "name": "Region Maloja",
+            "population": 18236
+        },
+        {
+            "number": "001847",
+            "name": "Region Moesa",
+            "population": 8909
+        },
+        {
+            "number": "001848",
+            "name": "Region Plessur",
+            "population": 43233
+        },
+        {
+            "number": "001849",
+            "name": "Region Pr\u00e4ttigau / Davos",
+            "population": 26060
+        },
+        {
+            "number": "001850",
+            "name": "Region Surselva",
+            "population": 21438
+        },
+        {
+            "number": "001851",
+            "name": "Region Viamala",
+            "population": 14029
+        },
+        {
+            "number": "001901",
+            "name": "Bezirk Aarau",
+            "population": 81275
+        },
+        {
+            "number": "001902",
+            "name": "Bezirk Baden",
+            "population": 147193
+        },
+        {
+            "number": "001903",
+            "name": "Bezirk Bremgarten",
+            "population": 80298
+        },
+        {
+            "number": "001904",
+            "name": "Bezirk Brugg",
+            "population": 52802
+        },
+        {
+            "number": "001905",
+            "name": "Bezirk Kulm",
+            "population": 43822
+        },
+        {
+            "number": "001906",
+            "name": "Bezirk Laufenburg",
+            "population": 33729
+        },
+        {
+            "number": "001907",
+            "name": "Bezirk Lenzburg",
+            "population": 66522
+        },
+        {
+            "number": "001908",
+            "name": "Bezirk Muri",
+            "population": 37967
+        },
+        {
+            "number": "001909",
+            "name": "Bezirk Rheinfelden",
+            "population": 48591
+        },
+        {
+            "number": "001910",
+            "name": "Bezirk Zofingen",
+            "population": 75116
+        },
+        {
+            "number": "001911",
+            "name": "Bezirk Zurzach",
+            "population": 35771
+        },
+        {
+            "number": "002011",
+            "name": "Bezirk Arbon",
+            "population": 59035
+        },
+        {
+            "number": "002012",
+            "name": "Bezirk Frauenfeld",
+            "population": 70418
+        },
+        {
+            "number": "002013",
+            "name": "Bezirk Kreuzlingen",
+            "population": 50395
+        },
+        {
+            "number": "002014",
+            "name": "Bezirk M\u00fcnchwilen",
+            "population": 48852
+        },
+        {
+            "number": "002015",
+            "name": "Bezirk Weinfelden",
+            "population": 57264
+        },
+        {
+            "number": "002101",
+            "name": "Distretto di Bellinzona",
+            "population": 56371
+        },
+        {
+            "number": "002102",
+            "name": "Distretto di Blenio",
+            "population": 5634
+        },
+        {
+            "number": "002103",
+            "name": "Distretto di Leventina",
+            "population": 8718
+        },
+        {
+            "number": "002104",
+            "name": "Distretto di Locarno",
+            "population": 64159
+        },
+        {
+            "number": "002105",
+            "name": "Distretto di Lugano",
+            "population": 151242
+        },
+        {
+            "number": "002106",
+            "name": "Distretto di Mendrisio",
+            "population": 49778
+        },
+        {
+            "number": "002107",
+            "name": "Distretto di Riviera",
+            "population": 10354
+        },
+        {
+            "number": "002108",
+            "name": "Distretto di Vallemaggia",
+            "population": 5925
+        },
+        {
+            "number": "002221",
+            "name": "District d'Aigle",
+            "population": 47125
+        },
+        {
+            "number": "002222",
+            "name": "District de la Broye-Vully",
+            "population": 45259
+        },
+        {
+            "number": "002223",
+            "name": "District du Gros-de-Vaud",
+            "population": 46776
+        },
+        {
+            "number": "002224",
+            "name": "District du Jura-Nord vaudois",
+            "population": 93852
+        },
+        {
+            "number": "002225",
+            "name": "District de Lausanne",
+            "population": 169024
+        },
+        {
+            "number": "002226",
+            "name": "District de Lavaux-Oron",
+            "population": 64270
+        },
+        {
+            "number": "002227",
+            "name": "District de Morges",
+            "population": 85975
+        },
+        {
+            "number": "002228",
+            "name": "District de Nyon",
+            "population": 104214
+        },
+        {
+            "number": "002229",
+            "name": "District de l'Ouest lausannois",
+            "population": 80245
+        },
+        {
+            "number": "002230",
+            "name": "District de la Riviera-Pays-d'Enhaut",
+            "population": 86228
+        },
+        {
+            "number": "002301",
+            "name": "Bezirk Brig",
+            "population": 27822
+        },
+        {
+            "number": "002302",
+            "name": "District de Conthey",
+            "population": 29856
+        },
+        {
+            "number": "002303",
+            "name": "District d'Entremont",
+            "population": 15837
+        },
+        {
+            "number": "002304",
+            "name": "Bezirk Goms",
+            "population": 4401
+        },
+        {
+            "number": "002305",
+            "name": "District d'H\u00e9rens",
+            "population": 11123
+        },
+        {
+            "number": "002306",
+            "name": "Bezirk Leuk",
+            "population": 12657
+        },
+        {
+            "number": "002307",
+            "name": "District de Martigny",
+            "population": 49674
+        },
+        {
+            "number": "002308",
+            "name": "District de Monthey",
+            "population": 48636
+        },
+        {
+            "number": "002309",
+            "name": "Bezirk Raron",
+            "population": 11178
+        },
+        {
+            "number": "002310",
+            "name": "District de Saint-Maurice",
+            "population": 14277
+        },
+        {
+            "number": "002311",
+            "name": "District de Sierre",
+            "population": 50019
+        },
+        {
+            "number": "002312",
+            "name": "District de Sion",
+            "population": 49023
+        },
+        {
+            "number": "002313",
+            "name": "Bezirk Visp",
+            "population": 28706
+        },
+        {
+            "number": "002400",
+            "name": "Canton de Neuch\u00e2tel",
+            "population": 176166
+        },
+        {
+            "number": "002500",
+            "name": "Canton de Gen\u00e8ve",
+            "population": 509448
+        },
+        {
+            "number": "002601",
+            "name": "District de Del\u00e9mont",
+            "population": 39125
+        },
+        {
+            "number": "002602",
+            "name": "District des Franches-Montagnes",
+            "population": 10478
+        },
+        {
+            "number": "002603",
+            "name": "District de Porrentruy",
+            "population": 24195
+        },
+        {
+            "number": null,
+            "name": null,
+            "population": null
+        }
+    ]
+}
