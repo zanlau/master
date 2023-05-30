@@ -48,7 +48,7 @@
         },
         {
             "number": 10,
-            "name": "Canton Esch",
+            "name": "Canton Esch-Alzette",
             "population": 189540
         },
         {
@@ -60,11 +60,6 @@
             "number": 12,
             "name": "Canton Mersch",
             "population": 35579
-        },
-        {
-            "number": null,
-            "name": null,
-            "population": null
         }
     ]
 }
