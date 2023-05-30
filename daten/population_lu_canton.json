@@ -1,0 +1,70 @@
+{
+    "source": "Statec - Statistikseite des Staates Luxemburghttps://lustat.statec.lu/vis?fs[0]=Topics%2C1%7CPopulation%20and%20employment%23B%23%7CPopulation%20structure%23B1%23&pg=0&fc=Topics&lc=en&df[ds]=ds-release&df[id]=DF_X021&df[ag]=LU1&df[vs]=1.0&pd=2015%2C2023&dq=A.",
+    "data": [
+        {
+            "number": 1,
+            "name": "Canton Clervaux",
+            "population": 20687
+        },
+        {
+            "number": 2,
+            "name": "Canton Diekirch",
+            "population": 35150
+        },
+        {
+            "number": 3,
+            "name": "Canton Redange",
+            "population": 20874
+        },
+        {
+            "number": 4,
+            "name": "Canton Vianden",
+            "population": 5594
+        },
+        {
+            "number": 5,
+            "name": "Canton Wiltz",
+            "population": 19209
+        },
+        {
+            "number": 6,
+            "name": "Canton Echternach",
+            "population": 20280
+        },
+        {
+            "number": 7,
+            "name": "Canton Grevenmacher",
+            "population": 32524
+        },
+        {
+            "number": 8,
+            "name": "Canton Remich",
+            "population": 24186
+        },
+        {
+            "number": 9,
+            "name": "Canton Capellen",
+            "population": 52828
+        },
+        {
+            "number": 10,
+            "name": "Canton Esch",
+            "population": 189540
+        },
+        {
+            "number": 11,
+            "name": "Canton Luxembourg",
+            "population": 204358
+        },
+        {
+            "number": 12,
+            "name": "Canton Mersch",
+            "population": 35579
+        },
+        {
+            "number": null,
+            "name": null,
+            "population": null
+        }
+    ]
+}

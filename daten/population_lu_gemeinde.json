@@ -1,0 +1,515 @@
+{
+    "source": "Statec - Statistikseite des Staates Luxemburghttps://lustat.statec.lu/vis?fs[0]=Topics%2C1%7CPopulation%20and%20employment%23B%23%7CPopulation%20structure%23B1%23&pg=0&fc=Topics&lc=en&df[ds]=ds-release&df[id]=DF_X021&df[ag]=LU1&df[vs]=1.0&pd=2015%2C2023&dq=A.",
+    "data": [
+        {
+            "number": 1,
+            "name": "Clervaux",
+            "population": 6021
+        },
+        {
+            "number": 2,
+            "name": "Parc Hosingen",
+            "population": 4036
+        },
+        {
+            "number": 3,
+            "name": "Troisvierges",
+            "population": 3513
+        },
+        {
+            "number": 4,
+            "name": "Weiswampach",
+            "population": 2313
+        },
+        {
+            "number": 5,
+            "name": "Wincrange",
+            "population": 4804
+        },
+        {
+            "number": 6,
+            "name": "Bettendorf",
+            "population": 3052
+        },
+        {
+            "number": 7,
+            "name": "Bourscheid",
+            "population": 1678
+        },
+        {
+            "number": 8,
+            "name": "Diekirch",
+            "population": 7295
+        },
+        {
+            "number": 9,
+            "name": "Erpeldange-sur-S\u00fbre",
+            "population": 2429
+        },
+        {
+            "number": 10,
+            "name": "Ettelbruck",
+            "population": 9688
+        },
+        {
+            "number": 11,
+            "name": "Feulen",
+            "population": 2366
+        },
+        {
+            "number": 12,
+            "name": "Mertzig",
+            "population": 2370
+        },
+        {
+            "number": 13,
+            "name": "Reisdorf",
+            "population": 1353
+        },
+        {
+            "number": 14,
+            "name": "Schieren",
+            "population": 2149
+        },
+        {
+            "number": 15,
+            "name": "Vall\u00e9e de l'Ernz",
+            "population": 2770
+        },
+        {
+            "number": 16,
+            "name": "Beckerich",
+            "population": 2866
+        },
+        {
+            "number": 17,
+            "name": "Ell",
+            "population": 1582
+        },
+        {
+            "number": 18,
+            "name": "Grosbous",
+            "population": 1134
+        },
+        {
+            "number": 19,
+            "name": "Pr\u00e9izerdaul",
+            "population": 1827
+        },
+        {
+            "number": 20,
+            "name": "Rambrouch",
+            "population": 4836
+        },
+        {
+            "number": 21,
+            "name": "Redange-sur-Attert",
+            "population": 3059
+        },
+        {
+            "number": 22,
+            "name": "Saeul",
+            "population": 983
+        },
+        {
+            "number": 23,
+            "name": "Useldange",
+            "population": 2075
+        },
+        {
+            "number": 24,
+            "name": "Vichten",
+            "population": 1425
+        },
+        {
+            "number": 25,
+            "name": "Wahl",
+            "population": 1087
+        },
+        {
+            "number": 26,
+            "name": "Putscheid",
+            "population": 1153
+        },
+        {
+            "number": 27,
+            "name": "Tandel",
+            "population": 2238
+        },
+        {
+            "number": 28,
+            "name": "Vianden",
+            "population": 2203
+        },
+        {
+            "number": 29,
+            "name": "Boulaide",
+            "population": 1499
+        },
+        {
+            "number": 30,
+            "name": "Esch-sur-S\u00fbre",
+            "population": 3129
+        },
+        {
+            "number": 31,
+            "name": "Goesdorf",
+            "population": 1664
+        },
+        {
+            "number": 32,
+            "name": "Kiischpelt",
+            "population": 1260
+        },
+        {
+            "number": 33,
+            "name": "Lac de la Haute-S\u00fbre",
+            "population": 2253
+        },
+        {
+            "number": 34,
+            "name": "Wiltz",
+            "population": 7949
+        },
+        {
+            "number": 35,
+            "name": "Winseler",
+            "population": 1455
+        },
+        {
+            "number": 36,
+            "name": "Beaufort",
+            "population": 3053
+        },
+        {
+            "number": 37,
+            "name": "Bech",
+            "population": 1357
+        },
+        {
+            "number": 38,
+            "name": "Berdorf",
+            "population": 2219
+        },
+        {
+            "number": 39,
+            "name": "Consdorf",
+            "population": 2117
+        },
+        {
+            "number": 40,
+            "name": "Echternach",
+            "population": 5870
+        },
+        {
+            "number": 41,
+            "name": "Rosport - Mompach",
+            "population": 3704
+        },
+        {
+            "number": 42,
+            "name": "Waldbillig",
+            "population": 1960
+        },
+        {
+            "number": 43,
+            "name": "Betzdorf",
+            "population": 4105
+        },
+        {
+            "number": 44,
+            "name": "Biwer",
+            "population": 1926
+        },
+        {
+            "number": 45,
+            "name": "Flaxweiler",
+            "population": 2193
+        },
+        {
+            "number": 46,
+            "name": "Grevenmacher",
+            "population": 5092
+        },
+        {
+            "number": 47,
+            "name": "Junglinster",
+            "population": 8622
+        },
+        {
+            "number": 48,
+            "name": "Manternach",
+            "population": 2298
+        },
+        {
+            "number": 49,
+            "name": "Mertert",
+            "population": 5117
+        },
+        {
+            "number": 50,
+            "name": "Wormeldange",
+            "population": 3171
+        },
+        {
+            "number": 51,
+            "name": "Bous",
+            "population": 1752
+        },
+        {
+            "number": 52,
+            "name": "Dalheim",
+            "population": 2408
+        },
+        {
+            "number": 53,
+            "name": "Lenningen",
+            "population": 2070
+        },
+        {
+            "number": 54,
+            "name": "Mondorf-les-Bains",
+            "population": 5424
+        },
+        {
+            "number": 55,
+            "name": "Remich",
+            "population": 4015
+        },
+        {
+            "number": 56,
+            "name": "Schengen",
+            "population": 5196
+        },
+        {
+            "number": 57,
+            "name": "Stadtbredimus",
+            "population": 1984
+        },
+        {
+            "number": 58,
+            "name": "Waldbredimus",
+            "population": 1337
+        },
+        {
+            "number": 59,
+            "name": "Dippach",
+            "population": 4635
+        },
+        {
+            "number": 60,
+            "name": "Garnich",
+            "population": 2289
+        },
+        {
+            "number": 61,
+            "name": "Habscht",
+            "population": 4992
+        },
+        {
+            "number": 62,
+            "name": "K\u00e4erjeng",
+            "population": 11015
+        },
+        {
+            "number": 63,
+            "name": "Kehlen",
+            "population": 6391
+        },
+        {
+            "number": 64,
+            "name": "Koerich",
+            "population": 2706
+        },
+        {
+            "number": 65,
+            "name": "Kopstal",
+            "population": 4286
+        },
+        {
+            "number": 66,
+            "name": "Mamer",
+            "population": 10643
+        },
+        {
+            "number": 67,
+            "name": "Steinfort",
+            "population": 5871
+        },
+        {
+            "number": 68,
+            "name": "Bettembourg",
+            "population": 11422
+        },
+        {
+            "number": 69,
+            "name": "Differdange",
+            "population": 29536
+        },
+        {
+            "number": 70,
+            "name": "Dudelange",
+            "population": 21953
+        },
+        {
+            "number": 71,
+            "name": "Esch-sur-Alzette",
+            "population": 36625
+        },
+        {
+            "number": 72,
+            "name": "Frisange",
+            "population": 4912
+        },
+        {
+            "number": 73,
+            "name": "Kayl",
+            "population": 9865
+        },
+        {
+            "number": 74,
+            "name": "Leudelange",
+            "population": 2766
+        },
+        {
+            "number": 75,
+            "name": "Mondercange",
+            "population": 7119
+        },
+        {
+            "number": 76,
+            "name": "P\u00e9tange",
+            "population": 20563
+        },
+        {
+            "number": 77,
+            "name": "Reckange-sur-Mess",
+            "population": 2734
+        },
+        {
+            "number": 78,
+            "name": "Roeser",
+            "population": 6657
+        },
+        {
+            "number": 79,
+            "name": "Rumelange",
+            "population": 5692
+        },
+        {
+            "number": 80,
+            "name": "Sanem",
+            "population": 18333
+        },
+        {
+            "number": 81,
+            "name": "Schifflange",
+            "population": 11363
+        },
+        {
+            "number": 82,
+            "name": "Bertrange",
+            "population": 8668
+        },
+        {
+            "number": 83,
+            "name": "Contern",
+            "population": 4374
+        },
+        {
+            "number": 84,
+            "name": "Hesperange",
+            "population": 16433
+        },
+        {
+            "number": 85,
+            "name": "Luxembourg",
+            "population": 132780
+        },
+        {
+            "number": 86,
+            "name": "Niederanven",
+            "population": 6660
+        },
+        {
+            "number": 87,
+            "name": "Sandweiler",
+            "population": 3751
+        },
+        {
+            "number": 88,
+            "name": "Schuttrange",
+            "population": 4387
+        },
+        {
+            "number": 89,
+            "name": "Steinsel",
+            "population": 5539
+        },
+        {
+            "number": 90,
+            "name": "Strassen",
+            "population": 10538
+        },
+        {
+            "number": 91,
+            "name": "Walferdange",
+            "population": 8730
+        },
+        {
+            "number": 92,
+            "name": "Weiler-la-Tour",
+            "population": 2498
+        },
+        {
+            "number": 93,
+            "name": "Bissen",
+            "population": 3450
+        },
+        {
+            "number": 94,
+            "name": "Colmar-Berg",
+            "population": 2336
+        },
+        {
+            "number": 95,
+            "name": "Fischbach",
+            "population": 1308
+        },
+        {
+            "number": 96,
+            "name": "Heffingen",
+            "population": 1549
+        },
+        {
+            "number": 97,
+            "name": "Helperknapp",
+            "population": 4941
+        },
+        {
+            "number": 98,
+            "name": "Larochette",
+            "population": 2208
+        },
+        {
+            "number": 99,
+            "name": "Lintgen",
+            "population": 3436
+        },
+        {
+            "number": 100,
+            "name": "Lorentzweiler",
+            "population": 4521
+        },
+        {
+            "number": 101,
+            "name": "Mersch",
+            "population": 10393
+        },
+        {
+            "number": 102,
+            "name": "Nommern",
+            "population": 1437
+        }
+    ]
+}
