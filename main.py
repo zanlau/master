@@ -27,7 +27,7 @@ def emergency_dropdown(id):
                             {"label": "Feuerwehrstützpunkt", "value": 'fire_station'},
                             {"label": "Schlaganfallzentrum", "value": 'stroke_unit'}],
                         multi=False,
-                        value='emergency',
+                        value='emergency_type',
                         style={"width": "40%"})
 
 def area_criteria(id):
@@ -79,7 +79,7 @@ app.layout = html.Div(
                 dbc.Card([
                     dbc.CardHeader(children="Karte zur Bestimmung der Einzugsgebiete",
                         id="world_map_header"),
-                    dcc.Graph(id = "graph"),
+                    dcc.Graph(id="graph"),
                     dcc.Interval(id="my_interval", interval=2000, n_intervals=0, disabled=False),
                 ])
             ])
@@ -97,7 +97,7 @@ class NFS:
         self.kind = kind
         self.country = country
         self.coordinates = coordinates
-        self.personal = personal
+        #self.personal = personal
         self.color = {"notfallstation": "blue", "stroke_unit": "green", "fire_station": "red"}[self.kind]
 
 def open_data():
@@ -152,8 +152,9 @@ def filter_data_based_on_criteria(data, kind):
     Output("graph", "figure"),
     inputs={
         "all_inputs": {
+            "my_interval": Input("my_interval", "value"),
             "emergency_type": Input("emergency_type", "value"),
-            "my_interval": Input("criteria", "value")
+            "criteria": Input("criteria", "value"),
         }
     },
 )
