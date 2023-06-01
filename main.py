@@ -1,5 +1,7 @@
 import json
 import random
+import sys
+
 import dash
 import html
 import dash_bootstrap_components as dbc
@@ -13,6 +15,10 @@ import dash.dependencies as dependencies
 from flask import Flask
 from openpyxl import load_workbook
 from plotly.subplots import make_subplots
+
+if dash.__version__ != "2.10.2":
+    print("dash version 2.10.2 required!")
+    sys.exit()
 
 
 def h1(text): return html.H1(text, style={'text-align': 'center'})
