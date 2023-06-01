@@ -140,30 +140,45 @@ class Cord:
         self.lat = lat
         self.lon = lon
 
+    def __str__(self):
+        return f"{self.lat} {self.lon}"
+
+
+class Location:
+    def __init__(self, coordinates, country, city=None, postcode=None, street=None, housenumber=None):
+        self.coordinates = coordinates
+        self.country = country
+        self.city = city
+        self.postcode = postcode
+        self.street = street
+        self.housenumber = housenumber
+
+    def __str__(self):
+        return f"{self.coordinates}"
 
 class NFS:
-    def __init__(self, kind, country, coordinates):
+    def __init__(self, name, kind, location, personal=None):
+        self.name = name or f"{kind} {location}"
         self.kind = kind
-        self.country = country
-        self.coordinates = coordinates
-        # self.personal = personal
+        self.location = location
+        self.personal = personal
         self.color = {"notfallstation": "blue", "stroke_unit": "green", "fire_station": "red"}[self.kind]
 
 
 def open_data():
     data = []
     with open("daten/notfallstationen_ch.json") as f:
-        data.extend([NFS("notfallstation", "CH", Cord(x["lat"], x["lon"])) for x in json.load(f)["data"]])
+        data.extend([NFS(x["institut"], "notfallstation", Location(Cord(x["lat"], x["lon"]), "CH"), x["personal_bestand"]) for x in json.load(f)["data"]])
     with open("daten/notfallstationen_lu.json") as f:
-        data.extend([NFS("notfallstation", "LU", Cord(x["lat"], x["lon"])) for x in json.load(f)["data"]])
+        data.extend([NFS(x["institut"], "notfallstation", Location(Cord(x["lat"], x["lon"]), "LU"), x["personal_bestand"]) for x in json.load(f)["data"]])
     with open("daten/stroke_units_ch.json") as f:
-        data.extend([NFS("stroke_unit", "CH", Cord(x["lat"], x["lon"])) for x in json.load(f)["data"]])
+        data.extend([NFS(x["institut"], "stroke_unit", Location(Cord(x["lat"], x["lon"]), "CH")) for x in json.load(f)["data"]])
     with open("daten/stroke_untis_lu.json") as f:
-        data.extend([NFS("stroke_unit", "LU", Cord(x["lat"], x["lon"])) for x in json.load(f)["data"]])
+        data.extend([NFS(x["institut"], "stroke_unit", Location(Cord(x["lat"], x["lon"]), "LU")) for x in json.load(f)["data"]])
     with open("daten/fire_station_ch.json") as f:
-        data.extend([NFS("fire_station", "CH", Cord(x.get("lat"), x.get("lon"))) for x in json.load(f)["elements"]])
+        data.extend([NFS(x.get("tags", {}).get("name"), "fire_station", Location(Cord(x.get("lat"), x.get("lon")), "CH")) for x in json.load(f)["elements"]])
     with open("daten/fire_station_lu.json") as f:
-        data.extend([NFS("fire_station", "LU", Cord(x.get("lat"), x.get("lon"))) for x in json.load(f)["elements"]])
+        data.extend([NFS(x.get("tags", {}).get("name"), "fire_station", Location(Cord(x.get("lat"), x.get("lon")), "LU")) for x in json.load(f)["elements"]])
     return data
 
 
@@ -174,10 +189,11 @@ def get_fig(data):
 
     fig.add_trace(
         go.Scattermapbox(
-            lat=[x.coordinates.lat for x in data],
-            lon=[x.coordinates.lon for x in data],
+            lat=[x.location.coordinates.lat for x in data],
+            lon=[x.location.coordinates.lon for x in data],
             mode="markers",
             marker=dict(size=15, color=[x.color for x in data]),
+            text=[x.name for x in data],
         )
     )
 
