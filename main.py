@@ -176,7 +176,25 @@ def open_data():
     with open("daten/stroke_untis_lu.json") as f:
         data.extend([NFS(x["institut"], "stroke_unit", Location(Cord(x["lat"], x["lon"]), "LU")) for x in json.load(f)["data"]])
     with open("daten/fire_station_ch.json") as f:
-        data.extend([NFS(x.get("tags", {}).get("name"), "fire_station", Location(Cord(x.get("lat"), x.get("lon")), "CH")) for x in json.load(f)["elements"]])
+        elements = json.load(f)["elements"]
+
+        #data.extend([NFS(x.get("tags", {}).get("name"), "fire_station", Location(Cord(x.get("lat"), x.get("lon")), "CH")) for x in elements])
+
+        for s in elements:
+            name = s.get("tags", {}).get("name")
+            if name or s.get("tags", {}).get("amenity") == "fire_station":
+                try:
+                    cord = Cord(s["lat"], s["lon"])
+                except KeyError:
+                    # No Coordinates found in node
+                    if cords := [(i["lat"], i["lon"])
+                             for i in elements
+                             for node in s.get("nodes", [])
+                             if i["id"] == node]:
+                        cord = Cord(sum(x[0] for x in cords)/len(cords), sum(x[1] for x in cords)/len(cords))
+                        #print(cord)
+                data.append(NFS(name, "fire_station", Location(cord, "CH")))
+
     with open("daten/fire_station_lu.json") as f:
         data.extend([NFS(x.get("tags", {}).get("name"), "fire_station", Location(Cord(x.get("lat"), x.get("lon")), "LU")) for x in json.load(f)["elements"]])
     return data
