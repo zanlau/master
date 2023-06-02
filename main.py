@@ -196,7 +196,8 @@ def open_data():
                 data.append(NFS(name, "fire_station", Location(cord, "CH")))
 
     with open("daten/fire_station_lu.json") as f:
-        data.extend([NFS(x.get("tags", {}).get("name"), "fire_station", Location(Cord(x.get("lat"), x.get("lon")), "LU")) for x in json.load(f)["elements"]])
+        data.extend([NFS(x.get("tags", {}).get("name"), "fire_station", Location(Cord(x.get("lat"), x.get("lon")), "LU"))
+                     for x in json.load(f)["elements"] if x.get("tags", {}).get("name")])
     return data
 
 
@@ -209,11 +210,21 @@ def get_fig(data):
         go.Scattermapbox(
             lat=[x.location.coordinates.lat for x in data],
             lon=[x.location.coordinates.lon for x in data],
-            mode="markers",
             marker=dict(size=15, color=[x.color for x in data]),
             text=[x.name for x in data],
         )
     )
+
+    if False:
+        fig.add_trace(
+            go.Scattermapbox(
+                lat=[x.location.coordinates.lat for x in data],
+                lon=[x.location.coordinates.lon for x in data],
+                marker=dict(size=50, sizemode="area", opacity=0.2, color=["yellow" for x in data]),
+                text=[x.name for x in data],
+            )
+        )
+
 
     # open street map mit Standardposition
     fig.update_layout(
@@ -251,6 +262,8 @@ def update_map(all_inputs):
         data = filter_data_based_on_criteria(data, c.emergency_type.value)
     elif c.my_interval.triggered:
         print(f"{c.my_interval.value}")
+
+    print(len(data))
 
     return get_fig(data)
 

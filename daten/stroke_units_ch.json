@@ -4,194 +4,194 @@
         {
             "lat": "46.996919199999994",
             "lon": "6.942923586966937",
-            "institut": "Maladi\u00e8re 45",
-            "stand_address": 2000,
-            "stand_plz": "Neuch\u00e2tel",
-            "stand_ort": "stroke_units"
+            "institut": "H\u00f4pital Neuch\u00e2telois",
+            "stand_address": "Maladi\u00e8re 45",
+            "stand_plz": 2000,
+            "stand_ort": "Neuch\u00e2tel"
         },
         {
             "lat": "46.2347703",
             "lon": "7.3877684",
-            "institut": "Avenue Grand-Champsec 80",
-            "stand_address": 1950,
-            "stand_plz": "Sion",
-            "stand_ort": "stroke_units"
+            "institut": "H\u00f4pital du Valais / Spital Wallis - Sion",
+            "stand_address": "Avenue Grand-Champsec 80",
+            "stand_plz": 1950,
+            "stand_ort": "Sion"
         },
         {
             "lat": "47.3664471",
             "lon": "8.497290184035592",
-            "institut": "Birmensdorferstrasse 497",
-            "stand_address": 8063,
-            "stand_plz": "Z\u00fcrich",
-            "stand_ort": "stroke_units"
+            "institut": "Stadtspital Triemli Z\u00fcrich",
+            "stand_address": "Birmensdorferstrasse 497",
+            "stand_plz": 8063,
+            "stand_ort": "Z\u00fcrich"
         },
         {
             "lat": "47.14643975",
             "lon": "7.245180350694886",
-            "institut": "Vogelsang 84",
-            "stand_address": 2502,
-            "stand_plz": "Biel",
-            "stand_ort": "stroke_units"
+            "institut": "Spitalzentrum Biel",
+            "stand_address": "Vogelsang 84",
+            "stand_plz": 2502,
+            "stand_ort": "Biel"
         },
         {
             "lat": "47.17342105",
             "lon": "9.448926224140056",
-            "institut": "Spitalstrasse 44",
-            "stand_address": 9472,
-            "stand_plz": "Grabs",
-            "stand_ort": "stroke_units"
+            "institut": "Spital Grabs",
+            "stand_address": "Spitalstrasse 44",
+            "stand_plz": 9472,
+            "stand_ort": "Grabs"
         },
         {
             "lat": "47.506859899999995",
             "lon": "8.728524077691285",
-            "institut": "Brauerstrasse 15",
-            "stand_address": 8401,
-            "stand_plz": "Winterthur",
-            "stand_ort": "stroke_units"
+            "institut": "Kantonsspital Winterthur",
+            "stand_address": "Brauerstrasse 15",
+            "stand_plz": 8401,
+            "stand_ort": "Winterthur"
         },
         {
             "lat": "47.39356545",
             "lon": "8.430542580571107",
-            "institut": "Urdorferstrasse 100",
-            "stand_address": 8952,
-            "stand_plz": "Schlieren",
-            "stand_ort": "stroke_units"
+            "institut": "Spital Limmattal",
+            "stand_address": "Urdorferstrasse 100",
+            "stand_plz": 8952,
+            "stand_ort": "Schlieren"
         },
         {
             "lat": "46.80191755",
             "lon": "7.137948440709019",
-            "institut": "Chemin des Pensionnats 2",
-            "stand_address": 1752,
-            "stand_plz": "Villars-sur-Gl\u00e2ne",
-            "stand_ort": "stroke_units"
+            "institut": "HFR Fribourg H\u00f4pital Cantonal",
+            "stand_address": "Chemin des Pensionnats 2",
+            "stand_plz": 1752,
+            "stand_ort": "Villars-sur-Gl\u00e2ne"
         },
         {
             "lat": "47.45470415",
             "lon": "8.277970718196961",
-            "institut": "Im Ergel 1",
-            "stand_address": 5404,
-            "stand_plz": "Baden",
-            "stand_ort": "stroke_units"
+            "institut": "Kantonsspital Baden",
+            "stand_address": "Im Ergel 1",
+            "stand_plz": 5404,
+            "stand_ort": "Baden"
         },
         {
             "lat": "47.1985334",
             "lon": "7.5385483",
-            "institut": "Sch\u00f6ngr\u00fcnstrasse 42",
-            "stand_address": 4500,
-            "stand_plz": "Solothurn",
-            "stand_ort": "stroke_units"
+            "institut": "B\u00fcrgerspital Solothurn",
+            "stand_address": "Sch\u00f6ngr\u00fcnstrasse 42",
+            "stand_plz": 4500,
+            "stand_ort": "Solothurn"
         },
         {
             "lat": "47.630151850000004",
             "lon": "9.235874786867209",
-            "institut": "Spitalcampus 1",
-            "stand_address": 8596,
-            "stand_plz": "M\u00fcnsterlingen",
-            "stand_ort": "stroke_units"
+            "institut": "B\u00fcrgerspital M\u00fcnsterlingen",
+            "stand_address": "Spitalcampus 1",
+            "stand_plz": 8596,
+            "stand_ort": "M\u00fcnsterlingen"
         },
         {
             "lat": "46.86026715",
             "lon": "9.536473817120369",
-            "institut": "Loestrasse 99",
-            "stand_address": 7000,
-            "stand_plz": "Chur",
-            "stand_ort": "stroke_units"
+            "institut": "Kantonsspital Graub\u00fcnden - Chur",
+            "stand_address": "Loestrasse 99",
+            "stand_plz": 7000,
+            "stand_ort": "Chur"
         },
         {
             "lat": "46.3831531",
             "lon": "6.227391098710791",
-            "institut": "Chemin Monastier 10",
-            "stand_address": 1269,
-            "stand_plz": "Nyon",
-            "stand_ort": "stroke_units"
+            "institut": "H\u00f4pital de Nyon GHOL",
+            "stand_address": "Chemin Monastier 10",
+            "stand_plz": 1269,
+            "stand_ort": "Nyon"
         },
         {
             "lat": "47.54973705",
             "lon": "8.90922538767634",
-            "institut": "Pfaffenholzstrasse. 5",
-            "stand_address": 8501,
-            "stand_plz": "Frauenfeld",
-            "stand_ort": "stroke_units"
+            "institut": "Kantonsspital Frauenfeld",
+            "stand_address": "Pfaffenholzstrasse. 5",
+            "stand_plz": 8501,
+            "stand_ort": "Frauenfeld"
         },
         {
             "lat": "47.430687199999994",
             "lon": "9.387328766821327",
-            "institut": "Rorschacher Strasse 95",
-            "stand_address": 9007,
-            "stand_plz": "St. Gallen",
-            "stand_ort": "stroke_centers"
+            "institut": "Kantonsspital St. Gallen",
+            "stand_address": "Rorschacher Strasse 95",
+            "stand_plz": 9007,
+            "stand_ort": "St. Gallen"
         },
         {
             "lat": "47.38837665",
             "lon": "8.060297010142904",
-            "institut": "Tellstrasse 25",
-            "stand_address": 5001,
-            "stand_plz": "Aarau",
-            "stand_ort": "stroke_centers"
+            "institut": "Kantonsspital Aarau",
+            "stand_address": "Tellstrasse 25",
+            "stand_plz": 5001,
+            "stand_ort": "Aarau"
         },
         {
             "lat": "46.192006750000004",
             "lon": "6.147949875776305",
-            "institut": "Rue Gabrielle-Perret-Gentil 4",
-            "stand_address": 1205,
-            "stand_plz": "Genf",
-            "stand_ort": "stroke_centers"
+            "institut": "HUG, H\u00f4pitaux Universitaires Gen\u00e8ve",
+            "stand_address": "Rue Gabrielle-Perret-Gentil 4",
+            "stand_plz": 1205,
+            "stand_ort": "Genf"
         },
         {
             "lat": "46.9483192",
             "lon": "7.4244133",
-            "institut": "Freiburgstrasse 16",
-            "stand_address": 3010,
-            "stand_plz": "Bern",
-            "stand_ort": "stroke_centers"
+            "institut": "Inselspital Bern",
+            "stand_address": "Freiburgstrasse 16",
+            "stand_plz": 3010,
+            "stand_ort": "Bern"
         },
         {
             "lat": "46.525507950000005",
             "lon": "6.642268736084432",
-            "institut": "Rue du Bugnon 46",
-            "stand_address": 1011,
-            "stand_plz": "Lausanne",
-            "stand_ort": "stroke_centers"
+            "institut": "CHUV, Lausanne",
+            "stand_address": "Rue du Bugnon 46",
+            "stand_plz": 1011,
+            "stand_ort": "Lausanne"
         },
         {
             "lat": "46.0176565",
             "lon": "8.9516753",
-            "institut": "Via Tesserete 46",
-            "stand_address": 6900,
-            "stand_plz": "Lugano",
-            "stand_ort": "stroke_centers"
+            "institut": "EOC, Ospedale Regionale di Lugano (Civico)",
+            "stand_address": "Via Tesserete 46",
+            "stand_plz": 6900,
+            "stand_ort": "Lugano"
         },
         {
             "lat": "47.5609784",
             "lon": "7.5852927",
-            "institut": "Petersgraben 4",
-            "stand_address": 4031,
-            "stand_plz": "Basel",
-            "stand_ort": "stroke_centers"
+            "institut": "USB, Universit\u00e4tsspital Basel",
+            "stand_address": "Petersgraben 4",
+            "stand_plz": 4031,
+            "stand_ort": "Basel"
         },
         {
-            "lat": "47.3785149",
-            "lon": "8.5507443",
-            "institut": "Frauenklinikstrasse 26",
-            "stand_address": 8091,
-            "stand_plz": "Z\u00fcrich",
-            "stand_ort": "stroke_centers"
+            "lat": "47.378183",
+            "lon": "8.5511538",
+            "institut": "Universit\u00e4tsspital Z\u00fcrich",
+            "stand_address": "Frauenklinikstrasse 26",
+            "stand_plz": 8091,
+            "stand_ort": "Z\u00fcrich"
         },
         {
             "lat": "47.3504048",
             "lon": "8.5762714",
-            "institut": "Witellikerstrasse 40",
-            "stand_address": 8032,
-            "stand_plz": "Z\u00fcrich",
-            "stand_ort": "stroke_centers"
+            "institut": "Hirslanden Z\u00fcrich",
+            "stand_address": "Witellikerstrasse 40",
+            "stand_plz": 8032,
+            "stand_ort": "Z\u00fcrich"
         },
         {
-            "lat": "47.0570829",
-            "lon": "8.2960559",
-            "institut": "Spitalstrasse 16",
-            "stand_address": 6000,
-            "stand_plz": "Luzern",
-            "stand_ort": "stroke_centers"
+            "lat": "47.0600776",
+            "lon": "8.3030025",
+            "institut": "Luzerner Kantonsspital",
+            "stand_address": "Spitalstrasse 16",
+            "stand_plz": 6000,
+            "stand_ort": "Luzern"
         }
     ]
 }

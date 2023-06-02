@@ -17,10 +17,10 @@ for row in worksheet.iter_rows(min_row=2): #von erster Spalte über alle Element
     stations.append({
         "lat": response[0]["lat"],
         "lon": response[0]["lon"],
-        "institut": row[1].value,
-        "stand_address": row[2].value,
-        "stand_plz": row[3].value,
-        "stand_ort": row[4].value,
+        "institut": row[0].value,
+        "stand_address": row[1].value,
+        "stand_plz": row[2].value,
+        "stand_ort": row[3].value,
     })
 
 data = {
