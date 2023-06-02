@@ -813,12 +813,12 @@
         },
         {
             "lat": "47.56207405000001",
-            "lon": "8.06464216359053",
-            "institut": "Gesundheitszentrum Fricktal, Laufenburg",
+            "lon": "8.064658041711805",
+            "institut": "Spital Laufenburg",
             "stand_address": "Spitalstrasse 10",
             "stand_plz": 5080,
             "stand_ort": "Laufenburg",
-            "personal_bestand": "x"
+            "personal_bestand": 950
         },
         {
             "lat": "47.446422600000005",
@@ -827,25 +827,7 @@
             "stand_address": "Hasenb\u00fchlstrasse 11",
             "stand_plz": 9410,
             "stand_ort": "Heiden",
-            "personal_bestand": "x"
-        },
-        {
-            "lat": "46.5842547",
-            "lon": "7.6422775",
-            "institut": "Spit\u00e4ler fmi AG, Frutigen",
-            "stand_address": "Adelbodenstrasse 27",
-            "stand_plz": 3714,
-            "stand_ort": "Frutigen",
-            "personal_bestand": "x"
-        },
-        {
-            "lat": "46.9427418",
-            "lon": "7.47447504492612",
-            "institut": "Klinik Sonnenhof AG",
-            "stand_address": "Buchserstrasse 30",
-            "stand_plz": 3006,
-            "stand_ort": "Bern",
-            "personal_bestand": "x"
+            "personal_bestand": 188
         },
         {
             "lat": "46.94461005",
@@ -854,7 +836,7 @@
             "stand_address": "B\u00fcmplizstrasse 83",
             "stand_plz": 3018,
             "stand_ort": "Bern",
-            "personal_bestand": "x"
+            "personal_bestand": 147
         },
         {
             "lat": "46.943341700000005",
@@ -863,7 +845,7 @@
             "stand_address": "Dorfbergstrasse 10",
             "stand_plz": 3550,
             "stand_ort": "Langnau im Emmental",
-            "personal_bestand": "x"
+            "personal_bestand": 1059
         },
         {
             "lat": "46.8137435",
@@ -872,7 +854,7 @@
             "stand_address": "Eyweg 2",
             "stand_plz": 3132,
             "stand_ort": "Riggisberg",
-            "personal_bestand": "x"
+            "personal_bestand": 600
         },
         {
             "lat": "46.5579105",
@@ -881,16 +863,7 @@
             "stand_address": "Karl Haueter-Strasse 21",
             "stand_plz": 3770,
             "stand_ort": "Zweisimmen",
-            "personal_bestand": "x"
-        },
-        {
-            "lat": "46.8719431",
-            "lon": "7.5681451",
-            "institut": "Insel Gruppe AG M\u00fcnsingen",
-            "stand_address": "Krankenhausweg 18",
-            "stand_plz": 3110,
-            "stand_ort": "M\u00fcnsingen",
-            "personal_bestand": "x"
+            "personal_bestand": 160
         },
         {
             "lat": "47.0480795",
@@ -899,7 +872,7 @@
             "stand_address": "Lyss-Strasse 31",
             "stand_plz": 3270,
             "stand_ort": "Aarberg",
-            "personal_bestand": "x"
+            "personal_bestand": 150
         },
         {
             "lat": "46.95209065",
@@ -908,16 +881,7 @@
             "stand_address": "Sch\u00e4nzlistrasse 39",
             "stand_plz": 3013,
             "stand_ort": "Bern",
-            "personal_bestand": "x"
-        },
-        {
-            "lat": "46.9746491",
-            "lon": "7.4532122",
-            "institut": "Insel Gruppe AG Tiefenau",
-            "stand_address": "Tiefenaustrasse 112",
-            "stand_plz": 3004,
-            "stand_ort": "Bern",
-            "personal_bestand": "x"
+            "personal_bestand": 1289
         },
         {
             "lat": "47.52791945",
@@ -926,7 +890,7 @@
             "stand_address": "Gemeindeholzweg",
             "stand_plz": 4101,
             "stand_ort": "Bruderholz",
-            "personal_bestand": "x"
+            "personal_bestand": 1500
         },
         {
             "lat": "47.493906249999995",
@@ -935,7 +899,7 @@
             "stand_address": "Pfeffingerweg 1",
             "stand_plz": 4144,
             "stand_ort": "Arlesheim",
-            "personal_bestand": "x"
+            "personal_bestand": 50
         },
         {
             "lat": "47.52788805",
@@ -944,7 +908,7 @@
             "stand_address": "Reinacherstrasse 28",
             "stand_plz": 4142,
             "stand_ort": "M\u00fcnchenstein",
-            "personal_bestand": "x"
+            "personal_bestand": 294
         },
         {
             "lat": "47.4884053",
@@ -953,7 +917,7 @@
             "stand_address": "Rheinstrasse 26",
             "stand_plz": 4410,
             "stand_ort": "Liestal",
-            "personal_bestand": "x"
+            "personal_bestand": 1800
         },
         {
             "lat": "47.5482765",
@@ -962,7 +926,7 @@
             "stand_address": "Gellertstrasse 144",
             "stand_plz": 4052,
             "stand_ort": "Basel",
-            "personal_bestand": "x"
+            "personal_bestand": 8000
         },
         {
             "lat": "46.80092175",
@@ -971,7 +935,7 @@
             "stand_address": "Route de Bertigny 34",
             "stand_plz": 1700,
             "stand_ort": "Fribourg",
-            "personal_bestand": "x"
+            "personal_bestand": 320
         },
         {
             "lat": "46.1998578",
@@ -980,7 +944,7 @@
             "stand_address": "Chemin des Grangettes 7",
             "stand_plz": 1224,
             "stand_ort": "Ch\u00eane-Bougeries",
-            "personal_bestand": "x"
+            "personal_bestand": 690
         },
         {
             "lat": "47.3688966",
@@ -989,7 +953,7 @@
             "stand_address": "Faubourg des Capucins 30",
             "stand_plz": 2800,
             "stand_ort": "Del\u00e9mont",
-            "personal_bestand": "x"
+            "personal_bestand": 1850
         },
         {
             "lat": "47.0500473",
@@ -998,7 +962,7 @@
             "stand_address": "Huobmattstrasse 9",
             "stand_plz": 6045,
             "stand_ort": "Meggen",
-            "personal_bestand": "x"
+            "personal_bestand": 1221
         },
         {
             "lat": "47.168364600000004",
@@ -1007,7 +971,7 @@
             "stand_address": "Spitalstrasse 16A",
             "stand_plz": 6210,
             "stand_ort": "Sursee",
-            "personal_bestand": "x"
+            "personal_bestand": 5000
         },
         {
             "lat": "47.0654385",
@@ -1016,7 +980,7 @@
             "stand_address": "Spitalstrasse 50",
             "stand_plz": 6110,
             "stand_ort": "Wolhusen",
-            "personal_bestand": "x"
+            "personal_bestand": 1000
         },
         {
             "lat": "47.1136975",
@@ -1025,7 +989,7 @@
             "stand_address": "Rue de Chasseral 20",
             "stand_plz": 2300,
             "stand_ort": "La Chaux-de-Fonds",
-            "personal_bestand": "x"
+            "personal_bestand": 1900
         },
         {
             "lat": "46.996919199999994",
@@ -1034,16 +998,7 @@
             "stand_address": "Rue de la Maladi\u00e8re 45",
             "stand_plz": 2000,
             "stand_ort": "Neuch\u00e2tel",
-            "personal_bestand": "x"
-        },
-        {
-            "lat": "47.2988801",
-            "lon": "9.0826745",
-            "institut": "Berit Klinik Wattwil",
-            "stand_address": "Steig",
-            "stand_plz": 9630,
-            "stand_ort": "Wattwil",
-            "personal_bestand": "x"
+            "personal_bestand": 800
         },
         {
             "lat": "47.48651375",
@@ -1052,7 +1007,7 @@
             "stand_address": "Spitalweg 11",
             "stand_plz": 4143,
             "stand_ort": "Dornach",
-            "personal_bestand": "x"
+            "personal_bestand": 3800
         },
         {
             "lat": "45.8670756",
@@ -1061,7 +1016,7 @@
             "stand_address": "Via Alfonso Turconi 23",
             "stand_plz": 6850,
             "stand_ort": "Mendrisio",
-            "personal_bestand": "x"
+            "personal_bestand": 1001
         },
         {
             "lat": "46.169326",
@@ -1070,7 +1025,7 @@
             "stand_address": "Via dell'Ospedale 1",
             "stand_plz": 6600,
             "stand_ort": "Locarno",
-            "personal_bestand": "x"
+            "personal_bestand": 1053
         },
         {
             "lat": "46.1841758",
@@ -1079,16 +1034,7 @@
             "stand_address": "Via Ospedale 12",
             "stand_plz": 6500,
             "stand_ort": "Bellinzona",
-            "personal_bestand": "x"
-        },
-        {
-            "lat": "46.16717825",
-            "lon": "8.800059946810604",
-            "institut": "Clinica Santa Chiara SA",
-            "stand_address": "Via Stefano Franscini 4",
-            "stand_plz": 6600,
-            "stand_ort": "Locarno",
-            "personal_bestand": "x"
+            "personal_bestand": 2000
         },
         {
             "lat": "46.0176565",
@@ -1097,16 +1043,7 @@
             "stand_address": "Via Tesserete 46",
             "stand_plz": 6900,
             "stand_ort": "Lugano",
-            "personal_bestand": "x"
-        },
-        {
-            "lat": "46.527334499999995",
-            "lon": "6.627899109027791",
-            "institut": "Clinique de La Source",
-            "stand_address": "Avenue Vinet 30",
-            "stand_plz": 1004,
-            "stand_ort": "Lausanne",
-            "personal_bestand": "x"
+            "personal_bestand": 1000
         },
         {
             "lat": "46.2347703",
@@ -1115,16 +1052,7 @@
             "stand_address": "Avenue Grand-Champsec 80",
             "stand_plz": 1951,
             "stand_ort": "Sitten",
-            "personal_bestand": "x"
-        },
-        {
-            "lat": "46.2565621",
-            "lon": "6.944199150000001",
-            "institut": "H\u00f4pital du Valais - Centre hospitalier du Chablais (CHC)",
-            "stand_address": "Route de Morgins 10",
-            "stand_plz": 1870,
-            "stand_ort": "Monthey",
-            "personal_bestand": "x"
+            "personal_bestand": 500
         },
         {
             "lat": "46.099287",
@@ -1133,7 +1061,7 @@
             "stand_address": "Avenue de la Fusion 27",
             "stand_plz": 1920,
             "stand_ort": "Martinach",
-            "personal_bestand": "x"
+            "personal_bestand": 200
         },
         {
             "lat": "46.317501",
@@ -1142,7 +1070,7 @@
             "stand_address": "Ueberlandstrasse 14",
             "stand_plz": 3900,
             "stand_ort": "Brig",
-            "personal_bestand": "x"
+            "personal_bestand": 500
         },
         {
             "lat": "47.3525221",
@@ -1151,7 +1079,7 @@
             "stand_address": "Seestrasse 220",
             "stand_plz": 8002,
             "stand_ort": "Z\u00fcrich",
-            "personal_bestand": "x"
+            "personal_bestand": 574
         }
     ]
 }
