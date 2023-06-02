@@ -228,20 +228,22 @@ def get_fig(data):
             lat=[x.location.coordinates.lat for x in data],
             lon=[x.location.coordinates.lon for x in data],
             marker=dict(size=15, color=[x.color for x in data]),
-            text=[x.name for x in data],
+            text=[f"Name: {x.name}<br>Kind: {x.kind}" for x in data],
+            textfont=dict(size=16)
         )
+
     )
 
-    if True:
+    if False:
         fig.add_trace(
             go.Scattermapbox(
                 lat=[x.location.coordinates.lat for x in data],
                 lon=[x.location.coordinates.lon for x in data],
                 marker=dict(size=50, sizemode="area", opacity=0.2, color=["yellow" for x in data]),
-                text=[x.name for x in data],
+                text=[f"Kind: {x.kind}<br>Name: {x.name}<br>Location: {x.location}" for x in data],
+                textfont=dict(size=16)
             )
         )
-
 
     # open street map mit Standardposition
     fig.update_layout(
