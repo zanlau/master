@@ -196,8 +196,25 @@ def open_data():
                 data.append(NFS(name, "fire_station", Location(cord, "CH")))
 
     with open("daten/fire_station_lu.json") as f:
-        data.extend([NFS(x.get("tags", {}).get("name"), "fire_station", Location(Cord(x.get("lat"), x.get("lon")), "LU"))
-                     for x in json.load(f)["elements"] if x.get("tags", {}).get("name")])
+        elements = json.load(f)["elements"]
+
+        for s in elements:
+            name = s.get("tags", {}).get("name")
+            if name or s.get("tags", {}).get("amenity") == "fire_station":
+                try:
+                    cord = Cord(s["lat"], s["lon"])
+                except KeyError:
+                    # No Coordinates found in node
+                    if cords := [(i["lat"], i["lon"])
+                             for i in elements
+                             for node in s.get("nodes", [])
+                             if i["id"] == node]:
+                        cord = Cord(sum(x[0] for x in cords)/len(cords), sum(x[1] for x in cords)/len(cords))
+                        #print(cord)
+                data.append(NFS(name, "fire_station", Location(cord, "LU")))
+
+        #data.extend([NFS(x.get("tags", {}).get("name"), "fire_station", Location(Cord(x.get("lat"), x.get("lon")), "LU")) for x in ["elements"])
+
     return data
 
 
@@ -215,7 +232,7 @@ def get_fig(data):
         )
     )
 
-    if False:
+    if True:
         fig.add_trace(
             go.Scattermapbox(
                 lat=[x.location.coordinates.lat for x in data],
