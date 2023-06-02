@@ -2,12 +2,16 @@
   "type": "FeatureCollection",
   "generator": "overpass-ide",
   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
-  "timestamp": "2023-05-11T18:39:03Z",
+  "timestamp": "2023-06-02T08:16:20Z",
   "features": [
     {
       "type": "Feature",
       "properties": {
         "@id": "relation/1559484",
+        "addr:city": "Morges",
+        "addr:housenumber": "2",
+        "addr:postcode": "1110",
+        "addr:street": "Av. de Marcelin",
         "amenity": "fire_station",
         "name": "SIS Morget",
         "type": "multipolygon",
@@ -96,6 +100,7 @@
         "@id": "relation/9762129",
         "amenity": "fire_station",
         "building": "yes",
+        "name": "SDIS La Mèbre",
         "type": "multipolygon"
       },
       "geometry": {
@@ -3354,7 +3359,8 @@
         "addr:postcode": "8263",
         "addr:street": "Biberweg",
         "amenity": "fire_station",
-        "building": "yes"
+        "building": "yes",
+        "name": "Feuerwehr Buch"
       },
       "geometry": {
         "type": "Polygon",
@@ -6430,7 +6436,8 @@
         "addr:postcode": "6048",
         "addr:street": "Kantonsstrasse",
         "amenity": "fire_station",
-        "building": "yes"
+        "building": "yes",
+        "name": "Feuerwehr Horw"
       },
       "geometry": {
         "type": "Polygon",
@@ -7782,6 +7789,47 @@
     {
       "type": "Feature",
       "properties": {
+        "@id": "way/150769348",
+        "addr:city": "Morges",
+        "addr:housenumber": "2",
+        "addr:postcode": "1110",
+        "addr:street": "Avenue de Marcelin",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "SIS Morget"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.4928535,
+              46.5116971
+            ],
+            [
+              6.4932325,
+              46.5117341
+            ],
+            [
+              6.4932076,
+              46.5118592
+            ],
+            [
+              6.4928284,
+              46.5118235
+            ],
+            [
+              6.4928535,
+              46.5116971
+            ]
+          ]
+        ]
+      },
+      "id": "way/150769348"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "@id": "way/151054552",
         "amenity": "fire_station",
         "building": "yes",
@@ -8418,31 +8466,35 @@
         "addr:housenumber": "2",
         "addr:street": "Holzstrasse",
         "amenity": "fire_station",
-        "building": "public"
+        "building": "public",
+        "building:levels": "1",
+        "name": "Feuerwehmagazin Steinhof",
+        "roof:levels": "0",
+        "roof:shape": "hipped"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              7.687169,
-              47.1611502
+              7.6871677,
+              47.1611495
             ],
             [
-              7.6871466,
-              47.1612207
+              7.6871453,
+              47.16122
             ],
             [
-              7.6870277,
-              47.1612032
+              7.6870264,
+              47.1612026
             ],
             [
-              7.6870501,
-              47.1611327
+              7.6870488,
+              47.1611321
             ],
             [
-              7.687169,
-              47.1611502
+              7.6871677,
+              47.1611495
             ]
           ]
         ]
@@ -12295,48 +12347,6 @@
         ]
       },
       "id": "way/223927209"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/224230270",
-        "addr:city": "Utzenstorf",
-        "addr:country": "CH",
-        "addr:housenumber": "1",
-        "addr:postcode": "3427",
-        "addr:street": "Lindenpark",
-        "amenity": "fire_station",
-        "building": "yes",
-        "ele": "474"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              7.5558563,
-              47.1317781
-            ],
-            [
-              7.5561946,
-              47.1317814
-            ],
-            [
-              7.5561918,
-              47.1319113
-            ],
-            [
-              7.5558535,
-              47.131908
-            ],
-            [
-              7.5558563,
-              47.1317781
-            ]
-          ]
-        ]
-      },
-      "id": "way/224230270"
     },
     {
       "type": "Feature",
@@ -21897,32 +21907,32 @@
               47.3736543
             ],
             [
-              8.2370089,
-              47.3734554
+              8.2370117,
+              47.3734548
             ],
             [
-              8.2370379,
-              47.3734161
+              8.237041,
+              47.3734154
             ],
             [
-              8.2369499,
-              47.3733863
+              8.2369654,
+              47.3733896
             ],
             [
-              8.2370684,
-              47.3732258
+              8.2370735,
+              47.3732442
             ],
             [
-              8.2373538,
-              47.3733224
+              8.2373458,
+              47.3733371
             ],
             [
-              8.2373192,
-              47.3733693
+              8.2373224,
+              47.3733686
             ],
             [
-              8.2377092,
-              47.3735013
+              8.2377103,
+              47.373501
             ],
             [
               8.2375963,
@@ -29675,7 +29685,7 @@
       "properties": {
         "@id": "node/3157602575",
         "amenity": "fire_station",
-        "name": "Feuerwehr Magazin"
+        "name": "Feuerwehrmagazin"
       },
       "geometry": {
         "type": "Point",
@@ -32919,22 +32929,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6111420407",
-        "amenity": "fire_station",
-        "name": "Feuerwehr Horw"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          8.3084831,
-          47.0130128
-        ]
-      },
-      "id": "node/6111420407"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "@id": "node/6160120155",
         "amenity": "fire_station",
         "name": "Feuerwehr Dietwil Oberrüti"
@@ -35725,6 +35719,26 @@
         ]
       },
       "id": "node/9373000958"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9389241931",
+        "addr:city": "Schinznach Dorf",
+        "addr:country": "CH",
+        "addr:housenumber": "10",
+        "addr:postcode": "5107",
+        "addr:street": "Veltheimerstrasse",
+        "amenity": "fire_station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.1456174,
+          47.4424579
+        ]
+      },
+      "id": "node/9389241931"
     },
     {
       "type": "Feature",

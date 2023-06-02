@@ -2,8 +2,8 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.60 f4c14d41",
   "osm3s": {
-    "timestamp_osm_base": "2023-05-11T18:39:03Z",
-    "timestamp_areas_base": "2023-05-11T16:12:35Z",
+    "timestamp_osm_base": "2023-06-02T08:16:20Z",
+    "timestamp_areas_base": "2023-06-02T04:51:19Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -4116,7 +4116,7 @@
       "lon": 7.7020108,
       "tags": {
         "amenity": "fire_station",
-        "name": "Feuerwehr Magazin"
+        "name": "Feuerwehrmagazin"
       }
     },
     {
@@ -6265,16 +6265,6 @@
     },
     {
       "type": "node",
-      "id": 6111420407,
-      "lat": 47.0130128,
-      "lon": 8.3084831,
-      "tags": {
-        "amenity": "fire_station",
-        "name": "Feuerwehr Horw"
-      }
-    },
-    {
-      "type": "node",
       "id": 6160120155,
       "lat": 47.1471422,
       "lon": 8.3917308,
@@ -8135,6 +8125,20 @@
         "addr:street": "Schulhausstrasse",
         "amenity": "fire_station",
         "operator": "Feuerwehr Bellach"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9389241931,
+      "lat": 47.4424579,
+      "lon": 8.1456174,
+      "tags": {
+        "addr:city": "Schinznach Dorf",
+        "addr:country": "CH",
+        "addr:housenumber": "10",
+        "addr:postcode": "5107",
+        "addr:street": "Veltheimerstrasse",
+        "amenity": "fire_station"
       }
     },
     {
@@ -10094,7 +10098,8 @@
         "addr:postcode": "8263",
         "addr:street": "Biberweg",
         "amenity": "fire_station",
-        "building": "yes"
+        "building": "yes",
+        "name": "Feuerwehr Buch"
       }
     },
     {
@@ -11418,7 +11423,8 @@
         "addr:postcode": "6048",
         "addr:street": "Kantonsstrasse",
         "amenity": "fire_station",
-        "building": "yes"
+        "building": "yes",
+        "name": "Feuerwehr Horw"
       }
     },
     {
@@ -11996,6 +12002,26 @@
     },
     {
       "type": "way",
+      "id": 150769348,
+      "nodes": [
+        1064258063,
+        1064257895,
+        1064258109,
+        1064257754,
+        1064258063
+      ],
+      "tags": {
+        "addr:city": "Morges",
+        "addr:housenumber": "2",
+        "addr:postcode": "1110",
+        "addr:street": "Avenue de Marcelin",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "SIS Morget"
+      }
+    },
+    {
+      "type": "way",
       "id": 151054552,
       "nodes": [
         1638943691,
@@ -12289,7 +12315,11 @@
         "addr:housenumber": "2",
         "addr:street": "Holzstrasse",
         "amenity": "fire_station",
-        "building": "public"
+        "building": "public",
+        "building:levels": "1",
+        "name": "Feuerwehmagazin Steinhof",
+        "roof:levels": "0",
+        "roof:shape": "hipped"
       }
     },
     {
@@ -13941,27 +13971,6 @@
         "amenity": "fire_station",
         "building": "yes",
         "ele": "895"
-      }
-    },
-    {
-      "type": "way",
-      "id": 224230270,
-      "nodes": [
-        2330520658,
-        2330520659,
-        2330520660,
-        2330520661,
-        2330520658
-      ],
-      "tags": {
-        "addr:city": "Utzenstorf",
-        "addr:country": "CH",
-        "addr:housenumber": "1",
-        "addr:postcode": "3427",
-        "addr:street": "Lindenpark",
-        "amenity": "fire_station",
-        "building": "yes",
-        "ele": "474"
       }
     },
     {
@@ -18749,6 +18758,10 @@
         }
       ],
       "tags": {
+        "addr:city": "Morges",
+        "addr:housenumber": "2",
+        "addr:postcode": "1110",
+        "addr:street": "Av. de Marcelin",
         "amenity": "fire_station",
         "name": "SIS Morget",
         "type": "multipolygon",
@@ -18773,6 +18786,7 @@
       "tags": {
         "amenity": "fire_station",
         "building": "yes",
+        "name": "SDIS La Mèbre",
         "type": "multipolygon"
       }
     },
@@ -19060,6 +19074,12 @@
     },
     {
       "type": "node",
+      "id": 1064257895,
+      "lat": 46.5118235,
+      "lon": 6.4928284
+    },
+    {
+      "type": "node",
       "id": 1064257952,
       "lat": 46.5121756,
       "lon": 6.4929669
@@ -19081,6 +19101,12 @@
       "id": 1064258063,
       "lat": 46.5116971,
       "lon": 6.4928535
+    },
+    {
+      "type": "node",
+      "id": 1064258109,
+      "lat": 46.5118592,
+      "lon": 6.4932076
     },
     {
       "type": "node",
@@ -23794,30 +23820,6 @@
     },
     {
       "type": "node",
-      "id": 2330520658,
-      "lat": 47.1317781,
-      "lon": 7.5558563
-    },
-    {
-      "type": "node",
-      "id": 2330520659,
-      "lat": 47.1317814,
-      "lon": 7.5561946
-    },
-    {
-      "type": "node",
-      "id": 2330520660,
-      "lat": 47.1319113,
-      "lon": 7.5561918
-    },
-    {
-      "type": "node",
-      "id": 2330520661,
-      "lat": 47.131908,
-      "lon": 7.5558535
-    },
-    {
-      "type": "node",
       "id": 2454989550,
       "lat": 47.1332422,
       "lon": 7.6011723
@@ -24101,26 +24103,26 @@
     {
       "type": "node",
       "id": 1767677288,
-      "lat": 47.1611327,
-      "lon": 7.6870501
+      "lat": 47.1611321,
+      "lon": 7.6870488
     },
     {
       "type": "node",
       "id": 1767677289,
-      "lat": 47.1611502,
-      "lon": 7.687169
+      "lat": 47.1611495,
+      "lon": 7.6871677
     },
     {
       "type": "node",
       "id": 1767677290,
-      "lat": 47.1612032,
-      "lon": 7.6870277
+      "lat": 47.1612026,
+      "lon": 7.6870264
     },
     {
       "type": "node",
       "id": 1767677291,
-      "lat": 47.1612207,
-      "lon": 7.6871466
+      "lat": 47.16122,
+      "lon": 7.6871453
     },
     {
       "type": "node",
@@ -26225,44 +26227,44 @@
     {
       "type": "node",
       "id": 7308632593,
-      "lat": 47.3733224,
-      "lon": 8.2373538
+      "lat": 47.3733371,
+      "lon": 8.2373458
     },
     {
       "type": "node",
       "id": 7308632594,
-      "lat": 47.3733693,
-      "lon": 8.2373192
+      "lat": 47.3733686,
+      "lon": 8.2373224
     },
     {
       "type": "node",
       "id": 7308632595,
-      "lat": 47.3733863,
-      "lon": 8.2369499
+      "lat": 47.3733896,
+      "lon": 8.2369654
     },
     {
       "type": "node",
       "id": 7308632596,
-      "lat": 47.3734161,
-      "lon": 8.2370379
+      "lat": 47.3734154,
+      "lon": 8.237041
     },
     {
       "type": "node",
       "id": 7308632597,
-      "lat": 47.3732258,
-      "lon": 8.2370684
+      "lat": 47.3732442,
+      "lon": 8.2370735
     },
     {
       "type": "node",
       "id": 7308632598,
-      "lat": 47.3735013,
-      "lon": 8.2377092
+      "lat": 47.373501,
+      "lon": 8.2377103
     },
     {
       "type": "node",
       "id": 7308632599,
-      "lat": 47.3734554,
-      "lon": 8.2370089
+      "lat": 47.3734548,
+      "lon": 8.2370117
     },
     {
       "type": "node",
