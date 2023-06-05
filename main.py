@@ -113,10 +113,47 @@ def render_content(tab):
                 ]))
         ])
 
+
     elif tab == 'tab-2':
         return html.Div([
+            html.Div([
+                dbc.Col(width=2, children=[
+                    dbc.Card([
+                        dbc.CardHeader(
+                            "Land 1"),
+                        dbc.CardBody([
+                            dcc.Dropdown(
+                                id='Dropdown 1',
+                                options=[
+                                    {'label': 'Schweiz', 'value': 'CH'},
+                                    {'label': 'Luxemburg', 'value': 'LU'}
+                                ],
+                                value='option1'
+                            ),
+                            html.Div(id='dropdown1_output')
+                        ])
+                    ])
+                ]),
+                dbc.Col(width=2, children=[
+                    dbc.Card([
+                        dbc.CardHeader(
+                            "Land 2"),
+                        dbc.CardBody([
+                            dcc.Dropdown(
+                                id='dropdown2',
+                                options=[
+                                    {'label': 'Schweiz', 'value': 'CH'},
+                                    {'label': 'Luxemburg', 'value': 'LU'}
+                                ],
+                                value='option2'
+                            ),
+                            html.Div(id='dropdown2_output')
+                        ])
+                    ])
+                ]),
+            ], className='row'),
             dcc.Graph(
-                id='bar-chart',
+                id='stacked-bar-chart',
                 figure={
                     'data': [
                         go.Bar(
@@ -126,13 +163,69 @@ def render_content(tab):
                         )
                     ],
                     'layout': go.Layout(
-                        title='Bar Chart Beispiel',  # Titel des Charts
-                        xaxis=dict(title='Kategorien'),  # Beschriftung der x-Achse
-                        yaxis=dict(title='Werte')  # Beschriftung der y-Achse
+                        title='Anzahl Notfallstationen',  # Titel des Charts
+                        xaxis=dict(title='Länder'),  # Beschriftung der x-Achse
+                        yaxis=dict(title='Anzahl')  # Beschriftung der y-Achse
                     )
                 }
-            )
-        ])
+            ),
+            dbc.Col(width=4, children=[
+                dbc.Card([
+                    dbc.CardHeader("Abdeckung der Notfallversorgung"),
+                    dbc.CardBody([
+                        dcc.Dropdown(
+                            id='emergency_type',
+                            options=[
+                                {'label': 'Medizinische Notfallstation', 'value': 'NFS'},
+                                {'label': 'Feuerwehrstützpunkt', 'value': 'fire_station'},
+                                {'label': 'Schlaganfallzentrum', 'value': 'stroke_unit'}
+                            ],
+                            value='emergency_type'
+                        ),
+                        html.Div(id='emergency_type')
+                    ])
+                ])
+            ]),
+            html.Div([
+                dcc.Graph(
+                    id='pie-chart',
+                    figure={
+                        'data': [
+                            go.Pie(
+                                labels=labels,
+                                values=values
+                            )
+                        ],
+                        'layout': go.Layout(
+                            title='Schweiz',
+                            title_x=0.4,
+                            height=700,
+                            width=700
+                        )
+                    }
+                )
+            ], className='six columns', style={'display': 'inline-block'}),
+            html.Div([
+                dcc.Graph(
+                    id='pie-chart2',
+                    figure={
+                        'data': [
+                            go.Pie(
+                                labels=labels,
+                                values=values
+                            )
+                        ],
+                        'layout': go.Layout(
+                            title='Luxemburg',
+                            title_x=0.4,
+                            height=700,
+                            width=700
+                        )
+                    }
+                )
+        ], className='six columns', style={'display': 'inline-block'})
+    ])
+
 
 
 class Cord:
@@ -234,7 +327,7 @@ def get_fig(data):
 
     )
 
-    if False:
+    if True:
         fig.add_trace(
             go.Scattermapbox(
                 lat=[x.location.coordinates.lat for x in data],
@@ -288,6 +381,10 @@ def update_map(all_inputs):
 
 x_data = ['A', 'B', 'C', 'D']
 y_data = [10, 8, 12, 6]
+
+labels = ['Medizinische Notfallstation C', 'Feuerwehrstützpunkt', 'Schlaganfallzentrum']
+values = [30, 40, 20]
+
 
 if __name__ == '__main__':
     app.run_server()
