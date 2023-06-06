@@ -7,6 +7,7 @@ import html
 import dash_bootstrap_components as dbc
 from dash import dcc
 import pandas as pd
+import geopandas as gpd
 import plotly.express as px
 import plotly.graph_objects as go
 from dash import dcc, html, ctx
@@ -15,6 +16,7 @@ import dash.dependencies as dependencies
 from flask import Flask
 from openpyxl import load_workbook
 from plotly.subplots import make_subplots
+from shapely.geometry import Point
 
 if dash.__version__ != "2.10.2":
     print("dash version 2.10.2 required!")
@@ -233,6 +235,9 @@ class Cord:
         self.lat = lat
         self.lon = lon
 
+    def to_Point(self):
+        return Point(self.lon, self.lat)
+
     def __str__(self):
         return f"{self.lat} {self.lon}"
 
@@ -313,7 +318,7 @@ def open_data():
 
 # Diagramme im Dashboard generieren
 # Positionen in OpenStreetMap erzeugen
-def get_fig(data):
+def get_fig(data, criteria):
     fig = go.Figure()
 
     fig.add_trace(
@@ -327,15 +332,25 @@ def get_fig(data):
 
     )
 
-    if True:
-        fig.add_trace(
-            go.Scattermapbox(
-                lat=[x.location.coordinates.lat for x in data],
-                lon=[x.location.coordinates.lon for x in data],
-                marker=dict(size=50, sizemode="area", opacity=0.2, color=["yellow" for x in data]),
-                text=[f"Name: {x.name}<br>Kind: {x.kind}" for x in data],
-                textfont=dict(size=16)
-            )
+    if criteria == "area":
+        # prep geometry
+        d = {"geometry": [x.location.coordinates.to_Point() for x in data]}
+        gdf = gpd.GeoDataFrame(d, crs="EPSG:4326")
+
+        cgeo = (
+            gdf.set_crs("epsg:4326")
+                .pipe(lambda d: d.to_crs(d.estimate_utm_crs()))["geometry"]
+                .centroid.buffer(13819) #600km^2 Fläche
+                .to_crs("epsg:4326")
+                .__geo_interface__
+        )
+        fig.update_layout(
+            mapbox={
+                "layers": [
+                    {"source": cgeo, "color": "PaleTurquoise", "type": "fill", "opacity": .5},
+                    {"source": cgeo, "color": "black", "type": "line", "opacity": 0.1},
+                ]
+            }
         )
 
     # open street map mit Standardposition
@@ -372,12 +387,14 @@ def update_map(all_inputs):
     if c.emergency_type.triggered:
         print(f"{c.emergency_type.value}")
         data = filter_data_based_on_criteria(data, c.emergency_type.value)
+    elif c.criteria.triggered:
+        print(f"{c.criteria.value}")
     elif c.my_interval.triggered:
         print(f"{c.my_interval.value}")
 
     print(len(data))
 
-    return get_fig(data)
+    return get_fig(data, c.criteria.value)
 
 x_data = ['A', 'B', 'C', 'D']
 y_data = [10, 8, 12, 6]
