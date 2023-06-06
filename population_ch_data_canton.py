@@ -10,7 +10,7 @@ worksheet = wb['Kanton']
 municipality = []
 
 for row in worksheet.iter_rows(min_row=2): #von erster Spalte über alle Elemente iterieren
-    numbers = f"{row[0].value}, {row[1].value}, {row[2].value}"
+    numbers = f"{row[0].value}, {row[1].value}"
     print(numbers)
     url = f'https://nominatim.openstreetmap.org/search/{urllib.parse.quote(numbers)}?format=json'
     response = requests.get(url).json()

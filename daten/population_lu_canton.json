@@ -2,61 +2,85 @@
     "source": "Statec - Statistikseite des Staates Luxemburghttps://lustat.statec.lu/vis?fs[0]=Topics%2C1%7CPopulation%20and%20employment%23B%23%7CPopulation%20structure%23B1%23&pg=0&fc=Topics&lc=en&df[ds]=ds-release&df[id]=DF_X021&df[ag]=LU1&df[vs]=1.0&pd=2015%2C2023&dq=A.",
     "data": [
         {
+            "lat": "50.0542955",
+            "lon": "6.079926754341518",
             "number": 1,
             "name": "Canton Clervaux",
             "population": 20687
         },
         {
+            "lat": "49.881433400000006",
+            "lon": "6.21113080297455",
             "number": 2,
             "name": "Canton Diekirch",
             "population": 35150
         },
         {
+            "lat": "49.87173985",
+            "lon": "5.801253465447152",
             "number": 3,
             "name": "Canton Redange",
             "population": 20874
         },
         {
+            "lat": "49.9349536",
+            "lon": "6.1575495053435105",
             "number": 4,
             "name": "Canton Vianden",
             "population": 5594
         },
         {
+            "lat": "49.92085735",
+            "lon": "6.036200469125326",
             "number": 5,
             "name": "Canton Wiltz",
             "population": 19209
         },
         {
+            "lat": "49.79745845",
+            "lon": "6.388121004812441",
             "number": 6,
             "name": "Canton Echternach",
             "population": 20280
         },
         {
+            "lat": "49.711767800000004",
+            "lon": "6.3422835535024555",
             "number": 7,
             "name": "Canton Grevenmacher",
             "population": 32524
         },
         {
+            "lat": "49.5047592",
+            "lon": "6.2793662",
             "number": 8,
             "name": "Canton Remich",
             "population": 24186
         },
         {
+            "lat": "49.570339450000006",
+            "lon": "5.920389615748902",
             "number": 9,
             "name": "Canton Capellen",
             "population": 52828
         },
         {
+            "lat": "49.508304499999994",
+            "lon": "5.992203250000004",
             "number": 10,
             "name": "Canton Esch-Alzette",
             "population": 189540
         },
         {
+            "lat": "49.588484550000004",
+            "lon": "6.140676265269274",
             "number": 11,
             "name": "Canton Luxembourg",
             "population": 204358
         },
         {
+            "lat": "49.814557",
+            "lon": "6.0968824",
             "number": 12,
             "name": "Canton Mersch",
             "population": 35579
