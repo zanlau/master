@@ -2,511 +2,715 @@
     "source": "Statec - Statistikseite des Staates Luxemburghttps://lustat.statec.lu/vis?fs[0]=Topics%2C1%7CPopulation%20and%20employment%23B%23%7CPopulation%20structure%23B1%23&pg=0&fc=Topics&lc=en&df[ds]=ds-release&df[id]=DF_X021&df[ag]=LU1&df[vs]=1.0&pd=2015%2C2023&dq=A.",
     "data": [
         {
+            "lat": "50.0547912",
+            "lon": "6.0275511",
             "number": 1,
             "name": "Clervaux",
             "population": 6021
         },
         {
+            "lat": "49.996313099999995",
+            "lon": "6.099126835094641",
             "number": 2,
             "name": "Parc Hosingen",
             "population": 4036
         },
         {
+            "lat": "50.1212652",
+            "lon": "6.0020737",
             "number": 3,
             "name": "Troisvierges",
             "population": 3513
         },
         {
+            "lat": "50.139719",
+            "lon": "6.0753153",
             "number": 4,
             "name": "Weiswampach",
             "population": 2313
         },
         {
+            "lat": "50.0534489",
+            "lon": "5.9149576",
             "number": 5,
             "name": "Wincrange",
             "population": 4804
         },
         {
+            "lat": "47.5852476",
+            "lon": "7.2770871",
             "number": 6,
             "name": "Bettendorf",
             "population": 3052
         },
         {
+            "lat": "48.7709488",
+            "lon": "7.1905594",
             "number": 7,
             "name": "Bourscheid",
             "population": 1678
         },
         {
+            "lat": "49.8690898",
+            "lon": "6.1600549",
             "number": 8,
             "name": "Diekirch",
             "population": 7295
         },
         {
+            "lat": "49.8628748",
+            "lon": "6.114372",
             "number": 9,
             "name": "Erpeldange-sur-S\u00fbre",
             "population": 2429
         },
         {
+            "lat": "49.8470016",
+            "lon": "6.0984659",
             "number": 10,
             "name": "Ettelbruck",
             "population": 9688
         },
         {
+            "lat": "49.862016499999996",
+            "lon": "6.028477868201082",
             "number": 11,
             "name": "Feulen",
             "population": 2366
         },
         {
+            "lat": "49.8309168",
+            "lon": "6.0041083",
             "number": 12,
             "name": "Mertzig",
             "population": 2370
         },
         {
+            "lat": "49.8673199",
+            "lon": "6.2658927",
             "number": 13,
             "name": "Reisdorf",
             "population": 1353
         },
         {
+            "lat": "53.9444025",
+            "lon": "10.3913655",
             "number": 14,
             "name": "Schieren",
             "population": 2149
         },
         {
+            "lat": "49.8214165",
+            "lon": "6.226492405027903",
             "number": 15,
             "name": "Vall\u00e9e de l'Ernz",
             "population": 2770
         },
         {
+            "lat": "49.7307067",
+            "lon": "5.8830092",
             "number": 16,
             "name": "Beckerich",
             "population": 2866
         },
         {
+            "lat": "49.7628457",
+            "lon": "5.854027",
             "number": 17,
             "name": "Ell",
             "population": 1582
         },
         {
+            "lat": "49.8275648",
+            "lon": "5.9644035",
             "number": 18,
             "name": "Grosbous",
             "population": 1134
         },
         {
+            "lat": "49.8021096",
+            "lon": "5.9348446379391095",
             "number": 19,
             "name": "Pr\u00e9izerdaul",
             "population": 1827
         },
         {
+            "lat": "49.8298505",
+            "lon": "5.8494252",
             "number": 20,
             "name": "Rambrouch",
             "population": 4836
         },
         {
+            "lat": "49.778048999999996",
+            "lon": "5.891050888560612",
             "number": 21,
             "name": "Redange-sur-Attert",
             "population": 3059
         },
         {
+            "lat": "49.7277779",
+            "lon": "5.9854867",
             "number": 22,
             "name": "Saeul",
             "population": 983
         },
         {
+            "lat": "49.7696681",
+            "lon": "5.9815427",
             "number": 23,
             "name": "Useldange",
             "population": 2075
         },
         {
+            "lat": "49.8025509",
+            "lon": "5.9963314",
             "number": 24,
             "name": "Vichten",
             "population": 1425
         },
         {
+            "lat": "49.8356744",
+            "lon": "5.9054353",
             "number": 25,
             "name": "Wahl",
             "population": 1087
         },
         {
+            "lat": "49.9593737",
+            "lon": "6.1412236",
             "number": 26,
             "name": "Putscheid",
             "population": 1153
         },
         {
+            "lat": "49.8974652",
+            "lon": "6.1824934",
             "number": 27,
             "name": "Tandel",
             "population": 2238
         },
         {
+            "lat": "49.9336976",
+            "lon": "6.2066715",
             "number": 28,
             "name": "Vianden",
             "population": 2203
         },
         {
+            "lat": "49.8869853",
+            "lon": "5.8151538",
             "number": 29,
             "name": "Boulaide",
             "population": 1499
         },
         {
+            "lat": "49.9112543",
+            "lon": "5.9351159",
             "number": 30,
             "name": "Esch-sur-S\u00fbre",
             "population": 3129
         },
         {
+            "lat": "49.9206113",
+            "lon": "5.9668241",
             "number": 31,
             "name": "Goesdorf",
             "population": 1664
         },
         {
+            "lat": "49.9784565",
+            "lon": "6.000857669175531",
             "number": 32,
             "name": "Kiischpelt",
             "population": 1260
         },
         {
+            "lat": "49.9315225",
+            "lon": "5.851122226785716",
             "number": 33,
             "name": "Lac de la Haute-S\u00fbre",
             "population": 2253
         },
         {
+            "lat": "49.9666914",
+            "lon": "5.9321021",
             "number": 34,
             "name": "Wiltz",
             "population": 7949
         },
         {
+            "lat": "49.9669968",
+            "lon": "5.8899696",
             "number": 35,
             "name": "Winseler",
             "population": 1455
         },
         {
+            "lat": "50.2144406",
+            "lon": "3.9615305",
             "number": 36,
             "name": "Beaufort",
             "population": 3053
         },
         {
+            "lat": "48.2083537",
+            "lon": "16.3725042",
             "number": 37,
             "name": "Bech",
             "population": 1357
         },
         {
+            "lat": "49.822329",
+            "lon": "6.35096",
             "number": 38,
             "name": "Berdorf",
             "population": 2219
         },
         {
+            "lat": "49.7798323",
+            "lon": "6.3382466",
             "number": 39,
             "name": "Consdorf",
             "population": 2117
         },
         {
+            "lat": "49.8120961",
+            "lon": "6.4214859",
             "number": 40,
             "name": "Echternach",
             "population": 5870
         },
         {
+            "lat": "49.7767906",
+            "lon": "6.456682848939024",
             "number": 41,
             "name": "Rosport - Mompach",
             "population": 3704
         },
         {
+            "lat": "49.7952998",
+            "lon": "6.2865589",
             "number": 42,
             "name": "Waldbillig",
             "population": 1960
         },
         {
+            "lat": "50.7879961",
+            "lon": "7.8723802",
             "number": 43,
             "name": "Betzdorf",
             "population": 4105
         },
         {
+            "lat": "49.7058978",
+            "lon": "6.3729847",
             "number": 44,
             "name": "Biwer",
             "population": 1926
         },
         {
+            "lat": "49.6663359",
+            "lon": "6.341955",
             "number": 45,
             "name": "Flaxweiler",
             "population": 2193
         },
         {
+            "lat": "49.679313",
+            "lon": "6.4430979",
             "number": 46,
             "name": "Grevenmacher",
             "population": 5092
         },
         {
+            "lat": "49.7118482",
+            "lon": "6.2522878",
             "number": 47,
             "name": "Junglinster",
             "population": 8622
         },
         {
+            "lat": "49.7071605",
+            "lon": "6.4243373",
             "number": 48,
             "name": "Manternach",
             "population": 2298
         },
         {
+            "lat": "49.7002005",
+            "lon": "6.4815968",
             "number": 49,
             "name": "Mertert",
             "population": 5117
         },
         {
+            "lat": "49.62702",
+            "lon": "6.383273202287997",
             "number": 50,
             "name": "Wormeldange",
             "population": 3171
         },
         {
+            "lat": "49.5557996",
+            "lon": "6.3312468",
             "number": 51,
             "name": "Bous",
             "population": 1752
         },
         {
+            "lat": "48.8889399",
+            "lon": "6.5625264",
             "number": 52,
             "name": "Dalheim",
             "population": 2408
         },
         {
+            "lat": "48.5526023",
+            "lon": "9.4693273",
             "number": 53,
             "name": "Lenningen",
             "population": 2070
         },
         {
+            "lat": "49.5071747",
+            "lon": "6.2814238",
             "number": 54,
             "name": "Mondorf-les-Bains",
             "population": 5424
         },
         {
+            "lat": "49.5442267",
+            "lon": "6.3676062",
             "number": 55,
             "name": "Remich",
             "population": 4015
         },
         {
+            "lat": "49.4716",
+            "lon": "6.3659008",
             "number": 56,
             "name": "Schengen",
             "population": 5196
         },
         {
+            "lat": "49.5650843",
+            "lon": "6.3634808",
             "number": 57,
             "name": "Stadtbredimus",
             "population": 1984
         },
         {
+            "lat": "49.5572304",
+            "lon": "6.287091",
             "number": 58,
             "name": "Waldbredimus",
             "population": 1337
         },
         {
+            "lat": "49.587507",
+            "lon": "5.9814794",
             "number": 59,
             "name": "Dippach",
             "population": 4635
         },
         {
+            "lat": "49.6141671",
+            "lon": "5.9506057",
             "number": 60,
             "name": "Garnich",
             "population": 2289
         },
         {
+            "lat": "49.6958025",
+            "lon": "5.938113757853628",
             "number": 61,
             "name": "Habscht",
             "population": 4992
         },
         {
+            "lat": "49.587712249999996",
+            "lon": "5.901094474807923",
             "number": 62,
             "name": "K\u00e4erjeng",
             "population": 11015
         },
         {
+            "lat": "49.6675477",
+            "lon": "6.0357089",
             "number": 63,
             "name": "Kehlen",
             "population": 6391
         },
         {
+            "lat": "49.6697542",
+            "lon": "5.949443",
             "number": 64,
             "name": "Koerich",
             "population": 2706
         },
         {
+            "lat": "49.6645077",
+            "lon": "6.0731924",
             "number": 65,
             "name": "Kopstal",
             "population": 4286
         },
         {
+            "lat": "49.6266028",
+            "lon": "6.0229288",
             "number": 66,
             "name": "Mamer",
             "population": 10643
         },
         {
+            "lat": "49.6597539",
+            "lon": "5.914723",
             "number": 67,
             "name": "Steinfort",
             "population": 5871
         },
         {
+            "lat": "49.5173351",
+            "lon": "6.0966536",
             "number": 68,
             "name": "Bettembourg",
             "population": 11422
         },
         {
+            "lat": "49.5208469",
+            "lon": "5.889242",
             "number": 69,
             "name": "Differdange",
             "population": 29536
         },
         {
+            "lat": "49.4786477",
+            "lon": "6.0847792",
             "number": 70,
             "name": "Dudelange",
             "population": 21953
         },
         {
+            "lat": "49.4959628",
+            "lon": "5.9850306",
             "number": 71,
             "name": "Esch-sur-Alzette",
             "population": 36625
         },
         {
+            "lat": "49.5144142",
+            "lon": "6.1903089",
             "number": 72,
             "name": "Frisange",
             "population": 4912
         },
         {
+            "lat": "49.4861302",
+            "lon": "6.041472",
             "number": 73,
             "name": "Kayl",
             "population": 9865
         },
         {
+            "lat": "49.5660842",
+            "lon": "6.0673211",
             "number": 74,
             "name": "Leudelange",
             "population": 2766
         },
         {
+            "lat": "49.5320813",
+            "lon": "5.9870253",
             "number": 75,
             "name": "Mondercange",
             "population": 7119
         },
         {
+            "lat": "49.5566918",
+            "lon": "5.8776052",
             "number": 76,
             "name": "P\u00e9tange",
             "population": 20563
         },
         {
+            "lat": "49.5611874",
+            "lon": "6.0093091",
             "number": 77,
             "name": "Reckange-sur-Mess",
             "population": 2734
         },
         {
+            "lat": "49.5423193",
+            "lon": "6.1471163",
             "number": 78,
             "name": "Roeser",
             "population": 6657
         },
         {
+            "lat": "49.461113",
+            "lon": "6.0307171",
             "number": 79,
             "name": "Rumelange",
             "population": 5692
         },
         {
+            "lat": "49.5476008",
+            "lon": "5.9272714",
             "number": 80,
             "name": "Sanem",
             "population": 18333
         },
         {
+            "lat": "49.5062732",
+            "lon": "6.0118175",
             "number": 81,
             "name": "Schifflange",
             "population": 11363
         },
         {
+            "lat": "49.3133457",
+            "lon": "6.193137",
             "number": 82,
             "name": "Bertrange",
             "population": 8668
         },
         {
+            "lat": "49.5858294",
+            "lon": "6.2262883",
             "number": 83,
             "name": "Contern",
             "population": 4374
         },
         {
+            "lat": "49.5729552",
+            "lon": "6.1615727",
             "number": 84,
             "name": "Hesperange",
             "population": 16433
         },
         {
+            "lat": "49.8158683",
+            "lon": "6.1296751",
             "number": 85,
             "name": "Luxembourg",
             "population": 132780
         },
         {
+            "lat": "49.6512224",
+            "lon": "6.2552342",
             "number": 86,
             "name": "Niederanven",
             "population": 6660
         },
         {
+            "lat": "49.616081",
+            "lon": "6.2173651",
             "number": 87,
             "name": "Sandweiler",
             "population": 3751
         },
         {
+            "lat": "49.6226683",
+            "lon": "6.2714312",
             "number": 88,
             "name": "Schuttrange",
             "population": 4387
         },
         {
+            "lat": "49.677469",
+            "lon": "6.1244736",
             "number": 89,
             "name": "Steinsel",
             "population": 5539
         },
         {
+            "lat": "49.6196726",
+            "lon": "6.0721393",
             "number": 90,
             "name": "Strassen",
             "population": 10538
         },
         {
+            "lat": "49.6584806",
+            "lon": "6.1306387",
             "number": 91,
             "name": "Walferdange",
             "population": 8730
         },
         {
+            "lat": "49.5416974",
+            "lon": "6.1995573",
             "number": 92,
             "name": "Weiler-la-Tour",
             "population": 2498
         },
         {
+            "lat": "49.7891516",
+            "lon": "6.0662981",
             "number": 93,
             "name": "Bissen",
             "population": 3450
         },
         {
+            "lat": "49.811143",
+            "lon": "6.0910235",
             "number": 94,
             "name": "Colmar-Berg",
             "population": 2336
         },
         {
+            "lat": "49.7462374",
+            "lon": "6.1866614",
             "number": 95,
             "name": "Fischbach",
             "population": 1308
         },
         {
+            "lat": "49.7707883",
+            "lon": "6.2405201",
             "number": 96,
             "name": "Heffingen",
             "population": 1549
         },
         {
+            "lat": "49.7393575",
+            "lon": "6.020404611111116",
             "number": 97,
             "name": "Helperknapp",
             "population": 4941
         },
         {
+            "lat": "49.7869673",
+            "lon": "6.2189134",
             "number": 98,
             "name": "Larochette",
             "population": 2208
         },
         {
+            "lat": "49.7223176",
+            "lon": "6.1278945",
             "number": 99,
             "name": "Lintgen",
             "population": 3436
         },
         {
+            "lat": "49.7011902",
+            "lon": "6.1440065",
             "number": 100,
             "name": "Lorentzweiler",
             "population": 4521
         },
         {
+            "lat": "49.7506746",
+            "lon": "6.1066591",
             "number": 101,
             "name": "Mersch",
             "population": 10393
         },
         {
+            "lat": "49.7938754",
+            "lon": "6.1737271",
             "number": 102,
             "name": "Nommern",
             "population": 1437

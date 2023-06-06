@@ -18,6 +18,7 @@ from openpyxl import load_workbook
 from plotly.subplots import make_subplots
 from shapely.geometry import Point
 
+
 if dash.__version__ != "2.10.2":
     print("dash version 2.10.2 required!")
     sys.exit()
