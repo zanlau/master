@@ -6,84 +6,96 @@
             "lon": "6.079926754341518",
             "number": 1,
             "name": "Canton Clervaux",
-            "population": 20687
+            "population": 20687,
+            "osm_id": 251892186
         },
         {
             "lat": "49.881433400000006",
             "lon": "6.21113080297455",
             "number": 2,
             "name": "Canton Diekirch",
-            "population": 35150
+            "population": 35150,
+            "osm_id": 835735736
         },
         {
             "lat": "49.87173985",
             "lon": "5.801253465447152",
             "number": 3,
             "name": "Canton Redange",
-            "population": 20874
+            "population": 20874,
+            "osm_id": 755641956
         },
         {
             "lat": "49.9349536",
             "lon": "6.1575495053435105",
             "number": 4,
             "name": "Canton Vianden",
-            "population": 5594
+            "population": 5594,
+            "osm_id": 834690105
         },
         {
             "lat": "49.92085735",
             "lon": "6.036200469125326",
             "number": 5,
             "name": "Canton Wiltz",
-            "population": 19209
+            "population": 19209,
+            "osm_id": 272527539
         },
         {
             "lat": "49.79745845",
             "lon": "6.388121004812441",
             "number": 6,
             "name": "Canton Echternach",
-            "population": 20280
+            "population": 20280,
+            "osm_id": 535240485
         },
         {
             "lat": "49.711767800000004",
             "lon": "6.3422835535024555",
             "number": 7,
             "name": "Canton Grevenmacher",
-            "population": 32524
+            "population": 32524,
+            "osm_id": 141129886
         },
         {
             "lat": "49.5047592",
             "lon": "6.2793662",
             "number": 8,
             "name": "Canton Remich",
-            "population": 24186
+            "population": 24186,
+            "osm_id": 6160638448
         },
         {
             "lat": "49.570339450000006",
             "lon": "5.920389615748902",
             "number": 9,
             "name": "Canton Capellen",
-            "population": 52828
+            "population": 52828,
+            "osm_id": 85150546
         },
         {
             "lat": "49.508304499999994",
             "lon": "5.992203250000004",
             "number": 10,
             "name": "Canton Esch-Alzette",
-            "population": 189540
+            "population": 189540,
+            "osm_id": 182423103
         },
         {
             "lat": "49.588484550000004",
             "lon": "6.140676265269274",
             "number": 11,
             "name": "Canton Luxembourg",
-            "population": 204358
+            "population": 204358,
+            "osm_id": 945837282
         },
         {
             "lat": "49.814557",
             "lon": "6.0968824",
             "number": 12,
             "name": "Canton Mersch",
-            "population": 35579
+            "population": 35579,
+            "osm_id": 72603795
         }
     ]
 }

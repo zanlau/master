@@ -14,12 +14,14 @@ for row in worksheet.iter_rows(min_row=2): #von erster Spalte über alle Element
     print(numbers)
     url = f'https://nominatim.openstreetmap.org/search/{urllib.parse.quote(numbers)}?format=json'
     response = requests.get(url).json()
+
     municipality.append({
         "lat": response[0]["lat"],
         "lon": response[0]["lon"],
         "number": row[0].value,
         "name": row[1].value,
         "population": row[2].value,
+        "osm_id": response[0]["osm_id"]
     })
 
 data = {
