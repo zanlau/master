@@ -330,7 +330,6 @@ def get_fig(data, criteria):
             text=[f"Name: {x.name}<br>Kind: {x.kind}" for x in data],
             textfont=dict(size=16)
         )
-
     )
 
     if criteria == "area":
@@ -352,6 +351,25 @@ def get_fig(data, criteria):
                     {"source": cgeo, "color": "black", "type": "line", "opacity": 0.1},
                 ]
             }
+        )
+    elif criteria == "population":
+        with open("daten/population_lu_gemeinde.json") as f:
+            pop_data = json.load(f)["data"]
+
+        for notfalzentrum in notfalzentren:
+            pop_remaining = notfalzentrum.personalbestand * 50
+            nächste_gemainde = None
+            for gemeinde in gemeinden:
+                lat/long vergleichen und nächste auswählen
+                ausser es hat eine farbe
+            nächste_gemainde.farbe = "irgendöpis"
+
+        fig.add_trace(
+            go.Choroplethmapbox(
+                geojson=json.load(open("daten/borders.geojson")),
+                locations=[f'relation/{x["osm_id"]}' for x in pop_data],
+                z=[x["population"] for x in pop_data],
+            )
         )
 
     # open street map mit Standardposition

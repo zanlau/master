@@ -14,13 +14,24 @@ for row in worksheet.iter_rows(min_row=2): #von erster Spalte über alle Element
     print(numbers)
     url = f'https://nominatim.openstreetmap.org/search/{urllib.parse.quote(numbers)}?format=json'
     response = requests.get(url).json()
-    municipality.append({
-        "lat": response[0]["lat"],
-        "lon": response[0]["lon"],
-        "number": row[0].value,
-        "name": row[1].value,
-        "population": row[2].value,
-    })
+    print(response)
+
+    for i, item in enumerate(response):
+        url2 = f'https://nominatim.openstreetmap.org/lookup?osm_ids=R{item["osm_id"]}&format=json'
+        response2 = requests.get(url2).json()[0]
+        print(response2)
+        address = response2["address"]
+        if ("city" in address or "town" in address or "village" in address) and address["country_code"] == "lu":
+            municipality.append({
+                "lat": response[i]["lat"],
+                "lon": response[i]["lon"],
+                "number": row[0].value,
+                "name": row[1].value,
+                "population": row[2].value,
+                "osm_id": response[i]["osm_id"]
+            })
+            break
+        print("NEXT TRY")
 
 data = {
     "source": "Statec - Statistikseite des Staates Luxemburg"

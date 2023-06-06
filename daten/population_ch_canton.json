@@ -6,182 +6,208 @@
             "lon": "8.5410422",
             "number": "ZH",
             "name": "Z\u00fcrich",
-            "population": 1564662
+            "population": 1564662,
+            "osm_id": 1682248
         },
         {
             "lat": "46.9484742",
             "lon": "7.4521749",
             "number": "BE",
             "name": "Bern",
-            "population": 1047473
+            "population": 1047473,
+            "osm_id": 1682378
         },
         {
             "lat": "47.0505452",
             "lon": "8.3054682",
             "number": "LU",
             "name": "Luzern",
-            "population": 420326
+            "population": 420326,
+            "osm_id": 1682891
         },
         {
             "lat": "46.8820732",
             "lon": "8.6413922",
             "number": "UR",
             "name": "Uri",
-            "population": 37047
+            "population": 37047,
+            "osm_id": 1683055
         },
         {
             "lat": "47.0211848",
             "lon": "8.6535598",
             "number": "SZ",
             "name": "Schwyz",
-            "population": 163689
+            "population": 163689,
+            "osm_id": 1683103
         },
         {
             "lat": "46.8753152",
             "lon": "8.28105",
             "number": "OW",
             "name": "Obwalden",
-            "population": 38435
+            "population": 38435,
+            "osm_id": 9869762470
         },
         {
             "lat": "46.9840938",
             "lon": "8.3104542",
             "number": "NW",
             "name": "Nidwalden",
-            "population": 43894
+            "population": 43894,
+            "osm_id": 1683080
         },
         {
             "lat": "47.0422116",
             "lon": "9.0674041",
             "number": "GL",
             "name": "Glarus",
-            "population": 41190
+            "population": 41190,
+            "osm_id": 1683142
         },
         {
             "lat": "47.1679898",
             "lon": "8.5173652",
             "number": "ZG",
             "name": "Zug",
-            "population": 129787
+            "population": 129787,
+            "osm_id": 1683151
         },
         {
             "lat": "46.8056255",
             "lon": "7.1611125",
             "number": "FR",
             "name": "Freiburg",
-            "population": 329809
+            "population": 329809,
+            "osm_id": 1683318
         },
         {
             "lat": "47.2081355",
             "lon": "7.5384045",
             "number": "SO",
             "name": "Solothurn",
-            "population": 280245
+            "population": 280245,
+            "osm_id": 1683577
         },
         {
             "lat": "47.55774955",
             "lon": "7.564260603780503",
             "number": "BS",
             "name": "Basel Stadt",
-            "population": 196036
+            "population": 196036,
+            "osm_id": 26166985
         },
         {
             "lat": "47.4263362",
             "lon": "7.8984684",
             "number": "BL",
             "name": "Basel Landschaft",
-            "population": 292817
+            "population": 292817,
+            "osm_id": 1683661
         },
         {
             "lat": "47.6960491",
             "lon": "8.634513",
             "number": "SH",
             "name": "Schaffhausen",
-            "population": 83995
+            "population": 83995,
+            "osm_id": 1683703
         },
         {
             "lat": "47.4195905",
             "lon": "9.5726679",
             "number": "AR",
             "name": "Appenzell Ausserrhoden",
-            "population": 55585
+            "population": 55585,
+            "osm_id": 1683924
         },
         {
             "lat": "47.4032696",
             "lon": "9.5239895",
             "number": "AI",
             "name": "Appenzell Innerrhoden",
-            "population": 16360
+            "population": 16360,
+            "osm_id": 293575472
         },
         {
             "lat": "47.4250593",
             "lon": "9.3765878",
             "number": "SG",
             "name": "St.Gallen",
-            "population": 519245
+            "population": 519245,
+            "osm_id": 1683941
         },
         {
             "lat": "46.553071",
             "lon": "9.3234097",
             "number": "GR",
             "name": "Graub\u00fcnden",
-            "population": 201376
+            "population": 201376,
+            "osm_id": 4429008093
         },
         {
             "lat": "47.3191633",
             "lon": "8.4200738",
             "number": "AG",
             "name": "Aargau",
-            "population": 703086
+            "population": 703086,
+            "osm_id": 1684256
         },
         {
             "lat": "47.4777697",
             "lon": "8.9976456",
             "number": "TG",
             "name": "Thurgau",
-            "population": 285964
+            "population": 285964,
+            "osm_id": 240118537
         },
         {
             "lat": "46.4024362",
             "lon": "8.874988",
             "number": "TI",
             "name": "Ticino",
-            "population": 352181
+            "population": 352181,
+            "osm_id": 305192136
         },
         {
             "lat": "46.3965712",
             "lon": "6.9248129",
             "number": "VD",
             "name": "Waadt",
-            "population": 822968
+            "population": 822968,
+            "osm_id": 1685193
         },
         {
             "lat": "29.6313486",
             "lon": "-96.0652362",
             "number": "VS",
             "name": "Wallis",
-            "population": 353209
+            "population": 353209,
+            "osm_id": 6586829
         },
         {
             "lat": "46.9895828",
             "lon": "6.9292641",
             "number": "NE",
             "name": "Neuenburg",
-            "population": 176166
+            "population": 176166,
+            "osm_id": 1685519
         },
         {
             "lat": "46.2017559",
             "lon": "6.1466014",
             "number": "GE",
             "name": "Genf",
-            "population": 509448
+            "population": 509448,
+            "osm_id": 1685488
         },
         {
             "lat": "24.5064892",
             "lon": "73.2238233",
             "number": "JU",
             "name": "Jura",
-            "population": 73798
+            "population": 73798,
+            "osm_id": 7500199563
         }
     ]
 }
