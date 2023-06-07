@@ -226,8 +226,26 @@ def render_content(tab):
                         )
                     }
                 )
-        ], className='six columns', style={'display': 'inline-block'})
-    ])
+            ], className='six columns', style={'display': 'inline-block'}),
+            html.Div([
+                dbc.Col(width=4, children=[
+                    dbc.Card([
+                        dbc.CardHeader("Top 5 Notfallversorgungen"),
+                        dbc.CardBody([
+                            dcc.Dropdown(
+                                id='land-dropdown',
+                                options=[
+                                    {'label': 'Schweiz', 'value': 'Schweiz'},
+                                    {'label': 'Deutschland', 'value': 'Deutschland'}
+                                ],
+                                value='Schweiz'
+                            ),
+                            html.Ul(id='top-5-list')
+                        ])
+                    ])
+                ])
+            ])
+        ])
 
 
 
@@ -415,12 +433,38 @@ def update_map(all_inputs):
 
     return get_fig(data, c.criteria.value)
 
+
+@app.callback(
+    dash.dependencies.Output('top-5-list', 'children'),
+    [dash.dependencies.Input('land-dropdown', 'value')]
+)
+def update_top_list(land):
+    # Filtern der Daten basierend auf ausgewähltem Land
+    filtered_data = df_list[df_list['Land'] == land]
+    top_stationen = filtered_data.nlargest(5, 'Anzahl')
+
+    list_items = [
+        html.Li(f"Notfallstation: {station}, Anzahl: {anzahl}")
+        for station, anzahl in zip(top_stationen['Notfallstation'], top_stationen['Anzahl'])
+    ]
+
+    return list_items
+
+
+#bar chart
 x_data = ['A', 'B', 'C', 'D']
 y_data = [10, 8, 12, 6]
 
+#pie chart
 labels = ['Medizinische Notfallstation C', 'Feuerwehrstützpunkt', 'Schlaganfallzentrum']
 values = [30, 40, 20]
 
+#list
+df_list = pd.DataFrame({
+    'Land': ['Schweiz', 'Schweiz', 'Schweiz', 'Schweiz', 'Schweiz', 'Deutschland', 'Deutschland', 'Deutschland', 'Deutschland', 'Deutschland'],
+    'Notfallstation': ['Klinik A', 'Klinik B', 'Klinik C', 'Klinik D', 'Klinik E', 'Klinik X', 'Klinik Y', 'Klinik Z', 'Klinik W', 'Klinik V'],
+    'Anzahl': [10, 8, 6, 4, 2, 12, 10, 8, 6, 4]
+})
 
 if __name__ == '__main__':
     app.run_server()
