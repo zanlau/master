@@ -189,6 +189,7 @@ def render_content(tab):
                     ])
                 ])
             ]),
+            html.Div(style={'padding-top': '20px'}),  # Zeilenabstand
             html.Div([
                 dcc.Graph(
                     id='pie-chart',
@@ -227,6 +228,7 @@ def render_content(tab):
                     }
                 )
             ], className='six columns', style={'display': 'inline-block'}),
+            html.Div(style={'padding-top': '20px'}),  # Zeilenabstand
             html.Div([
                 dbc.Col(width=4, children=[
                     dbc.Card([
@@ -244,8 +246,85 @@ def render_content(tab):
                         ])
                     ])
                 ])
-            ])
+            ]),
+            html.Div(style={'padding-top': '20px'}),  # Zeilenabstand
+            html.Div([
+                dbc.Col(width=2, children=[
+                    dbc.Card([
+                        dbc.CardHeader("Vergleichsland 1"),
+                        dbc.CardBody([
+                            dcc.Dropdown(
+                                id='Dropdown 4',
+                                options=[
+                                    {'label': 'Schweiz', 'value': 'CH'},
+                                    {'label': 'Luxemburg', 'value': 'LU'}
+                                ],
+                                value='option4',
+                                style={"margin-right": "10px"}
+                            ),
+                            html.Div(id="dropdown4_output")
+                        ])
+                    ])
+                ]),
+                dbc.Col(width=2, children=[
+                    dbc.Card([
+                        dbc.CardHeader("Vergleichsland 2"),
+                        dbc.CardBody([
+                            dcc.Dropdown(
+                                id='dropdown5',
+                                options=[
+                                    {'label': 'Schweiz', 'value': 'CH'},
+                                    {'label': 'Luxemburg', 'value': 'LU'}
+                                ],
+                                value='option5',
+                                style={"margin-left": "10px"}
+                            ),
+                            html.Div(id='dropdown5_output')
+                        ])
+                    ])
+                ])
+            ], style={"display": "flex"}),
+            html.Div(style={'padding-top': '20px'}),  # Zeilenabstand
+            html.Div([
+                dcc.Graph(
+                    id='bar-chart1',
+                    figure={
+                        'data': [
+                            go.Bar(
+                                x=categories,
+                                y=values1,
+                                name='Schweiz'
+                            )
+                        ],
+                        'layout': go.Layout(
+                            title='Anzahl in der Schweiz',
+                            title_x=0.4,
+                            height=400
+                        )
+                    }
+                )
+            ], className='six columns', style={'display': 'inline-block'}),
+            html.Div([
+                dcc.Graph(
+                    id='bar-chart2',
+                    figure={
+                        'data': [
+                            go.Bar(
+                                x=categories,
+                                y=values2,
+                                name='Luxemburg'
+                            )
+                        ],
+                        'layout': go.Layout(
+                            title='Anzahl in Luxemburg',
+                            title_x=0.4,
+                            height=400
+                        )
+                    }
+                )
+            ], className='six columns', style={'display': 'inline-block'}),
         ])
+
 
 
 
@@ -450,8 +529,16 @@ def update_top_list(land):
 
     return list_items
 
+@app.callback(
+    dash.dependencies.Output('emergency_type_output', 'children'),
+    [dash.dependencies.Input('emergency_type_dropdown', 'value')]
+)
+def update_emergency_type_output(emergency_type):
+    return update_emergency_type_output
 
-#bar chart
+
+
+#stacked bar chart
 x_data = ['A', 'B', 'C', 'D']
 y_data = [10, 8, 12, 6]
 
@@ -465,6 +552,11 @@ df_list = pd.DataFrame({
     'Notfallstation': ['Klinik A', 'Klinik B', 'Klinik C', 'Klinik D', 'Klinik E', 'Klinik X', 'Klinik Y', 'Klinik Z', 'Klinik W', 'Klinik V'],
     'Anzahl': [10, 8, 6, 4, 2, 12, 10, 8, 6, 4]
 })
+
+#bar chart
+categories = ['Kategorie 1', 'Kategorie 2']
+values1 = [10, 20, 30]
+values2 = [15, 25, 35]
 
 if __name__ == '__main__':
     app.run_server()
