@@ -356,13 +356,13 @@ def get_fig(data, criteria):
         with open("daten/population_lu_gemeinde.json") as f:
             pop_data = json.load(f)["data"]
 
-        for notfalzentrum in notfalzentren:
-            pop_remaining = notfalzentrum.personalbestand * 50
-            nächste_gemainde = None
-            for gemeinde in gemeinden:
-                lat/long vergleichen und nächste auswählen
-                ausser es hat eine farbe
-            nächste_gemainde.farbe = "irgendöpis"
+        #for notfalzentrum in notfalzentren:
+         #   pop_remaining = notfalzentrum.personalbestand * 50
+          #  nächste_gemainde = None
+           # for gemeinde in gemeinden:
+            #    lat/long vergleichen und nächste auswählen
+             #   ausser es hat eine farbe
+            #nächste_gemainde.farbe = "irgendöpis"
 
         fig.add_trace(
             go.Choroplethmapbox(
