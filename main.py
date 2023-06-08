@@ -428,8 +428,27 @@ def get_fig(data, criteria):
             textfont=dict(size=16)
         )
     )
+    if criteria == "minutes":
+        d = {"geometry": [x.location.coordinates.to_Point() for x in data]}
+        gdf = gpd.GeoDataFrame(d, crs="EPSG:4326")
 
-    if criteria == "area":
+        cgeo = (
+            gdf.set_crs("epsg:4326")
+                .pipe(lambda d: d.to_crs(d.estimate_utm_crs()))["geometry"]
+                .centroid.buffer(12500)  # 12.5km (50 km/h, 15 Minuten = 12.5km)
+                .to_crs("epsg:4326")
+                .__geo_interface__
+        )
+        fig.update_layout(
+            mapbox={
+                "layers": [
+                    {"source": cgeo, "color": "PaleTurquoise", "type": "fill", "opacity": .5},
+                    {"source": cgeo, "color": "black", "type": "line", "opacity": 0.1},
+                ]
+            }
+        )
+
+    elif criteria == "area":
         # prep geometry
         d = {"geometry": [x.location.coordinates.to_Point() for x in data]}
         gdf = gpd.GeoDataFrame(d, crs="EPSG:4326")
