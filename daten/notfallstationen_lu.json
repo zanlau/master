@@ -8,6 +8,7 @@
             "stand_address": "Avenue Lucien Salentiny 120",
             "stand_plz": 9080,
             "stand_ort": "Ettelbruck",
+            "land": "LU",
             "personal_bestand": 600
         },
         {
@@ -17,6 +18,7 @@
             "stand_address": "Rue Grande-Duchesse Charlotte 10",
             "stand_plz": 9515,
             "stand_ort": "Wiltz",
+            "land": "LU",
             "personal_bestand": 600
         },
         {
@@ -26,6 +28,7 @@
             "stand_address": "Rue d'Eich 78",
             "stand_plz": 1460,
             "stand_ort": "Eich",
+            "land": "LU",
             "personal_bestand": 1241
         },
         {
@@ -35,6 +38,7 @@
             "stand_address": "Rue Nicolas Ernest Barbl\u00e9 4",
             "stand_plz": 1210,
             "stand_ort": "Luxembourg",
+            "land": "LU",
             "personal_bestand": 1250
         },
         {
@@ -44,6 +48,7 @@
             "stand_address": "Rue Edward Steichen 9",
             "stand_plz": 2540,
             "stand_ort": "Luxemburg",
+            "land": "LU",
             "personal_bestand": 1002
         },
         {
@@ -53,6 +58,7 @@
             "stand_address": "Rue d'Anvers 20",
             "stand_plz": 1130,
             "stand_ort": "Luxembourg",
+            "land": "LU",
             "personal_bestand": 1002
         },
         {
@@ -62,6 +68,7 @@
             "stand_address": "Rue Wurth-Paquet 7",
             "stand_plz": 4350,
             "stand_ort": "Esch-sur-Alzette",
+            "land": "LU",
             "personal_bestand": 552
         },
         {
@@ -71,6 +78,7 @@
             "stand_address": "Rue Emile Mayrisch",
             "stand_plz": 4240,
             "stand_ort": "Esch-sur-Alzette",
+            "land": "LU",
             "personal_bestand": 1023
         },
         {
@@ -80,6 +88,7 @@
             "stand_address": "Avenue de la Libert\u00e9 187",
             "stand_plz": 4602,
             "stand_ort": "Niederkorn",
+            "land": "LU",
             "personal_bestand": 651
         },
         {
@@ -89,6 +98,7 @@
             "stand_address": "Rue de l'H\u00f4pital 98",
             "stand_plz": 3488,
             "stand_ort": "Dudelange",
+            "land": "LU",
             "personal_bestand": 651
         }
     ]

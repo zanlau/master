@@ -8,6 +8,7 @@
             "stand_address": "Spitalstrasse 1",
             "stand_plz": 5737,
             "stand_ort": "Menziken",
+            "land": "CH",
             "personal_bestand": 209.5
         },
         {
@@ -17,6 +18,7 @@
             "stand_address": "Kommendeweg 12",
             "stand_plz": 5316,
             "stand_ort": "Leuggern",
+            "land": "CH",
             "personal_bestand": 236.55
         },
         {
@@ -26,6 +28,7 @@
             "stand_address": "M\u00fchlethalstrasse 27",
             "stand_plz": 4800,
             "stand_ort": "Zofingen",
+            "land": "CH",
             "personal_bestand": 563.13
         },
         {
@@ -35,6 +38,7 @@
             "stand_address": "Sch\u00e4nisweg 1",
             "stand_plz": 5000,
             "stand_ort": "Aarau",
+            "land": "CH",
             "personal_bestand": 639.46
         },
         {
@@ -44,6 +48,7 @@
             "stand_address": "Spitalstrasse 144",
             "stand_plz": 5630,
             "stand_ort": "Muri",
+            "land": "CH",
             "personal_bestand": 643
         },
         {
@@ -53,6 +58,7 @@
             "stand_address": "Riburgerstrasse 12",
             "stand_plz": 4310,
             "stand_ort": "Rheinfelden",
+            "land": "CH",
             "personal_bestand": 686.34
         },
         {
@@ -62,6 +68,7 @@
             "stand_address": "Im Ergel 1",
             "stand_plz": 5404,
             "stand_ort": "Baden",
+            "land": "CH",
             "personal_bestand": 2342.09
         },
         {
@@ -71,6 +78,7 @@
             "stand_address": "Tellstrasse 25",
             "stand_plz": 5000,
             "stand_ort": "Aarau",
+            "land": "CH",
             "personal_bestand": 3775.4
         },
         {
@@ -80,6 +88,7 @@
             "stand_address": "Sonnhalde 2",
             "stand_plz": 9050,
             "stand_ort": "Appenzell",
+            "land": "CH",
             "personal_bestand": 59.85
         },
         {
@@ -89,6 +98,7 @@
             "stand_address": "Krombach 3",
             "stand_plz": 9100,
             "stand_ort": "Herisau",
+            "land": "CH",
             "personal_bestand": 624.09
         },
         {
@@ -98,6 +108,7 @@
             "stand_address": "Beausite 49",
             "stand_plz": 2740,
             "stand_ort": "Moutier",
+            "land": "CH",
             "personal_bestand": 251.47
         },
         {
@@ -107,6 +118,7 @@
             "stand_address": "Worbstrasse 316",
             "stand_plz": 3073,
             "stand_ort": "G\u00fcmligen",
+            "land": "CH",
             "personal_bestand": 373.17
         },
         {
@@ -116,6 +128,7 @@
             "stand_address": "Blumenrain 105",
             "stand_plz": 2503,
             "stand_ort": "Biel",
+            "land": "CH",
             "personal_bestand": 391.14
         },
         {
@@ -125,6 +138,7 @@
             "stand_address": "St. Urbanstrasse 67",
             "stand_plz": 4900,
             "stand_ort": "Langenthal",
+            "land": "CH",
             "personal_bestand": 847.86
         },
         {
@@ -134,6 +148,7 @@
             "stand_address": "Weissenaustrasse 27",
             "stand_plz": 3800,
             "stand_ort": "Unterseen",
+            "land": "CH",
             "personal_bestand": 893.2
         },
         {
@@ -143,6 +158,7 @@
             "stand_address": "Oberburgstrasse 54",
             "stand_plz": 3400,
             "stand_ort": "Burgdorf",
+            "land": "CH",
             "personal_bestand": 1059.31
         },
         {
@@ -152,6 +168,7 @@
             "stand_address": "Sch\u00e4nzlihalde 11",
             "stand_plz": 3013,
             "stand_ort": "Bern",
+            "land": "CH",
             "personal_bestand": 1134.2
         },
         {
@@ -161,6 +178,7 @@
             "stand_address": "Freiburgstrasse 18",
             "stand_plz": 3010,
             "stand_ort": "Bern",
+            "land": "CH",
             "personal_bestand": 1324.78
         },
         {
@@ -170,6 +188,7 @@
             "stand_address": "Vogelsang 84",
             "stand_plz": 2502,
             "stand_ort": "Biel",
+            "land": "CH",
             "personal_bestand": 1358.95
         },
         {
@@ -179,6 +198,7 @@
             "stand_address": "Krankenhausstrasse 12",
             "stand_plz": 3600,
             "stand_ort": "Thun",
+            "land": "CH",
             "personal_bestand": 1608.04
         },
         {
@@ -188,6 +208,7 @@
             "stand_address": "Bremgartenstrasse 117",
             "stand_plz": 3012,
             "stand_ort": "Bern",
+            "land": "CH",
             "personal_bestand": 1776.07
         },
         {
@@ -197,6 +218,7 @@
             "stand_address": "M\u00fchlemattstrasse 26",
             "stand_plz": 4410,
             "stand_ort": "Liestal",
+            "land": "CH",
             "personal_bestand": 2552.37
         },
         {
@@ -206,6 +228,7 @@
             "stand_address": "Kleinriehenstrasse 30",
             "stand_plz": 4058,
             "stand_ort": "Basel",
+            "land": "CH",
             "personal_bestand": 796.41
         },
         {
@@ -215,6 +238,7 @@
             "stand_address": "Hebelstrasse 32",
             "stand_plz": 4031,
             "stand_ort": "Basel",
+            "land": "CH",
             "personal_bestand": 5469.64
         },
         {
@@ -224,6 +248,7 @@
             "stand_address": "Chemin des Pensionnats 2",
             "stand_plz": 1708,
             "stand_ort": "Fribourg",
+            "land": "CH",
             "personal_bestand": 2889.83
         },
         {
@@ -233,6 +258,7 @@
             "stand_address": "Avenue de Beau-S\u00e9jour 6",
             "stand_plz": 1206,
             "stand_ort": "Gen\u00e8ve",
+            "land": "CH",
             "personal_bestand": 251.7
         },
         {
@@ -242,6 +268,7 @@
             "stand_address": "Avenue Jacob-Daniel Maillard 3",
             "stand_plz": 1217,
             "stand_ort": "Meyrin",
+            "land": "CH",
             "personal_bestand": 913.95
         },
         {
@@ -251,6 +278,7 @@
             "stand_address": "Rue Gabrielle-Perret-Gentil 4",
             "stand_plz": 1205,
             "stand_ort": "Gen\u00e8ve",
+            "land": "CH",
             "personal_bestand": 12101.94
         },
         {
@@ -260,6 +288,7 @@
             "stand_address": "Burgstrasse 99",
             "stand_plz": 8750,
             "stand_ort": "Glarus",
+            "land": "CH",
             "personal_bestand": 536.87
         },
         {
@@ -269,6 +298,7 @@
             "stand_address": "Sielva 122",
             "stand_plz": 7536,
             "stand_ort": "Santa Maria Val M\u00fcstair",
+            "land": "CH",
             "personal_bestand": 21.71
         },
         {
@@ -278,6 +308,7 @@
             "stand_address": "Stradung 52",
             "stand_plz": 7460,
             "stand_ort": "Savognin",
+            "land": "CH",
             "personal_bestand": 43.39
         },
         {
@@ -287,6 +318,7 @@
             "stand_address": "Via da li Cl\u00fcs\u00fcri 1",
             "stand_plz": 7742,
             "stand_ort": "Poschiavo",
+            "land": "CH",
             "personal_bestand": 43.55
         },
         {
@@ -296,6 +328,7 @@
             "stand_address": "Flin 5",
             "stand_plz": 7606,
             "stand_ort": "Promontogno",
+            "land": "CH",
             "personal_bestand": 52.02
         },
         {
@@ -305,6 +338,7 @@
             "stand_address": "Via da l'Ospidal 280",
             "stand_plz": 7550,
             "stand_ort": "Scuol",
+            "land": "CH",
             "personal_bestand": 139.36
         },
         {
@@ -314,6 +348,7 @@
             "stand_address": "Alte Strasse 31",
             "stand_plz": 7430,
             "stand_ort": "Thusis",
+            "land": "CH",
             "personal_bestand": 173.87
         },
         {
@@ -323,6 +358,7 @@
             "stand_address": "Via Arona 34",
             "stand_plz": 7500,
             "stand_ort": "St. Moritz",
+            "land": "CH",
             "personal_bestand": 182.13
         },
         {
@@ -332,6 +368,7 @@
             "stand_address": "Tersierstrasse 7",
             "stand_plz": 7220,
             "stand_ort": "Schiers",
+            "land": "CH",
             "personal_bestand": 187.85
         },
         {
@@ -341,6 +378,7 @@
             "stand_address": "Spitalstrasse 6",
             "stand_plz": 7130,
             "stand_ort": "Ilanz",
+            "land": "CH",
             "personal_bestand": 209.11
         },
         {
@@ -350,6 +388,7 @@
             "stand_address": "Promenade 4",
             "stand_plz": 7270,
             "stand_ort": "Davos Platz",
+            "land": "CH",
             "personal_bestand": 228.65
         },
         {
@@ -359,6 +398,7 @@
             "stand_address": "Via Nouva 3",
             "stand_plz": 7503,
             "stand_ort": "Samedan",
+            "land": "CH",
             "personal_bestand": 274.35
         },
         {
@@ -368,6 +408,7 @@
             "stand_address": "Loestrasse 170",
             "stand_plz": 7000,
             "stand_ort": "Chur",
+            "land": "CH",
             "personal_bestand": 2003.24
         },
         {
@@ -377,6 +418,7 @@
             "stand_address": "Chemin de l'H\u00f4pital 9a",
             "stand_plz": 2900,
             "stand_ort": "Porrentruy",
+            "land": "CH",
             "personal_bestand": 1329.79
         },
         {
@@ -386,6 +428,7 @@
             "stand_address": "St. Anna\u00adStrasse 32",
             "stand_plz": 6006,
             "stand_ort": "Luzern",
+            "land": "CH",
             "personal_bestand": 1036.96
         },
         {
@@ -395,6 +438,7 @@
             "stand_address": "Spitalstrasse",
             "stand_plz": 6004,
             "stand_ort": "Luzern",
+            "land": "CH",
             "personal_bestand": 5623.33
         },
         {
@@ -404,6 +448,7 @@
             "stand_address": "Maladi\u00e8re 45",
             "stand_plz": 2000,
             "stand_ort": "Neuch\u00e2tel",
+            "land": "CH",
             "personal_bestand": 2422.63
         },
         {
@@ -413,6 +458,7 @@
             "stand_address": "Ennetmooserstrasse 19",
             "stand_plz": 6370,
             "stand_ort": "Stans",
+            "land": "CH",
             "personal_bestand": 462.67
         },
         {
@@ -422,6 +468,7 @@
             "stand_address": "Br\u00fcnigstrasse 181",
             "stand_plz": 6060,
             "stand_ort": "Sarnen",
+            "land": "CH",
             "personal_bestand": 360.8
         },
         {
@@ -431,6 +478,7 @@
             "stand_address": "Bahnhofstrasse 123a",
             "stand_plz": 9244,
             "stand_ort": "Niederuzwil",
+            "land": "CH",
             "personal_bestand": 21.09
         },
         {
@@ -440,6 +488,7 @@
             "stand_address": "Gasterstrasse 25",
             "stand_plz": 8730,
             "stand_ort": "Uznach",
+            "land": "CH",
             "personal_bestand": 420.08
         },
         {
@@ -449,6 +498,7 @@
             "stand_address": "Brauerstrasse 95",
             "stand_plz": 9016,
             "stand_ort": "St. Gallen",
+            "land": "CH",
             "personal_bestand": 477.84
         },
         {
@@ -458,6 +508,7 @@
             "stand_address": "F\u00fcrstenlandstrasse 32",
             "stand_plz": 9500,
             "stand_ort": "Wil",
+            "land": "CH",
             "personal_bestand": 585.73
         },
         {
@@ -467,6 +518,7 @@
             "stand_address": "Alte Landstrasse 106",
             "stand_plz": 9445,
             "stand_ort": "Rebstein",
+            "land": "CH",
             "personal_bestand": 1189.81
         },
         {
@@ -476,6 +528,7 @@
             "stand_address": "Rorschacher Strasse 95",
             "stand_plz": 9007,
             "stand_ort": "St. Gallen",
+            "land": "CH",
             "personal_bestand": 4939.79
         },
         {
@@ -485,6 +538,7 @@
             "stand_address": "Geissbergstrasse 81",
             "stand_plz": 8208,
             "stand_ort": "Schaffhausen",
+            "land": "CH",
             "personal_bestand": 1039.54
         },
         {
@@ -494,6 +548,7 @@
             "stand_address": "Sch\u00f6ngr\u00fcnstrasse 36a",
             "stand_plz": 4500,
             "stand_ort": "Solothurn",
+            "land": "CH",
             "personal_bestand": 2985.29
         },
         {
@@ -503,6 +558,7 @@
             "stand_address": "Spitalstrasse 28",
             "stand_plz": 8840,
             "stand_ort": "Einsiedeln",
+            "land": "CH",
             "personal_bestand": 242.89
         },
         {
@@ -512,6 +568,7 @@
             "stand_address": "Waldeggstrasse 10",
             "stand_plz": 6430,
             "stand_ort": "Schwyz",
+            "land": "CH",
             "personal_bestand": 493.02
         },
         {
@@ -521,6 +578,7 @@
             "stand_address": "Oberdorfstrasse 41",
             "stand_plz": 8853,
             "stand_ort": "Lachen",
+            "land": "CH",
             "personal_bestand": 545.51
         },
         {
@@ -530,6 +588,7 @@
             "stand_address": "Bernrainstrasse 17",
             "stand_plz": 8280,
             "stand_ort": "Kreuzlingen",
+            "land": "CH",
             "personal_bestand": 77.45
         },
         {
@@ -539,6 +598,7 @@
             "stand_address": "Waldeggstrasse 8a",
             "stand_plz": 8501,
             "stand_ort": "Frauenfeld",
+            "land": "CH",
             "personal_bestand": 2352.49
         },
         {
@@ -548,6 +608,7 @@
             "stand_address": "Via Moncucco 10",
             "stand_plz": 6900,
             "stand_ort": "Lugano",
+            "land": "CH",
             "personal_bestand": 726.4
         },
         {
@@ -557,6 +618,7 @@
             "stand_address": "Viale Officina 3",
             "stand_plz": 6500,
             "stand_ort": "Bellinzona",
+            "land": "CH",
             "personal_bestand": 5115.78
         },
         {
@@ -566,6 +628,7 @@
             "stand_address": "Spitalstrasse 1",
             "stand_plz": 6460,
             "stand_ort": "Altdorf",
+            "land": "CH",
             "personal_bestand": 459.65
         },
         {
@@ -575,6 +638,7 @@
             "stand_address": "Route de l'H\u00f4pital 17",
             "stand_plz": 1660,
             "stand_ort": "Ch\u00e2teau-d'Oex",
+            "land": "CH",
             "personal_bestand": 99.32
         },
         {
@@ -584,6 +648,7 @@
             "stand_address": "Rue de l'H\u00f4pital 3",
             "stand_plz": 1347,
             "stand_ort": "Le Sentier",
+            "land": "CH",
             "personal_bestand": 125.04
         },
         {
@@ -593,6 +658,7 @@
             "stand_address": "Rue des Rosiers 29",
             "stand_plz": 1450,
             "stand_ort": "Ste-Croix",
+            "land": "CH",
             "personal_bestand": 193.4
         },
         {
@@ -602,6 +668,7 @@
             "stand_address": "Chemin Monastier 10",
             "stand_plz": 1260,
             "stand_ort": "Nyon",
+            "land": "CH",
             "personal_bestand": 650.02
         },
         {
@@ -611,6 +678,7 @@
             "stand_address": "Avenue de la Colline 3",
             "stand_plz": 1530,
             "stand_ort": "Payerne",
+            "land": "CH",
             "personal_bestand": 662.27
         },
         {
@@ -620,6 +688,7 @@
             "stand_address": "Avenue d'Ouchy 31",
             "stand_plz": 1006,
             "stand_ort": "Lausanne",
+            "land": "CH",
             "personal_bestand": 696.65
         },
         {
@@ -629,6 +698,7 @@
             "stand_address": "Chemin du Cr\u00eat 2",
             "stand_plz": 1110,
             "stand_ort": "Morges",
+            "land": "CH",
             "personal_bestand": 1148.39
         },
         {
@@ -638,6 +708,7 @@
             "stand_address": "Rue d'Entremonts 11",
             "stand_plz": 1400,
             "stand_ort": "Yverdon-les-Bains",
+            "land": "CH",
             "personal_bestand": 1304.31
         },
         {
@@ -647,6 +718,7 @@
             "stand_address": "Route du Vieux S\u00e9quoia 20",
             "stand_plz": 1847,
             "stand_ort": "Rennaz",
+            "land": "CH",
             "personal_bestand": 1656.14
         },
         {
@@ -656,6 +728,7 @@
             "stand_address": "Rue du Bugnon 21",
             "stand_plz": 1011,
             "stand_ort": "Lausanne",
+            "land": "CH",
             "personal_bestand": 10803.24
         },
         {
@@ -665,6 +738,7 @@
             "stand_address": "Pflanzettastrasse 8",
             "stand_plz": 3930,
             "stand_ort": "Visp",
+            "land": "CH",
             "personal_bestand": 985.77
         },
         {
@@ -674,6 +748,7 @@
             "stand_address": "Avenue du Grand-Champsec 80",
             "stand_plz": 1950,
             "stand_ort": "Sion",
+            "land": "CH",
             "personal_bestand": 2936.47
         },
         {
@@ -683,6 +758,7 @@
             "stand_address": "Rigistrasse 1",
             "stand_plz": 6330,
             "stand_ort": "Cham",
+            "land": "CH",
             "personal_bestand": 264.92
         },
         {
@@ -692,6 +768,7 @@
             "stand_address": "Landhausstrasse 11",
             "stand_plz": 6340,
             "stand_ort": "Baar",
+            "land": "CH",
             "personal_bestand": 941.19
         },
         {
@@ -701,6 +778,7 @@
             "stand_address": "Sonnenbergstrasse 27",
             "stand_plz": 8910,
             "stand_ort": "Affoltern am Albis",
+            "land": "CH",
             "personal_bestand": 367.24
         },
         {
@@ -710,6 +788,7 @@
             "stand_address": "Spitalstrasse 66",
             "stand_plz": 8620,
             "stand_ort": "Wetzikon",
+            "land": "CH",
             "personal_bestand": 709.06
         },
         {
@@ -719,6 +798,7 @@
             "stand_address": "Asylstrasse 19",
             "stand_plz": 8810,
             "stand_ort": "Horgen",
+            "land": "CH",
             "personal_bestand": 730.15
         },
         {
@@ -728,6 +808,7 @@
             "stand_address": "Asylstrasse 10",
             "stand_plz": 8708,
             "stand_ort": "M\u00e4nnedorf",
+            "land": "CH",
             "personal_bestand": 775
         },
         {
@@ -737,15 +818,17 @@
             "stand_address": "Ti\u00e8chestrasse 99",
             "stand_plz": 8037,
             "stand_ort": "Z\u00fcrich",
+            "land": "CH",
             "personal_bestand": 870.52
         },
         {
-            "lat": "47.3487142",
-            "lon": "8.598455194659852",
+            "lat": "47.3489646",
+            "lon": "8.5979872",
             "institut": "Spital Zollikerberg",
             "stand_address": "Trichtenhauserstrasse 20",
             "stand_plz": 8125,
             "stand_ort": "Zollikerberg",
+            "land": "CH",
             "personal_bestand": 876.29
         },
         {
@@ -755,24 +838,27 @@
             "stand_address": "Spitalstrasse 24",
             "stand_plz": 8180,
             "stand_ort": "B\u00fclach",
+            "land": "CH",
             "personal_bestand": 883.87
         },
         {
-            "lat": "47.352939",
-            "lon": "8.724005962777778",
+            "lat": "47.3534821",
+            "lon": "8.7243656",
             "institut": "Spital Uster",
             "stand_address": "Brunnenstrasse 42",
             "stand_plz": 8610,
             "stand_ort": "Uster",
+            "land": "CH",
             "personal_bestand": 993.38
         },
         {
-            "lat": "47.39356545",
-            "lon": "8.430542580571107",
+            "lat": "47.3941975",
+            "lon": "8.4291985",
             "institut": "Spital Limmattal",
             "stand_address": "Urdorferstrasse 100",
             "stand_plz": 8952,
             "stand_ort": "Schlieren",
+            "land": "CH",
             "personal_bestand": 1054.82
         },
         {
@@ -782,6 +868,7 @@
             "stand_address": "Witellikerstrasse 40",
             "stand_plz": 8008,
             "stand_ort": "Z\u00fcrich",
+            "land": "CH",
             "personal_bestand": 1533.15
         },
         {
@@ -791,6 +878,7 @@
             "stand_address": "Birmensdorferstrasse 497",
             "stand_plz": 8063,
             "stand_ort": "Z\u00fcrich",
+            "land": "CH",
             "personal_bestand": 2695.39
         },
         {
@@ -800,6 +888,7 @@
             "stand_address": "Brauerstrasse 15",
             "stand_plz": 8400,
             "stand_ort": "Winterthur",
+            "land": "CH",
             "personal_bestand": 3028.76
         },
         {
@@ -809,6 +898,7 @@
             "stand_address": "R\u00e4mistrasse 100",
             "stand_plz": 8091,
             "stand_ort": "Z\u00fcrich",
+            "land": "CH",
             "personal_bestand": 7657.61
         },
         {
@@ -818,6 +908,7 @@
             "stand_address": "Spitalstrasse 10",
             "stand_plz": 5080,
             "stand_ort": "Laufenburg",
+            "land": "CH",
             "personal_bestand": 950
         },
         {
@@ -827,6 +918,7 @@
             "stand_address": "Hasenb\u00fchlstrasse 11",
             "stand_plz": 9410,
             "stand_ort": "Heiden",
+            "land": "CH",
             "personal_bestand": 188
         },
         {
@@ -836,6 +928,7 @@
             "stand_address": "B\u00fcmplizstrasse 83",
             "stand_plz": 3018,
             "stand_ort": "Bern",
+            "land": "CH",
             "personal_bestand": 147
         },
         {
@@ -845,6 +938,7 @@
             "stand_address": "Dorfbergstrasse 10",
             "stand_plz": 3550,
             "stand_ort": "Langnau im Emmental",
+            "land": "CH",
             "personal_bestand": 1059
         },
         {
@@ -854,6 +948,7 @@
             "stand_address": "Eyweg 2",
             "stand_plz": 3132,
             "stand_ort": "Riggisberg",
+            "land": "CH",
             "personal_bestand": 600
         },
         {
@@ -863,6 +958,7 @@
             "stand_address": "Karl Haueter-Strasse 21",
             "stand_plz": 3770,
             "stand_ort": "Zweisimmen",
+            "land": "CH",
             "personal_bestand": 160
         },
         {
@@ -872,6 +968,7 @@
             "stand_address": "Lyss-Strasse 31",
             "stand_plz": 3270,
             "stand_ort": "Aarberg",
+            "land": "CH",
             "personal_bestand": 150
         },
         {
@@ -881,6 +978,7 @@
             "stand_address": "Sch\u00e4nzlistrasse 39",
             "stand_plz": 3013,
             "stand_ort": "Bern",
+            "land": "CH",
             "personal_bestand": 1289
         },
         {
@@ -890,6 +988,7 @@
             "stand_address": "Gemeindeholzweg",
             "stand_plz": 4101,
             "stand_ort": "Bruderholz",
+            "land": "CH",
             "personal_bestand": 1500
         },
         {
@@ -899,6 +998,7 @@
             "stand_address": "Pfeffingerweg 1",
             "stand_plz": 4144,
             "stand_ort": "Arlesheim",
+            "land": "CH",
             "personal_bestand": 50
         },
         {
@@ -908,6 +1008,7 @@
             "stand_address": "Reinacherstrasse 28",
             "stand_plz": 4142,
             "stand_ort": "M\u00fcnchenstein",
+            "land": "CH",
             "personal_bestand": 294
         },
         {
@@ -917,6 +1018,7 @@
             "stand_address": "Rheinstrasse 26",
             "stand_plz": 4410,
             "stand_ort": "Liestal",
+            "land": "CH",
             "personal_bestand": 1800
         },
         {
@@ -926,6 +1028,7 @@
             "stand_address": "Gellertstrasse 144",
             "stand_plz": 4052,
             "stand_ort": "Basel",
+            "land": "CH",
             "personal_bestand": 8000
         },
         {
@@ -935,6 +1038,7 @@
             "stand_address": "Route de Bertigny 34",
             "stand_plz": 1700,
             "stand_ort": "Fribourg",
+            "land": "CH",
             "personal_bestand": 320
         },
         {
@@ -944,6 +1048,7 @@
             "stand_address": "Chemin des Grangettes 7",
             "stand_plz": 1224,
             "stand_ort": "Ch\u00eane-Bougeries",
+            "land": "CH",
             "personal_bestand": 690
         },
         {
@@ -953,6 +1058,7 @@
             "stand_address": "Faubourg des Capucins 30",
             "stand_plz": 2800,
             "stand_ort": "Del\u00e9mont",
+            "land": "CH",
             "personal_bestand": 1850
         },
         {
@@ -962,6 +1068,7 @@
             "stand_address": "Huobmattstrasse 9",
             "stand_plz": 6045,
             "stand_ort": "Meggen",
+            "land": "CH",
             "personal_bestand": 1221
         },
         {
@@ -971,6 +1078,7 @@
             "stand_address": "Spitalstrasse 16A",
             "stand_plz": 6210,
             "stand_ort": "Sursee",
+            "land": "CH",
             "personal_bestand": 5000
         },
         {
@@ -980,6 +1088,7 @@
             "stand_address": "Spitalstrasse 50",
             "stand_plz": 6110,
             "stand_ort": "Wolhusen",
+            "land": "CH",
             "personal_bestand": 1000
         },
         {
@@ -989,6 +1098,7 @@
             "stand_address": "Rue de Chasseral 20",
             "stand_plz": 2300,
             "stand_ort": "La Chaux-de-Fonds",
+            "land": "CH",
             "personal_bestand": 1900
         },
         {
@@ -998,6 +1108,7 @@
             "stand_address": "Rue de la Maladi\u00e8re 45",
             "stand_plz": 2000,
             "stand_ort": "Neuch\u00e2tel",
+            "land": "CH",
             "personal_bestand": 800
         },
         {
@@ -1007,6 +1118,7 @@
             "stand_address": "Spitalweg 11",
             "stand_plz": 4143,
             "stand_ort": "Dornach",
+            "land": "CH",
             "personal_bestand": 3800
         },
         {
@@ -1016,6 +1128,7 @@
             "stand_address": "Via Alfonso Turconi 23",
             "stand_plz": 6850,
             "stand_ort": "Mendrisio",
+            "land": "CH",
             "personal_bestand": 1001
         },
         {
@@ -1025,6 +1138,7 @@
             "stand_address": "Via dell'Ospedale 1",
             "stand_plz": 6600,
             "stand_ort": "Locarno",
+            "land": "CH",
             "personal_bestand": 1053
         },
         {
@@ -1034,6 +1148,7 @@
             "stand_address": "Via Ospedale 12",
             "stand_plz": 6500,
             "stand_ort": "Bellinzona",
+            "land": "CH",
             "personal_bestand": 2000
         },
         {
@@ -1043,6 +1158,7 @@
             "stand_address": "Via Tesserete 46",
             "stand_plz": 6900,
             "stand_ort": "Lugano",
+            "land": "CH",
             "personal_bestand": 1000
         },
         {
@@ -1052,6 +1168,7 @@
             "stand_address": "Avenue Grand-Champsec 80",
             "stand_plz": 1951,
             "stand_ort": "Sitten",
+            "land": "CH",
             "personal_bestand": 500
         },
         {
@@ -1061,6 +1178,7 @@
             "stand_address": "Avenue de la Fusion 27",
             "stand_plz": 1920,
             "stand_ort": "Martinach",
+            "land": "CH",
             "personal_bestand": 200
         },
         {
@@ -1070,6 +1188,7 @@
             "stand_address": "Ueberlandstrasse 14",
             "stand_plz": 3900,
             "stand_ort": "Brig",
+            "land": "CH",
             "personal_bestand": 500
         },
         {
@@ -1079,6 +1198,7 @@
             "stand_address": "Seestrasse 220",
             "stand_plz": 8002,
             "stand_ort": "Z\u00fcrich",
+            "land": "CH",
             "personal_bestand": 574
         }
     ]

@@ -46,8 +46,9 @@ def area_criteria(id):
     return dcc.Dropdown(id=id,
                         options=[
                             {"label": "15 Minuten", "value": 'minutes'},
-                            {"label": "Gebietsfläche", "value": 'area'},
-                            {"label": "Bevölkerungsgrösse", "value": 'population'}],
+                            {"label": "Einzugsfläche 600km^2", "value": 'area'},
+                            {"label": "Grösse der Notfallstation", "value": 'population'},
+                            {"label": "Vollständige Abdeckung", "value": 'float fill'}],
                         multi=False,
                         value='criteria',
                         style={"width": "40%"})
@@ -62,13 +63,14 @@ app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP], server=se
 app.title = "Dashboard Notfallversorgungen"
 
 app.layout = html.Div([
-    html.Div(style={'height': '10px'}), #Leerzeile einfüge
+    html.Div(style={'height': '20px'}), #Leerzeile einfüge
     h1("Einzugsgebiete von Notfallversorgungen"),
-    html.Div(style={'height': '10px'}), #Leerzeile einfügen
+    html.Div(style={'height': '20px'}), #Leerzeile einfügen
     dcc.Tabs(id="tabs", value='tab-1', children=[
         dcc.Tab(label='Karte mit Einzugsgebiete', value='tab-1'),
         dcc.Tab(label='Charts für Vergleiche', value='tab-2'),
     ]),
+    html.Div(style={'height': '20px'}), #Leerzeile einfügen
     html.Div(id='page-content')
 ])
 
@@ -235,12 +237,12 @@ def render_content(tab):
                         dbc.CardHeader("Top 5 Notfallversorgungen"),
                         dbc.CardBody([
                             dcc.Dropdown(
-                                id='land-dropdown',
+                                id='country-dropdown',
                                 options=[
-                                    {'label': 'Schweiz', 'value': 'Schweiz'},
-                                    {'label': 'Deutschland', 'value': 'Deutschland'}
+                                    {'label': 'Schweiz', 'value': 'CH'},
+                                    {'label': 'Luxemburg', 'value': 'LU'}
                                 ],
-                                value='Schweiz'
+                                placeholder="Land auswählen"
                             ),
                             html.Ul(id='top-5-list')
                         ])
@@ -488,13 +490,40 @@ def get_fig(data, criteria):
             )
         )
 
+        fig.update_layout(
+            height=1500,
+            width=2500,
+            margin={"r": 10, "t": 10, "b": 10, "l": 10},
+            autosize=True,
+            mapbox=dict(style="open-street-map", center=dict(lat=47.95, lon=7.45), zoom=7, uirevision=len(data)),
+            # Deaktivierung der automatischen Rückkehr zur Standardposition
+        )
+
+    elif criteria == "Vollständige Abdeckung":
+        gemeinde_ids = [f'relation/{x["osm_id"]}' for x in open_data()]
+        float_fill_values = [x["float_fill"] for x in open_data()]
+        switzerland_border = [geojson_data["features"][0]]  # Die Schweiz ist das erste Feature in der GeoJSON-Datei
+        geojson_data["features"] = switzerland_border
+
+        fig.add_trace(
+            go.Choroplethmapbox(
+                geojson=geojson_data,
+                locations=gemeinde_ids,
+                z=float_fill_values,
+                colorscale="Viridis",  # Farbskala für den Float-Fill
+                colorbar=dict(
+                    title="Float-Fill",
+            )
+        )
+        )
+
     # open street map mit Standardposition
     fig.update_layout(
         height=1500,
         width=2500,
         margin={"r": 10, "t": 10, "b": 10, "l": 10},
         autosize=True,
-        mapbox=dict(style="open-street-map", center=dict(lat=47.95, lon=7.45), zoom=7, uirevision=len(data)),
+        mapbox=dict(style="carto-positron", center=dict(lat=47.95, lon=7.45), zoom=7, uirevision=len(data)),
         # Deaktivierung der automatischen Rückkehr zur Standardposition
     )
     return fig
@@ -504,6 +533,27 @@ def filter_data_based_on_criteria(data, kind):
     if kind:
         return [x for x in data if x.kind == kind]
     return data
+
+def load_data(country=None):
+    data = []
+    if country == "CH":
+        with open("daten/notfallstationen_ch.json") as f:
+            data.extend(json.load(f)["data"])
+    elif country == "LU":
+        with open("daten/notfallstationen_lu.json") as f:
+            data.extend(json.load(f)["data"])
+    else:
+        with open("daten/notfallstationen_ch.json") as f:
+            data.extend(json.load(f)["data"])
+        with open("daten/notfallstationen_lu.json") as f:
+            data.extend(json.load(f)["data"])
+    return data
+
+def get_top_5_notfallstationen():
+    data = load_data()
+    sorted_data = sorted(data, key=lambda x: x["personal_bestand"], reverse=True)
+    top_5_data = sorted_data[:5]
+    return top_5_data
 
 
 @app.callback(
@@ -533,19 +583,12 @@ def update_map(all_inputs):
 
 
 @app.callback(
-    dash.dependencies.Output('top-5-list', 'children'),
-    [dash.dependencies.Input('land-dropdown', 'value')]
+    Output('top-5-list', 'children'),
+    Input('country-dropdown', 'value')
 )
-def update_top_list(land):
-    # Filtern der Daten basierend auf ausgewähltem Land
-    filtered_data = df_list[df_list['Land'] == land]
-    top_stationen = filtered_data.nlargest(5, 'Anzahl')
-
-    list_items = [
-        html.Li(f"Notfallstation: {station}, Anzahl: {anzahl}")
-        for station, anzahl in zip(top_stationen['Notfallstation'], top_stationen['Anzahl'])
-    ]
-
+def update_top_5_list():
+    top_5_data = get_top_5_notfallstationen()
+    list_items = [html.Li(station['institut']) for station in top_5_data]
     return list_items
 
 @app.callback(
@@ -562,7 +605,7 @@ x_data = ['A', 'B', 'C', 'D']
 y_data = [10, 8, 12, 6]
 
 #pie chart
-labels = ['Medizinische Notfallstation C', 'Feuerwehrstützpunkt', 'Schlaganfallzentrum']
+labels = ['Medizinische Notfallstation', 'Feuerwehrstützpunkt', 'Schlaganfallzentrum']
 values = [30, 40, 20]
 
 #list
