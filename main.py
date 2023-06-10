@@ -129,7 +129,7 @@ def open_data():
 
 # Diagramme im Dashboard generieren
 # Positionen in OpenStreetMap erzeugen
-def get_fig(data, criteria):
+def get_fig(data, criteria, speed):
     fig = go.Figure()
 
     fig.add_trace(
@@ -148,7 +148,7 @@ def get_fig(data, criteria):
         cgeo = (
             gdf.set_crs("epsg:4326")
                 .pipe(lambda d: d.to_crs(d.estimate_utm_crs()))["geometry"]
-                .centroid.buffer(12500)  # 12.5km (50 km/h, 15 Minuten = 12.5km)
+                .centroid.buffer(speed*250)  # 12.5km (50 km/h, 15 Minuten = 12.5km)
                 .to_crs("epsg:4326")
                 .__geo_interface__
         )
@@ -248,9 +248,11 @@ def filter_data_based_on_criteria(data, kind):
 
 @app.callback(
     Output("graph", "figure"),
+    Output("criteria_slider_div", "style"),
+    Output("criteria", "options"),
     inputs={
         "all_inputs": {
-            "my_interval": Input("my_interval", "value"),
+            "criteria_slider": Input("criteria_slider", "value"),
             "emergency_type": Input("emergency_type", "value"),
             "criteria": Input("criteria", "value"),
         }
@@ -259,9 +261,21 @@ def filter_data_based_on_criteria(data, kind):
 def update_map(all_inputs):
     data = open_data()
     c = ctx.args_grouping["all_inputs"]
+
     data = filter_data_based_on_criteria(data, c.emergency_type.value)
 
-    return get_fig(data, c.criteria.value)
+    dropdown = [{"label": "15 Minuten", "value": 'minutes'},
+                {"label": "Vollständige Abdeckung", "value": 'full_coverage'}]
+
+    if c.emergency_type.value == "notfallstation":
+        dropdown.extend([{"label": "Einzugsfläche 600km^2", "value": 'area'},
+                         {"label": "Grösse der Notfallstation", "value": 'population'}])
+    elif c.emergency_type.value == "fire_station":
+        dropdown.append({"label": "Gemeindegrenzen", "value": 'borders'})
+
+    return get_fig(data, c.criteria.value, c.criteria_slider.value), \
+           view.slider_style(c.criteria.value == "minutes"), \
+           dropdown
 
 
 def load_data(country=None):

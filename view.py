@@ -19,11 +19,14 @@ def row(children):
     return dbc.Row(children, style={"margin-bottom": "2rem"})
 
 
+def slider_style(display):
+    return {"width": "40%", 'display': "block" if display else 'none'}
+
 def render_tab1():
     return html.Div([
         html.Div(
             row([
-                dbc.Col(width=12, children=[
+                dbc.Col(children=[
                     dbc.Card([
                         dbc.CardHeader(
                             "Notfallart"),
@@ -41,18 +44,21 @@ def render_tab1():
             ])),
         html.Div(
             row([
-                dbc.Col(width=12, children=[
+                dbc.Col(children=[
                     dbc.Card([
                         dbc.CardHeader(
                             "Kriterien der Einzugsgebiete"),
                         dbc.CardBody([
-                            dcc.Dropdown(id='criteria',
-                                         options=[
-                                             {"label": "15 Minuten", "value": 'minutes'},
-                                             {"label": "Einzugsfläche 600km^2", "value": 'area'},
-                                             {"label": "Grösse der Notfallstation", "value": 'population'},
-                                             {"label": "Vollständige Abdeckung", "value": 'float fill'}],
-                                         style={"width": "40%"})
+                            html.Div([
+                                dcc.Dropdown(id='criteria',
+                                             style={"width": "40%"}),
+                                html.Div([
+                                    dcc.Slider(0, 100, 5,
+                                               value=50,
+                                               id='criteria_slider')
+                                ],
+                                    id="criteria_slider_div")
+                            ], style=dict(display='flex'))
                         ])
                     ])
                 ])
