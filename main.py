@@ -210,21 +210,36 @@ def get_fig(data, criteria, speed):
             # Deaktivierung der automatischen Rückkehr zur Standardposition
         )
 
-    elif criteria == "Vollständige Abdeckung":
-        gemeinde_ids = [f'relation/{x["osm_id"]}' for x in open_data()]
-        float_fill_values = [x["float_fill"] for x in open_data()]
-        switzerland_border = [geojson_data["features"][0]]  # Die Schweiz ist das erste Feature in der GeoJSON-Datei
-        geojson_data["features"] = switzerland_border
+    elif criteria == "full_coverage":
+        print("HELLO")
+        with open("daten/countries.geojson") as f:
+            borders = json.load(f)
+            for e in borders["features"]:
+                if e["properties"]["ADMIN"] == "Switzerland":
+                    border_switzerland = {"features": [e]}
+                    break
 
         fig.add_trace(
             go.Choroplethmapbox(
-                geojson=geojson_data,
-                locations=gemeinde_ids,
-                z=float_fill_values,
+                geojson=border_switzerland,
                 colorscale="Viridis",  # Farbskala für den Float-Fill
                 colorbar=dict(
                     title="Float-Fill",
                 )
+            )
+        )
+    elif criteria == "borders":
+        with open("daten/population_lu_gemeinde.json") as f:
+            pop_data = json.load(f)["data"]
+
+        print(data)
+        print(pop_data)
+
+        fig.add_trace(
+            go.Choroplethmapbox(
+                geojson=json.load(open("daten/borders.geojson")),
+                locations=[f'relation/{x["osm_id"]}' for x in pop_data],
+                z=[x["population"] for x in pop_data],
             )
         )
 
