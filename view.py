@@ -107,7 +107,8 @@ def render_tab2():
                                     options=[
                                         {'label': 'Schweiz', 'value': 'CH'},
                                         {'label': 'Luxemburg', 'value': 'LU'}
-                                    ]
+                                    ],
+                                    value="CH"
                                 ),
                                 html.Div(id='dropdown1_output')
                             ])
@@ -123,7 +124,8 @@ def render_tab2():
                                     options=[
                                         {'label': 'Schweiz', 'value': 'CH'},
                                         {'label': 'Luxemburg', 'value': 'LU'}
-                                    ]
+                                    ],
+                                    value="LU"
                                 ),
                                 html.Div(id='dropdown2_output')
                             ])

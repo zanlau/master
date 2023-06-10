@@ -306,22 +306,37 @@ def update_top_5_list(country):
 def update_stacked_bar_chart(country1, country2):
     print("update_stacked_bar_chart", country1, country2)
 
-    # stacked bar chart
-    x_data = ['A', 'B', 'C', 'D']
-    y_data = [10, 8, 12, 6]
+    data = open_data()
+
+    data_country1 = [x for x in data if x.location.country == country1]
+    data_country2 = [x for x in data if x.location.country == country2]
+
+    trace = [
+        go.Bar(
+            x=[country1, country2],
+            y=[len([x for x in data_country1 if x.kind == "notfallstation"]),
+               len([x for x in data_country2 if x.kind == "notfallstation"])],
+            name='Medizinische Notfallstation'
+        ),
+        go.Bar(
+            x=[country1, country2],
+            y=[len([x for x in data_country1 if x.kind == "stroke_unit"]),
+               len([x for x in data_country2 if x.kind == "stroke_unit"])],
+            name='Schlaganfallzentrum'
+        ),
+        go.Bar(
+            x=[country1, country2],
+            y=[len([x for x in data_country1 if x.kind == "fire_station"]),
+               len([x for x in data_country2 if x.kind == "fire_station"])],
+            name='Feuerwehrstützpunkt'
+        )
+    ]
 
     return {
-        'data': [
-            go.Bar(
-                x=x_data,
-                y=y_data,
-                marker=dict(color='blue')  # Farbe der Balken
-            )
-        ],
+        'data': trace,
         'layout': go.Layout(
+            barmode='stack',
             title='Anzahl Notfallstationen',  # Titel des Charts
-            xaxis=dict(title='Länder'),  # Beschriftung der x-Achse
-            yaxis=dict(title='Anzahl')  # Beschriftung der y-Achse
         )
     }
 
