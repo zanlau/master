@@ -38,7 +38,7 @@ def emergency_dropdown(id):
                             {"label": "Feuerwehrstützpunkt", "value": 'fire_station'},
                             {"label": "Schlaganfallzentrum", "value": 'stroke_unit'}],
                         multi=False,
-                        value='emergency_type',
+                        value=None,
                         style={"width": "40%"})
 
 
@@ -50,7 +50,7 @@ def area_criteria(id):
                             {"label": "Grösse der Notfallstation", "value": 'population'},
                             {"label": "Vollständige Abdeckung", "value": 'float fill'}],
                         multi=False,
-                        value='criteria',
+                        value=None,
                         style={"width": "40%"})
 
 
@@ -569,15 +569,7 @@ def get_top_5_notfallstationen():
 def update_map(all_inputs):
     data = open_data()
     c = ctx.args_grouping["all_inputs"]
-    if c.emergency_type.triggered:
-        print(f"{c.emergency_type.value}")
-        data = filter_data_based_on_criteria(data, c.emergency_type.value)
-    elif c.criteria.triggered:
-        print(f"{c.criteria.value}")
-    elif c.my_interval.triggered:
-        print(f"{c.my_interval.value}")
-
-    print(len(data))
+    data = filter_data_based_on_criteria(data, c.emergency_type.value)
 
     return get_fig(data, c.criteria.value)
 
