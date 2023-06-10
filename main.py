@@ -1,78 +1,27 @@
 import json
-import random
 import sys
 
 import dash
-import html
 import dash_bootstrap_components as dbc
-from dash import dcc
-import pandas as pd
 import geopandas as gpd
-import plotly.express as px
 import plotly.graph_objects as go
-from dash import dcc, html, ctx
+from dash import html, ctx
 from dash.dependencies import Input, Output
-import dash.dependencies as dependencies
 from flask import Flask
-from openpyxl import load_workbook
-from plotly.subplots import make_subplots
 from shapely.geometry import Point
 
+import view
 
 if dash.__version__ != "2.10.2":
     print("dash version 2.10.2 required!")
     sys.exit()
 
 
-def h1(text): return html.H1(text, style={'text-align': 'center'})
-
-
-def h4(text): return html.H4(text, style={'text-align': 'left'})
-
-
-# Interaktionsmöglichkeiten
-def emergency_dropdown(id):
-    return dcc.Dropdown(id=id,
-                        options=[
-                            {"label": "Medizinische Notfallstation", "value": 'notfallstation'},
-                            {"label": "Feuerwehrstützpunkt", "value": 'fire_station'},
-                            {"label": "Schlaganfallzentrum", "value": 'stroke_unit'}],
-                        multi=False,
-                        value=None,
-                        style={"width": "40%"})
-
-
-def area_criteria(id):
-    return dcc.Dropdown(id=id,
-                        options=[
-                            {"label": "15 Minuten", "value": 'minutes'},
-                            {"label": "Einzugsfläche 600km^2", "value": 'area'},
-                            {"label": "Grösse der Notfallstation", "value": 'population'},
-                            {"label": "Vollständige Abdeckung", "value": 'float fill'}],
-                        multi=False,
-                        value=None,
-                        style={"width": "40%"})
-
-
-def row(children):
-    return dbc.Row(children, style={"margin-bottom": "2rem"})
-
-
 server = Flask(__name__)
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP], server=server)
 app.title = "Dashboard Notfallversorgungen"
 
-app.layout = html.Div([
-    html.Div(style={'height': '20px'}), #Leerzeile einfüge
-    h1("Einzugsgebiete von Notfallversorgungen"),
-    html.Div(style={'height': '20px'}), #Leerzeile einfügen
-    dcc.Tabs(id="tabs", value='tab-1', children=[
-        dcc.Tab(label='Karte mit Einzugsgebiete', value='tab-1'),
-        dcc.Tab(label='Charts für Vergleiche', value='tab-2'),
-    ]),
-    html.Div(style={'height': '20px'}), #Leerzeile einfügen
-    html.Div(id='page-content')
-])
+app.layout = view.layout
 
 
 @app.callback(
@@ -80,254 +29,9 @@ app.layout = html.Div([
     [dash.dependencies.Input('tabs', 'value')])
 def render_content(tab):
     if tab == 'tab-1':
-        return html.Div([
-            html.Div(
-                row([
-                    dbc.Col(width=12, children=[
-                        dbc.Card([
-                            dbc.CardHeader(
-                                "Notfallart"),
-                            dbc.CardBody([
-                                emergency_dropdown('emergency_type')
-                            ])
-                        ])
-                    ])
-                ])),
-            html.Div(
-                row([
-                    dbc.Col(width=12, children=[
-                        dbc.Card([
-                            dbc.CardHeader(
-                                "Kriterien der Einzugsgebiete"),
-                            dbc.CardBody([
-                                area_criteria('criteria')
-                            ])
-                        ])
-                    ])
-                ])),
-            html.Div(
-                row([
-                    dbc.Col(width=12, children=[
-                        dbc.Card([
-                            dbc.CardHeader(children="Karte zur Bestimmung der Einzugsgebiete",
-                                           id="world_map_header"),
-                            dcc.Graph(id="graph"),
-                            dcc.Interval(id="my_interval", interval=2000, n_intervals=0, disabled=False),
-                        ])
-                    ])
-                ]))
-        ])
-
-
+        return view.render_tab1()
     elif tab == 'tab-2':
-        return html.Div([
-            html.Div([
-                dbc.Col(width=2, children=[
-                    dbc.Card([
-                        dbc.CardHeader(
-                            "Land 1"),
-                        dbc.CardBody([
-                            dcc.Dropdown(
-                                id='Dropdown 1',
-                                options=[
-                                    {'label': 'Schweiz', 'value': 'CH'},
-                                    {'label': 'Luxemburg', 'value': 'LU'}
-                                ],
-                                value='option1'
-                            ),
-                            html.Div(id='dropdown1_output')
-                        ])
-                    ])
-                ]),
-                dbc.Col(width=2, children=[
-                    dbc.Card([
-                        dbc.CardHeader(
-                            "Land 2"),
-                        dbc.CardBody([
-                            dcc.Dropdown(
-                                id='dropdown2',
-                                options=[
-                                    {'label': 'Schweiz', 'value': 'CH'},
-                                    {'label': 'Luxemburg', 'value': 'LU'}
-                                ],
-                                value='option2'
-                            ),
-                            html.Div(id='dropdown2_output')
-                        ])
-                    ])
-                ]),
-            ], className='row'),
-            dcc.Graph(
-                id='stacked-bar-chart',
-                figure={
-                    'data': [
-                        go.Bar(
-                            x=x_data,
-                            y=y_data,
-                            marker=dict(color='blue')  # Farbe der Balken
-                        )
-                    ],
-                    'layout': go.Layout(
-                        title='Anzahl Notfallstationen',  # Titel des Charts
-                        xaxis=dict(title='Länder'),  # Beschriftung der x-Achse
-                        yaxis=dict(title='Anzahl')  # Beschriftung der y-Achse
-                    )
-                }
-            ),
-            dbc.Col(width=4, children=[
-                dbc.Card([
-                    dbc.CardHeader("Abdeckung der Notfallversorgung"),
-                    dbc.CardBody([
-                        dcc.Dropdown(
-                            id='emergency_type',
-                            options=[
-                                {'label': 'Medizinische Notfallstation', 'value': 'NFS'},
-                                {'label': 'Feuerwehrstützpunkt', 'value': 'fire_station'},
-                                {'label': 'Schlaganfallzentrum', 'value': 'stroke_unit'}
-                            ],
-                            value='emergency_type'
-                        ),
-                        html.Div(id='emergency_type')
-                    ])
-                ])
-            ]),
-            html.Div(style={'padding-top': '20px'}),  # Zeilenabstand
-            html.Div([
-                dcc.Graph(
-                    id='pie-chart',
-                    figure={
-                        'data': [
-                            go.Pie(
-                                labels=labels,
-                                values=values
-                            )
-                        ],
-                        'layout': go.Layout(
-                            title='Schweiz',
-                            title_x=0.4,
-                            height=700,
-                            width=700
-                        )
-                    }
-                )
-            ], className='six columns', style={'display': 'inline-block'}),
-            html.Div([
-                dcc.Graph(
-                    id='pie-chart2',
-                    figure={
-                        'data': [
-                            go.Pie(
-                                labels=labels,
-                                values=values
-                            )
-                        ],
-                        'layout': go.Layout(
-                            title='Luxemburg',
-                            title_x=0.4,
-                            height=700,
-                            width=700
-                        )
-                    }
-                )
-            ], className='six columns', style={'display': 'inline-block'}),
-            html.Div(style={'padding-top': '20px'}),  # Zeilenabstand
-            html.Div([
-                dbc.Col(width=4, children=[
-                    dbc.Card([
-                        dbc.CardHeader("Top 5 Notfallversorgungen"),
-                        dbc.CardBody([
-                            dcc.Dropdown(
-                                id='country-dropdown',
-                                options=[
-                                    {'label': 'Schweiz', 'value': 'CH'},
-                                    {'label': 'Luxemburg', 'value': 'LU'}
-                                ],
-                                placeholder="Land auswählen"
-                            ),
-                            html.Ul(id='top-5-list')
-                        ])
-                    ])
-                ])
-            ]),
-            html.Div(style={'padding-top': '20px'}),  # Zeilenabstand
-            html.Div([
-                dbc.Col(width=2, children=[
-                    dbc.Card([
-                        dbc.CardHeader("Vergleichsland 1"),
-                        dbc.CardBody([
-                            dcc.Dropdown(
-                                id='Dropdown 4',
-                                options=[
-                                    {'label': 'Schweiz', 'value': 'CH'},
-                                    {'label': 'Luxemburg', 'value': 'LU'}
-                                ],
-                                value='option4',
-                                style={"margin-right": "10px"}
-                            ),
-                            html.Div(id="dropdown4_output")
-                        ])
-                    ])
-                ]),
-                dbc.Col(width=2, children=[
-                    dbc.Card([
-                        dbc.CardHeader("Vergleichsland 2"),
-                        dbc.CardBody([
-                            dcc.Dropdown(
-                                id='dropdown5',
-                                options=[
-                                    {'label': 'Schweiz', 'value': 'CH'},
-                                    {'label': 'Luxemburg', 'value': 'LU'}
-                                ],
-                                value='option5',
-                                style={"margin-left": "10px"}
-                            ),
-                            html.Div(id='dropdown5_output')
-                        ])
-                    ])
-                ])
-            ], style={"display": "flex"}),
-            html.Div(style={'padding-top': '20px'}),  # Zeilenabstand
-            html.Div([
-                dcc.Graph(
-                    id='bar-chart1',
-                    figure={
-                        'data': [
-                            go.Bar(
-                                x=categories,
-                                y=values1,
-                                name='Schweiz'
-                            )
-                        ],
-                        'layout': go.Layout(
-                            title='Anzahl in der Schweiz',
-                            title_x=0.4,
-                            height=400
-                        )
-                    }
-                )
-            ], className='six columns', style={'display': 'inline-block'}),
-            html.Div([
-                dcc.Graph(
-                    id='bar-chart2',
-                    figure={
-                        'data': [
-                            go.Bar(
-                                x=categories,
-                                y=values2,
-                                name='Luxemburg'
-                            )
-                        ],
-                        'layout': go.Layout(
-                            title='Anzahl in Luxemburg',
-                            title_x=0.4,
-                            height=400
-                        )
-                    }
-                )
-            ], className='six columns', style={'display': 'inline-block'}),
-        ])
-
-
+        return view.render_tab2()
 
 
 class Cord:
@@ -354,6 +58,7 @@ class Location:
     def __str__(self):
         return f"{self.coordinates}"
 
+
 class NFS:
     def __init__(self, name, kind, location, personal=None):
         self.name = name or f"{kind} {location}"
@@ -366,18 +71,24 @@ class NFS:
 def open_data():
     data = []
     with open("daten/notfallstationen_ch.json") as f:
-        data.extend([NFS(x["institut"], "notfallstation", Location(Cord(x["lat"], x["lon"]), "CH"), x["personal_bestand"]) for x in json.load(f)["data"]])
+        data.extend(
+            [NFS(x["institut"], "notfallstation", Location(Cord(x["lat"], x["lon"]), "CH"), x["personal_bestand"]) for x
+             in json.load(f)["data"]])
     with open("daten/notfallstationen_lu.json") as f:
-        data.extend([NFS(x["institut"], "notfallstation", Location(Cord(x["lat"], x["lon"]), "LU"), x["personal_bestand"]) for x in json.load(f)["data"]])
+        data.extend(
+            [NFS(x["institut"], "notfallstation", Location(Cord(x["lat"], x["lon"]), "LU"), x["personal_bestand"]) for x
+             in json.load(f)["data"]])
     with open("daten/stroke_units_ch.json") as f:
-        data.extend([NFS(x["institut"], "stroke_unit", Location(Cord(x["lat"], x["lon"]), "CH")) for x in json.load(f)["data"]])
+        data.extend(
+            [NFS(x["institut"], "stroke_unit", Location(Cord(x["lat"], x["lon"]), "CH")) for x in json.load(f)["data"]])
     with open("daten/stroke_untis_lu.json") as f:
-        data.extend([NFS(x["institut"], "stroke_unit", Location(Cord(x["lat"], x["lon"]), "LU")) for x in json.load(f)["data"]])
+        data.extend(
+            [NFS(x["institut"], "stroke_unit", Location(Cord(x["lat"], x["lon"]), "LU")) for x in json.load(f)["data"]])
     with open("daten/fire_station_ch.json") as f:
         elements = json.load(f)["elements"]
 
-        #data.extend([NFS(x.get("tags", {}).get("name"), "fire_station", Location(Cord(x.get("lat"), x.get("lon")), "CH")) for x in elements])
-
+        # data.extend([NFS(x.get("tags", {}).get("name"), "fire_station", Location(Cord(x.get("lat"), x.get("lon")), "CH")) for x in elements])
+        # lat und lon waren nicht in nodes
         for s in elements:
             name = s.get("tags", {}).get("name")
             if name or s.get("tags", {}).get("amenity") == "fire_station":
@@ -386,11 +97,11 @@ def open_data():
                 except KeyError:
                     # No Coordinates found in node
                     if cords := [(i["lat"], i["lon"])
-                             for i in elements
-                             for node in s.get("nodes", [])
-                             if i["id"] == node]:
-                        cord = Cord(sum(x[0] for x in cords)/len(cords), sum(x[1] for x in cords)/len(cords))
-                        #print(cord)
+                                 for i in elements
+                                 for node in s.get("nodes", [])
+                                 if i["id"] == node]:
+                        cord = Cord(sum(x[0] for x in cords) / len(cords), sum(x[1] for x in cords) / len(cords))
+                        # print(cord)
                 data.append(NFS(name, "fire_station", Location(cord, "CH")))
 
     with open("daten/fire_station_lu.json") as f:
@@ -404,14 +115,14 @@ def open_data():
                 except KeyError:
                     # No Coordinates found in node
                     if cords := [(i["lat"], i["lon"])
-                             for i in elements
-                             for node in s.get("nodes", [])
-                             if i["id"] == node]:
-                        cord = Cord(sum(x[0] for x in cords)/len(cords), sum(x[1] for x in cords)/len(cords))
-                        #print(cord)
+                                 for i in elements
+                                 for node in s.get("nodes", [])
+                                 if i["id"] == node]:
+                        cord = Cord(sum(x[0] for x in cords) / len(cords), sum(x[1] for x in cords) / len(cords))
+                        # print(cord)
                 data.append(NFS(name, "fire_station", Location(cord, "LU")))
 
-        #data.extend([NFS(x.get("tags", {}).get("name"), "fire_station", Location(Cord(x.get("lat"), x.get("lon")), "LU")) for x in ["elements"])
+        # data.extend([NFS(x.get("tags", {}).get("name"), "fire_station", Location(Cord(x.get("lat"), x.get("lon")), "LU")) for x in ["elements"])
 
     return data
 
@@ -458,7 +169,7 @@ def get_fig(data, criteria):
         cgeo = (
             gdf.set_crs("epsg:4326")
                 .pipe(lambda d: d.to_crs(d.estimate_utm_crs()))["geometry"]
-                .centroid.buffer(13819) #600km^2 Fläche
+                .centroid.buffer(13819)  # 600km^2 Fläche
                 .to_crs("epsg:4326")
                 .__geo_interface__
         )
@@ -474,13 +185,13 @@ def get_fig(data, criteria):
         with open("daten/population_lu_gemeinde.json") as f:
             pop_data = json.load(f)["data"]
 
-        #for notfalzentrum in notfalzentren:
-         #   pop_remaining = notfalzentrum.personalbestand * 50
-          #  nächste_gemainde = None
-           # for gemeinde in gemeinden:
-            #    lat/long vergleichen und nächste auswählen
-             #   ausser es hat eine farbe
-            #nächste_gemainde.farbe = "irgendöpis"
+        # for notfalzentrum in notfalzentren:
+        #   pop_remaining = notfalzentrum.personalbestand * 50
+        #  nächste_gemainde = None
+        # for gemeinde in gemeinden:
+        #    lat/long vergleichen und nächste auswählen
+        #   ausser es hat eine farbe
+        # nächste_gemainde.farbe = "irgendöpis"
 
         fig.add_trace(
             go.Choroplethmapbox(
@@ -513,8 +224,8 @@ def get_fig(data, criteria):
                 colorscale="Viridis",  # Farbskala für den Float-Fill
                 colorbar=dict(
                     title="Float-Fill",
+                )
             )
-        )
         )
 
     # open street map mit Standardposition
@@ -533,27 +244,6 @@ def filter_data_based_on_criteria(data, kind):
     if kind:
         return [x for x in data if x.kind == kind]
     return data
-
-def load_data(country=None):
-    data = []
-    if country == "CH":
-        with open("daten/notfallstationen_ch.json") as f:
-            data.extend(json.load(f)["data"])
-    elif country == "LU":
-        with open("daten/notfallstationen_lu.json") as f:
-            data.extend(json.load(f)["data"])
-    else:
-        with open("daten/notfallstationen_ch.json") as f:
-            data.extend(json.load(f)["data"])
-        with open("daten/notfallstationen_lu.json") as f:
-            data.extend(json.load(f)["data"])
-    return data
-
-def get_top_5_notfallstationen():
-    data = load_data()
-    sorted_data = sorted(data, key=lambda x: x["personal_bestand"], reverse=True)
-    top_5_data = sorted_data[:5]
-    return top_5_data
 
 
 @app.callback(
@@ -574,43 +264,108 @@ def update_map(all_inputs):
     return get_fig(data, c.criteria.value)
 
 
+def load_data(country=None):
+    data = []
+    if country == "CH":
+        with open("daten/notfallstationen_ch.json") as f:
+            data.extend(json.load(f)["data"])
+    elif country == "LU":
+        with open("daten/notfallstationen_lu.json") as f:
+            data.extend(json.load(f)["data"])
+    else:
+        with open("daten/notfallstationen_ch.json") as f:
+            data.extend(json.load(f)["data"])
+        with open("daten/notfallstationen_lu.json") as f:
+            data.extend(json.load(f)["data"])
+    return data
+
+
+def get_top_5_notfallstationen(country):
+    data = load_data(country)
+    sorted_data = sorted(data, key=lambda x: x["personal_bestand"], reverse=True)
+    top_5_data = sorted_data[:5]
+    return top_5_data
+
+
 @app.callback(
-    Output('top-5-list', 'children'),
-    Input('country-dropdown', 'value')
+    Output('top_5_list', 'children'),
+    Input('top_5_country_dropdown', 'value')
 )
-def update_top_5_list():
-    top_5_data = get_top_5_notfallstationen()
+def update_top_5_list(country):
+    print("update_top_5_list", country)
+    top_5_data = get_top_5_notfallstationen(country)
     list_items = [html.Li(station['institut']) for station in top_5_data]
     return list_items
 
+
 @app.callback(
-    dash.dependencies.Output('emergency_type_output', 'children'),
-    [dash.dependencies.Input('emergency_type_dropdown', 'value')]
+    Output("stacked_bar_chart", "figure"),
+    [Input('dropdown1', 'value'),
+     Input('dropdown2', 'value')],
 )
-def update_emergency_type_output(emergency_type):
-    return update_emergency_type_output
+def update_stacked_bar_chart(country1, country2):
+    print("update_stacked_bar_chart", country1, country2)
+
+    # stacked bar chart
+    x_data = ['A', 'B', 'C', 'D']
+    y_data = [10, 8, 12, 6]
+
+    return {
+        'data': [
+            go.Bar(
+                x=x_data,
+                y=y_data,
+                marker=dict(color='blue')  # Farbe der Balken
+            )
+        ],
+        'layout': go.Layout(
+            title='Anzahl Notfallstationen',  # Titel des Charts
+            xaxis=dict(title='Länder'),  # Beschriftung der x-Achse
+            yaxis=dict(title='Anzahl')  # Beschriftung der y-Achse
+        )
+    }
 
 
+@app.callback(
+    Output("coverage_pie_chart1", "figure"),
+    Output("coverage_pie_chart2", "figure"),
+    Input('coverage_pie_chart_emergency_type', 'value')
+)
+def update_pie_chart(emergency_type):
+    print("update_pie_chart", emergency_type)
 
-#stacked bar chart
-x_data = ['A', 'B', 'C', 'D']
-y_data = [10, 8, 12, 6]
+    # pie chart
+    labels = ['Medizinische Notfallstation', 'Feuerwehrstützpunkt', 'Schlaganfallzentrum']
+    values = [30, 40, 20]
 
-#pie chart
-labels = ['Medizinische Notfallstation', 'Feuerwehrstützpunkt', 'Schlaganfallzentrum']
-values = [30, 40, 20]
+    return {
+               'data': [
+                   go.Pie(
+                       labels=labels,
+                       values=values
+                   )
+               ],
+               'layout': go.Layout(
+                   title='Schweiz',
+                   title_x=0.4,
+                   height=700,
+                   width=700
+               )
+           }, {
+               'data': [
+                   go.Pie(
+                       labels=labels,
+                       values=values
+                   )
+               ],
+               'layout': go.Layout(
+                   title='Luxemburg',
+                   title_x=0.4,
+                   height=700,
+                   width=700
+               )
+           }
 
-#list
-df_list = pd.DataFrame({
-    'Land': ['Schweiz', 'Schweiz', 'Schweiz', 'Schweiz', 'Schweiz', 'Deutschland', 'Deutschland', 'Deutschland', 'Deutschland', 'Deutschland'],
-    'Notfallstation': ['Klinik A', 'Klinik B', 'Klinik C', 'Klinik D', 'Klinik E', 'Klinik X', 'Klinik Y', 'Klinik Z', 'Klinik W', 'Klinik V'],
-    'Anzahl': [10, 8, 6, 4, 2, 12, 10, 8, 6, 4]
-})
-
-#bar chart
-categories = ['Kategorie 1', 'Kategorie 2']
-values1 = [10, 20, 30]
-values2 = [15, 25, 35]
 
 if __name__ == '__main__':
     app.run_server()
