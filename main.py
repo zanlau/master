@@ -234,7 +234,7 @@ def get_fig(data, criteria, speed):
         width=2500,
         margin={"r": 10, "t": 10, "b": 10, "l": 10},
         autosize=True,
-        mapbox=dict(style="carto-positron", center=dict(lat=47.95, lon=7.45), zoom=7, uirevision=len(data)),
+        mapbox=dict(style="open-street-map", center=dict(lat=47.95, lon=7.45), zoom=7, uirevision=len(data)),
         # Deaktivierung der automatischen Rückkehr zur Standardposition
     )
     return fig
