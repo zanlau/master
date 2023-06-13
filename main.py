@@ -65,7 +65,8 @@ class NFS:
         self.kind = kind
         self.location = location
         self.personal = personal
-        self.color = {"notfallstation": "blue", "stroke_unit": "green", "fire_station": "red"}[self.kind]
+        self.color = \
+        {"notfallstation": "blue", "stroke_unit": "green", "fire_station": "red", "air_ambulance": "yellow"}[self.kind]
 
 
 def open_data():
@@ -126,6 +127,17 @@ def open_data():
 
     return data
 
+def open_air_ambulance_data():
+    data_air = []
+    with open("daten/air_ambulance_ch.json") as f:
+        data_air.extend(
+            [NFS(x["institut"], "air_ambulance", Location(Cord(x["lat"], x["lon"]), "CH")) for x in
+             json.load(f)["data"]])
+    with open("daten/air_ambulance_lu.json") as f:
+        data_air.extend(
+            [NFS(x["institut"], "air_ambulance", Location(Cord(x["lat"], x["lon"]), "LU")) for x in
+             json.load(f)["data"]])
+    return data_air
 
 # Diagramme im Dashboard generieren
 # Positionen in OpenStreetMap erzeugen
@@ -182,8 +194,11 @@ def get_fig(data, criteria, speed):
             }
         )
     elif criteria == "population":
-        with open("daten/population_lu_gemeinde.json") as f:
+        with open("daten/population_ch_gemeinde.json") as f:
             pop_data = json.load(f)["data"]
+        with open("daten/population_lu_gemeinde.json") as f:
+            pop_data_1 = json.load(f)["data"]
+        pop_data.extend(pop_data_1)
 
         # for notfalzentrum in notfalzentren:
         #   pop_remaining = notfalzentrum.personalbestand * 50
@@ -222,9 +237,9 @@ def get_fig(data, criteria, speed):
         fig.add_trace(
             go.Choroplethmapbox(
                 geojson=border_switzerland,
-                colorscale="Viridis",  # Farbskala für den Float-Fill
+                colorscale="Viridis",  # Farbskala für den Flood-Fill
                 colorbar=dict(
-                    title="Float-Fill",
+                    title="flood-fill",
                 )
             )
         )
@@ -245,8 +260,7 @@ def get_fig(data, criteria, speed):
 
     # open street map mit Standardposition
     fig.update_layout(
-        height=1500,
-        width=2500,
+        height=1300,
         margin={"r": 10, "t": 10, "b": 10, "l": 10},
         autosize=True,
         mapbox=dict(style="open-street-map", center=dict(lat=47.95, lon=7.45), zoom=7, uirevision=len(data)),
@@ -261,6 +275,7 @@ def filter_data_based_on_criteria(data, kind):
     return data
 
 
+
 @app.callback(
     Output("graph", "figure"),
     Output("criteria_slider_div", "style"),
@@ -270,6 +285,7 @@ def filter_data_based_on_criteria(data, kind):
             "criteria_slider": Input("criteria_slider", "value"),
             "emergency_type": Input("emergency_type", "value"),
             "criteria": Input("criteria", "value"),
+            "air_ambulance_button": Input("air_ambulance", "value")
         }
     },
 )
@@ -282,11 +298,19 @@ def update_map(all_inputs):
     dropdown = [{"label": "15 Minuten", "value": 'minutes'},
                 {"label": "Vollständige Abdeckung", "value": 'full_coverage'}]
 
+    button = [{"label": "Luftrettung", "value": "air_ambulance"}]
+
     if c.emergency_type.value == "notfallstation":
         dropdown.extend([{"label": "Einzugsfläche 600km^2", "value": 'area'},
                          {"label": "Grösse der Notfallstation", "value": 'population'}])
     elif c.emergency_type.value == "fire_station":
         dropdown.append({"label": "Gemeindegrenzen", "value": 'borders'})
+
+    if c.air_ambulance_button.get("value"):
+        # Air Ambulance soll angezeigt werden
+        air_ambulance_data = open_air_ambulance_data()
+        # Fügen Sie die Air Ambulance-Daten zur Karte hinzu
+        data.extend(air_ambulance_data)
 
     return get_fig(data, c.criteria.value, c.criteria_slider.value), \
            view.slider_style(c.criteria.value == "minutes"), \
@@ -365,7 +389,10 @@ def update_stacked_bar_chart(country1, country2):
         'data': trace,
         'layout': go.Layout(
             barmode='stack',
-            title='Anzahl Notfallstationen',  # Titel des Charts
+            title='Anzahl Notfallstationen',# Titel des Charts
+            yaxis_type='log',
+            xaxis_title='Land',
+            yaxis_title='Anzahl'
         )
     }
 

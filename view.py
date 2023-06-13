@@ -1,6 +1,7 @@
 import dash_bootstrap_components as dbc
 import plotly.graph_objects as go
 from dash import dcc, html
+from dash_daq import ToggleSwitch
 
 layout = html.Div([
     html.Div(style={'height': '20px'}),  # Leerzeile einfüge
@@ -17,7 +18,6 @@ layout = html.Div([
 
 def row(children):
     return dbc.Row(children, style={"margin-bottom": "2rem"})
-
 
 def slider_style(display):
     return {"width": "40%", 'display': "block" if display else 'none'}
@@ -52,10 +52,17 @@ def render_tab1():
                             html.Div([
                                 dcc.Dropdown(id='criteria',
                                              style={"width": "40%"}),
+                                html.Div(
+                                    children=[
+                                        ToggleSwitch(label='Luftrettung', id='air_ambulance', value=0),
+                                        html.Div(id='output')
+                                    ],
+                                        id="air_ambulance_button"),
                                 html.Div([
                                     dcc.Slider(0, 100, 5,
                                                value=50,
-                                               id='criteria_slider')
+                                               id='criteria_slider'),
+                                html.P("Mit dem Slider kann die Geschwindigkeit des Fahrzeugs gesteurt werden (Angaben in km/h)")
                                 ],
                                     id="criteria_slider_div")
                             ], style=dict(display='flex'))
@@ -65,7 +72,7 @@ def render_tab1():
             ])),
         html.Div(
             row([
-                dbc.Col(width=12, children=[
+                dbc.Col(children=[
                     dbc.Card([
                         dbc.CardHeader(children="Karte zur Bestimmung der Einzugsgebiete",
                                        id="world_map_header"),
@@ -84,13 +91,14 @@ def render_tab2():
                 dbc.Card([
                     dbc.CardHeader("Top 5 Notfallversorgungen"),
                     dbc.CardBody([
+                        html.P("Hier werden die fünf grössten medizinischen Notfallstationen anhand des Personalbestands ersichtlich."),
                         dcc.Dropdown(
                             id='top_5_country_dropdown',
                             options=[
                                 {'label': 'Schweiz', 'value': 'CH'},
                                 {'label': 'Luxemburg', 'value': 'LU'}
                             ],
-                            placeholder="Land auswählen"
+                            placeholder="Land auswählen",
                         ),
                         html.Div(style={'padding-top': '20px'}),  # Zeilenabstand
                         html.Ol(id='top_5_list', type="1")
@@ -102,6 +110,8 @@ def render_tab2():
         dbc.Card([
             dbc.CardHeader("Anzahl Notfallversorgungen"),
             dbc.CardBody([
+                html.P(
+                    "Die Anzahl der Notfallstationen werden in logarithmischer Skala dargestellt."),
                 html.Div([
                     dbc.Col(width=2, children=[
                         dbc.Card([
