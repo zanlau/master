@@ -9,6 +9,7 @@ from dash import html, ctx
 from dash.dependencies import Input, Output
 from flask import Flask
 from shapely.geometry import Point
+from scipy import spatial
 
 import view
 
@@ -141,7 +142,7 @@ def open_air_ambulance_data():
 
 # Diagramme im Dashboard generieren
 # Positionen in OpenStreetMap erzeugen
-def get_fig(data, criteria, speed):
+def get_fig(data, criteria, speed, aad):
     fig = go.Figure()
 
     fig.add_trace(
@@ -153,6 +154,35 @@ def get_fig(data, criteria, speed):
             textfont=dict(size=16)
         )
     )
+
+    if aad:
+        fig.add_trace(
+            go.Scattermapbox(
+                lat=[x.location.coordinates.lat for x in aad],
+                lon=[x.location.coordinates.lon for x in aad],
+                marker=dict(size=15, color=[x.color for x in aad]),
+                text=[f"Name: {x.name}<br>Kind: {x.kind}" for x in aad],
+                textfont=dict(size=16)
+            )
+        )
+        d = {"geometry": [x.location.coordinates.to_Point() for x in aad]}
+        gdf = gpd.GeoDataFrame(d, crs="EPSG:4326")
+
+        cgeo = (
+            gdf.set_crs("epsg:4326")
+                .pipe(lambda d: d.to_crs(d.estimate_utm_crs()))["geometry"]
+                .centroid.buffer(60000)  # vollständige Abdeckung
+                .to_crs("epsg:4326")
+                .__geo_interface__
+        )
+        fig.update_layout(
+            mapbox={
+                "layers": [
+                    {"source": cgeo, "color": "yellow", "type": "fill", "opacity": .5},
+                ]
+            }
+        )
+
     if criteria == "minutes":
         d = {"geometry": [x.location.coordinates.to_Point() for x in data]}
         gdf = gpd.GeoDataFrame(d, crs="EPSG:4326")
@@ -194,55 +224,41 @@ def get_fig(data, criteria, speed):
             }
         )
     elif criteria == "population":
+        pass
+    elif criteria == "full_coverage":
         with open("daten/population_ch_gemeinde.json") as f:
             pop_data = json.load(f)["data"]
         with open("daten/population_lu_gemeinde.json") as f:
             pop_data_1 = json.load(f)["data"]
         pop_data.extend(pop_data_1)
 
-        # for notfalzentrum in notfalzentren:
-        #   pop_remaining = notfalzentrum.personalbestand * 50
-        #  nächste_gemainde = None
-        # for gemeinde in gemeinden:
-        #    lat/long vergleichen und nächste auswählen
-        #   ausser es hat eine farbe
-        # nächste_gemainde.farbe = "irgendöpis"
+        municipality = [(x["lat"], x["lon"]) for x in pop_data]
+        max_distance = 5 #jumping verhindern
+        while municipality:
+            for i, nfs in enumerate(data):
+                tree = spatial.KDTree(municipality)
+                distance, index = tree.query([(nfs.location.coordinates.lat, nfs.location.coordinates.lon)])
+                if distance[0] <= (max_distance/40000*360):
+                    g = municipality.pop(index[0])
+                    for p in pop_data:
+                        if (p["lat"], p["lon"]) == g:
+                            p["nfs"] = i
+                            break
+                    if not municipality:
+                        break
+            max_distance += 1
+
 
         fig.add_trace(
             go.Choroplethmapbox(
                 geojson=json.load(open("daten/borders.geojson")),
                 locations=[f'relation/{x["osm_id"]}' for x in pop_data],
-                z=[x["population"] for x in pop_data],
+                z=[x.get("nfs", -1) for i, x in enumerate(pop_data)],
+                colorscale="Portland",
             )
         )
 
-        fig.update_layout(
-            height=1500,
-            width=2500,
-            margin={"r": 10, "t": 10, "b": 10, "l": 10},
-            autosize=True,
-            mapbox=dict(style="open-street-map", center=dict(lat=47.95, lon=7.45), zoom=7, uirevision=len(data)),
-            # Deaktivierung der automatischen Rückkehr zur Standardposition
-        )
-
-    elif criteria == "full_coverage":
-        print("HELLO")
-        with open("daten/countries.geojson") as f:
-            borders = json.load(f)
-            for e in borders["features"]:
-                if e["properties"]["ADMIN"] == "Switzerland":
-                    border_switzerland = {"features": [e]}
-                    break
-
-        fig.add_trace(
-            go.Choroplethmapbox(
-                geojson=border_switzerland,
-                colorscale="Viridis",  # Farbskala für den Flood-Fill
-                colorbar=dict(
-                    title="flood-fill",
-                )
-            )
-        )
+        fig.update_traces(showlegend=False)
     elif criteria == "borders":
         with open("daten/population_lu_gemeinde.json") as f:
             pop_data = json.load(f)["data"]
@@ -293,6 +309,7 @@ def update_map(all_inputs):
     data = open_data()
     c = ctx.args_grouping["all_inputs"]
 
+    air_ambulance_data = None
     data = filter_data_based_on_criteria(data, c.emergency_type.value)
 
     dropdown = [{"label": "15 Minuten", "value": 'minutes'},
@@ -309,10 +326,8 @@ def update_map(all_inputs):
     if c.air_ambulance_button.get("value"):
         # Air Ambulance soll angezeigt werden
         air_ambulance_data = open_air_ambulance_data()
-        # Fügen Sie die Air Ambulance-Daten zur Karte hinzu
-        data.extend(air_ambulance_data)
 
-    return get_fig(data, c.criteria.value, c.criteria_slider.value), \
+    return get_fig(data, c.criteria.value, c.criteria_slider.value, air_ambulance_data), \
            view.slider_style(c.criteria.value == "minutes"), \
            dropdown
 
