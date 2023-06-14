@@ -4,16 +4,18 @@ from dash import dcc, html
 from dash_daq import ToggleSwitch
 
 layout = html.Div([
-    html.Div(style={'height': '20px'}),  # Leerzeile einfüge
+    html.Div(style={'height': '10px'}),  # Leerzeile einfüge
     html.H1("Einzugsgebiete von Notfallversorgungen", style={'text-align': 'center'}),
-    html.Div(style={'height': '20px'}),  # Leerzeile einfügen
+    html.Div(style={'height': '10px'}),  # Leerzeile einfügen
     dcc.Tabs(id="tabs", value='tab-1', children=[
         dcc.Tab(label='Karte mit Einzugsgebiete', value='tab-1'),
         dcc.Tab(label='Charts für Vergleiche', value='tab-2'),
     ]),
-    html.Div(style={'height': '20px'}),  # Leerzeile einfügen
+    html.Div(style={'height': '10px'}),  # Leerzeile einfügen
     html.Div(id='page-content')
-])
+    ],
+    style={"font-size": "25px"},
+)
 
 
 def row(children):
@@ -54,10 +56,15 @@ def render_tab1():
                                              style={"width": "40%"}),
                                 html.Div(
                                     children=[
-                                        ToggleSwitch(label='Luftrettung', id='air_ambulance', value=0),
-                                        html.Div(id='output')
+                                        html.Label('Luftrettung', style={'font-size': '25px'}),
+                                        ToggleSwitch(id='air_ambulance', value=0),
+                                        html.Div(id='output'),
                                     ],
-                                        id="air_ambulance_button"),
+                                    id="air_ambulance_button",
+                                ),
+                                dbc.Col(
+                                    width=1,  # Breite der Spalte anpassen
+                                ),
                                 html.Div([
                                     dcc.Slider(0, 100, 5,
                                                value=50,
@@ -79,7 +86,30 @@ def render_tab1():
                         dcc.Graph(id="graph"),
                         dcc.Interval(id="my_interval", interval=2000, n_intervals=0, disabled=False),
                     ])
-                ])
+                ]),
+                dbc.Col(children=[
+                    dbc.Card([
+                        dbc.CardHeader("Art der Notfallversorgung"),
+                        dbc.CardBody([
+                                html.Div([
+                                    html.Span(style={"color": "blue", "margin-right": "5px", "display": "inline-flex",
+                                                     "align-items": "center"}, children=["\u25CF"]),
+                                    html.Span("Medizinische Notfallstation",
+                                              style={"color": "black", "display": "inline"})
+                                ]),
+                                html.Div([
+                                    html.Span(style={"color": "red", "margin-right": "5px", "display": "inline-flex",
+                                                     "align-items": "center"}, children=["\u25CF"]),
+                                    html.Span("Feuerwehrstützpunkt", style={"color": "black", "display": "inline"})
+                                ]),
+                                html.Div([
+                                    html.Span(style={"color": "green", "margin-right": "5px", "display": "inline-flex",
+                                                     "align-items": "center"}, children=["\u25CF"]),
+                                    html.Span("Schlaganfallzentrum", style={"color": "black", "display": "inline"})
+                                ]),
+                            ])
+                    ])
+                ], width=2)
             ]))
     ])
 
@@ -96,7 +126,7 @@ def render_tab2():
                             id='top_5_country_dropdown',
                             options=[
                                 {'label': 'Schweiz', 'value': 'CH'},
-                                {'label': 'Luxemburg', 'value': 'LU'}
+                                {'label': 'Luxemburg', 'value': 'LU'},
                             ],
                             placeholder="Land auswählen",
                         ),
@@ -122,9 +152,9 @@ def render_tab2():
                                     id='dropdown1',
                                     options=[
                                         {'label': 'Schweiz', 'value': 'CH'},
-                                        {'label': 'Luxemburg', 'value': 'LU'}
+                                        {'label': 'Luxemburg', 'value': 'LU'},
                                     ],
-                                    value="CH"
+                                    value="CH",
                                 ),
                                 html.Div(id='dropdown1_output')
                             ])
@@ -139,9 +169,9 @@ def render_tab2():
                                     id='dropdown2',
                                     options=[
                                         {'label': 'Schweiz', 'value': 'CH'},
-                                        {'label': 'Luxemburg', 'value': 'LU'}
+                                        {'label': 'Luxemburg', 'value': 'LU'},
                                     ],
-                                    value="LU"
+                                    value="LU",
                                 ),
                                 html.Div(id='dropdown2_output')
                             ])
