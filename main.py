@@ -61,13 +61,27 @@ class Location:
 
 
 class NFS:
+    PERSONAL_OCCUPANCY_FACTOR = 50
+    POPULATION_EMERGENCY_USAGE_FACTOR = 0.125
+
     def __init__(self, name, kind, location, personal=None):
         self.name = name or f"{kind} {location}"
         self.kind = kind
         self.location = location
         self.personal = personal
+        if self.personal:
+            self._occupancy = personal * self.PERSONAL_OCCUPANCY_FACTOR
         self.color = \
         {"notfallstation": "blue", "stroke_unit": "green", "fire_station": "red", "air_ambulance": "yellow"}[self.kind]
+
+    def remaining_occupancy(self, population=None):
+        if population:
+            population = int(population * self.POPULATION_EMERGENCY_USAGE_FACTOR)
+            if val := bool((self._occupancy - population) >= 0):
+                self._occupancy -= population
+                return True
+            return False
+        return bool(self._occupancy)
 
 
 def open_data():
@@ -224,7 +238,47 @@ def get_fig(data, criteria, speed, aad):
             }
         )
     elif criteria == "population":
-        pass
+        with open("daten/population_ch_gemeinde.json") as f:
+            pop_data = json.load(f)["data"]
+        with open("daten/population_lu_gemeinde.json") as f:
+            pop_data_1 = json.load(f)["data"]
+        pop_data.extend(pop_data_1)
+
+        municipality = [(x["lat"], x["lon"]) for x in pop_data]
+        max_distance = 5 #jumping verhindern (5km)
+        while municipality:
+            for i, nfs in enumerate(data):
+                tree = spatial.KDTree(municipality)
+                distance, index = tree.query([(nfs.location.coordinates.lat, nfs.location.coordinates.lon)])
+                if distance[0] <= (max_distance/40000*360):
+                    g = municipality[index[0]]
+                    for p in pop_data:
+                        if (p["lat"], p["lon"]) == g:
+                            break
+
+                    if nfs.remaining_occupancy(int(p["number"])):
+                        p["nfs_name"] = nfs.name
+                        p["nfs"] = i
+                        municipality.pop(index[0])
+
+                    if not municipality:
+                        break
+            max_distance += 1
+
+
+        fig.add_trace(
+            go.Choroplethmapbox(
+                name="",
+                geojson=json.load(open("daten/borders.geojson")),
+                locations=[f'relation/{x["osm_id"]}' for x in pop_data],
+                z=[x.get("nfs", -1) for i, x in enumerate(pop_data)],
+                text=[x.get("nfs_name", "UNKNOWN") for x in pop_data],
+                hovertemplate='%{text}',
+                colorscale="Portland",
+            )
+        )
+
+
     elif criteria == "full_coverage":
         with open("daten/population_ch_gemeinde.json") as f:
             pop_data = json.load(f)["data"]
@@ -233,7 +287,7 @@ def get_fig(data, criteria, speed, aad):
         pop_data.extend(pop_data_1)
 
         municipality = [(x["lat"], x["lon"]) for x in pop_data]
-        max_distance = 5 #jumping verhindern
+        max_distance = 5 #jumping verhindern (5km Start, dann immer +1km)
         while municipality:
             for i, nfs in enumerate(data):
                 tree = spatial.KDTree(municipality)
@@ -243,6 +297,7 @@ def get_fig(data, criteria, speed, aad):
                     for p in pop_data:
                         if (p["lat"], p["lon"]) == g:
                             p["nfs"] = i
+                            p["nfs_name"] = nfs.name
                             break
                     if not municipality:
                         break
@@ -251,9 +306,12 @@ def get_fig(data, criteria, speed, aad):
 
         fig.add_trace(
             go.Choroplethmapbox(
+                name="",
                 geojson=json.load(open("daten/borders.geojson")),
                 locations=[f'relation/{x["osm_id"]}' for x in pop_data],
-                z=[x.get("nfs", -1) for i, x in enumerate(pop_data)],
+                z=[x.get("nfs", -1) for x in pop_data],
+                text=[x.get("nfs_name", "UNKNOWN") for x in pop_data],
+                hovertemplate='%{text}',
                 colorscale="Portland",
             )
         )
