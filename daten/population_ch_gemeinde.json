@@ -191,7 +191,7 @@
             "number": "0030",
             "name": "Andelfingen",
             "population": 2227,
-            "osm_id": 15071842
+            "osm_id": 1682083
         },
         {
             "lat": "47.5632291",
@@ -911,7 +911,7 @@
             "number": "0176",
             "name": "Lindau",
             "population": 5610,
-            "osm_id": 5754729
+            "osm_id": 1682160
         },
         {
             "lat": "47.365582",
@@ -2815,7 +2815,7 @@
             "number": "0355",
             "name": "K\u00f6niz",
             "population": 42177,
-            "osm_id": 6547648
+            "osm_id": 1682518
         },
         {
             "lat": "46.9290477",
@@ -3287,7 +3287,7 @@
             "number": "0861",
             "name": "Belp",
             "population": 11576,
-            "osm_id": 1947131
+            "osm_id": 1682374
         },
         {
             "lat": "46.8380937",
@@ -7727,7 +7727,7 @@
             "number": "2864",
             "name": "Th\u00fcrnen",
             "population": 1384,
-            "osm_id": 10523927
+            "osm_id": 1683715
         },
         {
             "lat": "47.440539",
@@ -9807,7 +9807,7 @@
             "number": "4010",
             "name": "Oberentfelden",
             "population": 8663,
-            "osm_id": 1690531
+            "osm_id": 1684384
         },
         {
             "lat": "47.373166",
@@ -10234,12 +10234,12 @@
             "osm_id": 1684274
         },
         {
-            "lat": "47.496863000000005",
-            "lon": "8.086857918650228",
+            "lat": "47.496398299999996",
+            "lon": "8.08661719172905",
             "number": "4094",
-            "name": "B\u00f6zen",
-            "population": 815,
-            "osm_id": 1684288
+            "name": "B\u00f6ztal",
+            "population": 2819,
+            "osm_id": 13622957
         },
         {
             "lat": "47.4824633",
@@ -10248,22 +10248,6 @@
             "name": "Brugg",
             "population": 12932,
             "osm_id": 1684281
-        },
-        {
-            "lat": "47.493355050000005",
-            "lon": "8.112710499141894",
-            "number": "4096",
-            "name": "Effingen",
-            "population": 618,
-            "osm_id": 1684297
-        },
-        {
-            "lat": "47.5100415",
-            "lon": "8.102794108638896",
-            "number": "4097",
-            "name": "Elfingen",
-            "population": 305,
-            "osm_id": 1684302
         },
         {
             "lat": "47.4620655",
@@ -10568,14 +10552,6 @@
             "name": "Herznach",
             "population": 1560,
             "osm_id": 1684327
-        },
-        {
-            "lat": "47.5008542",
-            "lon": "8.056978167393527",
-            "number": "4167",
-            "name": "Hornussen",
-            "population": 1081,
-            "osm_id": 1684331
         },
         {
             "lat": "47.5386303",
@@ -12530,14 +12506,6 @@
             "osm_id": 1684707
         },
         {
-            "lat": "45.9328773",
-            "lon": "8.9713503",
-            "number": "5195",
-            "name": "Maroggia",
-            "population": 741,
-            "osm_id": 1684708
-        },
-        {
             "lat": "46.0126998",
             "lon": "8.9443667",
             "number": "5196",
@@ -12546,12 +12514,12 @@
             "osm_id": 1684709
         },
         {
-            "lat": "45.9251448",
-            "lon": "8.9835902",
+            "lat": "45.92752185",
+            "lon": "8.99670026662222",
             "number": "5197",
-            "name": "Melano",
-            "population": 1464,
-            "osm_id": 1684710
+            "name": "Val Mara",
+            "population": 2996,
+            "osm_id": 14040250
         },
         {
             "lat": "45.9544353",
@@ -12648,14 +12616,6 @@
             "name": "Pura",
             "population": 1363,
             "osm_id": 1684744
-        },
-        {
-            "lat": "45.9330781",
-            "lon": "8.9884561",
-            "number": "5219",
-            "name": "Rovio",
-            "population": 791,
-            "osm_id": 1684750
         },
         {
             "lat": "46.0181215",
@@ -14143,7 +14103,7 @@
             "number": "5938",
             "name": "Yverdon-les-Bains",
             "population": 29662,
-            "osm_id": 1685206
+            "osm_id": 1868691
         },
         {
             "lat": "46.7983158",
@@ -15303,7 +15263,7 @@
             "number": "5888",
             "name": "Saint-L\u00e9gier-La Chi\u00e9saz",
             "population": 5627,
-            "osm_id": 1685138
+            "osm_id": 13623865
         },
         {
             "lat": "46.4537524",
@@ -16138,12 +16098,12 @@
             "osm_id": 1685372
         },
         {
-            "lat": "46.23054485",
-            "lon": "7.363800666443897",
+            "lat": "46.2311749",
+            "lon": "7.3588795",
             "number": "6266",
-            "name": "Sion",
+            "name": "Sitten",
             "population": 35259,
-            "osm_id": 1685377
+            "osm_id": 2757528
         },
         {
             "lat": "46.1955082",
