@@ -28,7 +28,15 @@ for row in worksheet.iter_rows(min_row=2): #von erster Spalte über alle Element
                 "number": row[0].value,
                 "name": row[1].value,
                 "population": row[2].value,
-                "osm_id": response[i]["osm_id"]
+                "osm_id": response[i]["osm_id"],
+                "boundingbox": [
+                    [
+                        response[i]["boundingbox"][0],
+                        response[i]["boundingbox"][2]
+                    ], [
+                        response[i]["boundingbox"][1],
+                        response[i]["boundingbox"][3]]
+                ]
             })
             break
         print("NEXT TRY")
