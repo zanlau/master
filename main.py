@@ -57,7 +57,7 @@ class Location:
         self.housenumber = housenumber
 
     def __str__(self):
-        return f"{self.coordinates}"
+        return f'{self.coordinates} {self.country} {self.city} {self.postcode} {self.street} {self.housenumber}'
 
 
 class NFS:
@@ -73,6 +73,11 @@ class NFS:
             self._occupancy = personal * self.PERSONAL_OCCUPANCY_FACTOR
         self.color = \
         {"notfallstation": "blue", "stroke_unit": "green", "fire_station": "red", "air_ambulance": "yellow"}[self.kind]
+
+    def __str__(self):
+        return f"{self.name}: {self.kind} {self.location}"
+
+    __repr__ = __str__
 
     def remaining_occupancy(self, population=None):
         if population:
@@ -237,6 +242,8 @@ def get_fig(data, criteria, speed, aad):
                 ]
             }
         )
+
+
     elif criteria == "population":
         with open("daten/population_ch_gemeinde.json") as f:
             pop_data = json.load(f)["data"]
@@ -315,22 +322,42 @@ def get_fig(data, criteria, speed, aad):
                 colorscale="Portland",
             )
         )
-
         fig.update_traces(showlegend=False)
-    elif criteria == "borders":
-        with open("daten/population_lu_gemeinde.json") as f:
-            pop_data = json.load(f)["data"]
 
-        print(data)
-        print(pop_data)
+
+    elif criteria == "borders":
+        with open("daten/population_ch_gemeinde.json") as f:
+            pop_data = json.load(f)["data"]
+        with open("daten/population_lu_gemeinde.json") as f:
+            pop_data_1 = json.load(f)["data"]
+        pop_data.extend(pop_data_1)
+
+        municipality = [(x["lat"], x["lon"]) for x in pop_data]
+        for nfs in data:
+            tree = spatial.KDTree(municipality)
+            distance, index = tree.query([(nfs.location.coordinates.lat, nfs.location.coordinates.lon)])
+            g = municipality[index[0]]
+            for p in pop_data:
+                if (p["lat"], p["lon"]) == g:
+                    if (float(p["boundingbox"][0][0])) <= nfs.location.coordinates.lat <= (float(p["boundingbox"][1][0])) and \
+                            (float(p["boundingbox"][0][1])) <= nfs.location.coordinates.lon  <= (float(p["boundingbox"][1][1])):
+                        if "nfs" not in p:
+                            p["nfs"] = 1
+                            p["nfs_name"] = nfs.name
+                    break
 
         fig.add_trace(
             go.Choroplethmapbox(
+                name="",
                 geojson=json.load(open("daten/borders.geojson")),
-                locations=[f'relation/{x["osm_id"]}' for x in pop_data],
-                z=[x["population"] for x in pop_data],
+                locations=[f'relation/{x["osm_id"]}' for x in pop_data if "nfs" in x],
+                z=[x.get("nfs", -1) for x in pop_data if "nfs" in x],
+                text=[x.get("nfs_name", "UNKNOWN") for x in pop_data if "nfs" in x],
+                hovertemplate='%{text}',
+                colorscale="Portland",
             )
         )
+
 
     # open street map mit Standardposition
     fig.update_layout(
