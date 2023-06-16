@@ -464,25 +464,28 @@ def update_stacked_bar_chart(country1, country2):
     data_country1 = [x for x in data if x.location.country == country1]
     data_country2 = [x for x in data if x.location.country == country2]
 
+    population_country1 = 8738791 #CH
+    population_country2 = 660809 #LU
+
     trace = [
         go.Bar(
             x=[country1, country2],
-            y=[len([x for x in data_country1 if x.kind == "notfallstation"]),
-               len([x for x in data_country2 if x.kind == "notfallstation"])],
+            y=[len([x for x in data_country1 if x.kind == "notfallstation"]) / population_country1,
+               len([x for x in data_country2 if x.kind == "notfallstation"]) / population_country2],
             name='Medizinische Notfallstation',
             marker=dict(color='blue')
         ),
         go.Bar(
             x=[country1, country2],
-            y=[len([x for x in data_country1 if x.kind == "stroke_unit"]),
-               len([x for x in data_country2 if x.kind == "stroke_unit"])],
+            y=[len([x for x in data_country1 if x.kind == "stroke_unit"]) / population_country1,
+               len([x for x in data_country2 if x.kind == "stroke_unit"]) / population_country2],
             name='Schlaganfallzentrum',
             marker=dict(color='green')
         ),
         go.Bar(
             x=[country1, country2],
-            y=[len([x for x in data_country1 if x.kind == "fire_station"]),
-               len([x for x in data_country2 if x.kind == "fire_station"])],
+            y=[len([x for x in data_country1 if x.kind == "fire_station"]) / population_country1,
+               len([x for x in data_country2 if x.kind == "fire_station"]) / population_country2],
             name='Feuerwehrstützpunkt',
             marker=dict(color='red')
         )
@@ -492,7 +495,7 @@ def update_stacked_bar_chart(country1, country2):
         'data': trace,
         'layout': go.Layout(
             barmode='stack',
-            yaxis_type='log',
+            #yaxis_type='log',
             # xaxis_title='Land',
             # yaxis_title='Anzahl',
             xaxis=dict(title=dict(text='Land', font=dict(size=20))),  # Schriftgröße der X-Achsenbeschriftung ändern
