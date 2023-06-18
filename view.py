@@ -31,7 +31,7 @@ def render_tab1():
                 dbc.Col(children=[
                     dbc.Card([
                         dbc.CardHeader(
-                            "Notfallart"),
+                            "Auswahl der Art der Notfallversorgung"),
                         dbc.CardBody([
                             dcc.Dropdown(id="emergency_type",
                                          options=[
@@ -49,7 +49,7 @@ def render_tab1():
                 dbc.Col(children=[
                     dbc.Card([
                         dbc.CardHeader(
-                            "Kriterien der Einzugsgebiete"),
+                            "Kriterium für die Bestimmung der Einzugsgebiete"),
                         dbc.CardBody([
                             html.Div([
                                 dcc.Dropdown(id='criteria',
@@ -66,12 +66,13 @@ def render_tab1():
                                     width=1,  # Breite der Spalte anpassen
                                 ),
                                 html.Div([
+                                    html.P(
+                                        "Mit dem Slider kann die Geschwindigkeit des Fahrzeugs gesteurt werden (Angaben in km/h)",
+                                    style={'margin-left': '20px'}),
                                     dcc.Slider(0, 100, 5,
                                                value=50,
                                                id='criteria_slider'),
-                                html.P("Mit dem Slider kann die Geschwindigkeit des Fahrzeugs gesteurt werden (Angaben in km/h)")
-                                ],
-                                    id="criteria_slider_div")
+                                ], id="criteria_slider_div")
                             ], style=dict(display='flex'))
                         ])
                     ])

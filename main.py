@@ -361,7 +361,7 @@ def get_fig(data, criteria, speed, aad):
 
     # open street map mit Standardposition
     fig.update_layout(
-        height=1300,
+        height=1200,
         margin={"r": 10, "t": 10, "b": 10, "l": 10},
         autosize=True,
         mapbox=dict(style="open-street-map", center=dict(lat=47.95, lon=7.45), zoom=7, uirevision=len(data)),
