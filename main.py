@@ -170,7 +170,7 @@ def get_fig(data, criteria, speed, aad):
             lon=[x.location.coordinates.lon for x in data],
             marker=dict(size=15, color=[x.color for x in data]),
             text=[f"Name: {x.name}<br>Kind: {x.kind}" for x in data],
-            textfont=dict(size=16)
+            textfont=dict(size=20)
         )
     )
 
@@ -198,7 +198,7 @@ def get_fig(data, criteria, speed, aad):
             mapbox={
                 "layers": [
                     {"source": cgeo, "color": "yellow", "type": "fill", "opacity": .2},
-                ]
+                ],
             }
         )
 
@@ -272,7 +272,6 @@ def get_fig(data, criteria, speed, aad):
                         break
             max_distance += 1
 
-
         fig.add_trace(
             go.Choroplethmapbox(
                 name="",
@@ -281,7 +280,7 @@ def get_fig(data, criteria, speed, aad):
                 z=[x.get("nfs", -1) for i, x in enumerate(pop_data)],
                 text=[x.get("nfs_name", "UNKNOWN") for x in pop_data],
                 hovertemplate='%{text}',
-                colorscale="Portland",
+                colorscale="Turbo",
             )
         )
 
@@ -319,7 +318,7 @@ def get_fig(data, criteria, speed, aad):
                 z=[x.get("nfs", -1) for x in pop_data],
                 text=[x.get("nfs_name", "UNKNOWN") for x in pop_data],
                 hovertemplate='%{text}',
-                colorscale="Portland",
+                colorscale="Turbo",
             )
         )
         fig.update_traces(showlegend=False)
@@ -354,7 +353,7 @@ def get_fig(data, criteria, speed, aad):
                 z=[x.get("nfs", -1) for x in pop_data if "nfs" in x],
                 text=[x.get("nfs_name", "UNKNOWN") for x in pop_data if "nfs" in x],
                 hovertemplate='%{text}',
-                colorscale="Portland",
+                colorscale="Turbo",
             )
         )
 
@@ -498,8 +497,8 @@ def update_stacked_bar_chart(country1, country2):
             #yaxis_type='log',
             # xaxis_title='Land',
             # yaxis_title='Anzahl',
-            xaxis=dict(title=dict(text='Land', font=dict(size=20))),  # Schriftgröße der X-Achsenbeschriftung ändern
-            yaxis=dict(title=dict(text='Anzahl', font=dict(size=20))),  # Schriftgröße der Y-Achsenbeschriftung ändern
+            xaxis=dict(title=dict(text='Land', font=dict(size=20))),  # Schriftgrösse der X-Achsenbeschriftung ändern
+            yaxis=dict(title=dict(text='Anzahl Notfallstationen', font=dict(size=20))),  # Schriftgröße der Y-Achsenbeschriftung ändern
             font=dict(size=20)
         )
     }

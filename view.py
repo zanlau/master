@@ -142,7 +142,7 @@ def render_tab2():
             dbc.CardHeader("Anzahl Notfallversorgungen"),
             dbc.CardBody([
                 html.P(
-                    "Die Anzahl der Notfallstationen werden in logarithmischer Skala dargestellt."),
+                    "Die Anzahl der Notfallstationen wird auf die Bevölkerungsgrösse berechnet."),
                 html.Div([
                     dbc.Col(width=2, children=[
                         dbc.Card([
