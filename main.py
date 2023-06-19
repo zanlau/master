@@ -181,7 +181,7 @@ def get_fig(data, criteria, speed, aad):
                 lon=[x.location.coordinates.lon for x in aad],
                 marker=dict(size=15, color=[x.color for x in aad]),
                 text=[f"Name: {x.name}<br>Kind: {x.kind}" for x in aad],
-                textfont=dict(size=16)
+                textfont=dict(size=20)
             )
         )
         d = {"geometry": [x.location.coordinates.to_Point() for x in aad]}
@@ -281,6 +281,7 @@ def get_fig(data, criteria, speed, aad):
                 text=[x.get("nfs_name", "UNKNOWN") for x in pop_data],
                 hovertemplate='%{text}',
                 colorscale="Turbo",
+                showscale=False
             )
         )
 
@@ -319,6 +320,7 @@ def get_fig(data, criteria, speed, aad):
                 text=[x.get("nfs_name", "UNKNOWN") for x in pop_data],
                 hovertemplate='%{text}',
                 colorscale="Turbo",
+                showscale=False
             )
         )
         fig.update_traces(showlegend=False)
@@ -354,6 +356,7 @@ def get_fig(data, criteria, speed, aad):
                 text=[x.get("nfs_name", "UNKNOWN") for x in pop_data if "nfs" in x],
                 hovertemplate='%{text}',
                 colorscale="Turbo",
+                showscale=False
             )
         )
 

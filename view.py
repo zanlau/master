@@ -189,28 +189,93 @@ def render_tab2():
             dbc.Card([
                 dbc.CardHeader("Abdeckung der Notfallversorgung"),
                 dbc.CardBody([
-                    dcc.Dropdown(
-                        id='coverage_pie_chart_emergency_type',
-                        options=[
-                            {'label': 'Medizinische Notfallstation', 'value': 'NFS'},
-                            {'label': 'Feuerwehrstützpunkt', 'value': 'fire_station'},
-                            {'label': 'Schlaganfallzentrum', 'value': 'stroke_unit'}
-                        ]
-                    ),
                     html.Div([
-                        html.Div([
-                            dcc.Graph(
-                                id='coverage_pie_chart1'
-                            )
-                        ], className='six columns', style={'display': 'inline-block'}),
-                        html.Div([
-                            dcc.Graph(
-                                id='coverage_pie_chart2'
-                            )
-                        ], className='six columns', style={'display': 'inline-block'}),
-                    ])
+                        dbc.Col(width=2, children=[
+                            dbc.Card([
+                                dbc.CardHeader(
+                                    "Land 1"),
+                                dbc.CardBody([
+                                    dcc.Dropdown(
+                                        id='pie_chart_dropdown1',
+                                        options=[
+                                            {'label': 'Schweiz', 'value': 'CH'},
+                                            {'label': 'Luxemburg', 'value': 'LU'},
+                                        ],
+                                        value="CH",
+                                    ),
+                                    html.Div(id='pie_chart_dropdown1_output'),
+                                    html.Div(style={'padding-top': '20px'}),
+                                    dcc.Dropdown(
+                                        id='pie_chart_dropdown3',
+                                        options=[
+                                            {'label': 'Schweiz', 'value': 'CH'},
+                                            {'label': 'Luxemburg', 'value': 'LU'},
+                                        ],
+                                        value="CH",
+                                    ),
+                                    html.Div(id='pie_chart_dropdown3_output')
+                                ])
+                            ])
+                        ]),
+                        dbc.Col(width=2, children=[
+                            dbc.Card([
+                                dbc.CardHeader(
+                                    "Land 2"),
+                                dbc.CardBody([
+                                    dcc.Dropdown(
+                                        id='pie_chart_dropdown2',
+                                        options=[
+                                            {'label': 'Schweiz', 'value': 'CH'},
+                                            {'label': 'Luxemburg', 'value': 'LU'},
+                                        ],
+                                        value="LU",
+                                    ),
+                                    html.Div(id='pie_chart_dropdown2_output'),
+                                    html.Div(style={'padding-top': '20px'}),
+                                    dcc.Dropdown(
+                                        id='pie_chart_dropdown3',
+                                        options=[
+                                            {'label': 'Schweiz', 'value': 'CH'},
+                                            {'label': 'Luxemburg', 'value': 'LU'},
+                                        ],
+                                        value="CH",
+                                    ),
+                                    html.Div(id='pie_chart_dropdown3_output')
+                                ])
+                            ])
+                        ]),
+                    ], className='row'),
+                    html.Div(style={'padding-top': '20px'}),
+                    dbc.Col(width=2, children=[
+                        dbc.Card([
+                            dbc.CardHeader(
+                                "Art der Notfallversorgung"),
+                            dbc.CardBody([
+                                dcc.Dropdown(
+                                    id='coverage_pie_chart_emergency_type',
+                                    options=[
+                                        {'label': 'Medizinische Notfallstation', 'value': 'NFS'},
+                                        {'label': 'Feuerwehrstützpunkt', 'value': 'fire_station'},
+                                        {'label': 'Schlaganfallzentrum', 'value': 'stroke_unit'}
+                                    ],
+                                ),
+                                html.Div([
+                                    html.Div([
+                                        dcc.Graph(
+                                            id='coverage_pie_chart1'
+                                        )
+                                    ], className='six columns', style={'display': 'inline-block'}),
+                                    html.Div([
+                                        dcc.Graph(
+                                            id='coverage_pie_chart2'
+                                        )
+                                    ], className='six columns', style={'display': 'inline-block'}),
+                                ])
+                            ])
+                        ])
+                    ]),
+                    html.Div(style={'padding-top': '20px'}),  # Zeilenabstand
                 ])
             ])
-        ]),
-        html.Div(style={'padding-top': '20px'}),  # Zeilenabstand
+        ])
     ])
