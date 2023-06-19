@@ -1,0 +1,15 @@
+{
+    "source": "H\u00e4ndische Erfassung mit Beizug der Literatur",
+    "data": [
+        {
+            "lat": "46.4804",
+            "lon": "8.1336",
+            "country": "Schweiz"
+        },
+        {
+            "lat": "49.4638",
+            "lon": "6.0543",
+            "country": "Luxemburg",
+        },
+    ]
+}

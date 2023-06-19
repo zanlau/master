@@ -34,7 +34,7 @@ def render_content(tab):
     elif tab == 'tab-2':
         return view.render_tab2()
 
-
+#Klassen, damit nicht immer der ganze Code für erneut eingegeben werden muss
 class Cord:
     def __init__(self, lat, lon):
         self.lat = lat
@@ -72,13 +72,14 @@ class NFS:
         if self.personal:
             self._occupancy = personal * self.PERSONAL_OCCUPANCY_FACTOR
         self.color = \
-        {"notfallstation": "blue", "stroke_unit": "green", "fire_station": "red", "air_ambulance": "yellow"}[self.kind]
+        {"notfallstation": "blue", "stroke_unit": "green", "fire_station": "red", "air_ambulance": "yellow", "emed": "black"}[self.kind]
 
     def __str__(self):
         return f"{self.name}: {self.kind} {self.location}"
 
     __repr__ = __str__
 
+    # Berechnung für Einzugsgebiete anhand der Grösse der Notfallstation
     def remaining_occupancy(self, population=None):
         if population:
             population = int(population * self.POPULATION_EMERGENCY_USAGE_FACTOR)
@@ -89,6 +90,7 @@ class NFS:
         return bool(self._occupancy)
 
 
+# Ein Datenfile aus allen JSON kreieren.
 def open_data():
     data = []
     with open("daten/notfallstationen_ch.json") as f:
@@ -108,8 +110,7 @@ def open_data():
     with open("daten/fire_station_ch.json") as f:
         elements = json.load(f)["elements"]
 
-        # data.extend([NFS(x.get("tags", {}).get("name"), "fire_station", Location(Cord(x.get("lat"), x.get("lon")), "CH")) for x in elements])
-        # lat und lon waren nicht in nodes
+        # lat und lon waren nicht in nodes, weshalb die Koordinaten in weiteren Kategorien gesucht werden.
         for s in elements:
             name = s.get("tags", {}).get("name")
             if name or s.get("tags", {}).get("amenity") == "fire_station":
@@ -147,6 +148,7 @@ def open_data():
 
     return data
 
+# Daten für Luftrettung hinzufügen
 def open_air_ambulance_data():
     data_air = []
     with open("daten/air_ambulance_ch.json") as f:
@@ -159,9 +161,19 @@ def open_air_ambulance_data():
              json.load(f)["data"]])
     return data_air
 
-# Diagramme im Dashboard generieren
+# Daten für eNotfallmedizin
+def open_emed_data():
+    data_emed = []
+    with open("daten/country_center.json") as f:
+        data_emed.extend(
+            [NFS(x["country"], "eMedizin", Location(Cord(x["lat"], x["lon"]))) for x in
+             json.load(f)["data"]])
+    return data_emed
+
+
+# Diagramme / Karte im Dashboard generieren
 # Positionen in OpenStreetMap erzeugen
-def get_fig(data, criteria, speed, aad):
+def get_fig(data, criteria, speed, aad, emed):
     fig = go.Figure()
 
     fig.add_trace(
@@ -209,7 +221,7 @@ def get_fig(data, criteria, speed, aad):
         cgeo = (
             gdf.set_crs("epsg:4326")
                 .pipe(lambda d: d.to_crs(d.estimate_utm_crs()))["geometry"]
-                .centroid.buffer(speed*250)  # 12.5km (50 km/h, 15 Minuten = 12.5km)
+                .centroid.buffer(speed*250)  # 12.5km (50 km/h, 15 Minuten = 12.5km) - berechnet in Grad
                 .to_crs("epsg:4326")
                 .__geo_interface__
         )
@@ -370,6 +382,7 @@ def get_fig(data, criteria, speed, aad):
         margin={"r": 10, "t": 10, "b": 10, "l": 10},
         autosize=True,
         mapbox=dict(style="open-street-map", center=dict(lat=47.95, lon=7.45), zoom=7, uirevision=len(data)),
+        hoverlabel=dict(font=dict(size=20))
         # Deaktivierung der automatischen Rückkehr zur Standardposition
     )
     return fig
@@ -391,7 +404,8 @@ def filter_data_based_on_criteria(data, kind):
             "criteria_slider": Input("criteria_slider", "value"),
             "emergency_type": Input("emergency_type", "value"),
             "criteria": Input("criteria", "value"),
-            "air_ambulance_button": Input("air_ambulance", "value")
+            "air_ambulance_button": Input("air_ambulance", "value"),
+            "emed_button": Input("emed", "value")
         }
     },
 )
@@ -400,13 +414,16 @@ def update_map(all_inputs):
     c = ctx.args_grouping["all_inputs"]
 
     air_ambulance_data = None
+    emed_data = None
     data = filter_data_based_on_criteria(data, c.emergency_type.value)
 
     dropdown = [{"label": "15 Minuten", "value": 'minutes'},
                 {"label": "Vollständige Abdeckung", "value": 'full_coverage'}]
 
     button = [{"label": "Luftrettung", "value": "air_ambulance"}]
+    button2 = [{"label": "eNotfallmedizin", "value": "emed"}]
 
+    # Filtern je nach Art der Notfallversorgung anpassen.
     if c.emergency_type.value == "notfallstation":
         dropdown.extend([{"label": "Einzugsfläche 600km^2", "value": 'area'},
                          {"label": "Grösse der Notfallstation", "value": 'population'}])
@@ -417,7 +434,11 @@ def update_map(all_inputs):
         # Air Ambulance soll angezeigt werden
         air_ambulance_data = open_air_ambulance_data()
 
-    return get_fig(data, c.criteria.value, c.criteria_slider.value, air_ambulance_data), \
+    if c.emed_button.get("value"):
+        # eNotfall soll angezeigt werden
+        emed_data = open_emed_data()
+
+    return get_fig(data, c.criteria.value, c.criteria_slider.value, air_ambulance_data, emed_data), \
            view.slider_style(c.criteria.value == "minutes"), \
            dropdown
 
@@ -452,7 +473,7 @@ def get_top_5_notfallstationen(country):
 def update_top_5_list(country):
     print("update_top_5_list", country)
     top_5_data = get_top_5_notfallstationen(country)
-    list_items = [html.Li(station['institut']) for station in top_5_data]
+    list_items = [html.Li(station['institut']) for station in top_5_data] # Liste mit Nummern voraus
     return list_items
 
 
@@ -469,9 +490,10 @@ def update_stacked_bar_chart(country1, country2):
     data_country1 = [x for x in data if x.location.country == country1]
     data_country2 = [x for x in data if x.location.country == country2]
 
-    population_country1 = 8738791 #CH
-    population_country2 = 660809 #LU
+    population_country1 = 8738791 # CH Total Bevölkerungsgrösse
+    population_country2 = 660809 # LU Total Bevölkerungsgrösse
 
+    # plotly express nicht möglich auf Dash, deshalb goBAr mit zeilenweiser Generierung
     trace = [
         go.Bar(
             x=[country1, country2],
@@ -505,7 +527,8 @@ def update_stacked_bar_chart(country1, country2):
             # yaxis_title='Anzahl',
             xaxis=dict(title=dict(text='Land', font=dict(size=20))),  # Schriftgrösse der X-Achsenbeschriftung ändern
             yaxis=dict(title=dict(text='Anzahl Notfallstationen', font=dict(size=20))),  # Schriftgröße der Y-Achsenbeschriftung ändern
-            font=dict(size=20)
+            font=dict(size=20),
+            hoverlabel=dict(font=dict(size=20))
         )
     }
 

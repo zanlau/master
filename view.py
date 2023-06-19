@@ -3,11 +3,15 @@ import plotly.graph_objects as go
 from dash import dcc, html
 from dash_daq import ToggleSwitch
 
+
+#Erstellung eines HTML Files zur besseren Übersicht des Codes
+
+
 layout = html.Div([
-    html.Div(style={'height': '10px'}),  # Leerzeile einfüge
+    html.Div(style={'height': '10px'}),  # Leerzeile einfügen
     html.H1("Einzugsgebiete von Notfallversorgungen", style={'text-align': 'center'}),
     html.Div(style={'height': '10px'}),  # Leerzeile einfügen
-    dcc.Tabs(id="tabs", value='tab-1', children=[
+    dcc.Tabs(id="tabs", value='tab-1', children=[ #2 Tabs für Übersichtlichkeit (1. für visuelle Bestimmung / 2. für Vergleiche)
         dcc.Tab(label='Karte mit Einzugsgebiete', value='tab-1'),
         dcc.Tab(label='Charts für Vergleiche', value='tab-2'),
     ]),
@@ -39,7 +43,18 @@ def render_tab1():
                                              {"label": "Feuerwehrstützpunkt", "value": 'fire_station'},
                                              {"label": "Schlaganfallzentrum", "value": 'stroke_unit'}],
                                          value=None,
-                                         style={"width": "40%"})
+                                         style={"width": "40%"}),
+                            html.Div(
+                                children=[
+                                    html.Label('eNotfallmedizin', style={'font-size': '25px'}),
+                                    ToggleSwitch(id='emed', value=0),
+                                    html.Div(id='output'),
+                                ],
+                                id="emed_button",
+                            ),
+                            dbc.Col(
+                                width=1,  # Breite der Spalte anpassen
+                            ),
                         ])
                     ])
                 ])
@@ -141,7 +156,7 @@ def render_tab2():
         dbc.Card([
             dbc.CardHeader("Anzahl Notfallversorgungen"),
             dbc.CardBody([
-                html.P(
+                html.P( #Notiz / Hinweis für Balkendiagramm für einfacheres Verständnis
                     "Die Anzahl der Notfallstationen wird auf die Bevölkerungsgrösse berechnet."),
                 html.Div([
                     dbc.Col(width=2, children=[
