@@ -281,7 +281,8 @@ def get_fig(data, criteria, speed, aad):
                 text=[x.get("nfs_name", "UNKNOWN") for x in pop_data],
                 hovertemplate='%{text}',
                 colorscale="Turbo",
-                showscale=False
+                showscale=False,
+                marker=dict(opacity=0.7)
             )
         )
 
@@ -320,7 +321,8 @@ def get_fig(data, criteria, speed, aad):
                 text=[x.get("nfs_name", "UNKNOWN") for x in pop_data],
                 hovertemplate='%{text}',
                 colorscale="Turbo",
-                showscale=False
+                showscale=False,
+                marker=dict(opacity=0.7)
             )
         )
         fig.update_traces(showlegend=False)
@@ -356,7 +358,8 @@ def get_fig(data, criteria, speed, aad):
                 text=[x.get("nfs_name", "UNKNOWN") for x in pop_data if "nfs" in x],
                 hovertemplate='%{text}',
                 colorscale="Turbo",
-                showscale=False
+                showscale=False,
+                marker=dict(opacity=0.7)
             )
         )
 
