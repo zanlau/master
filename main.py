@@ -176,10 +176,30 @@ def open_air_ambulance_data():
 # Daten für eNotfallmedizin
 def open_emed_data():
     with open("daten/country_center.json") as f:
-        data_emed.extend(
-            [NFS(x["country"], "eMedizin", Location(Cord(x["lat"], x["lon"]))) for x in
-             json.load(f)["data"]])
-    return data_emed
+        return [NFS(x["country"], "emed", Location(Cord(x["lat"], x["lon"]), x["country"])) for x in
+                json.load(f)["data"]]
+
+
+def map_nfs_to_municipality(data, pop_data):
+    municipality = [(x["lat"], x["lon"]) for x in pop_data]
+    for nfs in data:
+        tree = spatial.KDTree(municipality)
+        distance, index = tree.query([(nfs.location.coordinates.lat, nfs.location.coordinates.lon)])
+        g = municipality[index[0]]
+        for p in pop_data:
+            if (p["lat"], p["lon"]) == g:
+                if (float(p["boundingbox"][0][0])) <= nfs.location.coordinates.lat <= (
+                float(p["boundingbox"][1][0])) and \
+                        (float(p["boundingbox"][0][1])) <= nfs.location.coordinates.lon <= (
+                float(p["boundingbox"][1][1])):
+                    if "nfs" not in p:
+                        p["nfs"] = 1
+                        p["nfs_count"] = 1
+                        p["nfs_name"] = nfs.name
+                    else:
+                        p["nfs_count"] += 1
+                break
+    return pop_data
 
 
 # Diagramme / Karte im Dashboard generieren
@@ -424,6 +444,7 @@ def filter_data_based_on_criteria(data, kind):
 @app.callback(
     Output("graph", "figure"),
     Output("criteria_slider_div", "style"),
+    Output("emed_button", "style"),
     Output("criteria", "options"),
     inputs={
         "all_inputs": {
@@ -466,6 +487,7 @@ def update_map(all_inputs):
 
     return get_fig(data, c.criteria.value, c.criteria_slider.value, air_ambulance_data, emed_data), \
            view.slider_style(c.criteria.value == "minutes"), \
+           view.emed_style(c.emergency_type.value == "notfallstation"),\
            dropdown
 
 
@@ -557,45 +579,70 @@ def update_stacked_bar_chart(country1, country2):
 
 
 @app.callback(
+    Output("pie_chart1_municipality", "options"),
+    Output("coverage_pie_chart1_population", "children"),
     Output("coverage_pie_chart1", "figure"),
+    Output("pie_chart2_municipality", "options"),
+    Output("coverage_pie_chart2_population", "children"),
     Output("coverage_pie_chart2", "figure"),
-    Input('coverage_pie_chart_emergency_type', 'value')
+    Input("pie_chart1_country", "value"),
+    Input("pie_chart1_municipality", "value"),
+    Input("pie_chart2_country", "value"),
+    Input("pie_chart2_municipality", "value")
 )
-def update_pie_chart(emergency_type):
-    print("update_pie_chart", emergency_type)
+def update_pie_chart(country1, municipality1, country2, municipality2):
+    print("update_pie_chart", country1, municipality1, country2, municipality2)
+
+    data = open_data()
+    fs_data = [x for x in data if x.kind == "fire_station"]
+    ns_data = [x for x in data if x.kind == "notfallstation"]
+    su_data = [x for x in data if x.kind == "stroke_unit"]
+
+    pop_ch = open_population_data("CH")
+    pop_lu = open_population_data("LU")
+    pop_data = pop_ch + pop_lu
+
+    municipalities = {
+        "CH": list(sorted([m["name"] for m in pop_ch])),
+        "LU": list(sorted([m["name"] for m in pop_lu]))
+    }
+
+    fs_pop_data = map_nfs_to_municipality(fs_data, copy.deepcopy(pop_data))
+    ns_pop_data = map_nfs_to_municipality(ns_data, copy.deepcopy(pop_data))
+    su_pop_data = map_nfs_to_municipality(su_data, copy.deepcopy(pop_data))
+
+    def gm(d, municipality, key="nfs_count"):
+        for x in d:
+            if x["name"] == municipality:
+                return x.get(key, 0)
+        return 0
 
     # pie chart
     labels = ['Medizinische Notfallstation', 'Feuerwehrstützpunkt', 'Schlaganfallzentrum']
-    values = [30, 40, 20]
+    values1 = [gm(ns_pop_data, municipality1), gm(fs_pop_data, municipality1), gm(su_pop_data, municipality1)]
+    values2 = [gm(ns_pop_data, municipality2), gm(fs_pop_data, municipality2), gm(su_pop_data, municipality2)]
 
-    return {
-               'data': [
-                   go.Pie(
-                       labels=labels,
-                       values=values
-                   )
-               ],
-               'layout': go.Layout(
-                   title='Schweiz',
-                   title_x=0.4,
-                   height=700,
-                   width=700
-               )
-           }, {
-               'data': [
-                   go.Pie(
-                       labels=labels,
-                       values=values
-                   )
-               ],
-               'layout': go.Layout(
-                   title='Luxemburg',
-                   title_x=0.4,
-                   height=700,
-                   width=700
-               )
-           }
+    pop1 = pop2 = ""
 
+    pie1 = pie2 = go.Figure(go.Pie(labels=["Nicht abgedeckt"], values=[1], marker=go.pie.Marker(colors=["grey"])))
+
+    marker = go.pie.Marker(colors=["blue", "red", "green"])
+    if municipality1:
+        pop1 = gm(pop_data, municipality1, "population")
+        if any(values1):
+            pie1 = go.Figure([go.Pie(labels=labels, values=values1, marker=marker)])
+
+    if municipality2:
+        pop2 = gm(pop_data, municipality2, "population")
+        if any(values2):
+            pie2 = go.Figure([go.Pie(labels=labels, values=values2, marker=marker)])
+
+
+    pie1.update_layout(margin=dict(t=0, b=0, l=0, r=0), font=dict(size=20))
+    pie2.update_layout(margin=dict(t=0, b=0, l=0, r=0), font=dict(size=20))
+
+    return municipalities[country1], f"Bevölkerungsgrösse: {pop1}", pie1,\
+           municipalities[country2], f"Bevölkerungsgrösse: {pop2}", pie2
 
 if __name__ == '__main__':
     app.run_server()
