@@ -225,6 +225,40 @@ def get_fig(data, criteria, speed, aad, emed):
             }
         )
 
+    if emed:
+        fig.add_trace(
+            go.Scattermapbox(
+                lat=[x.location.coordinates.lat for x in emed],
+                lon=[x.location.coordinates.lon for x in emed],
+                marker=dict(size=15, color=[x.color for x in emed]),
+                text=[f"Name: {x.name}<br>Kind: {x.kind}" for x in emed],
+                textfont=dict(size=20),
+            )
+        )
+        pop_data = [
+            {
+                "name": "Switzerland",
+                "osm_id": 1682079,
+            },
+            {
+                "name": "Luxembourg",
+                "osm_id": 1682079,
+            }
+        ]
+
+        fig.add_trace(
+            go.Choroplethmapbox(
+                name="",
+                geojson=json.load(open("daten/countries.geojson")),
+                featureidkey="properties.ADMIN",
+                locations=[x["name"] for x in pop_data],
+                z=[0, 0],
+                colorscale="Turbo",
+                showscale=False,
+                marker=dict(opacity=0.7)
+            )
+        )
+
     if criteria == "minutes":
         d = {"geometry": [x.location.coordinates.to_Point() for x in data]}
         gdf = gpd.GeoDataFrame(d, crs="EPSG:4326")
