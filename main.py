@@ -147,6 +147,19 @@ def open_data():
 
     return data
 
+def open_population_data(country=None):
+    pop_data = []
+
+    if not country or country == "CH":
+        with open("daten/population_ch_gemeinde.json") as f:
+            pop_data.extend(json.load(f)["data"])
+
+    if not country or country == "LU":
+        with open("daten/population_lu_gemeinde.json") as f:
+            pop_data.extend(json.load(f)["data"])
+
+    return pop_data
+
 # Daten für Luftrettung hinzufügen
 def open_air_ambulance_data():
     data_air = []
