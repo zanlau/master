@@ -2,14 +2,14 @@
     "source": "H\u00e4ndische Erfassung mit Beizug der Literatur",
     "data": [
         {
-            "lat": "46.4804",
-            "lon": "8.1336",
-            "country": "Schweiz"
+            "lat": "46.798449",
+            "lon": "8.231879",
+            "country": "CH"
         },
         {
-            "lat": "49.4638",
-            "lon": "6.0543",
-            "country": "Luxemburg",
-        },
+            "lat": "49.777222",
+            "lon": "6.095278",
+            "country": "LU"
+        }
     ]
 }

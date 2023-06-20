@@ -1,5 +1,7 @@
 import json
 import sys
+import copy
+import re
 
 import dash
 import dash_bootstrap_components as dbc
@@ -10,6 +12,7 @@ from dash.dependencies import Input, Output
 from flask import Flask
 from shapely.geometry import Point
 from scipy import spatial
+
 
 import view
 
@@ -34,11 +37,11 @@ def render_content(tab):
     elif tab == 'tab-2':
         return view.render_tab2()
 
-#Klassen, damit nicht immer der ganze Code für erneut eingegeben werden muss
+# Klassen, damit nicht immer der ganze Code für erneut eingegeben werden muss
 class Cord:
     def __init__(self, lat, lon):
-        self.lat = lat
-        self.lon = lon
+        self.lat = float(lat)
+        self.lon = float(lon)
 
     def to_Point(self):
         return Point(self.lon, self.lat)
@@ -57,7 +60,8 @@ class Location:
         self.housenumber = housenumber
 
     def __str__(self):
-        return f'{self.coordinates} {self.country} {self.city} {self.postcode} {self.street} {self.housenumber}'
+        return re.sub(' +', ' ',
+                      f'{self.country or ""} {self.city or ""} {self.postcode or ""} {self.street or ""} {self.housenumber or ""}')
 
 
 class NFS:
@@ -90,7 +94,6 @@ class NFS:
         return bool(self._occupancy)
 
 
-# Ein Datenfile aus allen JSON kreieren.
 def open_data():
     data = []
     with open("daten/notfallstationen_ch.json") as f:
@@ -110,7 +113,7 @@ def open_data():
     with open("daten/fire_station_ch.json") as f:
         elements = json.load(f)["elements"]
 
-        # lat und lon waren nicht in nodes, weshalb die Koordinaten in weiteren Kategorien gesucht werden.
+        # um lat und lon zu finden muss man in den nodes suchen gehen
         for s in elements:
             name = s.get("tags", {}).get("name")
             if name or s.get("tags", {}).get("amenity") == "fire_station":
@@ -123,7 +126,6 @@ def open_data():
                                  for node in s.get("nodes", [])
                                  if i["id"] == node]:
                         cord = Cord(sum(x[0] for x in cords) / len(cords), sum(x[1] for x in cords) / len(cords))
-                        # print(cord)
                 data.append(NFS(name, "fire_station", Location(cord, "CH")))
 
     with open("daten/fire_station_lu.json") as f:
@@ -141,10 +143,7 @@ def open_data():
                                  for node in s.get("nodes", [])
                                  if i["id"] == node]:
                         cord = Cord(sum(x[0] for x in cords) / len(cords), sum(x[1] for x in cords) / len(cords))
-                        # print(cord)
                 data.append(NFS(name, "fire_station", Location(cord, "LU")))
-
-        # data.extend([NFS(x.get("tags", {}).get("name"), "fire_station", Location(Cord(x.get("lat"), x.get("lon")), "LU")) for x in ["elements"])
 
     return data
 
@@ -163,7 +162,6 @@ def open_air_ambulance_data():
 
 # Daten für eNotfallmedizin
 def open_emed_data():
-    data_emed = []
     with open("daten/country_center.json") as f:
         data_emed.extend(
             [NFS(x["country"], "eMedizin", Location(Cord(x["lat"], x["lon"]))) for x in
@@ -193,7 +191,7 @@ def get_fig(data, criteria, speed, aad, emed):
                 lon=[x.location.coordinates.lon for x in aad],
                 marker=dict(size=15, color=[x.color for x in aad]),
                 text=[f"Name: {x.name}<br>Kind: {x.kind}" for x in aad],
-                textfont=dict(size=20)
+                textfont=dict(size=20),
             )
         )
         d = {"geometry": [x.location.coordinates.to_Point() for x in aad]}
@@ -257,15 +255,12 @@ def get_fig(data, criteria, speed, aad, emed):
 
 
     elif criteria == "population":
-        with open("daten/population_ch_gemeinde.json") as f:
-            pop_data = json.load(f)["data"]
-        with open("daten/population_lu_gemeinde.json") as f:
-            pop_data_1 = json.load(f)["data"]
-        pop_data.extend(pop_data_1)
+        pop_data = open_population_data()
 
         municipality = [(x["lat"], x["lon"]) for x in pop_data]
         max_distance = 5 #jumping verhindern (5km)
         while municipality:
+            found = False
             for i, nfs in enumerate(data):
                 tree = spatial.KDTree(municipality)
                 distance, index = tree.query([(nfs.location.coordinates.lat, nfs.location.coordinates.lon)])
@@ -278,11 +273,13 @@ def get_fig(data, criteria, speed, aad, emed):
                     if nfs.remaining_occupancy(int(p["number"])):
                         p["nfs_name"] = nfs.name
                         p["nfs"] = i
+                        found = True
                         municipality.pop(index[0])
 
                     if not municipality:
                         break
-            max_distance += 1
+            if not found:
+                max_distance += 1
 
         fig.add_trace(
             go.Choroplethmapbox(
@@ -300,15 +297,12 @@ def get_fig(data, criteria, speed, aad, emed):
 
 
     elif criteria == "full_coverage":
-        with open("daten/population_ch_gemeinde.json") as f:
-            pop_data = json.load(f)["data"]
-        with open("daten/population_lu_gemeinde.json") as f:
-            pop_data_1 = json.load(f)["data"]
-        pop_data.extend(pop_data_1)
+        pop_data = open_population_data()
 
         municipality = [(x["lat"], x["lon"]) for x in pop_data]
         max_distance = 5 #jumping verhindern (5km Start, dann immer +1km)
         while municipality:
+            found = False
             for i, nfs in enumerate(data):
                 tree = spatial.KDTree(municipality)
                 distance, index = tree.query([(nfs.location.coordinates.lat, nfs.location.coordinates.lon)])
@@ -318,10 +312,12 @@ def get_fig(data, criteria, speed, aad, emed):
                         if (p["lat"], p["lon"]) == g:
                             p["nfs"] = i
                             p["nfs_name"] = nfs.name
+                            found = True
                             break
                     if not municipality:
                         break
-            max_distance += 1
+            if not found:
+                max_distance += 1
 
 
         fig.add_trace(
@@ -341,25 +337,7 @@ def get_fig(data, criteria, speed, aad, emed):
 
 
     elif criteria == "borders":
-        with open("daten/population_ch_gemeinde.json") as f:
-            pop_data = json.load(f)["data"]
-        with open("daten/population_lu_gemeinde.json") as f:
-            pop_data_1 = json.load(f)["data"]
-        pop_data.extend(pop_data_1)
-
-        municipality = [(x["lat"], x["lon"]) for x in pop_data]
-        for nfs in data:
-            tree = spatial.KDTree(municipality)
-            distance, index = tree.query([(nfs.location.coordinates.lat, nfs.location.coordinates.lon)])
-            g = municipality[index[0]]
-            for p in pop_data:
-                if (p["lat"], p["lon"]) == g:
-                    if (float(p["boundingbox"][0][0])) <= nfs.location.coordinates.lat <= (float(p["boundingbox"][1][0])) and \
-                            (float(p["boundingbox"][0][1])) <= nfs.location.coordinates.lon  <= (float(p["boundingbox"][1][1])):
-                        if "nfs" not in p:
-                            p["nfs"] = 1
-                            p["nfs_name"] = nfs.name
-                    break
+        pop_data = map_nfs_to_municipality(data, open_population_data())
 
         fig.add_trace(
             go.Choroplethmapbox(
@@ -378,11 +356,12 @@ def get_fig(data, criteria, speed, aad, emed):
 
     # open street map mit Standardposition
     fig.update_layout(
-        height=1200,
+        height=1300,
         margin={"r": 10, "t": 10, "b": 10, "l": 10},
         autosize=True,
         mapbox=dict(style="open-street-map", center=dict(lat=47.95, lon=7.45), zoom=7, uirevision=len(data)),
-        hoverlabel=dict(font=dict(size=20))
+        hoverlabel=dict(font=dict(size=20)),
+        showlegend=False
         # Deaktivierung der automatischen Rückkehr zur Standardposition
     )
     return fig
@@ -423,7 +402,7 @@ def update_map(all_inputs):
     button = [{"label": "Luftrettung", "value": "air_ambulance"}]
     button2 = [{"label": "eNotfallmedizin", "value": "emed"}]
 
-    # Filtern je nach Art der Notfallversorgung anpassen.
+    # Dropdown je nach Art der Notfallversorgung anpassen.
     if c.emergency_type.value == "notfallstation":
         dropdown.extend([{"label": "Einzugsfläche 600km^2", "value": 'area'},
                          {"label": "Grösse der Notfallstation", "value": 'population'}])
@@ -493,15 +472,8 @@ def update_stacked_bar_chart(country1, country2):
     population_country1 = 8738791 # CH Total Bevölkerungsgrösse
     population_country2 = 660809 # LU Total Bevölkerungsgrösse
 
-    # plotly express nicht möglich auf Dash, deshalb goBAr mit zeilenweiser Generierung
+    # plotly.express nicht möglich auf Dash, deshalb go.Bar mit zeilenweiser Generierung
     trace = [
-        go.Bar(
-            x=[country1, country2],
-            y=[len([x for x in data_country1 if x.kind == "notfallstation"]) / population_country1,
-               len([x for x in data_country2 if x.kind == "notfallstation"]) / population_country2],
-            name='Medizinische Notfallstation',
-            marker=dict(color='blue')
-        ),
         go.Bar(
             x=[country1, country2],
             y=[len([x for x in data_country1 if x.kind == "stroke_unit"]) / population_country1,
@@ -515,6 +487,13 @@ def update_stacked_bar_chart(country1, country2):
                len([x for x in data_country2 if x.kind == "fire_station"]) / population_country2],
             name='Feuerwehrstützpunkt',
             marker=dict(color='red')
+        ),
+        go.Bar(
+            x=[country1, country2],
+            y=[len([x for x in data_country1 if x.kind == "notfallstation"]) / population_country1,
+               len([x for x in data_country2 if x.kind == "notfallstation"]) / population_country2],
+            name='Medizinische Notfallstation',
+            marker=dict(color='blue')
         )
     ]
 
@@ -522,9 +501,6 @@ def update_stacked_bar_chart(country1, country2):
         'data': trace,
         'layout': go.Layout(
             barmode='stack',
-            #yaxis_type='log',
-            # xaxis_title='Land',
-            # yaxis_title='Anzahl',
             xaxis=dict(title=dict(text='Land', font=dict(size=20))),  # Schriftgrösse der X-Achsenbeschriftung ändern
             yaxis=dict(title=dict(text='Anzahl Notfallstationen', font=dict(size=20))),  # Schriftgröße der Y-Achsenbeschriftung ändern
             font=dict(size=20),

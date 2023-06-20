@@ -4,7 +4,7 @@ from dash import dcc, html
 from dash_daq import ToggleSwitch
 
 
-#Erstellung eines HTML Files zur besseren Übersicht des Codes
+# Erstellung eines HTML Files zur besseren Übersicht des Codes
 
 
 layout = html.Div([
@@ -16,7 +16,7 @@ layout = html.Div([
         dcc.Tab(label='Charts für Vergleiche', value='tab-2'),
     ]),
     html.Div(style={'height': '10px'}),  # Leerzeile einfügen
-    html.Div(id='page-content')
+    html.Div(id='page-content', style={"height":"100%"})
     ],
     style={"font-size": "25px"},
 )
@@ -27,6 +27,9 @@ def row(children):
 
 def slider_style(display):
     return {"width": "40%", 'display': "block" if display else 'none'}
+
+def emed_style(display):
+    return {"width": "40%", 'display': "flex" if display else 'none'}
 
 def render_tab1():
     return html.Div([
@@ -47,15 +50,11 @@ def render_tab1():
                             html.Div(
                                 children=[
                                     html.Label('eNotfallmedizin', style={'font-size': '25px'}),
-                                    ToggleSwitch(id='emed', value=0),
-                                    html.Div(id='output'),
+                                    ToggleSwitch(id='emed', value=0, style={"margin-left": "15px"}),
                                 ],
-                                id="emed_button",
+                                id="emed_button"
                             ),
-                            dbc.Col(
-                                width=1,  # Breite der Spalte anpassen
-                            ),
-                        ])
+                        ], style=dict(display='flex'))
                     ])
                 ])
             ])),
@@ -72,13 +71,10 @@ def render_tab1():
                                 html.Div(
                                     children=[
                                         html.Label('Luftrettung', style={'font-size': '25px'}),
-                                        ToggleSwitch(id='air_ambulance', value=0),
-                                        html.Div(id='output'),
+                                        ToggleSwitch(id='air_ambulance', value=0, style={"margin-left": "15px"}),
                                     ],
                                     id="air_ambulance_button",
-                                ),
-                                dbc.Col(
-                                    width=1,  # Breite der Spalte anpassen
+                                    style={"display": "flex"}
                                 ),
                                 html.Div([
                                     html.P(
@@ -159,7 +155,7 @@ def render_tab2():
                 html.P( #Notiz / Hinweis für Balkendiagramm für einfacheres Verständnis
                     "Die Anzahl der Notfallstationen wird auf die Bevölkerungsgrösse berechnet."),
                 html.Div([
-                    dbc.Col(width=2, children=[
+                    dbc.Col(children=[
                         dbc.Card([
                             dbc.CardHeader(
                                 "Land 1"),
@@ -176,7 +172,7 @@ def render_tab2():
                             ])
                         ])
                     ]),
-                    dbc.Col(width=2, children=[
+                    dbc.Col(children=[
                         dbc.Card([
                             dbc.CardHeader(
                                 "Land 2"),
@@ -205,90 +201,61 @@ def render_tab2():
                 dbc.CardHeader("Abdeckung der Notfallversorgung"),
                 dbc.CardBody([
                     html.Div([
-                        dbc.Col(width=2, children=[
+                        dbc.Col(children=[
                             dbc.Card([
                                 dbc.CardHeader(
                                     "Land 1"),
                                 dbc.CardBody([
                                     dcc.Dropdown(
-                                        id='pie_chart_dropdown1',
+                                        id='pie_chart1_country',
                                         options=[
                                             {'label': 'Schweiz', 'value': 'CH'},
                                             {'label': 'Luxemburg', 'value': 'LU'},
                                         ],
                                         value="CH",
                                     ),
-                                    html.Div(id='pie_chart_dropdown1_output'),
                                     html.Div(style={'padding-top': '20px'}),
                                     dcc.Dropdown(
-                                        id='pie_chart_dropdown3',
-                                        options=[
-                                            {'label': 'Schweiz', 'value': 'CH'},
-                                            {'label': 'Luxemburg', 'value': 'LU'},
-                                        ],
-                                        value="CH",
+                                        id='pie_chart1_municipality',
                                     ),
-                                    html.Div(id='pie_chart_dropdown3_output')
+                                    html.Div(style={'padding-top': '20px'}),
+                                    html.Div(
+                                        html.P(id="coverage_pie_chart1_population"),
+                                    ),
+                                    html.Div(style={'padding-top': '20px'}),
+                                    dcc.Graph(id='coverage_pie_chart1'),
+                                    html.Div(style={'padding-top': '20px'}),
+
                                 ])
                             ])
                         ]),
-                        dbc.Col(width=2, children=[
+                        dbc.Col(children=[
                             dbc.Card([
                                 dbc.CardHeader(
                                     "Land 2"),
                                 dbc.CardBody([
                                     dcc.Dropdown(
-                                        id='pie_chart_dropdown2',
+                                        id='pie_chart2_country',
                                         options=[
                                             {'label': 'Schweiz', 'value': 'CH'},
                                             {'label': 'Luxemburg', 'value': 'LU'},
                                         ],
                                         value="LU",
                                     ),
-                                    html.Div(id='pie_chart_dropdown2_output'),
                                     html.Div(style={'padding-top': '20px'}),
                                     dcc.Dropdown(
-                                        id='pie_chart_dropdown3',
-                                        options=[
-                                            {'label': 'Schweiz', 'value': 'CH'},
-                                            {'label': 'Luxemburg', 'value': 'LU'},
-                                        ],
-                                        value="CH",
+                                        id='pie_chart2_municipality',
                                     ),
-                                    html.Div(id='pie_chart_dropdown3_output')
+                                    html.Div(style={'padding-top': '20px'}),
+                                    html.Div(
+                                        html.P(id="coverage_pie_chart2_population"),
+                                    ),
+                                    html.Div(style={'padding-top': '20px'}),
+                                    dcc.Graph(id='coverage_pie_chart2')
                                 ])
                             ])
                         ]),
                     ], className='row'),
-                    html.Div(style={'padding-top': '20px'}),
-                    dbc.Col(width=2, children=[
-                        dbc.Card([
-                            dbc.CardHeader(
-                                "Art der Notfallversorgung"),
-                            dbc.CardBody([
-                                dcc.Dropdown(
-                                    id='coverage_pie_chart_emergency_type',
-                                    options=[
-                                        {'label': 'Medizinische Notfallstation', 'value': 'NFS'},
-                                        {'label': 'Feuerwehrstützpunkt', 'value': 'fire_station'},
-                                        {'label': 'Schlaganfallzentrum', 'value': 'stroke_unit'}
-                                    ],
-                                ),
-                                html.Div([
-                                    html.Div([
-                                        dcc.Graph(
-                                            id='coverage_pie_chart1'
-                                        )
-                                    ], className='six columns', style={'display': 'inline-block'}),
-                                    html.Div([
-                                        dcc.Graph(
-                                            id='coverage_pie_chart2'
-                                        )
-                                    ], className='six columns', style={'display': 'inline-block'}),
-                                ])
-                            ])
-                        ])
-                    ]),
                     html.Div(style={'padding-top': '20px'}),  # Zeilenabstand
                 ])
             ])
