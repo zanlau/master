@@ -52,7 +52,7 @@ def render_tab1():
                                     html.Label('eNotfallmedizin', style={'font-size': '25px'}),
                                     ToggleSwitch(id='emed', value=0, style={"margin-left": "15px"}),
                                 ],
-                                id="emed_button"
+                                id="emed_button", style=emed_style(False)
                             ),
                         ], style=dict(display='flex'))
                     ])
@@ -83,7 +83,7 @@ def render_tab1():
                                     dcc.Slider(0, 100, 5,
                                                value=50,
                                                id='criteria_slider'),
-                                ], id="criteria_slider_div")
+                                ], id="criteria_slider_div", style=slider_style(False)),
                             ], style=dict(display='flex'))
                         ])
                     ])

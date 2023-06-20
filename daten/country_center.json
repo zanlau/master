@@ -4,12 +4,18 @@
         {
             "lat": "46.798449",
             "lon": "8.231879",
-            "country": "CH"
+            "population": 8738791,
+            "country": "CH",
+            "name": "Switzerland",
+            "osm_id": 1682079
         },
         {
             "lat": "49.777222",
             "lon": "6.095278",
-            "country": "LU"
+            "population": 660809,
+            "country": "LU",
+            "name": "Luxembourg",
+            "osm_id": 1682079
         }
     ]
 }

@@ -68,11 +68,12 @@ class NFS:
     PERSONAL_OCCUPANCY_FACTOR = 50
     POPULATION_EMERGENCY_USAGE_FACTOR = 0.125
 
-    def __init__(self, name, kind, location, personal=None):
+    def __init__(self, name, kind, location, personal=None, additional=None):
         self.name = name or f"{kind} {location}"
         self.kind = kind
         self.location = location
         self.personal = personal
+        self.additional_data = additional
         if self.personal:
             self._occupancy = personal * self.PERSONAL_OCCUPANCY_FACTOR
         self.color = \
@@ -176,7 +177,8 @@ def open_air_ambulance_data():
 # Daten für eNotfallmedizin
 def open_emed_data():
     with open("daten/country_center.json") as f:
-        return [NFS(x["country"], "emed", Location(Cord(x["lat"], x["lon"]), x["country"])) for x in
+        return [NFS(x["name"], "emed", Location(Cord(x["lat"], x["lon"]), x["country"]),
+                    additional={"population": x["population"]}) for x in
                 json.load(f)["data"]]
 
 
@@ -255,24 +257,16 @@ def get_fig(data, criteria, speed, aad, emed):
                 textfont=dict(size=20),
             )
         )
-        pop_data = [
-            {
-                "name": "Switzerland",
-                "osm_id": 1682079,
-            },
-            {
-                "name": "Luxembourg",
-                "osm_id": 1682079,
-            }
-        ]
 
         fig.add_trace(
             go.Choroplethmapbox(
                 name="",
                 geojson=json.load(open("daten/countries.geojson")),
                 featureidkey="properties.ADMIN",
-                locations=[x["name"] for x in pop_data],
+                locations=[x.name for x in emed],
                 z=[0, 0],
+                text=[f'{x.name}: {x.additional_data["population"]} Personen' for x in emed],
+                hovertemplate='%{text}',
                 colorscale="Turbo",
                 showscale=False,
                 marker=dict(opacity=0.7)
