@@ -532,8 +532,9 @@ def update_stacked_bar_chart(country1, country2):
     data_country1 = [x for x in data if x.location.country == country1]
     data_country2 = [x for x in data if x.location.country == country2]
 
-    population_country1 = 8738791 # CH Total Bevölkerungsgrösse
-    population_country2 = 660809 # LU Total Bevölkerungsgrösse
+    # Bevölkerungsgrösse setzen
+    population_country1 = 8738791 if country1 == "CH" else 660809
+    population_country2 = 8738791 if country2 == "CH" else 660809
 
     # plotly.express nicht möglich auf Dash, deshalb go.Bar mit zeilenweiser Generierung
     trace = [

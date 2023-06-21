@@ -125,139 +125,104 @@ def render_tab1():
             ]))
     ])
 
+def render_top5_list():
+    return dbc.Col(children=[
+        dbc.Card([
+            dbc.CardHeader("Top 5 Notfallversorgungen"),
+            dbc.CardBody([
+                html.P(
+                    "Hier werden die fünf grössten medizinischen Notfallstationen anhand des Personalbestands ersichtlich."),
+                dcc.Dropdown(
+                    id='top_5_country_dropdown',
+                    options=[
+                        {'label': 'Schweiz', 'value': 'CH'},
+                        {'label': 'Luxemburg', 'value': 'LU'},
+                    ],
+                    placeholder="Land auswählen",
+                ),
+                html.Div(style={'padding-top': '20px'}),  # Zeilenabstand
+                html.Ol(id='top_5_list', type="1")
+            ])
+        ])
+    ])
+
+def render_bar_chart():
+    return dbc.Card([
+        dbc.CardHeader("Anzahl Notfallversorgungen"),
+        dbc.CardBody([
+            html.P(  # Notiz / Hinweis für Balkendiagramm für einfacheres Verständnis
+                "Die Anzahl der Notfallstationen wird auf die Bevölkerungsgrösse berechnet."),
+            html.Div([
+                dbc.Col(children=[
+                    dbc.Card([
+                        dbc.CardHeader(
+                            f"Land {i}"),
+                        dbc.CardBody([
+                            dcc.Dropdown(
+                                id=f'dropdown{i}',
+                                options=[
+                                    {'label': 'Schweiz', 'value': 'CH'},
+                                    {'label': 'Luxemburg', 'value': 'LU'},
+                                ],
+                                value="CH" if i % 2 else "LU",
+                            ),
+                            html.Div(id=f'dropdown{i}_output')
+                        ])
+                    ])
+                ]) for i in range(1, 3)
+            ], className='row'),
+            dcc.Graph(
+                id='stacked_bar_chart',
+            ),
+        ]),
+    ])
+
+def render_pie_chart(index):
+    return dbc.Col(width=6, children=[
+        dbc.Card([
+            dbc.CardHeader(
+                f"Land {index}"),
+            dbc.CardBody([
+                dcc.Dropdown(
+                    id=f'pie_chart{index}_country',
+                    options=[
+                        {'label': 'Schweiz', 'value': 'CH'},
+                        {'label': 'Luxemburg', 'value': 'LU'},
+                    ],
+                    value="CH",
+                ),
+                html.Div(style={'padding-top': '20px'}),
+                dcc.Dropdown(
+                    id=f'pie_chart{index}_municipality',
+                ),
+                html.Div(style={'padding-top': '20px'}),
+                html.Div(
+                    html.P(id=f"coverage_pie_chart{index}_population"),
+                ),
+                html.Div(style={'padding-top': '20px'}),
+                dcc.Graph(id=f'coverage_pie_chart{index}'),
+                html.Div(style={'padding-top': '20px'}),
+            ])
+        ])
+    ])
+
+def render_pie_charts():
+    return dbc.Col(children=[
+        dbc.Card([
+            dbc.CardHeader("Abdeckung der Notfallversorgung"),
+            dbc.CardBody([
+                dbc.Row([render_pie_chart(x) for x in range(1, 3)], className='row'),
+                html.Div(style={'padding-top': '20px'}),  # Zeilenabstand
+            ])
+        ])
+    ])
 
 def render_tab2():
     return html.Div([
-        html.Div([
-            dbc.Col(children=[
-                dbc.Card([
-                    dbc.CardHeader("Top 5 Notfallversorgungen"),
-                    dbc.CardBody([
-                        html.P("Hier werden die fünf grössten medizinischen Notfallstationen anhand des Personalbestands ersichtlich."),
-                        dcc.Dropdown(
-                            id='top_5_country_dropdown',
-                            options=[
-                                {'label': 'Schweiz', 'value': 'CH'},
-                                {'label': 'Luxemburg', 'value': 'LU'},
-                            ],
-                            placeholder="Land auswählen",
-                        ),
-                        html.Div(style={'padding-top': '20px'}),  # Zeilenabstand
-                        html.Ol(id='top_5_list', type="1")
-                    ])
-                ])
-            ])
-        ]),
+        render_top5_list(),
         html.Div(style={'padding-top': '20px'}),  # Zeilenabstand
-        dbc.Card([
-            dbc.CardHeader("Anzahl Notfallversorgungen"),
-            dbc.CardBody([
-                html.P( #Notiz / Hinweis für Balkendiagramm für einfacheres Verständnis
-                    "Die Anzahl der Notfallstationen wird auf die Bevölkerungsgrösse berechnet."),
-                html.Div([
-                    dbc.Col(children=[
-                        dbc.Card([
-                            dbc.CardHeader(
-                                "Land 1"),
-                            dbc.CardBody([
-                                dcc.Dropdown(
-                                    id='dropdown1',
-                                    options=[
-                                        {'label': 'Schweiz', 'value': 'CH'},
-                                        {'label': 'Luxemburg', 'value': 'LU'},
-                                    ],
-                                    value="CH",
-                                ),
-                                html.Div(id='dropdown1_output')
-                            ])
-                        ])
-                    ]),
-                    dbc.Col(children=[
-                        dbc.Card([
-                            dbc.CardHeader(
-                                "Land 2"),
-                            dbc.CardBody([
-                                dcc.Dropdown(
-                                    id='dropdown2',
-                                    options=[
-                                        {'label': 'Schweiz', 'value': 'CH'},
-                                        {'label': 'Luxemburg', 'value': 'LU'},
-                                    ],
-                                    value="LU",
-                                ),
-                                html.Div(id='dropdown2_output')
-                            ])
-                        ])
-                    ]),
-                ], className='row'),
-                dcc.Graph(
-                    id='stacked_bar_chart',
-                ),
-            ]),
-        ]),
+        render_bar_chart(),
         html.Div(style={'padding-top': '20px'}),  # Zeilenabstand
-        dbc.Col(children=[
-            dbc.Card([
-                dbc.CardHeader("Abdeckung der Notfallversorgung"),
-                dbc.CardBody([
-                    html.Div([
-                        dbc.Col(children=[
-                            dbc.Card([
-                                dbc.CardHeader(
-                                    "Land 1"),
-                                dbc.CardBody([
-                                    dcc.Dropdown(
-                                        id='pie_chart1_country',
-                                        options=[
-                                            {'label': 'Schweiz', 'value': 'CH'},
-                                            {'label': 'Luxemburg', 'value': 'LU'},
-                                        ],
-                                        value="CH",
-                                    ),
-                                    html.Div(style={'padding-top': '20px'}),
-                                    dcc.Dropdown(
-                                        id='pie_chart1_municipality',
-                                    ),
-                                    html.Div(style={'padding-top': '20px'}),
-                                    html.Div(
-                                        html.P(id="coverage_pie_chart1_population"),
-                                    ),
-                                    html.Div(style={'padding-top': '20px'}),
-                                    dcc.Graph(id='coverage_pie_chart1'),
-                                    html.Div(style={'padding-top': '20px'}),
-
-                                ])
-                            ])
-                        ]),
-                        dbc.Col(children=[
-                            dbc.Card([
-                                dbc.CardHeader(
-                                    "Land 2"),
-                                dbc.CardBody([
-                                    dcc.Dropdown(
-                                        id='pie_chart2_country',
-                                        options=[
-                                            {'label': 'Schweiz', 'value': 'CH'},
-                                            {'label': 'Luxemburg', 'value': 'LU'},
-                                        ],
-                                        value="LU",
-                                    ),
-                                    html.Div(style={'padding-top': '20px'}),
-                                    dcc.Dropdown(
-                                        id='pie_chart2_municipality',
-                                    ),
-                                    html.Div(style={'padding-top': '20px'}),
-                                    html.Div(
-                                        html.P(id="coverage_pie_chart2_population"),
-                                    ),
-                                    html.Div(style={'padding-top': '20px'}),
-                                    dcc.Graph(id='coverage_pie_chart2')
-                                ])
-                            ])
-                        ]),
-                    ], className='row'),
-                    html.Div(style={'padding-top': '20px'}),  # Zeilenabstand
-                ])
-            ])
-        ])
+        render_pie_charts(),
+        html.Div(style={'padding-top': '20px'})   # Zeilenabstand
     ])
