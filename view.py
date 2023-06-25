@@ -131,7 +131,7 @@ def render_top5_list():
             dbc.CardHeader("Top 5 Notfallversorgungen"),
             dbc.CardBody([
                 html.P(
-                    "Hier werden die fünf grössten medizinischen Notfallstationen anhand des Personalbestands ersichtlich."),
+                    "Nachfolgend sind die fünf grössten medizinischen Notfallstationen anhand des Personalbestands ersichtlich."),
                 dcc.Dropdown(
                     id='top_5_country_dropdown',
                     options=[
@@ -144,7 +144,7 @@ def render_top5_list():
                 html.Ol(id='top_5_list', type="1")
             ])
         ], style={"width": "100%", "display": "flex"})
-    ], style={'width': '90vw'})
+    ], style={'width': '89vw'})
 
 def render_bar_chart():
     return html.Div([
@@ -152,7 +152,7 @@ def render_bar_chart():
             dbc.CardHeader("Anzahl Notfallversorgungen"),
             dbc.CardBody([
                 html.P(  # Notiz / Hinweis für Balkendiagramm für einfacheres Verständnis
-                    "Die Anzahl der Notfallstationen wird auf die Bevölkerungsgrösse berechnet."),
+                    "Die Anzahl der Notfallstationen eines Landes wird auf die Bevölkerungsgrösse hinuntergebrochen."),
                 html.Div([
                     dbc.Col(children=[
                         dbc.Card([
@@ -177,7 +177,7 @@ def render_bar_chart():
                 ),
             ]),
         ], style={"width": "100%", "display": "flex"})
-    ], style={'width': '90vw'})
+    ], style={'width': '89vw'})
 
 def render_pie_chart(index):
     return dbc.Col(width=6, align="center", children=[
@@ -212,23 +212,26 @@ def render_pie_charts():
         dbc.Card([
             dbc.CardHeader("Abdeckung der Notfallversorgung"),
             dbc.CardBody([
+                html.P(
+                    "Die Visualisierungen zeigen mit welchen Notfallversorgungen die ausgewählte Gemeinde abgedeckt ist."),
                 dbc.Row([render_pie_chart(x) for x in range(1, 3)], className='row'),
                 html.Div(style={'padding-top': '20px'}),  # Zeilenabstand
             ])
         ], style={"width": "100%", "flex": "1"})
-    ], style={'width': '90vw'})
+    ], style={'width': '89vw'})
 
 def render_tab2():
     return html.Div([
         html.P(
-            "Im Tab Top 5 Liste kann eine Übersicht zu den grössten medizinischen Notfallstationen eines Landes gefunden werden. "
-            "In den Tabs Anzahl und Abdeckung der Notfallversorgungen können Vergleich zwischen mehreren Länder und Gemeinden erstellt werden. ",
+            "In der Sidebar können unterschiedliche Tabs für die genauere Datenexploration ausgewählt werden, wobei in der "
+            "Top 5 Liste eine Tabelle mit den grössten medizinischen Notfallstationen eines Landes angezeigt wird. "
+            "Mit den Visualiserungen zu den Anzahl und Abdeckung der Notfallversorgungen können Vergleiche zwischen mehreren Ländern und Gemeinden erstellt werden.",
         style={"margin": "20px",'padding-bottom': '20px'}),
         dcc.Tabs([
             dcc.Tab(label='Top 5 Liste', children=[render_top5_list()]),
             dcc.Tab(label='Anzahl Notfallversorgungen', children=[render_bar_chart()]),
             dcc.Tab(label='Abdeckung der Notfallversorgungen', children=[render_pie_charts()])
-        ], vertical=True, style={'width': '8vw', 'margin-left': "20px", 'margin-right': "20px"})])
+        ], vertical=True, style={'width': '9vw', 'margin-left': "20px", 'margin-right': "20px"})])
 
     return html.Div([
         render_top5_list(),

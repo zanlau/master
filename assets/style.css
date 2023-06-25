@@ -1,15 +1,12 @@
 .tab{
-  background-image: linear-gradient(navy, navy);
-  color: white;
+  background-image: linear-gradient(Lavender, Lavender);
+  color: black;
 }
 .tab--selected{
   color: white !important;
-  background-image: linear-gradient(navy, blue)
-}
-/*
-.card{
-  background-image: linear-gradient(navy, blue)
+  background-image: linear-gradient(navy, navy)
 }
 .card-header{
-  background-image: linear-gradient(navy, blue)
-}*/
+  background-image: linear-gradient(Lavender, Lavender);
+  color: black;
+}
