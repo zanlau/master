@@ -618,16 +618,24 @@ def update_pie_chart(country1, municipality1, country2, municipality2):
 
     pop1 = pop2 = ""
 
+    labels = ['Medizinische Notfallstation', 'Feuerwehrstützpunkt', 'Schlaganfallzentrum']
     pie1 = pie2 = go.Figure(go.Pie(labels=["Nicht abgedeckt"], values=[1], marker=go.pie.Marker(colors=["grey"])))
+
+    if municipality1 or municipality2:
+        fs_pop_data = map_nfs_to_municipality(fs_data, copy.deepcopy(pop_data))
+        ns_pop_data = map_nfs_to_municipality(ns_data, copy.deepcopy(pop_data))
+        su_pop_data = map_nfs_to_municipality(su_data, copy.deepcopy(pop_data))
 
     marker = go.pie.Marker(colors=["blue", "red", "green"])
     if municipality1:
         pop1 = gm(pop_data, municipality1, "population")
+        values1 = [gm(ns_pop_data, municipality1), gm(fs_pop_data, municipality1), gm(su_pop_data, municipality1)]
         if any(values1):
             pie1 = go.Figure([go.Pie(labels=labels, values=values1, marker=marker)])
 
     if municipality2:
         pop2 = gm(pop_data, municipality2, "population")
+        values2 = [gm(ns_pop_data, municipality2), gm(fs_pop_data, municipality2), gm(su_pop_data, municipality2)]
         if any(values2):
             pie2 = go.Figure([go.Pie(labels=labels, values=values2, marker=marker)])
 
