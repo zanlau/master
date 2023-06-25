@@ -1,0 +1,15 @@
+.tab{
+  background-image: linear-gradient(navy, navy);
+  color: white;
+}
+.tab--selected{
+  color: white !important;
+  background-image: linear-gradient(navy, blue)
+}
+/*
+.card{
+  background-image: linear-gradient(navy, blue)
+}
+.card-header{
+  background-image: linear-gradient(navy, blue)
+}*/

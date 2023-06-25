@@ -6,8 +6,8 @@ from dash_daq import ToggleSwitch
 
 # Erstellung eines HTML Files zur besseren Übersicht des Codes
 
-
 layout = html.Div([
+
     html.Div(style={'height': '10px'}),  # Leerzeile einfügen
     html.H1("Einzugsgebiete von Notfallversorgungen", style={'text-align': 'center'}),
     html.Div(style={'height': '10px'}),  # Leerzeile einfügen
@@ -107,17 +107,17 @@ def render_tab1():
                                     html.Span(style={"color": "blue", "margin-right": "5px", "display": "inline-flex",
                                                      "align-items": "center"}, children=["\u25CF"]),
                                     html.Span("Medizinische Notfallstation",
-                                              style={"color": "black", "display": "inline"})
+                                              style={"display": "inline"})
                                 ]),
                                 html.Div([
                                     html.Span(style={"color": "red", "margin-right": "5px", "display": "inline-flex",
                                                      "align-items": "center"}, children=["\u25CF"]),
-                                    html.Span("Feuerwehrstützpunkt", style={"color": "black", "display": "inline"})
+                                    html.Span("Feuerwehrstützpunkt", style={"display": "inline"})
                                 ]),
                                 html.Div([
                                     html.Span(style={"color": "green", "margin-right": "5px", "display": "inline-flex",
                                                      "align-items": "center"}, children=["\u25CF"]),
-                                    html.Span("Schlaganfallzentrum", style={"color": "black", "display": "inline"})
+                                    html.Span("Schlaganfallzentrum", style={"display": "inline"})
                                 ]),
                             ])
                     ])
@@ -126,7 +126,7 @@ def render_tab1():
     ])
 
 def render_top5_list():
-    return dbc.Col(children=[
+    return html.Div([
         dbc.Card([
             dbc.CardHeader("Top 5 Notfallversorgungen"),
             dbc.CardBody([
@@ -143,45 +143,46 @@ def render_top5_list():
                 html.Div(style={'padding-top': '20px'}),  # Zeilenabstand
                 html.Ol(id='top_5_list', type="1")
             ])
-        ])
-    ])
+        ], style={"width": "100%", "display": "flex"})
+    ], style={'width': '90vw'})
 
 def render_bar_chart():
-    return dbc.Card([
-        dbc.CardHeader("Anzahl Notfallversorgungen"),
-        dbc.CardBody([
-            html.P(  # Notiz / Hinweis für Balkendiagramm für einfacheres Verständnis
-                "Die Anzahl der Notfallstationen wird auf die Bevölkerungsgrösse berechnet."),
-            html.Div([
-                dbc.Col(children=[
-                    dbc.Card([
-                        dbc.CardHeader(
-                            f"Land {i}"),
-                        dbc.CardBody([
-                            dcc.Dropdown(
-                                id=f'dropdown{i}',
-                                options=[
-                                    {'label': 'Schweiz', 'value': 'CH'},
-                                    {'label': 'Luxemburg', 'value': 'LU'},
-                                ],
-                                value="CH" if i % 2 else "LU",
-                            ),
-                            html.Div(id=f'dropdown{i}_output')
+    return html.Div([
+        dbc.Card([
+            dbc.CardHeader("Anzahl Notfallversorgungen"),
+            dbc.CardBody([
+                html.P(  # Notiz / Hinweis für Balkendiagramm für einfacheres Verständnis
+                    "Die Anzahl der Notfallstationen wird auf die Bevölkerungsgrösse berechnet."),
+                html.Div([
+                    dbc.Col(children=[
+                        dbc.Card([
+                            dbc.CardHeader(
+                                f"Land {i}"),
+                            dbc.CardBody([
+                                dcc.Dropdown(
+                                    id=f'dropdown{i}',
+                                    options=[
+                                        {'label': 'Schweiz', 'value': 'CH'},
+                                        {'label': 'Luxemburg', 'value': 'LU'},
+                                    ],
+                                    value="CH" if i % 2 else "LU",
+                                ),
+                                html.Div(id=f'dropdown{i}_output')
+                            ])
                         ])
-                    ])
-                ]) for i in range(1, 3)
-            ], className='row'),
-            dcc.Graph(
-                id='stacked_bar_chart',
-            ),
-        ]),
-    ])
+                    ]) for i in range(1, 3)
+                ], className='row'),
+                dcc.Graph(
+                    id='stacked_bar_chart',
+                ),
+            ]),
+        ], style={"width": "100%", "display": "flex"})
+    ], style={'width': '90vw'})
 
 def render_pie_chart(index):
-    return dbc.Col(width=6, children=[
-        dbc.Card([
-            dbc.CardHeader(
-                f"Land {index}"),
+    return dbc.Col(width=6, align="center", children=[
+        dbc.Card(children=[
+            dbc.CardHeader(f"Land {index}"),
             dbc.CardBody([
                 dcc.Dropdown(
                     id=f'pie_chart{index}_country',
@@ -207,17 +208,28 @@ def render_pie_chart(index):
     ])
 
 def render_pie_charts():
-    return dbc.Col(children=[
+    return html.Div([
         dbc.Card([
             dbc.CardHeader("Abdeckung der Notfallversorgung"),
             dbc.CardBody([
                 dbc.Row([render_pie_chart(x) for x in range(1, 3)], className='row'),
                 html.Div(style={'padding-top': '20px'}),  # Zeilenabstand
             ])
-        ])
-    ])
+        ], style={"width": "100%", "flex": "1"})
+    ], style={'width': '90vw'})
 
 def render_tab2():
+    return html.Div([
+        html.P(
+            "Im Tab Top 5 Liste kann eine Übersicht zu den grössten medizinischen Notfallstationen eines Landes gefunden werden. "
+            "In den Tabs Anzahl und Abdeckung der Notfallversorgungen können Vergleich zwischen mehreren Länder und Gemeinden erstellt werden. ",
+        style={"margin": "20px",'padding-bottom': '20px'}),
+        dcc.Tabs([
+            dcc.Tab(label='Top 5 Liste', children=[render_top5_list()]),
+            dcc.Tab(label='Anzahl Notfallversorgungen', children=[render_bar_chart()]),
+            dcc.Tab(label='Abdeckung der Notfallversorgungen', children=[render_pie_charts()])
+        ], vertical=True, style={'width': '8vw', 'margin-left': "20px", 'margin-right': "20px"})])
+
     return html.Div([
         render_top5_list(),
         html.Div(style={'padding-top': '20px'}),  # Zeilenabstand

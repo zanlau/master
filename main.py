@@ -10,20 +10,22 @@ import plotly.graph_objects as go
 from dash import html, ctx
 from dash.dependencies import Input, Output
 from flask import Flask
-from shapely.geometry import Point
+from shapely.geometry import Point, shape
 from scipy import spatial
+from dash_bootstrap_templates import load_figure_template
 
-
-import view
 
 if dash.__version__ != "2.10.2":
     print("dash version 2.10.2 required!")
     sys.exit()
 
-
 server = Flask(__name__)
-app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP], server=server)
+dbc_css = "https://cdn.jsdelivr.net/gh/AnnMarieW/dash-bootstrap-templates/dbc.min.css"
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.LUX, dbc_css], server=server)
+load_figure_template("LUX")
 app.title = "Dashboard Notfallversorgungen"
+
+import view
 
 app.layout = view.layout
 
@@ -77,7 +79,7 @@ class NFS:
         if self.personal:
             self._occupancy = personal * self.PERSONAL_OCCUPANCY_FACTOR
         self.color = \
-        {"notfallstation": "blue", "stroke_unit": "green", "fire_station": "red", "air_ambulance": "yellow", "emed": "black"}[self.kind]
+        {"notfallstation": "blue", "stroke_unit": "green", "fire_station": "red", "air_ambulance": "black", "emed": "yellow"}[self.kind]
 
     def __str__(self):
         return f"{self.name}: {self.kind} {self.location}"
@@ -301,7 +303,7 @@ def get_fig(data, criteria, speed, aad, emed):
         cgeo = (
             gdf.set_crs("epsg:4326")
                 .pipe(lambda d: d.to_crs(d.estimate_utm_crs()))["geometry"]
-                .centroid.buffer(13819)  # 600km^2 Fläche
+                .centroid.buffer(13820)  # 600km^2 Fläche
                 .to_crs("epsg:4326")
                 .__geo_interface__
         )
@@ -537,7 +539,7 @@ def update_stacked_bar_chart(country1, country2):
     population_country2 = 8738791 if country2 == "CH" else 660809
 
     # plotly.express nicht möglich auf Dash, deshalb go.Bar mit zeilenweiser Generierung
-    trace = [
+    fig = go.Figure([
         go.Bar(
             x=[country1, country2],
             y=[len([x for x in data_country1 if x.kind == "stroke_unit"]) / population_country1,
@@ -559,18 +561,17 @@ def update_stacked_bar_chart(country1, country2):
             name='Medizinische Notfallstation',
             marker=dict(color='blue')
         )
-    ]
+    ])
 
-    return {
-        'data': trace,
-        'layout': go.Layout(
-            barmode='stack',
-            xaxis=dict(title=dict(text='Land', font=dict(size=20))),  # Schriftgrösse der X-Achsenbeschriftung ändern
-            yaxis=dict(title=dict(text='Anzahl Notfallstationen', font=dict(size=20))),  # Schriftgröße der Y-Achsenbeschriftung ändern
-            font=dict(size=20),
-            hoverlabel=dict(font=dict(size=20))
-        )
-    }
+    fig.update_layout(
+        barmode='stack',
+        xaxis=dict(title=dict(text='Land', font=dict(size=20))),  # Schriftgrösse der X-Achsenbeschriftung ändern
+        yaxis=dict(title=dict(text='Anzahl Notfallstationen', font=dict(size=20))),
+        # Schriftgröße der Y-Achsenbeschriftung ändern
+        font=dict(size=20),
+        hoverlabel=dict(font=dict(size=20)))
+    return fig
+
 
 
 @app.callback(
@@ -602,20 +603,11 @@ def update_pie_chart(country1, municipality1, country2, municipality2):
         "LU": list(sorted([m["name"] for m in pop_lu]))
     }
 
-    fs_pop_data = map_nfs_to_municipality(fs_data, copy.deepcopy(pop_data))
-    ns_pop_data = map_nfs_to_municipality(ns_data, copy.deepcopy(pop_data))
-    su_pop_data = map_nfs_to_municipality(su_data, copy.deepcopy(pop_data))
-
     def gm(d, municipality, key="nfs_count"):
         for x in d:
             if x["name"] == municipality:
                 return x.get(key, 0)
         return 0
-
-    # pie chart
-    labels = ['Medizinische Notfallstation', 'Feuerwehrstützpunkt', 'Schlaganfallzentrum']
-    values1 = [gm(ns_pop_data, municipality1), gm(fs_pop_data, municipality1), gm(su_pop_data, municipality1)]
-    values2 = [gm(ns_pop_data, municipality2), gm(fs_pop_data, municipality2), gm(su_pop_data, municipality2)]
 
     pop1 = pop2 = ""
 
