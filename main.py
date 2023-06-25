@@ -184,25 +184,32 @@ def open_emed_data():
                 json.load(f)["data"]]
 
 
-def map_nfs_to_municipality(data, pop_data):
-    municipality = [(x["lat"], x["lon"]) for x in pop_data]
-    for nfs in data:
-        tree = spatial.KDTree(municipality)
-        distance, index = tree.query([(nfs.location.coordinates.lat, nfs.location.coordinates.lon)])
-        g = municipality[index[0]]
-        for p in pop_data:
-            if (p["lat"], p["lon"]) == g:
-                if (float(p["boundingbox"][0][0])) <= nfs.location.coordinates.lat <= (
-                float(p["boundingbox"][1][0])) and \
-                        (float(p["boundingbox"][0][1])) <= nfs.location.coordinates.lon <= (
-                float(p["boundingbox"][1][1])):
-                    if "nfs" not in p:
-                        p["nfs"] = 1
-                        p["nfs_count"] = 1
-                        p["nfs_name"] = nfs.name
-                    else:
-                        p["nfs_count"] += 1
-                break
+def map_nfs_to_municipality(_data, pop_data):
+    borders = json.load(open("daten/borders.geojson"))
+
+    data = _data.copy()
+    for border in borders["features"]:
+        poly = shape(border["geometry"])
+
+        to_remove = []
+        for nfs in data:
+            if poly.contains(nfs.location.coordinates.to_Point()):
+                osm_id = int(border["id"].split("/")[1])
+                for m in pop_data:
+                    if m["osm_id"] == osm_id:
+                        if "nfs" not in m:
+                            m["nfs"] = 1
+                            m["nfs_count"] = 1
+                            m["nfs_name"] = nfs.name
+                        else:
+                            m["nfs_count"] += 1
+                        break
+                else:
+                    print(osm_id)
+                to_remove.append(nfs)
+        for x in to_remove:
+            data.remove(x)
+
     return pop_data
 
 
