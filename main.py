@@ -251,7 +251,8 @@ def get_fig(data, criteria, speed, aad, emed):
         fig.update_layout(
             mapbox={
                 "layers": [
-                    {"source": cgeo, "color": "yellow", "type": "fill", "opacity": .2},
+                    {"source": cgeo, "color": "yellow", "type": "fill", "opacity": 0.3},
+                    {"source": cgeo, "color": "black", "type": "line", "opacity": 0.1},
                 ],
             }
         )
@@ -296,8 +297,8 @@ def get_fig(data, criteria, speed, aad, emed):
         fig.update_layout(
             mapbox={
                 "layers": [
-                    {"source": cgeo, "color": "PaleTurquoise", "type": "fill", "opacity": .5},
-                    {"source": cgeo, "color": "black", "type": "line", "opacity": 0.1},
+                    {"source": cgeo, "color": "paleturquoise", "type": "fill", "opacity": .5},
+                    {"source": cgeo, "color": "black", "type": "line", "opacity": 0.05},
                 ]
             }
         )
@@ -317,7 +318,7 @@ def get_fig(data, criteria, speed, aad, emed):
         fig.update_layout(
             mapbox={
                 "layers": [
-                    {"source": cgeo, "color": "PaleTurquoise", "type": "fill", "opacity": .5},
+                    {"source": cgeo, "color": "violet", "type": "fill", "opacity": .5},
                     {"source": cgeo, "color": "black", "type": "line", "opacity": 0.1},
                 ]
             }
@@ -640,8 +641,8 @@ def update_pie_chart(country1, municipality1, country2, municipality2):
             pie2 = go.Figure([go.Pie(labels=labels, values=values2, marker=marker)])
 
 
-    pie1.update_layout(margin=dict(t=0, b=0, l=0, r=0), font=dict(size=20))
-    pie2.update_layout(margin=dict(t=0, b=0, l=0, r=0), font=dict(size=20))
+    pie1.update_layout(margin=dict(t=0, b=0, l=0, r=0), font=dict(size=20), hoverlabel=dict(font=dict(size=20)))
+    pie2.update_layout(margin=dict(t=0, b=0, l=0, r=0), font=dict(size=20), hoverlabel=dict(font=dict(size=20)))
 
     return municipalities[country1], f"Bevölkerungsgrösse: {pop1}", pie1,\
            municipalities[country2], f"Bevölkerungsgrösse: {pop2}", pie2
