@@ -43,8 +43,8 @@ def render_tab1():
                             dcc.Dropdown(id="emergency_type",
                                          options=[
                                              {"label": "Medizinische Notfallstation", "value": 'notfallstation'},
-                                             {"label": "Feuerwehrstützpunkt", "value": 'fire_station'},
-                                             {"label": "Schlaganfallzentrum", "value": 'stroke_unit'}],
+                                             {"label": "Schlaganfallzentrum", "value": 'stroke_unit'},
+                                             {"label": "Feuerwehrstützpunkt", "value": 'fire_station'}],
                                          value=None,
                                          style={"width": "40%"}),
                             html.Div(
@@ -110,14 +110,14 @@ def render_tab1():
                                               style={"display": "inline"})
                                 ]),
                                 html.Div([
-                                    html.Span(style={"color": "red", "margin-right": "5px", "display": "inline-flex",
-                                                     "align-items": "center"}, children=["\u25CF"]),
-                                    html.Span("Feuerwehrstützpunkt", style={"display": "inline"})
-                                ]),
-                                html.Div([
                                     html.Span(style={"color": "green", "margin-right": "5px", "display": "inline-flex",
                                                      "align-items": "center"}, children=["\u25CF"]),
                                     html.Span("Schlaganfallzentrum", style={"display": "inline"})
+                                ]),
+                                html.Div([
+                                    html.Span(style={"color": "red", "margin-right": "5px", "display": "inline-flex",
+                                                     "align-items": "center"}, children=["\u25CF"]),
+                                    html.Span("Feuerwehrstützpunkt", style={"display": "inline"})
                                 ]),
                             ])
                     ])

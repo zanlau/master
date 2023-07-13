@@ -189,11 +189,11 @@ def map_nfs_to_municipality(_data, pop_data):
 
     data = _data.copy()
     for border in borders["features"]:
-        poly = shape(border["geometry"])
+        poly = shape(border["geometry"]) # shape damit Polygon geladen wird
 
-        to_remove = []
+        to_remove = [] #Liste darf nicht verändert werden während dem iteriern.
         for nfs in data:
-            if poly.contains(nfs.location.coordinates.to_Point()):
+            if poly.contains(nfs.location.coordinates.to_Point()): # Ist Punkt in Polygon oder nicht
                 osm_id = int(border["id"].split("/")[1])
                 for m in pop_data:
                     if m["osm_id"] == osm_id:
@@ -330,14 +330,14 @@ def get_fig(data, criteria, speed, aad, emed):
 
         municipality = [(x["lat"], x["lon"]) for x in pop_data]
         max_distance = 5 #jumping verhindern (5km)
-        while municipality:
+        while municipality: #für alle Gemeinden, bis keine übrig bleibt
             found = False
             for i, nfs in enumerate(data):
-                tree = spatial.KDTree(municipality)
-                distance, index = tree.query([(nfs.location.coordinates.lat, nfs.location.coordinates.lon)])
-                if distance[0] <= (max_distance/40000*360):
+                tree = spatial.KDTree(municipality) #Liste von Punkte (Gemeinde)
+                distance, index = tree.query([(nfs.location.coordinates.lat, nfs.location.coordinates.lon)]) # nächst gelgene Gemeinde zur NFS
+                if distance[0] <= (max_distance/40000*360): # nicht zu weit entfernt Erde 40'000 km
                     g = municipality[index[0]]
-                    for p in pop_data:
+                    for p in pop_data: # P zu richtigen pop_daten
                         if (p["lat"], p["lon"]) == g:
                             break
 
