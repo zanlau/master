@@ -244,7 +244,7 @@ def get_fig(data, criteria, speed, aad, emed):
         cgeo = (
             gdf.set_crs("epsg:4326")
                 .pipe(lambda d: d.to_crs(d.estimate_utm_crs()))["geometry"]
-                .centroid.buffer(60000)  # vollständige Abdeckung
+                .centroid.buffer(60000)  # vollständige Abdeckung Air Ambulance
                 .to_crs("epsg:4326")
                 .__geo_interface__
         )

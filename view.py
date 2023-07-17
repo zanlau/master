@@ -12,7 +12,7 @@ layout = html.Div([
     html.H1("Einzugsgebiete von Notfallversorgungen", style={'text-align': 'center'}),
     html.Div(style={'height': '10px'}),  # Leerzeile einfügen
     dcc.Tabs(id="tabs", value='tab-1', children=[ #2 Tabs für Übersichtlichkeit (1. für visuelle Bestimmung / 2. für Vergleiche)
-        dcc.Tab(label='Karte mit Einzugsgebiete', value='tab-1'),
+        dcc.Tab(label='Karte mit Einzugsgebieten', value='tab-1'),
         dcc.Tab(label='Charts für Vergleiche', value='tab-2'),
     ]),
     html.Div(style={'height': '10px'}),  # Leerzeile einfügen
@@ -210,7 +210,7 @@ def render_pie_chart(index):
 def render_pie_charts():
     return html.Div([
         dbc.Card([
-            dbc.CardHeader("Abdeckung der Notfallversorgung"),
+            dbc.CardHeader("Abdeckung der Notfallversorgungen"),
             dbc.CardBody([
                 html.P(
                     "Die Visualisierungen zeigen mit welchen Notfallversorgungen die ausgewählte Gemeinde abgedeckt ist."),
